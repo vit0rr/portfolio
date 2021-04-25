@@ -77,11 +77,11 @@
 }
 
 .pDark {
-    color: white;
+    color: white !important;
 }
 
 .pLight {
-    color: black;
+    color: black !important;
 }
 
 .ownInfoItemsDark {

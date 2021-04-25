@@ -28,6 +28,12 @@ checkbox.addEventListener('click', function(){
         , el_projetosTheme = document.getElementById('projetosTheme')
         , el_cardTheme = document.getElementById('cardTheme')
         , el_cardTheme1 = document.getElementById('cardTheme1')
+        , el_cardTheme2 = document.getElementById('cardTheme2')
+        , el_cardTheme3 = document.getElementById('cardTheme3')
+        , el_cardTitleTheme = document.getElementById('cardTitleTheme')
+        , el_cardTitleTheme1 = document.getElementById('cardTitleTheme1')
+        , el_cardTitleTheme2 = document.getElementById('cardTitleTheme2')
+        , el_cardTitleTheme3 = document.getElementById('cardTitleTheme3')
 
         ;
     function setTheme(darkMode) {
@@ -41,8 +47,12 @@ checkbox.addEventListener('click', function(){
             el_projetosTheme.className = 'centralizar projetosDark'
             el_cardTheme.className = 'card bg-dark'
             el_cardTheme1.className = 'card bg-dark'
-
-
+            el_cardTheme2.className = 'card bg-dark'
+            el_cardTheme3.className = 'card bg-dark'
+            el_cardTitleTheme.className = 'card-title pDark'
+            el_cardTitleTheme1.className = 'card-title pDark'
+            el_cardTitleTheme2.className = 'card-title pDark'
+            el_cardTitleTheme3.className = 'card-title pDark'
         } else {
             el_mainBody.className = 'bodyLight'
             el_portfolioTheme.className = 'navbar-brand portfolioLight'
@@ -53,7 +63,12 @@ checkbox.addEventListener('click', function(){
             el_projetosTheme.className = 'centralizar projetosLight'
             el_cardTheme.className = 'card bg-light'
             el_cardTheme1.className = 'card bg-light'
-
+            el_cardTheme2.className = 'card bg-light'
+            el_cardTheme3.className = 'card bg-light'
+            el_cardTitleTheme.className = 'card-title pLight'
+            el_cardTitleTheme1.className = 'card-title pLight'
+            el_cardTitleTheme2.className = 'card-title pLight'
+            el_cardTitleTheme3.className = 'card-title pLight'
         }
     }
     checkbox.checked = JSON.parse(localStorage.getItem(LocalStorageName)) ?? false  // default value
