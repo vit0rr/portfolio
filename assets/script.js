@@ -34,6 +34,10 @@ checkbox.addEventListener('click', function(){
         , el_cardTitleTheme1 = document.getElementById('cardTitleTheme1')
         , el_cardTitleTheme2 = document.getElementById('cardTitleTheme2')
         , el_cardTitleTheme3 = document.getElementById('cardTitleTheme3')
+        , el_cardTextTheme = document.getElementById('cardTextTheme')
+        , el_cardTextTheme1 = document.getElementById('cardTextTheme1')
+        , el_cardTextTheme2 = document.getElementById('cardTextTheme2')
+        , el_cardTextTheme3 = document.getElementById('cardTextTheme3')
 
         ;
     function setTheme(darkMode) {
@@ -53,6 +57,10 @@ checkbox.addEventListener('click', function(){
             el_cardTitleTheme1.className = 'card-title pDark'
             el_cardTitleTheme2.className = 'card-title pDark'
             el_cardTitleTheme3.className = 'card-title pDark'
+            el_cardTextTheme.className = 'card-text pDark'
+            el_cardTextTheme1.className = 'card-text pDark'
+            el_cardTextTheme2.className = 'card-text pDark'
+            el_cardTextTheme3.className = 'card-text pDark'
         } else {
             el_mainBody.className = 'bodyLight'
             el_portfolioTheme.className = 'navbar-brand portfolioLight'
@@ -69,6 +77,10 @@ checkbox.addEventListener('click', function(){
             el_cardTitleTheme1.className = 'card-title pLight'
             el_cardTitleTheme2.className = 'card-title pLight'
             el_cardTitleTheme3.className = 'card-title pLight'
+            el_cardTextTheme.className = 'card-text pLight'
+            el_cardTextTheme1.className = 'card-text pLight'
+            el_cardTextTheme2.clssName = 'card-text pLight'
+            el_cardTextTheme3.className = 'card-text pLight'
         }
     }
     checkbox.checked = JSON.parse(localStorage.getItem(LocalStorageName)) ?? false  // default value
