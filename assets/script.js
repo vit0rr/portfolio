@@ -1,4 +1,4 @@
-let checkbox = document.querySelector('input[name=checkbox]');
+/*let checkbox = document.querySelector('input[name=checkbox]');
 
 checkbox.addEventListener('click', function(){
     if(this.checked){
@@ -12,4 +12,55 @@ checkbox.addEventListener('click', function(){
         document.getElementById('homeTheme').className = 'nav-link homeLight'
         document.getElementById('ownNameTheme').className = 'ownName ownNameLight'
     }
-})
+})*/
+
+(function () {
+
+    const
+        LocalStorageName = 'thema'
+        , checkbox = document.querySelector('input[name=checkbox]')
+        , el_mainBody = document.getElementById('mainBody')
+        , el_portfolioTheme = document.getElementById('portfolioTheme')
+        , el_homeTheme = document.getElementById('homeTheme')
+        , el_ownNameTheme = document.getElementById('ownNameTheme')
+        , el_pTheme = document.getElementById('pTheme')
+        , el_ownInfo = document.getElementById('ownInfo')
+        , el_projetosTheme = document.getElementById('projetosTheme')
+        , el_cardTheme = document.getElementById('cardTheme')
+        , el_cardTheme1 = document.getElementById('cardTheme1')
+
+        ;
+    function setTheme(darkMode) {
+        if (darkMode) {
+            el_mainBody.className = 'bodyDark'
+            el_portfolioTheme.className = 'navbar-brand portfolioDark'
+            el_homeTheme.className = 'nav-link homeDark'
+            el_ownNameTheme.className = 'ownName ownNameDark'
+            el_pTheme.className = 'pDark'
+            el_ownInfo.className = 'ownInfoItemsDark'
+            el_projetosTheme.className = 'centralizar projetosDark'
+            el_cardTheme.className = 'card bg-dark'
+            el_cardTheme1.className = 'card bg-dark'
+
+
+        } else {
+            el_mainBody.className = 'bodyLight'
+            el_portfolioTheme.className = 'navbar-brand portfolioLight'
+            el_homeTheme.className = 'nav-link homeLight'
+            el_ownNameTheme.className = 'ownName ownNameLight'
+            el_pTheme.className = 'pLight'
+            el_ownInfo.className = 'ownInfoItemsLight'
+            el_projetosTheme.className = 'centralizar projetosLight'
+            el_cardTheme.className = 'card bg-light'
+            el_cardTheme1.className = 'card bg-light'
+
+        }
+    }
+    checkbox.checked = JSON.parse(localStorage.getItem(LocalStorageName)) ?? false  // default value
+    setTheme(checkbox.checked)
+
+    checkbox.addEventListener('click', function () {
+        setTheme(checkbox.checked)
+        localStorage.setItem(LocalStorageName, JSON.stringify(checkbox.checked))
+    })
+})()

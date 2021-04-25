@@ -76,6 +76,41 @@
     color: black !important;
 }
 
+.pDark {
+    color: white;
+}
+
+.pLight {
+    color: black;
+}
+
+.ownInfoItemsDark {
+    color: white;
+}
+
+.ownInfoItemsLight {
+    color: black;
+}
+
+.cardThemeDark {
+    background-color: black;
+}
+
+.cardThemeLight {
+    background-color: white;
+}
+
+
+.projetosLight {
+    color: black !important;
+}
+
+.projetosDark {
+    color: white;
+}
+
+
+
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
     .responsiveImg {
