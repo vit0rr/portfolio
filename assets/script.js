@@ -87,7 +87,7 @@ checkbox.addEventListener('click', function(){
             el_cardTitleTheme3.className = 'card-title pLight'
             el_cardTextTheme.className = 'card-text pLight'
             el_cardTextTheme1.className = 'card-text pLight'
-            el_cardTextTheme2.clssName = 'card-text pLight'
+            el_cardTextTheme2.className = 'card-text pLight'
             el_cardTextTheme3.className = 'card-text pLight'
             el_textMutedTheme.className = 'text-muted pLight'
             el_textMutedTheme1.className = 'text-muted pLight'
