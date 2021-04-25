@@ -1,0 +1,106 @@
+.ownName {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+.profilePic {
+    border-radius: 10px;
+}
+
+.navHr {
+    border-bottom: 1px solid rgb(189, 184, 184);
+}
+
+#ownInfo {
+    padding-top: 10px;
+}
+
+.works {
+    padding-top: 10px;
+}
+
+.centralizar {
+    text-align: center;
+}
+
+.geralInfo {
+    padding-top: 25px;
+}
+
+#profileImg {
+    padding-top: 40px;
+}
+
+.rodape {
+    background-color: rgb(112, 23, 112);
+    color: white;
+}
+
+/*DarkMode*/
+.bodyDark {
+    background-color: #202124;
+} 
+
+.bodyLight {
+    background-color: white !important;
+}
+
+
+.portfolioDark {
+    color: white !important;
+}
+
+.portfolioLight {
+    color: black !important;
+}
+
+
+.homeDark {
+    color: white !important;
+}
+
+.homeLight {
+    color: black !important;
+}
+
+.ownNameDark {
+    color: white !important;
+}
+
+.ownNameLight {
+    color: black !important;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .responsiveImg {
+        width: 100px;
+    }
+ }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .responsiveImg {
+        width: 150px;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+ }
