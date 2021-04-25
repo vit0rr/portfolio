@@ -121,6 +121,12 @@
     text-decoration-color: rgb(112, 23, 112);
 }
 
+.switchBar {
+    /*border-right: 2px solid purple;*/
+    margin-right: 5px;
+    
+}
+
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
