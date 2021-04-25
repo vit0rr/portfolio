@@ -14,6 +14,13 @@ checkbox.addEventListener('click', function(){
     }
 })*/
 
+const rootDataset = document.documentElement.dataset;
+
+document.onclick = () => {
+    const inDarkMode = (rootDataset.theme === 'dark');
+    rootDataset.theme = inDarkMode ? '' : 'dark';
+}
+
 (function () {
 
     const

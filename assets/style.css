@@ -1,3 +1,14 @@
+:root {
+    --primary-color: white;    
+}
+[data-theme="dark"] {
+    --primary-color: grey;    
+}
+body {
+    background: var(--primary-color);
+    transition: background 0.5s;
+}
+
 .ownName {
     font-size: 20px;
     padding-bottom: 10px;
@@ -44,81 +55,93 @@
 /*DarkMode*/
 .bodyDark {
     background-color: #202124;
+    transition: background 0.5s;
 } 
 
 .bodyLight {
     background-color: white !important;
+    transition: background 0.5s;
 }
 
 
 .portfolioDark {
     color: white !important;
+    transition: background 0.5s;
+    
 }
 
 .portfolioLight {
     color: black !important;
+    transition: background 0.5s;
 }
 
 
 .homeDark {
     color: white !important;
+    transition: background 0.5s;
 }
 
 .homeLight {
     color: black !important;
+    transition: background 0.5s;
 }
 
 .ownNameDark {
     color: white !important;
+    transition: background 0.5s;
 }
 
 .ownNameLight {
     color: black !important;
+    transition: background 0.5s;
 }
 
 .pDark {
     color: white !important;
+    transition: background 0.5s;
 }
 
 .pLight {
     color: black !important;
+    transition: background 0.5s;
 }
 
 .ownInfoItemsDark {
     color: white;
+    transition: background 0.5s;
 }
 
 .ownInfoItemsLight {
     color: black;
+    transition: background 0.5s;
 }
 
 .cardThemeDark {
     background-color: black;
+    transition: background 0.5s;
 }
 
 .cardThemeLight {
     background-color: white;
+    transition: background 0.5s;
 }
 
 
 .projetosLight {
     color: black !important;
+    transition: background 0.5s;
 }
 
 .projetosDark {
     color: white;
-}
-
-#homeTheme {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-decoration-color: rgb(112, 23, 112);
+    transition: background 0.5s;
 }
 
 #portfolioTheme {
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    text-decoration-color: rgb(112, 23, 112);
+    text-decoration-color: white;
+    transition: background 0.5s;
 }
 
 .switchBar {
