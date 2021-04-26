@@ -20,7 +20,7 @@
             <div class="custom-control custom-switch switchBar">
                 <input type="checkbox" class="custom-control-input" id="customSwitch1" name="checkbox">
                 <label class="custom-control-label" for="customSwitch1"></label>
-              </div>
+            </div>
             <a class="navbar-brand" href="#" id="portfolioTheme">Portfolio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,16 +28,19 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" id="homeTheme">Home</a>
+                    <li class="nav-item active ativo">
+                        <a class="nav-link" href="./index.html" id="homeTheme">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/artigos.html" id="artigosTheme">Artigos</a>
                     </li>
                 </ul>
-                
+
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         </nav>
     </header>
-    <div class="container">
+    <div class="container"> 
         <div class="row geralInfo">
             <div class="col-8">
                 <div class="ownName" id="ownNameTheme">
@@ -62,12 +65,15 @@
                         class="profilePic responsiveImg">
                 </div>
                 <div id="ownInfo">
-                    <span class="bold" id="ownInfoItemsThemes">De:</span> <span id="ownInfoItemsDescThemes">São Paulo - SP</span> <br>
+                    <span class="bold" id="ownInfoItemsThemes">De:</span> <span id="ownInfoItemsDescThemes">São Paulo -
+                        SP</span> <br>
                     <span class="bold ">Nome:</span> <span>Vitor Souza de Almeida</span> <br>
                     <span class="bold ">Idade:</span> <span>17</span> <br>
                     <span class="bold ">Github:</span> <span><a href="https://github.com/vit0rr" target="_blank"
                             rel="noopener noreferrer">vit0rr</a></span> <br>
-                    <span class="bold ">LinkedIn:</span> <span><a href="https://www.linkedin.com/in/vitor-souza-397259206/" target="_blank" rel="noopener noreferrer">Vitor S.</a></span>
+                    <span class="bold ">LinkedIn:</span> <span><a
+                            href="https://www.linkedin.com/in/vitor-souza-397259206/" target="_blank"
+                            rel="noopener noreferrer">Vitor S.</a></span>
                 </div>
             </div>
         </div>
@@ -78,7 +84,8 @@
                 <div id="cardTheme" class="card">
                     <div class="card-body">
                         <h5 id="cardTitleTheme" class="card-title">Despesas Pessoais</h5>
-                        <p id="cardTextTheme" class="card-text">Site desenvolvido para colocar em práticas meus conhecimentos em
+                        <p id="cardTextTheme" class="card-text">Site desenvolvido para colocar em práticas meus
+                            conhecimentos em
                             JavaScript. O principal recurso utilizado foi Local Storage, para que seja possível
                             registrar dados em campos para posterior consulta. Com esse projeto também tive que lidar
                             com XSS.</p>
@@ -90,7 +97,8 @@
                 <div id="cardTheme1" class="card">
                     <div class="card-body">
                         <h5 id="cardTitleTheme1" class="card-title">DiscordDmNuke</h5>
-                        <p id="cardTextTheme1" class="card-text">Esse foi meu primeiro projeto que de fato resolvia um problema no qual eu
+                        <p id="cardTextTheme1" class="card-text">Esse foi meu primeiro projeto que de fato resolvia um
+                            problema no qual eu
                             me incomodava: não conseguir remover massivamente as mensagens do Discord. Então desenvolvi
                             tal programa para me possibilitar isso.</p>
                         <p class="card-text"><small id="textMutedTheme1" class="text-muted">Repositório: <a
@@ -101,29 +109,44 @@
                 <div id="cardTheme2" class="card">
                     <div class="card-body">
                         <h5 id="cardTitleTheme2" class="card-title">Mata Mosquito</h5>
-                        <p id="cardTextTheme2" class="card-text">Jogo feito para praticar conceitos de DOM em JavaScript.</p>
+                        <p id="cardTextTheme2" class="card-text">Jogo feito para praticar conceitos de DOM em
+                            JavaScript.</p>
                         <p class="card-text"><small id="textMutedTheme2" class="text-muted">Repositório: <a
                                     href="https://github.com/vit0rr/MataMosquito" target="_blank"
                                     rel="noopener noreferrer">aqui</a></small></p>
                     </div>
                 </div>
-                
+
             </div> <br>
-            <div id="cardTheme3" class="card">
-                <div class="card-body">
-                    <h5 id="cardTitleTheme3" class="card-title">Privacy for All</h5>
-                    <p id="cardTextTheme3" class="card-text">Site desenvolvido após a leitura de dois livros: "WikiLeaks - A guerra de Julian Assange contra os Segredos de Estado" e "Os arquivos de Snowden". Ambos falam sobre privacidade e política. No Privacy for All apresento alternativas de sites, softwares etc voltados para privacidade.</p>
-                    <p class="card-text"><small id="textMutedTheme3" class="text-muted">Repositório: <a
-                                href="https://github.com/vit0rr/privacyforall" target="_blank"
-                                rel="noopener noreferrer">aqui</a></small></p>
+            <div class="card-deck">
+                <div id="cardTheme3" class="card">
+                    <div class="card-body">
+                        <h5 id="cardTitleTheme3" class="card-title">Privacy for All</h5>
+                        <p id="cardTextTheme3" class="card-text">Site desenvolvido após a leitura de dois livros: "WikiLeaks
+                            - A guerra de Julian Assange contra os Segredos de Estado" e "Os arquivos de Snowden". Ambos
+                            falam sobre privacidade e política. No Privacy for All apresento alternativas de sites,
+                            softwares etc voltados para privacidade.</p>
+                        <p class="card-text"><small id="textMutedTheme3" class="text-muted">Repositório: <a
+                                    href="https://github.com/vit0rr/privacyforall" target="_blank"
+                                    rel="noopener noreferrer">aqui</a></small></p>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </div> <br>
-    <div class="rodape centralizar">
+       <!-- <div class="artigos">
+            <h3 class="centralizar" id="artigosTitleTheme">Artigos</h3>
+            <ul id="artigosUlTheme">
+                <li><a href="#" class="artigosLink">Inteligência Artifical: As máquinas podem pensar?</a></li>
+            </ul>
+        </div>
+    </div> <br> -->
+    <!-- <div class="rodape centralizar">
         <span class="">Todos os direitos reservados</span> <br>
-        <span>Vitor Souza de Almeida ( <a href="https://github.com/vit0rr/portfolio" target="_blank" rel="noopener noreferrer">Github</a> )</span>
-    </div>
+        <span>Vitor Souza de Almeida ( <a href="https://github.com/vit0rr/portfolio" target="_blank"
+                rel="noopener noreferrer">Github</a> )</span>
+    </div>-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

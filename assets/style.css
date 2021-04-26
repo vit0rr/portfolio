@@ -48,8 +48,19 @@ body {
 }
 
 .rodape {
-    background-color: rgb(112, 23, 112);
-    color: white;
+    background-color: rgba(39, 85, 155, 0.253);
+    color: black;
+    font-weight: bold;
+}
+
+.ativo {
+    text-decoration: underline !important;
+    text-decoration-color: gray !important;
+    text-decoration-thickness: 2px !important;
+}
+
+.artigosLink {
+    font-size: 18px;
 }
 
 /*DarkMode*/

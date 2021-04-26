@@ -49,7 +49,9 @@ document.onclick = () => {
         , el_textMutedTheme1 = document.getElementById('textMutedTheme1')
         , el_textMutedTheme2 = document.getElementById('textMutedTheme2')
         , el_textMutedTheme3 = document.getElementById('textMutedTheme3')
-
+        //, el_artigosTheme = document.getElementById('artigosTheme')
+        //, el_artigosTitleTheme = document.getElementById('artigosTitleTheme')
+        //, el_artigosUlTheme = document.getElementById('artigosUlTheme')
         ;
     function setTheme(darkMode) {
         if (darkMode) {
@@ -76,6 +78,9 @@ document.onclick = () => {
             el_textMutedTheme1.className = 'text-muted pDark'
             el_textMutedTheme2.className = 'text-mutd pDark'
             el_textMutedTheme3.className = 'text-muted pDark'
+            //el_artigosTheme.className = 'nav-link pDark'
+            //el_artigosTitleTheme.className = 'centralizar pDark'
+            //el_artigosUlTheme.className = 'pDark'
         } else {
             el_mainBody.className = 'bodyLight'
             el_portfolioTheme.className = 'navbar-brand portfolioLight'
@@ -100,6 +105,9 @@ document.onclick = () => {
             el_textMutedTheme1.className = 'text-muted pLight'
             el_textMutedTheme2.className = 'text-muted pLight'
             el_textMutedTheme3.className = 'text-muted pLight'
+            //el_artigosTheme.className = 'nav-link pLight'
+            //el_artigosTitleTheme.className = 'centralizar pLight'
+            //el_artigosUlTheme.className = 'pLight'
         }
     }
     checkbox.checked = JSON.parse(localStorage.getItem(LocalStorageName)) ?? false  // default value
