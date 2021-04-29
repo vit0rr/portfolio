@@ -1,19 +1,3 @@
-/*let checkbox = document.querySelector('input[name=checkbox]');
-
-checkbox.addEventListener('click', function(){
-    if(this.checked){
-        document.getElementById('mainBody').className = 'bodyDark'
-        document.getElementById('portfolioTheme').className = 'navbar-brand portfolioDark'
-        document.getElementById('homeTheme').className = 'nav-link homeDark'
-        document.getElementById('ownNameTheme').className = 'ownName ownNameDark'
-    } else {
-        document.getElementById('mainBody').className = 'bodyLight'
-        document.getElementById('portfolioTheme').className = 'navbar-brand portfolioLight'
-        document.getElementById('homeTheme').className = 'nav-link homeLight'
-        document.getElementById('ownNameTheme').className = 'ownName ownNameLight'
-    }
-})*/
-
 const rootDataset = document.documentElement.dataset;
 
 document.onclick = () => {
@@ -99,7 +83,6 @@ document.onclick = () => {
             el_artigosUlTheme.className = 'pDark'
             el_emDesenvolvimento.className = 'pDark'
             el_hrTheme.className = 'hrDark'
-
         } else {
             el_mainBody.className = 'bodyLight'
             el_portfolioTheme.className = 'navbar-brand portfolioLight'
