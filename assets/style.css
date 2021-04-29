@@ -148,6 +148,14 @@ body {
     transition: background 0.5s;
 }
 
+.hrDark {
+    border-color: white;
+}
+
+.hrLight {
+    border-color: none;
+}
+
 #portfolioTheme {
     text-decoration: underline;
     text-decoration-thickness: 3px;
