@@ -57,8 +57,10 @@ document.onclick = () => {
         , el_textMutedLinkTheme2 = document.getElementById('textMutedLinkTheme2')
         , el_textMutedLinkTheme3 = document.getElementById('textMutedLinkTheme3')
         , el_textMutedLinkTheme4 = document.getElementById('textMutedLinkTheme4')
+        , el_artigosUlTheme = document.getElementById('artigosUlTheme')
+        , el_emDesenvolvimento = document.getElementById('emDesenvolvimento')
         //, el_artigosTheme = document.getElementById('artigosTheme')
-        //, el_artigosTitleTheme = document.getElementById('artigosTitleTheme')
+        , el_artigosTitleTheme = document.getElementById('artigosTitleTheme')
         //, el_artigosUlTheme = document.getElementById('artigosUlTheme')
         ;
     function setTheme(darkMode) {
@@ -94,9 +96,9 @@ document.onclick = () => {
             el_textMutedLinkTheme2.className = 'text-muted pDark'
             el_textMutedLinkTheme3.className = 'text-muted pDark'
             el_textMutedLinkTheme4.className = 'text-muted pDark'
-            //el_artigosTheme.className = 'nav-link pDark'
-            //el_artigosTitleTheme.className = 'centralizar pDark'
-            //el_artigosUlTheme.className = 'pDark'
+            el_artigosTitleTheme.className = 'centralizar pDark'
+            el_artigosUlTheme.className = 'pDark'
+            el_emDesenvolvimento.className = 'pDark'
         } else {
             el_mainBody.className = 'bodyLight'
             el_portfolioTheme.className = 'navbar-brand portfolioLight'
@@ -129,9 +131,9 @@ document.onclick = () => {
             el_textMutedLinkTheme2.className = 'text-muted pLight'
             el_textMutedLinkTheme3.className = 'text-muted pLight'
             el_textMutedLinkTheme4.className = 'text-muted pLight'
-            //el_artigosTheme.className = 'nav-link pLight'
-            //el_artigosTitleTheme.className = 'centralizar pLight'
-            //el_artigosUlTheme.className = 'pLight'
+            el_artigosTitleTheme.className = 'centralizar pLight'
+            el_artigosUlTheme.className = 'pLight'
+            el_emDesenvolvimento.className = 'pLoght'
         }
     }
     checkbox.checked = JSON.parse(localStorage.getItem(LocalStorageName)) ?? false  // default value
