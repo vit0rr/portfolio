@@ -14,60 +14,125 @@
 
 <body>
     <span><a href="../index.html">Voltar</a></span>
-        <div class="row">
-            <div class="col-sm-3">
-                <ol>
-                    <li><a href="#introducao">Introdução</a></li>
-                    <li>O que é computador?</li>
+    <div class="row">
+        <div class="col-sm-3">
+            <ol>
+                <li><a href="#introducao">Introdução</a></li>
+                <li>O que é computador?</li>
+                <ol class="sumario-desc">
+                    <li>2.1 Dado e Informação</li>
                     <ol class="sumario-desc">
-                        <li>2.1 Informação e Dado</li>
-                        <li>2.2 Capacidade semântica e sintética</li>
-                        <ol class="sumario-desc">
-                            <li>2.2.1 Máquina de Turing</li>
-                            <li>2.2.2 EDVAC</li>
-                        </ol>
+                        <li>2.1.1 Strong AI</li>
+                        <li><a href="#strongAIvsBiologicalNaturalism">2.1.2 Strong AI vs. biological naturalism</a></li>
                     </ol>
-                    <li>Neurociência dos pensamentos</li>
-                    <li>Inteligência Artificial ou Imbecilidade Automática?</li>
-                    <li>Kurzwell</li>
-                    <li>CONCLUSÃO</li>
-                    <li>REFERÊNCIAS BILIOGRÁFICAS</li>
                 </ol>
+                <li>Neurociência dos pensamentos</li>
+                <li>Inteligência Artificial ou Imbecilidade Automática?</li>
+                <li>Kurzwell</li>
+                <li>CONCLUSÃO</li>
+                <li>REFERÊNCIAS BILIOGRÁFICAS</li>
+            </ol>
+        </div>
+        <div class="col-sm-6 container-md">
+            <div>
+                <h3 id="introducao">1. Introdução</h3>
+                <p>
+                    <span>Um</span> dilema que se estende para diversas áreas, como filosofia, matemática,
+                    computação e física, é se as máquinas um dia poderão pensar. Essa questão é mais complexa do que
+                    aparenta, pois engloba diversas variáveis a serem consideradas e não simplesmente uma definição de
+                    “pensar”.
+
+                </p>
+                <p>
+                    <span>As</span> etapas de concluir que um computador pensa pode inclusive não estar
+                    ligada diretamente com pensamentos, mas sim com agir de acordo com seres pensantes. Afinal, será que
+                    realmente importa algo pensar, se ele pode imitar perfeitamente um ser pensante? Essas questões
+                    também levam a dilemas da programação orientada a objetos, como o Duck Typing (que será explicado
+                    futuramente).
+
+                </p>
+                <p>
+                    <span>Partindo</span> de uma visão materialista, o que impediria a recriação das
+                    capacidades humanas em uma máquina, se a nossa existência está ligada em algo físico
+
+                </p>
             </div>
-            <div class="col-sm-6">
-                <div>
-                    <h3 id="introducao">1. Introdução</h3>
-                    <p>
-                        <span class="tab">Um</span> dilema que se estende para diversas áreas, como filosofia,
-                        matemática, computação e física, é se as máquinas um dia poderão pensar. Essa questão é mais
-                        complexa do que aparenta, pois engloba diversas variáveis a serem consideradas e não
-                        simplesmente uma definição de “pensar”.
-                    </p>
-                    <p>
-                        <span class="tab">As</span> etapas de concluir que um computador pensa pode inclusive não estar
-                        ligada diretamente com pensamentos, mas sim com agir de acordo com seres pensantes. Afinal, será
-                        que realmente importa algo pensar, se ele pode imitar perfeitamente um ser pensante? Essas
-                        questões também levam a dilemas da programação orientada a objetos, como o Duck Typing (que será
-                        explicado futuramente).
-                    </p>
-                    <p>
-                        <span class="tab">Partindo</span> de uma visão materialista, o que impediria a recriação das
-                        capacidades humanas em uma máquina, se a nossa existência está ligada em algo físico
-                    </p>
-                </div>
-                <div>
-                    <h3 id="o-que-e-um-computador">O que é um computador?</h3>
-                    <p>
-                        <span class="tab">Os</span> computadores atuais, os modernos, são máquinas matemáticas, lógico-simbólicas e algorítmicas.
-                        Isto significa que qualquer instrução passada para o computador, é interpretada e pode ser
-                        matematicamente descrita, ou seja, representa uma função matemática. Uma outra característica, é
-                        de que a matemática envolvida é restrita: só trabalha com símbolos de um conjunto finito,
-                        discreto, para ao qual sempre se pode correlacionar em um sistema numérico. Ou seja, o espaço de
-                        um computador é sempre quantificado, limitado, logo, nunca infinito.
-                    </p>
-                </div>
+            <div>
+                <h3 id="o-que-e-um-computador">2. O que é um computador?</h3>
+                <p>
+                    <span>Os</span> computadores atuais, os modernos, são máquinas matemáticas,
+                    lógico-simbólicas e algorítmicas. Isto significa que qualquer instrução passada para o computador, é
+                    interpretada e pode ser matematicamente descrita, ou seja, representa uma função matemática. Uma
+                    outra característica, é de que a matemática envolvida é restrita: só trabalha com símbolos de um
+                    conjunto finito, discreto, para ao qual sempre se pode correlacionar em um sistema numérico. Ou
+                    seja, o espaço de um computador é sempre quantificado, limitado, logo, nunca infinito.
+                </p>
+                <p>
+                    <span>Após</span> isso, fica simples de entender que o computador interpreta dados, e
+                    não informações.
+
+                </p>
+            </div>
+            <div>
+                <h3 id="dadoEInformacao">2.1. Dado e Informação</h3>
+                <p>
+                    <span>A</span> sala chinesa de Searle é um exemplo perfeito para conseguirmos
+                    diferenciar Dado de Informação. Suponha que se esteja numa sala fechada onde existem caixas com
+                    coleções de símbolos chineses. Para um não falante de chinês, esses símbolos não têm o menor
+                    significado. Mas, também na mesma sala, existe um Manual de Instruções escrito com a língua nativa
+                    ensinando a manipular esses símbolos. Uma outra pessoa, conhecedora da língua chinesa, está fora da
+                    sala e cria perguntas ou frases coerentes em chinês, sobre qualquer assunto, juntando os símbolos em
+                    pacotes que são passados através de uma abertura. O papel de quem está na primeira sala, será usar o
+                    Manual para formar uma nova coleção de símbolos que produza uma resposta coerente (em chinês) às
+                    questões recebidas. Considerando que tudo ocorreu da forma que deveria, a pessoa do lado de fora vai
+                    achar que está se comunicando com alguém que sabe chinês, sendo que na realidade quem estava lá
+                    dentro não fazia a menor ideia sobre a língua.
+
+                </p>
+                <p>
+                    <span>Da</span> mesma forma, assim como diz Searle, um computador que passa pelo Teste
+                    de Turing aparenta pensar, mas não pensa, pois ele não dispõe dos processos que o ser humano tem
+                    para pensar. Essa sala serve para passar a ideia de que, a pessoa da primeira sala, conseguiu
+                    estabelecer uma comunicação baseada em dados, ou seja, ela não sabia ou tinha qualquer conhecimento
+                    sobre o chinês, mas, utilizando da informação que está no livro, ele conseguiu se comunicar. Logo, o
+                    papel dessa sala, é mostrar que dados não são entendidos pelo computador, eles apenas passam, e o
+                    que chega a nós, humanos, que nos faz sentido, passa a ser informações. Ou seja, no final, acaba
+                    sendo uma questão de semântica e sintática.
+                </p>
+            </div>
+            <div>
+                <h3 id="StrongAI">2.1.1. Strong AI</h3>
+                <p>
+                    <span>O</span> computador devidamente programado, com entradas e saídas corretas, teria uma mente
+                    exatamente no mesmo sentido que os seres humanos têm. Uma Strong AI, ou seja, uma inteligência
+                    artificial forte, seria que de fato ela tem uma mente, e não simula uma, como uma IA fraca faria.
+                </p>
+                <p>
+                    <span>Searle</span> também atribui três afirmações aos defensores da IA Forte, como “Os sistemas de
+                    IA podem ser usados para explicar a mente”, “O estudo do cérebro é irrelevante para o estudo da
+                    mente”, “O teste de Turing é adequado para estabelecer a existência de estados mentais.”
+                </p>
+            </div>
+            <div>
+                <h3 id="strongAIvsBiologicalNaturalism">2.1.2. Strong AI vs. biological naturalism</h3>
+                <p>
+                    <span>Searle</span> tem uma posição filosófica chamada de “naturalismo biológico”. Ele descreve esse
+                    processo de pensamento como “brains cause minds” - cérebros causam mentes - e que “actual human
+                    mental phenomena [are] dependent on actual physical-chemical properties of actual human brains” -
+                    fenômenos mentais humanos [são] dependentes das propriedades físico-químicas reais dos cérebros
+                    humanos reais.
+                </p>
+                <p>
+                    <span>Searle</span> não discorda de que as máquinas podem ter consciência e compreensão, pois, como
+                    ele mesmo descreve, somos precisamente máquinas. Ele defende que o cérebro é uma máquina, mas que o
+                    cérebro dá origem à consciência. Ou seja, se a neurociência conseguir isolar o processo mecânico que
+                    dá origem à consciência, então será garantido - para Searle - que será possível criar mentes
+                    completas com máquinas.
+
+                </p>
             </div>
         </div>
+    </div>
 </body>
 
 </html>
