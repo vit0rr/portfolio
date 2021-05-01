@@ -7,6 +7,7 @@
 body {
     background: var(--primary-color);
     transition: background 0.5s;
+    overflow-x: hidden;
 }
 
 .ownName {
@@ -43,6 +44,9 @@ body {
     padding-top: 25px;
 }
 
+
+
+
 #profileImg {
     padding-top: 40px;
 }
@@ -61,6 +65,10 @@ body {
 
 .artigosLink {
     font-size: 18px;
+}
+
+.sumario-desc {
+    list-style-type: none;
 }
 
 /*DarkMode*/
