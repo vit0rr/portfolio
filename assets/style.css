@@ -140,6 +140,12 @@ body {
     transition: background 0.5s;
 }
 
+.navia {
+    font-size: 18px;
+    border-bottom:2px solid gray ;
+    margin: 5px;
+}
+
 .cardThemeLight {
     background-color: white;
     transition: background 0.5s;

@@ -11,29 +11,43 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
-
-<body>
-    <span><a href="../index.html">Voltar</a></span>
+<style>
+    li {
+        margin: 2px;
+    }
+</style>
+<body id="bodyTheme">
+    <header>
+        <div class="centralizar navia">
+            <span>
+                <div class="custom-control custom-switch switchBar">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1" name="checkbox">
+                    <label class="custom-control-label" for="customSwitch1"></label>
+                </div>
+                <a href="../index.html">Voltar para portfolio</a>
+            </span>
+        </div>
+    </header> <br>
     <div class="row">
         <div class="col-sm-3">
-            <ol>
+            <ol id="olTheme">
                 <li><a href="#introducao">Introdução</a></li>
-                <li>O que é computador?</li>
+                <li><a href="">O que é computador?</a></li>
                 <ol class="sumario-desc">
-                    <li>2.1 Dado e Informação</li>
+                    <li><a href="">2.1 Dado e Informação</a></li>
                     <ol class="sumario-desc">
-                        <li>2.1.1 Strong AI</li>
+                        <li><a href="">2.1.1 Strong AI</a></li>
                         <li><a href="#strongAIvsBiologicalNaturalism">2.1.2 Strong AI vs. biological naturalism</a></li>
                     </ol>
                 </ol>
-                <li>Neurociência dos pensamentos</li>
-                <li>Inteligência Artificial ou Imbecilidade Automática?</li>
-                <li>Kurzwell</li>
-                <li>CONCLUSÃO</li>
-                <li>REFERÊNCIAS BILIOGRÁFICAS</li>
+                <li><a href="">Neurociência dos pensamentos</a></li>
+                <li><a href="">Inteligência Artificial ou Imbecilidade Automática?</a></li>
+                <li><a href="">Raymond Kurzweil</a></li>
+                <li><a href="">CONCLUSÃO</a></li>
+                <li><a href="">REFERÊNCIAS BILIOGRÁFICAS</a></li>
             </ol>
         </div>
-        <div class="col-sm-6 container-md">
+        <div class="col-sm-6 container-md" id="articleTheme">
             <div>
                 <h3 id="introducao">1. Introdução</h3>
                 <p>
@@ -133,6 +147,7 @@
             </div>
         </div>
     </div>
+    <script src="../assets/darkModeArticle.js"></script>
 </body>
 
 </html>
