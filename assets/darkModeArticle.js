@@ -26,7 +26,6 @@ document.onclick = () => {
             el_numTheme.className = 'pDark'
             el_numTheme1.className = 'pDark'
             el_numTheme2.className = 'pDark'
-            el_numTheme3.className = 'pDark'
         } else {
             el_olTheme.className = 'pLight'
             el_bodyTheme.className = 'bodyLight'
@@ -34,7 +33,6 @@ document.onclick = () => {
             el_numTheme.className = 'pLight'
             el_numTheme1.className = 'pLight'
             el_numTheme2.className = 'pLight'
-            el_numTheme3.className = 'pLight'
         }
     }
     checkbox.checked = JSON.parse(localStorage.getItem(LocalStorageName)) ?? false  // default value
