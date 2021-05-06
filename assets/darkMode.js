@@ -114,7 +114,7 @@ document.onclick = () => {
             el_cardTitleTheme2.className = 'card-title pLight'
             el_cardTitleTheme3.className = 'card-title pLight'
             el_cardTitleTheme4.className = 'card-title pLight'
-            el_ccardTitleTheme5.className = 'card-title pLight'
+            el_cardTitleTheme5.className = 'card-title pLight'
             el_cardTextTheme.className = 'card-text pLight'
             el_cardTextTheme1.className = 'card-text pLight'
             el_cardTextTheme2.className = 'card-text pLight'
