@@ -71,6 +71,10 @@ body {
     list-style-type: none;
 }
 
+#artigosUlTheme {
+    list-style-type: none;
+}
+
 /*DarkMode*/
 .bodyDark {
     background-color: #202124;
