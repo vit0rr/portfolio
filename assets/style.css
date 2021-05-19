@@ -243,24 +243,8 @@ body {
         width: 90px;
     }
 
-    #introducao {
-        text-align: center;
-    }
-
-    #o-que-e-um-computador {
-        text-align: center;
-    }
-
-    #dadoEInformacao {
-        text-align: center;
-    }
-
-    #StrongAI {
-        text-align: center;
-    }
-
-    #strongAIvsBiologicalNaturalism {
-        text-align: center;
+    .center {
+       text-align: center; 
     }
  }
 
@@ -274,25 +258,10 @@ body {
         width: 150px;
     }
 
-    #introducao {
+    .center {
         text-align: center;
     }
 
-    #o-que-e-um-computador {
-        text-align: center;
-    }
-
-    #dadoEInformacao {
-        text-align: center;
-    }
-
-    #StrongAI {
-        text-align: center;
-    }
-
-    #strongAIvsBiologicalNaturalism {
-        text-align: center;
-    }
  }
 
 /* Medium devices (tablets, 768px and up)*/
