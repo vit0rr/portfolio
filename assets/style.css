@@ -8,6 +8,7 @@ body {
     background: var(--primary-color);
     transition: background 0.5s ;
     overflow-x: hidden;
+    width: 100%;
 }
 
 .ownName {
@@ -15,6 +16,10 @@ body {
     padding-bottom: 10px;
 }
 
+#reponsiveScrollbar {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 .bold {
     font-weight: bold;
