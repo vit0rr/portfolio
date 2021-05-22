@@ -177,8 +177,7 @@ body {
     margin-left: 5px;
     border-radius: 5px;
     color: black;
-    padding: 1px;
-    text-decoration: underline;
+    padding: 0px 5px 0px 5px;
 }
 
 .notaDark {
@@ -186,8 +185,7 @@ body {
     margin-left: 5px;
     border-radius: 5px;
     color: white;
-    padding: 1px;
-    text-decoration: underline;
+    padding: 0px 5px 0px 5px;
 }
 
 #portfolioTheme {
