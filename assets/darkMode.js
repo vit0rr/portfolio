@@ -46,8 +46,6 @@ document.onclick = () => {
         , el_textMutedLinkTheme3 = document.getElementById('textMutedLinkTheme3')
         , el_textMutedLinkTheme4 = document.getElementById('textMutedLinkTheme4')
         , el_textMutedLinkTheme5 = document.getElementById('textMutedLinkTheme5')
-        , el_artigosUlTheme = document.getElementById('artigosUlTheme')
-        , el_emDesenvolvimento = document.getElementById('emDesenvolvimento')
         , el_artigosTitleTheme = document.getElementById('artigosTitleTheme')
         , el_hrTheme = document.getElementById('hrTheme')
         , el_artigosTheme = document.getElementById('artigosTheme')
