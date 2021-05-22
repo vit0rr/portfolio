@@ -49,6 +49,7 @@ document.onclick = () => {
         , el_artigosTitleTheme = document.getElementById('artigosTitleTheme')
         , el_hrTheme = document.getElementById('hrTheme')
         , el_artigosTheme = document.getElementById('artigosTheme')
+        , el_notaTheme = document.getElementById('notaTheme')
         ;
     function setTheme(darkMode) {
         if (darkMode) {
@@ -91,6 +92,7 @@ document.onclick = () => {
             el_artigosTitleTheme.className = 'centralizar pDark'
             el_hrTheme.className = 'hrDark'
             el_artigosTheme.className = 'nav-link pDark'
+            el_notaTheme.className = 'notaDark'
         } else {
             el_mainBody.className = 'bodyLight'
             el_portfolioTheme.className = 'navbar-brand portfolioLight'
@@ -131,6 +133,7 @@ document.onclick = () => {
             el_artigosTitleTheme.className = 'centralizar pLight'
             el_hrTheme.className = 'hrLight'
             el_artigosTheme.className = 'nav-link pLight'
+            el_notaTheme.className = 'notaLight'
         }
     }
     checkbox.checked = JSON.parse(localStorage.getItem(LocalStorageName)) ?? false  // default value
