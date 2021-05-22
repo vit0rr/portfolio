@@ -46,7 +46,6 @@ document.onclick = () => {
         , el_textMutedLinkTheme3 = document.getElementById('textMutedLinkTheme3')
         , el_textMutedLinkTheme4 = document.getElementById('textMutedLinkTheme4')
         , el_textMutedLinkTheme5 = document.getElementById('textMutedLinkTheme5')
-        , el_artigosUlTheme = document.getElementById('artigosUlTheme')
         , el_emDesenvolvimento = document.getElementById('emDesenvolvimento')
         , el_artigosTitleTheme = document.getElementById('artigosTitleTheme')
         , el_hrTheme = document.getElementById('hrTheme')
@@ -91,7 +90,6 @@ document.onclick = () => {
             el_textMutedLinkTheme4.className = 'text-muted pDark'
             el_textMutedLinkTheme5.className = 'text-muted pDark'
             el_artigosTitleTheme.className = 'centralizar pDark'
-            el_artigosUlTheme.className = 'pDark'
             el_emDesenvolvimento.className = 'pDark'
             el_hrTheme.className = 'hrDark'
             el_artigosTheme.className = 'nav-link pDark'
@@ -133,7 +131,6 @@ document.onclick = () => {
             el_textMutedLinkTheme4.className = 'text-muted pLight'
             el_textMutedLinkTheme5.className = 'text-muted pLight'
             el_artigosTitleTheme.className = 'centralizar pLight'
-            el_artigosUlTheme.className = 'pLight'
             el_emDesenvolvimento.className = 'pLight'
             el_hrTheme.className = 'hrLight'
             el_artigosTheme.className = 'nav-link pLight'
