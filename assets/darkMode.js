@@ -35,15 +35,11 @@ document.onclick = () => {
         , el_cardTextTheme3 = document.getElementById('cardTextTheme3')
         , el_cardTextTheme4 = document.getElementById('cardTextTheme4')
         , el_cardTextTheme5 = document.getElementById('cardTextTheme5')
-        , el_textMutedLinkTheme = document.getElementById('textMutedLinkTheme')
-        , el_textMutedLinkTheme2 = document.getElementById('textMutedLinkTheme2')
-        , el_textMutedLinkTheme3 = document.getElementById('textMutedLinkTheme3')
-        , el_textMutedLinkTheme4 = document.getElementById('textMutedLinkTheme4')
-        , el_textMutedLinkTheme5 = document.getElementById('textMutedLinkTheme5')
         , el_artigosTitleTheme = document.getElementById('artigosTitleTheme')
         , el_hrTheme = document.getElementById('hrTheme')
         , el_artigosTheme = document.getElementById('artigosTheme')
         , el_notaTheme = document.getElementById('notaTheme')
+        , el_notaCardTheme = document.getElementById('notaCardTheme')
         ;
     function setTheme(darkMode) {
         if (darkMode) {
@@ -76,6 +72,7 @@ document.onclick = () => {
             el_hrTheme.className = 'hrDark'
             el_artigosTheme.className = 'nav-link pDark'
             el_notaTheme.className = 'notaDark'
+            el_notaCardTheme.className = 'notaDark'
         } else {
             el_mainBody.className = 'bodyLight'
             el_portfolioTheme.className = 'navbar-brand portfolioLight'
@@ -106,6 +103,7 @@ document.onclick = () => {
             el_hrTheme.className = 'hrLight'
             el_artigosTheme.className = 'nav-link pLight'
             el_notaTheme.className = 'notaLight'
+            el_notaCardTheme.className = 'notaLight'
         }
     }
     checkbox.checked = JSON.parse(localStorage.getItem(LocalStorageName)) ?? false  // default value
