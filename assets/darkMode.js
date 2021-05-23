@@ -40,6 +40,17 @@ document.onclick = () => {
         , el_artigosTheme = document.getElementById('artigosTheme')
         , el_notaTheme = document.getElementById('notaTheme')
         , el_notaCardTheme = document.getElementById('notaCardTheme')
+        , el_fabGitTheme1 = document.getElementById('fabGitTheme1')
+        , el_fabGitTheme2 = document.getElementById('fabGitTheme2')
+        , el_fabGitTheme3 = document.getElementById('fabGitTheme3')
+        , el_fabGitTheme4 = document.getElementById('fabGitTheme4')
+        , el_fabGitTheme5 = document.getElementById('fabGitTheme5')
+        , el_fabGitTheme6 = document.getElementById('fabGitTheme6')
+        , el_fabGlobeTheme1 = document.getElementById('fabGlobeTheme1')
+        , el_fabGlobeTheme2 = document.getElementById('fabGlobeTheme2')
+        , el_fabGlobeTheme3 = document.getElementById('fabGlobeTheme3')
+        , el_fabGlobeTheme4 = document.getElementById('fabGlobeTheme4')
+        , el_fabGlobeTheme5 = document.getElementById('fabGlobeTheme5')
         ;
     function setTheme(darkMode) {
         if (darkMode) {
@@ -73,6 +84,17 @@ document.onclick = () => {
             el_artigosTheme.className = 'nav-link pDark'
             el_notaTheme.className = 'notaDark'
             el_notaCardTheme.className = 'notaDark'
+            el_fabGitTheme1.className = 'pDark fab fa-github'
+            el_fabGitTheme2.className = 'pDark fab fa-github'
+            el_fabGitTheme3.className = 'pDark fab fa-github'
+            el_fabGitTheme4.className = 'pDark fab fa-github'
+            el_fabGitTheme5.className = 'pDark fab fa-github'
+            el_fabGitTheme6.className = 'pDark fab fa-github'
+            el_fabGlobeTheme1.className = 'pDark fas fa-globe-americas'
+            el_fabGlobeTheme2.className = 'pDark fas fa-globe-americas'
+            el_fabGlobeTheme3.className = 'pDark fas fa-globe-americas'
+            el_fabGlobeTheme4.className = 'pDark fas fa-globe-americas'
+            el_fabGlobeTheme5.className = 'pDark fas fa-globe-americas'
         } else {
             el_mainBody.className = 'bodyLight'
             el_portfolioTheme.className = 'navbar-brand portfolioLight'
@@ -104,6 +126,17 @@ document.onclick = () => {
             el_artigosTheme.className = 'nav-link pLight'
             el_notaTheme.className = 'notaLight'
             el_notaCardTheme.className = 'notaLight'
+            el_fabGitTheme1.className = 'pLight fab fa-github'
+            el_fabGitTheme2.className = 'pLight fab fa-github'
+            el_fabGitTheme3.className = 'pLight fab fa-github'
+            el_fabGitTheme4.className = 'pLight fab fa-github'
+            el_fabGitTheme5.className = 'pLight fab fa-github'
+            el_fabGitTheme6.className = 'pLight fab fa-github'
+            el_fabGlobeTheme1.className = 'pLight fas fa-globe-americas'
+            el_fabGlobeTheme2.className = 'pLight fas fa-globe-americas'
+            el_fabGlobeTheme3.className = 'pLight fas fa-globe-americas'
+            el_fabGlobeTheme4.className = 'pLight fas fa-globe-americas'
+            el_fabGlobeTheme5.className = 'pLight fas fa-globe-americas'
         }
     }
     checkbox.checked = JSON.parse(localStorage.getItem(LocalStorageName)) ?? false  // default value
