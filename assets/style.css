@@ -73,6 +73,10 @@ body {
     font-size: 18px;
 }
 
+#notaCardTheme {
+    width: 180px;
+}
+
 /*DarkMode*/
 .bodyDark {
     background-color: #202124;
