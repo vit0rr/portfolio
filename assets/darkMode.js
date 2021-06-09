@@ -11,6 +11,7 @@ document.onclick = () => {
         LocalStorageName = 'thema'
         , checkbox = document.querySelector('input[name=checkbox]')
         , el_mainBody = document.getElementById('mainBody')
+        , el_JobsTitleTheme = document.getElementById('JobsTitleTheme')
         , el_portfolioTheme = document.getElementById('portfolioTheme')
         , el_homeTheme = document.getElementById('homeTheme')
         , el_ownNameTheme = document.getElementById('ownNameTheme')
@@ -23,20 +24,24 @@ document.onclick = () => {
         , el_cardTheme3 = document.getElementById('cardTheme3')
         , el_cardTheme4 = document.getElementById('cardTheme4')
         , el_cardTheme5 = document.getElementById('cardTheme5')
+        , el_cardThemeJobs1 = document.getElementById('cardThemeJobs1')
         , el_cardTitleTheme = document.getElementById('cardTitleTheme')
         , el_cardTitleTheme1 = document.getElementById('cardTitleTheme1')
         , el_cardTitleTheme2 = document.getElementById('cardTitleTheme2')
         , el_cardTitleTheme3 = document.getElementById('cardTitleTheme3')
         , el_cardTitleTheme4 = document.getElementById('cardTitleTheme4')
         , el_cardTitleTheme5 = document.getElementById('cardTitleTheme5')
+        , el_cardTitleThemeJobs1 = document.getElementById('cardTitleThemeJobs1')
         , el_cardTextTheme = document.getElementById('cardTextTheme')
         , el_cardTextTheme1 = document.getElementById('cardTextTheme1')
         , el_cardTextTheme2 = document.getElementById('cardTextTheme2')
         , el_cardTextTheme3 = document.getElementById('cardTextTheme3')
         , el_cardTextTheme4 = document.getElementById('cardTextTheme4')
         , el_cardTextTheme5 = document.getElementById('cardTextTheme5')
+        , el_cardTextThemeJobs1 = document.getElementById('cardTextThemeJobs1')
         , el_artigosTitleTheme = document.getElementById('artigosTitleTheme')
         , el_hrTheme = document.getElementById('hrTheme')
+        , el_hrTheme1 = document.getElementById('hrTheme1')
         , el_artigosTheme = document.getElementById('artigosTheme')
         , el_notaTheme = document.getElementById('notaTheme')
         , el_notaCardTheme = document.getElementById('notaCardTheme')
@@ -51,10 +56,12 @@ document.onclick = () => {
         , el_fabGlobeTheme3 = document.getElementById('fabGlobeTheme3')
         , el_fabGlobeTheme4 = document.getElementById('fabGlobeTheme4')
         , el_fabGlobeTheme5 = document.getElementById('fabGlobeTheme5')
+        , el_fabGlobeThemeJobs1 = document.getElementById('fabGlobeThemeJobs1')
         ;
     function setTheme(darkMode) {
         if (darkMode) {
             el_mainBody.className = 'bodyDark'
+            el_JobsTitleTheme.className = 'pDark centralizar'
             el_portfolioTheme.className = 'navbar-brand portfolioDark'
             el_homeTheme.className = 'nav-link homeDark'
             el_ownNameTheme.className = 'ownName ownNameDark'
@@ -67,20 +74,24 @@ document.onclick = () => {
             el_cardTheme3.className = 'card bg-dark'
             el_cardTheme4.className = 'card bg-dark'
             el_cardTheme5.className = 'card bg-dark'
+            el_cardThemeJobs1.className = 'card bg-dark'
             el_cardTitleTheme.className = 'card-title pDark'
             el_cardTitleTheme1.className = 'card-title pDark'
             el_cardTitleTheme2.className = 'card-title pDark'
             el_cardTitleTheme3.className = 'card-title pDark'
             el_cardTitleTheme4.className = 'card-title pDark'
             el_cardTitleTheme5.className = 'card-title pDark'
+            el_cardTitleThemeJobs1.className = 'card-title pDark'
             el_cardTextTheme.className = 'card-text pDark'
             el_cardTextTheme1.className = 'card-text pDark'
             el_cardTextTheme2.className = 'card-text pDark'
             el_cardTextTheme3.className = 'card-text pDark'
             el_cardTextTheme4.className = 'card-text pDark'
             el_cardTextTheme5.className = 'card-text pDark'
+            el_cardTextThemeJobs1.className = 'card-text pDark'
             el_artigosTitleTheme.className = 'centralizar pDark'
             el_hrTheme.className = 'hrDark'
+            el_hrTheme1.className = 'hrDark'
             el_artigosTheme.className = 'nav-link pDark'
             el_notaTheme.className = 'notaDark'
             el_notaCardTheme.className = 'notaDark'
@@ -95,8 +106,10 @@ document.onclick = () => {
             el_fabGlobeTheme3.className = 'pDark fas fa-globe-americas'
             el_fabGlobeTheme4.className = 'pDark fas fa-globe-americas'
             el_fabGlobeTheme5.className = 'pDark fas fa-globe-americas'
+            el_fabGlobeThemeJobs1.className = 'pDark fas fa-globe-americas'
         } else {
             el_mainBody.className = 'bodyLight'
+            el_JobsTitleTheme.className = 'pLight centralizar'
             el_portfolioTheme.className = 'navbar-brand portfolioLight'
             el_homeTheme.className = 'nav-link homeLight'
             el_ownNameTheme.className = 'ownName ownNameLight'
@@ -109,20 +122,24 @@ document.onclick = () => {
             el_cardTheme3.className = 'card bg-light'
             el_cardTheme4.className = 'card bg-light'
             el_cardTheme5.className = 'card bg-light'
+            el_cardThemeJobs1.className = 'card bg-light'
             el_cardTitleTheme.className = 'card-title pLight'
             el_cardTitleTheme1.className = 'card-title pLight'
             el_cardTitleTheme2.className = 'card-title pLight'
             el_cardTitleTheme3.className = 'card-title pLight'
             el_cardTitleTheme4.className = 'card-title pLight'
             el_cardTitleTheme5.className = 'card-title pLight'
+            el_cardTitleThemeJobs1.className = 'card-title pLight'
             el_cardTextTheme.className = 'card-text pLight'
             el_cardTextTheme1.className = 'card-text pLight'
             el_cardTextTheme2.className = 'card-text pLight'
             el_cardTextTheme3.className = 'card-text pLight'
             el_cardTextTheme4.className = 'card-text pLight'
             el_cardTextTheme5.className = 'card-text pLight'
+            el_cardTextThemeJobs1.className = 'card-text pLight'
             el_artigosTitleTheme.className = 'centralizar pLight'
             el_hrTheme.className = 'hrLight'
+            el_hrTheme1.className = 'hrLight'
             el_artigosTheme.className = 'nav-link pLight'
             el_notaTheme.className = 'notaLight'
             el_notaCardTheme.className = 'notaLight'
@@ -137,6 +154,7 @@ document.onclick = () => {
             el_fabGlobeTheme3.className = 'pLight fas fa-globe-americas'
             el_fabGlobeTheme4.className = 'pLight fas fa-globe-americas'
             el_fabGlobeTheme5.className = 'pLight fas fa-globe-americas'
+            el_fabGlobeThemeJobs1.className = 'pLight fas fa-globe-americas'
         }
     }
     checkbox.checked = JSON.parse(localStorage.getItem(LocalStorageName)) ?? false  // default value
