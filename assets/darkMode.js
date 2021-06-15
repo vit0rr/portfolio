@@ -57,6 +57,7 @@ document.onclick = () => {
         , el_fabGlobeTheme4 = document.getElementById('fabGlobeTheme4')
         , el_fabGlobeTheme5 = document.getElementById('fabGlobeTheme5')
         , el_fabGlobeThemeJobs1 = document.getElementById('fabGlobeThemeJobs1')
+        , el_navTheme = document.getElementById('navTheme')
         ;
     function setTheme(darkMode) {
         if (darkMode) {
@@ -107,6 +108,7 @@ document.onclick = () => {
             el_fabGlobeTheme4.className = 'pDark fas fa-globe-americas'
             el_fabGlobeTheme5.className = 'pDark fas fa-globe-americas'
             el_fabGlobeThemeJobs1.className = 'pDark fas fa-globe-americas'
+            el_navTheme.className = 'navbar navbar-expand-lg navHr navbar-dark bg-dark'
         } else {
             el_mainBody.className = 'bodyLight'
             el_JobsTitleTheme.className = 'pLight centralizar'
@@ -155,6 +157,7 @@ document.onclick = () => {
             el_fabGlobeTheme4.className = 'pLight fas fa-globe-americas'
             el_fabGlobeTheme5.className = 'pLight fas fa-globe-americas'
             el_fabGlobeThemeJobs1.className = 'pLight fas fa-globe-americas'
+            el_navTheme.className = 'navbar navbar-expand-lg navHr navbar-light bg-light'
         }
     }
     checkbox.checked = JSON.parse(localStorage.getItem(LocalStorageName)) ?? false  // default value
