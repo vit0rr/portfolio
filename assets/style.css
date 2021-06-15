@@ -4,6 +4,7 @@
 [data-theme="dark"] {
     --primary-color: grey;    
 }
+
 body {
     background: var(--primary-color);
     transition: background 0.5s ;
@@ -80,12 +81,12 @@ body {
 /*DarkMode*/
 .bodyDark {
     background-color: #202124;
-    transition: background 0.5s;
+    transition: background 0.2s;
 } 
 
 .bodyLight {
     background-color: white !important;
-    transition: background 0.5s;
+    transition: background 0.2s;
 }
 
 
