@@ -26,6 +26,7 @@ document.onclick = () => {
         , el_cardTheme5 = document.getElementById('cardTheme5')
         , el_cardTheme6 = document.getElementById('cardTheme6')
         , el_cardThemeJobs1 = document.getElementById('cardThemeJobs1')
+        , el_cardThemeJobs2 = document.getElementById('cardThemeJobs2')
         , el_cardTitleTheme = document.getElementById('cardTitleTheme')
         , el_cardTitleTheme1 = document.getElementById('cardTitleTheme1')
         , el_cardTitleTheme2 = document.getElementById('cardTitleTheme2')
@@ -34,6 +35,7 @@ document.onclick = () => {
         , el_cardTitleTheme5 = document.getElementById('cardTitleTheme5')
         , el_cardTitleTheme6 = document.getElementById('cardTitleTheme6')
         , el_cardTitleThemeJobs1 = document.getElementById('cardTitleThemeJobs1')
+        , el_cardTitleThemeJobs2 = document.getElementById('cardTitleThemeJobs2')
         , el_cardTextTheme = document.getElementById('cardTextTheme')
         , el_cardTextTheme1 = document.getElementById('cardTextTheme1')
         , el_cardTextTheme2 = document.getElementById('cardTextTheme2')
@@ -42,6 +44,7 @@ document.onclick = () => {
         , el_cardTextTheme5 = document.getElementById('cardTextTheme5')
         , el_cardTextTheme6 = document.getElementById('cardTextTheme6')
         , el_cardTextThemeJobs1 = document.getElementById('cardTextThemeJobs1')
+        , el_cardTextThemeJobs2 = document.getElementById('cardTextThemeJobs2')
         , el_artigosTitleTheme = document.getElementById('artigosTitleTheme')
         , el_hrTheme = document.getElementById('hrTheme')
         , el_hrTheme1 = document.getElementById('hrTheme1')
@@ -62,6 +65,7 @@ document.onclick = () => {
         , el_fabGlobeTheme5 = document.getElementById('fabGlobeTheme5')
         , el_fabGlobeTheme6 = document.getElementById('fabGlobeTheme6')
         , el_fabGlobeThemeJobs1 = document.getElementById('fabGlobeThemeJobs1')
+        , el_fabGlobeThemeJobs2 = document.getElementById('fabGlobeThemeJobs2')
         , el_navTheme = document.getElementById('navTheme')
         ;
     function setTheme(darkMode) {
@@ -82,6 +86,7 @@ document.onclick = () => {
             el_cardTheme5.className = 'card bg-dark'
             el_cardTheme6.className = 'card bg-dark'
             el_cardThemeJobs1.className = 'card bg-dark'
+            el_cardThemeJobs2.className = 'card bg-dark'
             el_cardTitleTheme.className = 'card-title pDark'
             el_cardTitleTheme1.className = 'card-title pDark'
             el_cardTitleTheme2.className = 'card-title pDark'
@@ -90,6 +95,7 @@ document.onclick = () => {
             el_cardTitleTheme5.className = 'card-title pDark'
             el_cardTitleTheme6.className = 'card-title pDark'
             el_cardTitleThemeJobs1.className = 'card-title pDark'
+            el_cardTitleThemeJobs2.className = 'card-title pDark'
             el_cardTextTheme.className = 'card-text pDark'
             el_cardTextTheme1.className = 'card-text pDark'
             el_cardTextTheme2.className = 'card-text pDark'
@@ -98,6 +104,7 @@ document.onclick = () => {
             el_cardTextTheme5.className = 'card-text pDark'
             el_cardTextTheme6.className = 'card-text pDark'
             el_cardTextThemeJobs1.className = 'card-text pDark'
+            el_cardTextThemeJobs2.className = 'card-text pDark'
             el_artigosTitleTheme.className = 'centralizar pDark'
             el_hrTheme.className = 'hrDark'
             el_hrTheme1.className = 'hrDark'
@@ -118,6 +125,7 @@ document.onclick = () => {
             el_fabGlobeTheme5.className = 'pDark fas fa-globe-americas'
             el_fabGlobeTheme6.className = 'pDark fas fa-globe-americas'
             el_fabGlobeThemeJobs1.className = 'pDark fas fa-globe-americas'
+            el_fabGlobeThemeJobs2.className = 'pDark fas fa-globe-americas'
             el_navTheme.className = 'navbar navbar-expand-lg navHr navbar-dark bg-dark'
         } else {
             el_mainBody.className = 'bodyLight'
@@ -136,6 +144,7 @@ document.onclick = () => {
             el_cardTheme5.className = 'card bg-light'
             el_cardTheme6.className = 'card bg-light'
             el_cardThemeJobs1.className = 'card bg-light'
+            el_cardThemeJobs2.className = 'card bg-light'
             el_cardTitleTheme.className = 'card-title pLight'
             el_cardTitleTheme1.className = 'card-title pLight'
             el_cardTitleTheme2.className = 'card-title pLight'
@@ -144,6 +153,7 @@ document.onclick = () => {
             el_cardTitleTheme5.className = 'card-title pLight'
             el_cardTitleTheme6.className = 'card-title pLight'
             el_cardTitleThemeJobs1.className = 'card-title pLight'
+            el_cardTitleThemeJobs2.className = 'card-title pLight'
             el_cardTextTheme.className = 'card-text pLight'
             el_cardTextTheme1.className = 'card-text pLight'
             el_cardTextTheme2.className = 'card-text pLight'
@@ -152,6 +162,7 @@ document.onclick = () => {
             el_cardTextTheme5.className = 'card-text pLight'
             el_cardTextTheme6.className = 'card-text pLight'
             el_cardTextThemeJobs1.className = 'card-text pLight'
+            el_cardTextThemeJobs2.className = 'card-text pLight'
             el_artigosTitleTheme.className = 'centralizar pLight'
             el_hrTheme.className = 'hrLight'
             el_hrTheme1.className = 'hrLight'
@@ -172,6 +183,7 @@ document.onclick = () => {
             el_fabGlobeTheme5.className = 'pLight fas fa-globe-americas'
             el_fabGlobeTheme6.className = 'pLight fas fa-globe-americas'
             el_fabGlobeThemeJobs1.className = 'pLight fas fa-globe-americas'
+            el_fabGlobeThemeJobs2.className = 'pLight fas fa-globe-americas'
             el_navTheme.className = 'navbar navbar-expand-lg navHr navbar-light bg-light'
         }
     }
