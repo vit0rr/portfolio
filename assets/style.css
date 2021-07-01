@@ -78,6 +78,12 @@ body {
     width: 180px;
 }
 
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: purple;
+    background-color: purple;
+}
+
 /*DarkMode*/
 .bodyDark {
     background-color: #202124;
