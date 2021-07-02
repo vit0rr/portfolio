@@ -26,13 +26,13 @@
         data-abc="true"></a>
     <header>
         <nav class="navbar navbar-expand-lg navHr navbar-light" id="navTheme">
-                <div id="sunTheme">
-                    <i id="sunDarkmode"></i>
-                </div>
-                <div class="custom-control custom-switch switchBar" id="responsiveSun">
-                    <input type="checkbox" class="custom-control-input" id="customSwitch1" name="checkbox">
-                    <label class="custom-control-label" for="customSwitch1"></label>
-                </div>
+            <div id="sunTheme">
+                <i id="sunDarkmode"></i>
+            </div>
+            <div class="custom-control custom-switch switchBar" id="responsiveSun">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1" name="checkbox">
+                <label class="custom-control-label" for="customSwitch1"></label>
+            </div>
             <a class="navbar-brand" href="#" id="portfolioTheme">Portfolio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +53,7 @@
         </nav>
     </header>
     <div class="container">
-        <div class="row geralInfo">
+        <section class="row geralInfo">
             <div class="col-8">
                 <div class="ownName" id="ownNameTheme">
                     <span class="bold">Vitor</span> <span>S. Almeida</span>
@@ -73,7 +73,7 @@
 
                 </p>
             </div>
-            <div class="col-4">
+            <section class="col-4" id="basicInfo">
                 <div id="profileImg">
                     <img src="https://avatars.githubusercontent.com/vit0rr" alt="" width="250px"
                         class="profilePic responsiveImg">
@@ -85,15 +85,14 @@
                     <span class="bold ">Idade:</span> <span>17</span> <br>
                     <span class="bold ">Github:</span> <span><a href="https://github.com/vit0rr" target="_blank"
                             rel="noopener noreferrer">vit0rr</a></span> <br>
-                    <span class="bold ">LinkedIn:</span> <span><a
-                            href="https://www.linkedin.com/in/vitorsalmeida/" target="_blank"
-                            rel="noopener noreferrer">Vitor S.</a></span> <br>
+                    <span class="bold ">LinkedIn:</span> <span><a href="https://www.linkedin.com/in/vitorsalmeida/"
+                            target="_blank" rel="noopener noreferrer">Vitor S.</a></span> <br>
 
                 </div>
-            </div>
-        </div>
+            </section>
+        </section>
         <hr id="hrTheme">
-        <div class="works">
+        <section class="works">
             <h3 class="centralizar" id="projetosTheme">Projetos Pessoais</h3> <br>
             <div class="card-deck">
                 <div id="cardTheme" class="card">
@@ -209,7 +208,8 @@
                     <div class="card-body">
                         <h5 id="cardTitleTheme6" class="card-title">Phog Tech Solutions <i class="fab fa-html5"></i> <i
                                 class="fab fa-js-square"></i> <i class="fab fa-css3-alt"></i></h5>
-                        <p id="cardTextTheme6" class="card-text">Um time de desenvolvimentos onde buscamos e realizamos serviços para pessoas ou empresas.
+                        <p id="cardTextTheme6" class="card-text">Um time de desenvolvimentos onde buscamos e realizamos
+                            serviços para pessoas ou empresas.
                         </p>
                         <!--<p class="card-text"><small id="textMutedTheme5" class="text-muted">Repositório:--> <a
                             href="https://github.com/vit0rr/phogtech" target="_blank"
@@ -222,34 +222,41 @@
                 </div>
             </div>
             <hr id="hrTheme1">
-        </div>
-        <h3 class="centralizar" id="JobsTitleTheme">Trabalhos realizados</h3>
-        <div class="card-deck">
-            <div id="cardThemeJobs1" class="card">
-                <div class="card-body">
-                    <h5 id="cardTitleThemeJobs1" class="card-title">koisinhasdakisy <i class="fab fa-html5"></i> <i
-                            class="fab fa-js-square"></i> <i class="fab fa-css3-alt"></i></h5>
-                    <p id="cardTextThemeJobs1" class="card-text">Ecommerce onde tive contato com serviços que não conhecia
-                        antes. Realizei a manutenção de alguns bugs e configurei o que foi solicitado. Também
-                        aprendi um pouco mais na prática como funciona para indexar um site no Google e técnias de SEO.
-                    </p>
-                    <!--<p class="card-text"><small id="textMutedLinkTheme5" class="text-muted">Link:--> <a
-                        href="https://www.koisinhasdakisy.com.br/" target="_blank" rel="noopener noreferrer">Acesse</a>
-                    <i class="fas fa-globe-americas" id="fabGlobeThemeJobs1"></i></small></p>
+        </section>
+        <section id="freelas">
+            <h3 class="centralizar" id="JobsTitleTheme">Trabalhos realizados</h3>
+            <div class="card-deck">
+                <div id="cardThemeJobs1" class="card">
+                    <div class="card-body">
+                        <h5 id="cardTitleThemeJobs1" class="card-title">koisinhasdakisy <i class="fab fa-html5"></i> <i
+                                class="fab fa-js-square"></i> <i class="fab fa-css3-alt"></i></h5>
+                        <p id="cardTextThemeJobs1" class="card-text">Ecommerce onde tive contato com serviços que não
+                            conhecia
+                            antes. Realizei a manutenção de alguns bugs e configurei o que foi solicitado. Também
+                            aprendi um pouco mais na prática como funciona para indexar um site no Google e técnias de
+                            SEO.
+                        </p>
+                        <!--<p class="card-text"><small id="textMutedLinkTheme5" class="text-muted">Link:--> <a
+                            href="https://www.koisinhasdakisy.com.br/" target="_blank"
+                            rel="noopener noreferrer">Acesse</a>
+                        <i class="fas fa-globe-americas" id="fabGlobeThemeJobs1"></i></small></p>
+                    </div>
+                </div>
+                <div id="cardThemeJobs2" class="card">
+                    <div class="card-body">
+                        <h5 id="cardTitleThemeJobs2" class="card-title">Brilho da Infância <i class="fab fa-html5"></i>
+                            <i class="fab fa-js-square"></i> <i class="fab fa-css3-alt"></i></h5>
+                        <p id="cardTextThemeJobs2" class="card-text">Foi realizada a configuração de domínio que o
+                            cliente
+                            comprou. Desenvolvimento da loja e implementação das formas de pagamento e entrega.
+                        </p>
+                        <a href="https://www.brilhodainfancia.com.br/" target="_blank"
+                            rel="noopener noreferrer">Acesse</a>
+                        <i class="fas fa-globe-americas" id="fabGlobeThemeJobs2"></i></small></p>
+                    </div>
                 </div>
             </div>
-            <div id="cardThemeJobs2" class="card">
-                <div class="card-body">
-                    <h5 id="cardTitleThemeJobs2" class="card-title">Brilho da Infância <i class="fab fa-html5"></i> <i
-                            class="fab fa-js-square"></i> <i class="fab fa-css3-alt"></i></h5>
-                    <p id="cardTextThemeJobs2" class="card-text">Foi realizada a configuração de domínio que o cliente comprou. Desenvolvimento da loja e implementação das formas de pagamento e entrega.
-                    </p>
-                    <a
-                        href="https://www.brilhodainfancia.com.br/" target="_blank" rel="noopener noreferrer">Acesse</a>
-                    <i class="fas fa-globe-americas" id="fabGlobeThemeJobs2"></i></small></p>
-                </div>
-            </div>
-        </div>
+        </section>
     </div> <br>
     <div class="artigos">
         <h3 class="centralizar" id="artigosTitleTheme">Artigos</h3>
@@ -259,12 +266,6 @@
         </div>
     </div>
     </div> <br>
-    <!-- <div class="rodape centralizar">
-        <span class="">Todos os direitos reservados</span> <br>
-        <span>Vitor Souza de Almeida ( <a href="https://github.com/vit0rr/portfolio" target="_blank"
-                rel="noopener noreferrer">Github</a> )</span>
-    </div>-->
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./assets/darkMode.js"></script>
