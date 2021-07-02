@@ -249,7 +249,7 @@ body {
     right: 39px;
     z-index: 98;
     padding: 21px;
-    background-color: hsla(5, 76%, 62%, .8)
+    background-color: rgba(128, 0, 128, 0.726)
 }
 
 .js .cd-top--fade-out {
