@@ -101,6 +101,14 @@ body {
     transition: transform .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-transform .15s ease-in-out;
 }
 
+#sunTheme {
+    padding-right: 5px;
+}
+
+#responsiveSun {
+    padding-left: 35px;
+}
+
 /*DarkMode*/
 .bodyDark {
     background-color: #202124;
@@ -289,6 +297,10 @@ body {
     .center {
        text-align: center; 
     }
+
+    #responsiveSun {
+        padding-left: 0px;
+    }
  }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -305,19 +317,25 @@ body {
         text-align: center;
     }
 
+    #responsiveSun {
+        padding-left: 0px;
+    }
+
  }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
-
+    #responsiveSun {
+        padding-left: 0px;
+    }
  }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-
+    
  }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
-
+    
  }
