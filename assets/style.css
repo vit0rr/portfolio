@@ -111,7 +111,7 @@ body {
 
 /*DarkMode*/
 .bodyDark {
-    background-color: #202124;
+    background-color: #121212;
     transition: background 0.2s;
 } 
 
@@ -198,6 +198,10 @@ body {
 .projetosDark {
     color: white;
     transition: background 0.5s;
+}
+
+.bg-dark {
+    background-color: #1e1e1e !important;
 }
 
 .hrDark {
