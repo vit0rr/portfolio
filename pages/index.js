@@ -13,7 +13,7 @@ export default function Home() {
       />
       <Head>
         <title>Vitor S. Almeida - Portfolio</title>
-        <link rel="icon" href="https://github.com/vit0rr/portfolio/img/icons8-naruto.svg" />
+        <link rel="icon" href="https://raw.githubusercontent.com/vit0rr/portfolio/b7abe202dbd1cec591794b3921b23dbd71ac65bc/img/icons8-naruto.svg"/>
       </Head>
       <Header />
       <Main />

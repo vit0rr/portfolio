@@ -8,7 +8,6 @@ export default function Header() {
       <div className="container mx-auto flex flex-wrap p-5 md:flex-row">
         <a className="flex title-font font-medium text-white mb-4 md:mb-0 pr-4" href="/">
           <span className="ml-3 text-3xl">Vitor S.</span>
-          <link rel="favicon" href="https://github.com/vit0rr/portfolio/img/icons8-naruto.svg" type="image/svg"/> 
         </a>
         <button
             className="text-white cursor-pointer text-xl leading-none py-1 border border-solid border-transparent rounded bg-transparent block md:hidden outline-none focus:outline-none ml-auto pb-3"
