@@ -3,21 +3,25 @@ import React from "react";
 export default function Main() {
   return (
     <section className="text-black body-font lg:pt-20">
-      
+
       <section className="text-gray-600 body-font">
         <div className="container px-5 mx-auto">
           <div className="text-center mb-20">
-            <h2 className="sm:text-5xl font-medium title-font text-white mb-4">
+            <h2 className="text-5xl font-medium title-font text-white mb-4">
               Sobre Mim
             </h2>
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s text-white">
-              Oi :) <br/> <br/> 
+              Oi :) <br /> <br />
               Programo algo mais ou menos desde os meus 11 anos, mas só de uns 3 anos para cá que me dediquei com seriedade em desenvolvimento e curti o Frontend Web. Em 2020 participei do meu primeiro evento de programação Hacktoberfest e consegui concluir com os desafios e ganhar brindes do evento.
             </p>
+            <h2 className="text-2xl text-center text-white font-medium title-font pt-5">
+              Tecnologias: <br />
+            </h2>
+            <h2 className="text-blue-500 font-medium pt-2">JavaScript | TypeScript| NextJS | NodeJS | <br/> ReactJS | Bootstrap | CSS | HTML </h2>
             <div className="flex mt-6 justify-center">
               <div className="w-16 h-1 rounded-full bg-white inline-flex"></div>
             </div>
-            <h2 className="sm:text-5xl font-medium title-font text-white mb-4 pt-20">
+            <h2 className="text-5xl font-medium title-font text-white mb-4 pt-20">
               Projetos
             </h2>
             <div className="container px-5 py-5 mx-auto">
@@ -27,9 +31,9 @@ export default function Main() {
 
                     <div className="w-full">
                       <h2 className="title-font font-medium text-lg text-white">
-                      <a className= 'text-purple-500 hover:text-purple-300' href="https://github.com/vit0rr/DiscordDMNuke">DiscordDMNuke</a>
+                        <a className='text-purple-500 hover:text-purple-700' href="https://github.com/vit0rr/DiscordDMNuke">DiscordDMNuke</a>
                       </h2>
-                      
+
                       <p className="mb-4">
                         Esse foi meu primeiro código em JavaScript que resolvia um problema pessoal meu. Basicamente, é um script que remove automaticamente mensagens enviadas via DM no Discord.
                       </p>
@@ -76,12 +80,12 @@ export default function Main() {
                 </div>
                 <div className="p-4 lg:w-1/4 md:w-1/2">
                   <div className="h-full flex flex-col items-center text-center">
-                    
+
                     <div className="w-full">
                       <h2 className="title-font font-medium text-lg text-white">
-                      <a className= 'text-purple-500' href="https://github.com/vit0rr/phogtech">Phog Tech</a>
+                        <a className='text-purple-500 hover:text-purple-700' href="https://github.com/vit0rr/phogtech">Phog Tech</a>
                       </h2>
-                      
+
                       <p className="mb-4">
                         Projeto desenvolvido com mais dois amigos onde prestamos serviços de desenvolvimento web. Foi uma ótima iniciativa pois conseguimos experiência e aprender coisas novas.
                       </p>
@@ -128,12 +132,12 @@ export default function Main() {
                 </div>
                 <div className="p-4 lg:w-1/4 md:w-1/2">
                   <div className="h-full flex flex-col items-center text-center">
-                    
+
                     <div className="w-full">
                       <h2 className="title-font font-medium text-lg text-white">
-                         <a className= 'text-purple-500' href="https://github.com/vit0rr/privacyforall">Privacy For All</a>
+                        <a className='text-purple-500 hover:text-purple-700' href="https://github.com/vit0rr/privacyforall">Privacy For All</a>
                       </h2>
-                      
+
                       <p className="mb-4">
                         Construi esse site há um tempo quando comecei a me interessar por uma causa política e li dois livros, um do Julian Assange e outro do Edward Snowden.
                       </p>
@@ -180,10 +184,10 @@ export default function Main() {
                 </div>
                 <div className="p-4 lg:w-1/4 md:w-1/2">
                   <div className="h-full flex flex-col items-center text-center">
-                    
+
                     <div className="w-full">
                       <h2 className="title-font font-medium text-lg text-white">
-                        <a className= 'text-purple-500' href="https://github.com/vit0rr/blog">Blog</a>
+                        <a className='text-purple-500 hover:text-purple-700' href="https://github.com/vit0rr/blog">Blog</a>
                       </h2>
                       <p className="mb-4">
                         Meu blog onde posto textos sobre programação envolvendo algo que aprendi e gosto.
