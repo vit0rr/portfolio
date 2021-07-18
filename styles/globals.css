@@ -16,6 +16,12 @@ a {
   text-decoration: none;
 }
 
+.mainFooter:hover {
+  color: inherit;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.541) !important;
+}
+
 * {
   box-sizing: border-box;
 }
