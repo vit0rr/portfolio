@@ -1,6 +1,5 @@
 import React from "react";
 import ClickIcon from './clickIcon'
-import Link from 'next/link'
 
 export default function Main() {
   return (
