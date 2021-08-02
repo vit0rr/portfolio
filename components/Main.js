@@ -63,7 +63,7 @@ export default function Main() {
                 <a href="https://github.com/vit0rr/blog" target="_blank"><ClickIcon></ClickIcon> Blog</a>
                 </h2>
                 <p className="m-4 text-lg p-4 leading-relaxed text-center ">
-                    Meu blog onde posto alguns textos técnicos sobre programação 
+                    Meu blog onde posto alguns textos técnicos sobre programação.
                 </p>
             </article>
         </section>
