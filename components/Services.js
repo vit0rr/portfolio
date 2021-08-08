@@ -14,7 +14,7 @@ export default function Services() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
         </svg></div> Brilho da Infância</a>
                         </h2>
-                        <p className="m-4 text-lg p-4 leading-relaxed text-center ">
+                        <p className="m-4 text-lg p-4 leading-relaxed text-center text-gray-300">
                             Ecommerce desenvolvido pela Phog Tech onde configuramos desde o DNS e SEO até a loja propriamente dita.
                         </p>
                     </article>
@@ -26,7 +26,7 @@ export default function Services() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
         </svg></div> Koisinhas da Kisy</a>
                         </h2>
-                        <p className="m-4 text-lg p-4 leading-relaxed text-center ">
+                        <p className="m-4 text-lg p-4 leading-relaxed text-center text-gray-300">
                             Ecommerce desenvolvido pela Phog Tech onde configuramos a loja e resolução de bugs, além de SEO.
                         </p>
                     </article>
@@ -37,7 +37,7 @@ export default function Services() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
         </svg></div> Musa da Mente</a>
                         </h2>
-                        <p className="m-4 text-lg p-4 leading-relaxed text-center ">
+                        <p className="m-4 text-lg p-4 leading-relaxed text-center text-gray-300">
                             Teste de personalidade com front-end em JavaScript e back-end em PHP
                         </p>
                     </article>

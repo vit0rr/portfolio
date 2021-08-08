@@ -11,7 +11,7 @@ export default function Projects() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg></div> DiscordDMNuke</a>
                     </h2>
-                    <p className="m-4 text-lg p-4 leading-relaxed text-center ">
+                    <p className="m-4 text-lg p-4 leading-relaxed text-center text-gray-300">
                         Script desenvolvido em JavaScript que remove mensagens enviadas via DM no Discord automaticamente.
                     </p>
                 </article>
@@ -22,7 +22,7 @@ export default function Projects() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg></div> Phog Tech</a>
                     </h2>
-                    <p className="m-4 text-lg p-4 leading-relaxed text-center">
+                    <p className="m-4 text-lg p-4 leading-relaxed text-center text-gray-300">
                         Projeto com mais dois amigos onde realizamos serviços de construção/manutenção de websites.
                     </p>
                 </article>
@@ -33,7 +33,7 @@ export default function Projects() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg></div> Privacy For All</a>
                     </h2>
-                    <p className="m-4 text-lg p-4 leading-relaxed text-center ">
+                    <p className="m-4 text-lg p-4 leading-relaxed text-center text-gray-300">
                         Projeto desenvolvido com foco em oferecer alternativas privadas para serviços comuns.
                     </p>
                 </article>
@@ -45,7 +45,7 @@ export default function Projects() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg></div> Blog</a>
                     </h2>
-                    <p className="m-4 text-lg p-4 leading-relaxed text-center ">
+                    <p className="m-4 text-lg p-4 leading-relaxed text-center text-gray-300">
                         Meu blog onde posto alguns textos técnicos sobre programação.
                     </p>
                 </article>
@@ -58,7 +58,7 @@ export default function Projects() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg></div> FlappyJS</a>
                     </h2>
-                    <p className="m-4 text-lg p-4 leading-relaxed text-center ">
+                    <p className="m-4 text-lg p-4 leading-relaxed text-center text-gray-300">
                         Jogo do Flappy Bird utilizando Canvas.
                     </p>
                 </article>
@@ -70,7 +70,7 @@ export default function Projects() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg></div> SnakeJS</a>
                     </h2>
-                    <p className="m-4 text-lg p-4 leading-relaxed text-center ">
+                    <p className="m-4 text-lg p-4 leading-relaxed text-center text-gray-300">
                         Snake Game desenvolvido em JavaScript.
                     </p>
                 </article>
