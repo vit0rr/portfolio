@@ -48,7 +48,7 @@ export default function Services() {
                             </svg></div> Agro Bom Comércio</a>
                         </h2>
                         <p className="m-4 text-lg p-4 leading-relaxed text-center text-gray-300">
-                            Loja com fornecedores e clientes contruída do zero.
+                            Loja com fornecedores e clientes contruída do zero. Tive que identificar e auxiliar na correção de vulnerabilidades, colocando em prática um pouco do que sei sobre segurança da informação.
                         </p>
                     </article>
                 </section>
