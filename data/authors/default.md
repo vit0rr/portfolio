@@ -1,16 +1,16 @@
 ---
-name: Vitor S. Almeida
-avatar: /static/images/image.png
-occupation: Front-End developer
-company:
-email: vi.souza.almeida@protonmail.com
-twitter: https://twitter.com/vit0rrk
-linkedin: https://www.linkedin.com/in/vitorsalmeida/
-github: https://github.com/vit0rr
+name: Tails Azimuth
+avatar: /static/images/avatar.png
+occupation: Professor of Atmospheric Science
+company: Stanford University
+email: address@yoursite.com
+twitter: https://twitter.com/Twitter
+linkedin: https://www.linkedin.com
+github: https://github.com
 ---
 
-Vitor S. é desenvolvedor web front-end. Atualmente focado em desenvolvimento JavaScript e seu ecossistema.
+Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
 
-Em 2020, ganhou o evento hacktoberfest onde foi um dos primeiros contatos com o open-source. Contribui com um projeto Linux brasileiro chamado Pindorama.
+He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
 
-Sabe trabalhar com HTML, CSS, JavaScript, Bootstrap, NextJS, ReactJS, Tailwind CSS e NodeJS. Pretende cursar Sistema da Informação na faculdade.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
