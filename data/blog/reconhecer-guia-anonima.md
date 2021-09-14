@@ -6,11 +6,9 @@ draft: false
 summary: Como sites como Brainly consegue restringir seu acesso baseado na informação de se sua guia é anônima ou não?
 ---
 
-> Os códigios JavaScript usados nesse artigo são do Konrad Dzwinel, que é engenheiro de privacidade da DuckDuckGo.
-
 ## Introdução
 
-Saber se você está usando aba anônima ou não para uma empresa por ser útil, pois em guia anônima seu histórico, histórico de pesquisa e cookies são automaticamente apagados, e elas podem querer algum desses dados - seja lá por qual motivo. Porém, os navegadores apresentam diferentes métodos para obter tal informação. E esses métodos serão estudados através [desse](https://gist.github.com/kdzwinel/783df9b129ae5c8443dd96c0d4ed9723) código.
+Saber se você está usando aba anônima ou não para uma empresa por ser útil, pois em guia anônima seu histórico, histórico de pesquisa e cookies são automaticamente apagados, e elas podem querer algum desses dados - seja lá por qual motivo. Porém, os navegadores apresentam diferentes métodos para obter tal informação.
 
 ## Google Chrome
 
@@ -159,3 +157,7 @@ Aqui é parecido com o FireFox tirando a parte do `window.safariIncognito`. Exem
 #### window.safariIncognito
 
 No exemplo é bem fácil de reconhecer esse. É utilizado `window.safariIncognito` em um cadeamento if no começo do código. Caso for verdadeiro, retorne `is_private = true`, else -> seguido de algumas tratativas para realização de testes usando `try` e `catch`.
+
+### Fontes
+
+- [Small collection of solutions used to detect private mode](https://gist.github.com/kdzwinel/783df9b129ae5c8443dd96c0d4ed9723)
