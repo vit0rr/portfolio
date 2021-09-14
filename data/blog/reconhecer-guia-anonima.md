@@ -6,11 +6,11 @@ draft: false
 summary: Como sites como Brainly consegue restringir seu acesso baseado na informação de se sua guia é anônima ou não?
 ---
 
-## Introdução
+### Introdução
 
 Saber se você está usando aba anônima ou não para uma empresa por ser útil, pois em guia anônima seu histórico, histórico de pesquisa e cookies são automaticamente apagados, e elas podem querer algum desses dados - seja lá por qual motivo. Porém, os navegadores apresentam diferentes métodos para obter tal informação.
 
-## Google Chrome
+### Google Chrome
 
 No Google Chrome isso era possível antes do Chrome 76. Depois disso, esse recurso foi eliminado do navegador. Nas versões anteriores, o código era o seguinte:
 
@@ -29,7 +29,7 @@ No Google Chrome isso era possível antes do Chrome 76. Depois disso, esse recur
 	        );
 ```
 
-### window.webkitRequestFileSystem
+#### window.webkitRequestFileSystem
 
 Esse método é específico do Google Chrome e permite o site obter acesso a um sistema de arquivos sandboxed para próprio uso. NÃO é recomendado utilizar ele atualmente, pois não há suporte nas versões mais recente do Chrome e outros navegadores não tem suporte.
 
@@ -51,7 +51,7 @@ window.requestFileSystem(type, size, successCallback[, errorCallback]);
 
 Uma função que é chamada quando o sistema de arquivos foi obtido com sucesso. Como visto no código, caso isso tenha dado certo, ele retorna como 'false' o "is_private".
 
-## Firefox
+### Firefox
 
 No Firefox é usando métodos mais gerais, nada específico, como no Chrome. Exemplo:
 
@@ -121,7 +121,7 @@ if (sUsrAg.indexOf('Chrome') > -1) {
 alert('Você está utilizando: ' + sBrowser)
 ```
 
-## Safari
+### Safari
 
 Aqui é parecido com o FireFox tirando a parte do `window.safariIncognito`. Exemplo:
 
