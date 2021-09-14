@@ -48,7 +48,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                           <h2 className="text-2xl font-bold leading-8 tracking-tight">
                             <Link
                               href={`/blog/${slug}`}
-                              className="text-gray-900 dark:text-gray-100"
+                              className="text-gray-900 dark:text-gray-100 dark:hover:text-gray-400 hover:text-gray-500"
                             >
                               {title}
                             </Link>
