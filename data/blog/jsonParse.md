@@ -3,7 +3,7 @@ title: Como funciona o JSON.parse()
 date: '09-13-2021'
 tags: ['javascript', 'code']
 draft: false
-summary: Por que ao usar JSON.parse("0") retorna o tipo "correto" e não uma String?
+summary: Entendendo JSON.parse() e o motivo de JSON.parse("false") ser false e Boolean("false") ser true
 ---
 
 ### JSON
