@@ -3,7 +3,7 @@ title: Como os sites detectam janelas anônimas com JavaScript
 date: '08-11-2021'
 tags: ['javascript', 'code', 'security']
 draft: false
-summary: Como sites como Brainly consegue restringir seu acesso baseado na informação de se sua guia é anônima ou não?
+summary: Como o Brainly consegue restringir seu acesso baseado na informação de se sua guia é anônima ou não?
 ---
 
 ### Introdução
