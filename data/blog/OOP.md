@@ -34,12 +34,12 @@ Exemplos de chamda polimórfica:
 
 ```java
 class A {
-    void façaAlgo(){
+    void facaAlgo(){
         Falador b;
         if(...) {
             b = new Pessoa();
         } else {
-            b = new Criança();
+            b = new Crianca();
         }
         b.falar(); // chamada polimórfica
     }
@@ -50,7 +50,7 @@ class A {
 
 ```java
 class A {
-    void façaAlgo(){
+    void facaAlgo(){
         Gritador b = c.meDêUmGritador(); // "c" é um objeto qualquer para o qual tenha referência
         b.grita(); // chamada polimórfica
     }
@@ -61,7 +61,7 @@ class A {
 
 ```java
 class A {
-    void façaAlgo(Gritador b){
+    void facaAlgo(Gritador b){
         b.grita(); // chamda polimórfica
     }
 }
