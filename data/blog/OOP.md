@@ -1,18 +1,18 @@
 ---
 title: Entendendo programação orientada a objeto (OOP) com Java
 date: '09-23-2021'
-tags: ['java', 'computer sciense', 'polimorfizm', 'OOP']
+tags: ['java', 'computer science', 'polymorphism', 'OOP']
 draft: false
-summary: Entendendo o básico de OOP com a linguagem Java
+summary: Discussão sobre OOP com Java
 ---
 
 # EM DESENVOLVIMENTO
 
 ### O que é um objeto?
 
-Linguagens como C que seguem um paradigma de programação estruturada, onde é altamente orientada a dados, ou seja, se possui estruturas de dados e instruções do programa atuam nesses dados. Já numa linguagem orientada a objetos - como Java, JavaScript entre outras - se combina instruções de dados e programas em objetos.
+Linguagens como C, que seguem um paradigma de programação estruturada, ou seja, possuem estruturas de dados e instruções do programa atuam nesses dados. Já numa linguagem orientada a objetos - como Java, JavaScript entre outras - combinamos dados e suas instruções em objetos.
 
-Dados e lógica de programação são `combinados` em um objeto. Ele é uma entidade autocontida contendo atributos e comportamentos. Esse tipo de paradigma é uma extensão lógica de antigas técnicas da programação estrutural e tipos de dados abstratos. Um objeto é um tipo de dado abstrato com a adição de `polimorfismo` e `herança`.
+Dados e lógica de programação são `combinados` em um objeto. É uma entidade autocontida contendo atributos e comportamentos. Esse tipo de paradigma é uma extensão lógica de antigas técnicas da programação estrutural e tipos de dados abstratos. Um objeto é um tipo de dado abstrato com a adição de `polimorfismo` e `herança`.
 
 ### Polimorfismo
 
@@ -69,3 +69,9 @@ class A {
 
 O ponto geral dos exemplos é conseguir exibir que "a" tem uma refência a "b".
 Outra coisa é que, em Java, _todas_ as chamdas de métodos a objetos são polimórficas. Isso no caso em métodos de OBJETOS, no caso de métodos estáticos ou também chamados de métodos de classes não há polimorfismo.
+
+##### Fontes:
+
+- [Polymorphism em Java](https://beginnersbook.com/2013/03/polymorphism-in-java/)
+- [Polymorphism](<https://en.wikipedia.org/wiki/Polymorphism_(computer_science)>)
+- [Object(Computer_science)](<https://en.wikipedia.org/wiki/Object_(computer_science)>)
