@@ -9,8 +9,7 @@ linkedin: https://www.linkedin.com/in/vitorsalmeida/
 github: https://github.com/vit0rr
 ---
 
-Desenvolvedor Front-End. Em 2020 foi a primeira vez que participei do Hacktoberfest e consegui os prêmios. Estudo seriamente desenvolvimento há uns 2 anos.
+Em 2020, eu e outros dois desenvolvedores criamos a [Phog Tech](https://phogtech.vercel.app/), um projeto pensado em soluções Web. No mesmo ano, ganhei o evento hacktoberfest e foi minha primeira participação no evento.
+Gosto de escrever como método de memorização e aprendizado, pensando nisso, desenvolvi o presente Blog para discutir e dissertar sobre assuntos de programação dos quais considero importante.
 
-Gosto de open-source e participo de um projeto Linux brasileiro chamado Pindorama.
-
-Academicamente pretendo cursar Sistema da Informação e/ou Ciência da Computação. Futuramente quem sabe Filosofia.
+Também participo do [Projeto Pindorama](https://github.com/Projeto-Pindorama), sendo minha contribuição ao open-source ativamente.
