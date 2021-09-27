@@ -1,6 +1,6 @@
 ---
 name: Vitor S. Almeida
-avatar: /static/images/naruto.jpg
+avatar: /static/images/profile1.jpg
 occupation: Desenvolvedor Web Front-End
 company:
 email: vi.souza.almeida@protonmail.com
