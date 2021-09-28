@@ -12,11 +12,15 @@ summary: Discussão sobre OOP com Java
 
 Linguagens como C, que seguem um paradigma de programação estruturada, ou seja, possuem estruturas de dados e instruções do programa atuam nesses dados. Já numa linguagem orientada a objetos - como Java, JavaScript entre outras - combinamos dados e suas instruções em objetos.
 
-Dados e lógica de programação são `combinados` em um objeto. É uma entidade autocontida contendo atributos e comportamentos. Esse tipo de paradigma é uma extensão lógica de antigas técnicas da programação estrutural e tipos de dados abstratos. Um objeto é um tipo de dado abstrato com a adição de `polimorfismo` e `herança`.
+Dados e lógica de programação são `combinados` em um objeto. É uma entidade autocontida contendo atributos e comportamentos. Esse tipo de paradigma é uma extensão lógica de antigas técnicas da programação estrutural e tipos de dados abstratos. Porém, vale pontuar que não necessariamente objeto é um dado abstrato com adição de polimorfismo e herança. Essa generalização é feita em alguns artigos de forma `errada`.
+
+### Herança
 
 ### Polimorfismo
 
-De forma genérica, significa "várias formas", e isso no contexto da programação representa poder fazer "certa coisa" de várias formas. O ponto é essa "certa coisa". Estamos falando de chamadas de métodos, portanto, em Java, o polimorfismo é expresso apenas em chamdas de métodos. Ou seja, polimorfismo representa que uma chamada de método pode ser executada de várias formas diferentes. **O objeto que recebeu a chamada quem decide "a forma"**.
+De forma genérica, significa "várias formas", e isso no contexto da programação representa poder fazer "certa coisa" de várias formas. O ponto é essa "certa coisa". Estamos falando de chamadas de métodos, portanto, em Java, o polimorfismo é expresso apenas em chamdas de métodos. Ou seja, polimorfismo é um pedaço de código que trabalha com múltiplos dados.
+
+Ser objeto, não significa implicatamente ter polimorfismo. Todo objeto é polimórfico, pois a interface dele é. Mas isso não implica em necessariamente todo objeto ter polimorfismo.
 
 Polimorfismo é uma única [interface](<https://en.wikipedia.org/wiki/Interface_(computing)>) para dados de diferentes tipos ou um símbolo que represente vários tipos diferentes. Na prática isso ocorre com as três principais classes de polimorfismo, que são:
 
