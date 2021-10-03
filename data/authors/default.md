@@ -1,8 +1,8 @@
 ---
 name: Vitor S. Almeida
 avatar: /static/images/profile1.jpg
-occupation: Desenvolvedor Web Front-End
-company:
+occupation: Full stack developer
+company: I'M Labs Tecnologia
 email: vi.souza.almeida@protonmail.com
 twitter: https://twitter.com/vit0rrk
 linkedin: https://www.linkedin.com/in/vitorsalmeida/
