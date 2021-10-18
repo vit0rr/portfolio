@@ -16,6 +16,7 @@ Como estou seguindo a [documentação do PHP](https://www.php.net/manual/pt_BR/l
 
     - [Tipos](#tipos)
         - [Definir tipos](#defTipos)
+        - [Boolenos](#boolean)
 
 <h3 id="tipos">Introdução - Tipos</h3>
 Aqui é parecido com JavaScript. PHP suporta dez tipos primitivos, sendo eles:
@@ -98,5 +99,53 @@ Para usar a função `settype()`:
 
         settype($foo, "integer"); // $foo é agora 5   (integer)
         settype($bar, "string");  // $bar é agora "1" (string)
+    ?>
+```
+
+<h3 id="boolean">Booleanos</h3>
+Booleanos expressão valores de verdade. Pode ser `true` ou `false`
+Em uso prático, ambos são case-insensitive:
+
+```php
+    <?php
+        $foo = True;
+    ?>
+```
+
+Normalmente usar valores booleanos são resultados de estruturas de controle, como `if, else`. Exemplo:
+
+```php
+    <?php
+        // == É um operador que testa
+        // igualdade e retorna um booleano.
+        if ($action == "mostrar_versao") {
+            echo "A versão é 1.23";
+        }
+
+        // isto não é necessário ...
+        if ($exibir_separadores == TRUE) {
+            echo "<hr>\n";
+        }
+
+        // ... porque você pode simplesmente escrever isso:
+        if ($exibir_separadores) {
+            echo "<hr>\n";
+        }
+    ?>
+```
+
+O segundo exemplo não é necessário pois estruturas condicionais automaticamente presumem como verdadeiro. variável é igual a X? Se for verdade faça tal coisa, caso contrário, faça outra. O padrão, sem precisar declarar, já é verdadeiro.
+Também vale lembrar que é false, além de evidentemente o booleano `false`, qualquer número com `0`, uma `string` vazia ou uma `string "0"`.
+
+```php
+    <?php
+        var_dump((bool) "");        // bool(false)
+        var_dump((bool) 1);         // bool(true)
+        var_dump((bool) -2);        // bool(true)
+        var_dump((bool) "foo");     // bool(true)
+        var_dump((bool) 2.3e5);     // bool(true)
+        var_dump((bool) array(12)); // bool(true)
+        var_dump((bool) array());   // bool(false)
+        var_dump((bool) "false");   // bool(true)
     ?>
 ```
