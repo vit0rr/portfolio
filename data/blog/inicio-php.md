@@ -17,6 +17,7 @@ Como estou seguindo a [documentação do PHP](https://www.php.net/manual/pt_BR/l
     - [Tipos](#tipos)
         - [Definir tipos](#defTipos)
         - [Boolenos](#boolean)
+        - [Inteiros](#integer)
 
 <h3 id="tipos">Introdução - Tipos</h3>
 Aqui é parecido com JavaScript. PHP suporta dez tipos primitivos, sendo eles:
@@ -149,3 +150,5 @@ Também vale lembrar que é false, além de evidentemente o booleano `false`, qu
         var_dump((bool) "false");   // bool(true)
     ?>
 ```
+
+<h3 id="integer">Inteiros</h3>
