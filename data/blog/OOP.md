@@ -6,8 +6,6 @@ draft: false
 summary: Discussão sobre OOP com Java
 ---
 
-# EM DESENVOLVIMENTO
-
 ### O que é um objeto?
 
 Linguagens como C, que seguem um paradigma de programação estruturada, ou seja, possuem estruturas de dados e instruções do programa atuam nesses dados. Já numa linguagem orientada a objetos - como Java, JavaScript entre outras - combinamos dados e suas instruções em objetos.
