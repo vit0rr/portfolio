@@ -8,7 +8,7 @@ summary: Como foi a primeira semana como Tech Lead tendo 17 anos num startup de 
 
 ## Introdução
 
-Recentemente escrevi no Twitter um pouco sobre minha experiência como Tech Lead. O assunto teve uma proporção que eu não esperava, não era muito ativo lá e com esse post deu uma boa movimentada. Sobre números, tive quase 4.000 visualizações na publicação. Para mim, é bastante coisa.
+Recentemente escrevi no [Twitter](https://twitter.com/vit0rrk/status/1456382675720224770) um pouco sobre minha experiência como Tech Lead. O assunto teve uma proporção que eu não esperava, não era muito ativo lá e com esse post deu uma boa movimentada. Sobre números, tive quase 4.000 visualizações na publicação. Para mim, é bastante coisa.
 Tendo isso em vista, resolvi escrever um pouco mais detalhadamente, com mais tempo e sem a limitação de caracteres sobre como foi a dinâmica da minha primeira semana em gerir uma equipe numa nova Startup de tecnologia.
 
 ## Como foi o processo para iniciar na empresa
@@ -30,7 +30,7 @@ A dinâmica de desenvolvimento era bem ruim para ser sincero. Eles não usavam G
 
 Depois disso, o segundo projeto começou, no qual também não vou dar muitos detalhes pois ainda não posso, mas por conta disso eu fui responsável pelo meu novo parceiro de desenvolvimento atual. Indiquei uma pessoa para trabalhar como back-end e adianto que deu totalmente certo. Conseguimos entregar o projeto de forma satisfatória, e foi as duas últimas semanas mais positivas para ambos pois aprendemos MUITA coisa.
 
-Quando esse desenvolvedor entrou e passou em todos os testes, começou de fato meu trabalho como Tech Lead (já com permissão do boss e tudo mais). Evidentemente como alguém novo, eu não sabia a maioria das coisas que deveria saber para conseguir executar o cargo de forma satisfatória, então a 1 semana foi mais negativa que positiva. Passando por isso, no final da 3° semana do mês, conversei com Sibelius, Camilo, Castilho e o Eduardo, dos quais são pessoas que eu respeito e gosto muito, em especial Sibelius e Edu, que para mim foram muito importantes indireta ou diretamente para eu estar aqui.
+Quando esse desenvolvedor entrou e passou em todos os testes, começou de fato meu trabalho como Tech Lead (já com permissão do boss e tudo mais). Evidentemente como alguém novo, eu não sabia a maioria das coisas que deveria saber para conseguir executar o cargo de forma satisfatória, então a 1 semana foi mais negativa que positiva. Passando por isso, no final da 3° semana do mês, conversei com [Sibelius](https://twitter.com/sseraphini), [Camilo](https://twitter.com/OCam_l), [Castilho](https://twitter.com/coproduto) e o [Eduardo](https://twitter.com/TheEduardoRFS), dos quais são pessoas que eu respeito e gosto muito, em especial Sibelius e Edu, que para mim foram muito importantes indireta ou diretamente para eu estar aqui.
 
 ## O Sibelius é o cara
 
