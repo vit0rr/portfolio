@@ -5,7 +5,7 @@ occupation: Front-end developer and Tech Lead
 company:
 email: vi.souza.almeida@protonmail.com
 twitter: https://twitter.com/vit0rrk
-linkedin: https://www.linkedin.com/in/vitorsalmeida/
+linkedin:
 github: https://github.com/vit0rr
 ---
 
