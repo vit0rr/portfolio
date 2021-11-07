@@ -43,3 +43,9 @@ Desenvolvi o outro projeto junto com o novo dev back-end, mostramos ao chefe e p
 Com o aprendizado, chegamos no final da semana com o projeto plenamente desenvolvido, passamos por todos os desafios de implementar API das quais nunca havíamos usado etc. O resultado ficou incrível e o superior ficou extremamente contente com a entrega rápida e evidente evolução do time.
 
 É óbvio que cometi erros, tanto no mês, quanto na última semana da qual disse que foi ótima, mas foram erros que entregaram grande valor para mim e para o time, sentindo na pele e sofrendo com as boas ou péssimas decisões, que se evolui. Não tem como melhorar estando na zona de conforto e diversos insights que o Sibelius passou sobre isso, contribuiram para eu entrar de cabeça no cargo e dar meu máximo, pois com certeza absoluta o que estou passando atualmente vai gerar frutos no futuro, e a conseguir uma experiência que não conseguiria sem arriscar.
+
+### Vídeo e artigos que ajudaram:
+
+- [5-Step design and manufacturing process](https://twitter.com/TrungTPhan/status/1425476793327259651)
+- [Skin in the Game for Developers](https://sibelius.substack.com/p/skin-in-the-game-for-developers)
+- [Developer Training](https://sibelius.substack.com/p/developer-training)
