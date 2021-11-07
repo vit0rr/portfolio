@@ -1,5 +1,5 @@
 ---
-title: Experiência como Tech Lead tendo 17 anos
+title: Como foi minha primeira experiência sendo Tech Lead
 date: '11-07-2021'
 tags: ['tech lead', 'code', 'learn', 'work']
 draft: false
