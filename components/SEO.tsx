@@ -29,6 +29,7 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage }: CommonSEOPr
       <meta property="og:site_name" content={siteMetadata.title} />
       <meta property="og:description" content={description} />
       <meta property="og:title" content={title} />
+      <meta name="google-site-verification" content="cheUpXdmdV0PJwsDCb0RFeE1aqQVQXdDGrfC6m5fG0o" />
       {Array.isArray(ogImage) ? (
         ogImage.map(({ url }) => <meta property="og:image" content={url} key={url} />)
       ) : (
