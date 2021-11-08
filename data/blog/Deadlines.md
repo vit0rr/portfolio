@@ -2,7 +2,7 @@
 title: Como organizar e projetar prazos?
 date: '11-08-2021'
 tags: ['tech lead', 'code', 'learn', 'work', 'deadlines']
-draft: false
+draft: true
 summary: Como lidei sendo Tech Lead com as projeções de prazos
 ---
 
