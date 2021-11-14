@@ -3,26 +3,26 @@ title: Como foi minha primeira experiência sendo Tech Lead
 date: '11-07-2021'
 tags: ['tech lead', 'code', 'learn', 'work']
 draft: false
-summary: Como foi as primeiras semanas como Tech Lead numa startup de tecnologia?
+summary: Como foram as primeiras semanas como Tech Lead numa startup de tecnologia?
 ---
 
 ## Introdução
 
-Recentemente escrevi no [Twitter](https://twitter.com/vit0rrk/status/1456382675720224770) um pouco sobre minha experiência como Tech Lead. O assunto teve uma proporção que eu não esperava, não era muito ativo lá e com esse post deu uma boa movimentada. Sobre números, tive quase quatro mil visualizações na publicação. Para mim, é bastante coisa.
-Tendo isso em vista, resolvi escrever um pouco mais detalhadamente, com mais tempo e sem a limitação de caracteres sobre como foi a dinâmica da minha primeira semana em gerir uma equipe numa nova Startup de tecnologia.
+Escrevi no [Twitter](https://twitter.com/vit0rrk/status/1456382675720224770) um pouco sobre minha experiência como Tech Lead e recebi bastante feedback sobre em comentário, DM e Discord. Pensando nisso, resolvi escrever esse post para falar de forma mais completa sobre como foram as duas primeiras semanas. Além disso, contar a forma que cheguei na empresa, e o processo para conseguir o cargo.
 
 ## Como foi o processo para iniciar na empresa
 
-A princípio chegaram até mim por networking. Quando fizeram o contato, perguntaram se havia como eu me tornar programador Front-End da empresa. Eu evidentemente aceitei, expliquei toda minha disponibilidade relacionada a tempo, por eu ainda estar na escola. Isso significa que alguns dias eu poderia estar ausente, por trabalhos, semana de provas e essas coisas. Depois de conversarmos bastante ajustamos tudo, como salário também - que vou contar posteriormente - e eles me passaram um desafio técnico para avaliar se eu poderia de fato agregar em algo na empresa.
+A princípio chegaram até mim por networking. Quando fizeram o contato, perguntaram se havia como eu me tornar programador Front-End da empresa. Eu evidentemente aceitei, expliquei toda minha disponibilidade e prosseguimos para uma pequena entrevista. Nela, discutimos as tecnologias das quais eu me sentia confortável e projetos pessoais, além da minha pretenção salarial - que foi de R$2.000 PJ. Vale ressaltar que nesse ponto, eu não fazia a menor ideia que seria Tech Lead em algum momento, ok? Foi uma entrevista de um desenvolvedor front-end Junior.
 
 ### O processo seletivo
 
-O teste de Front-end era relativamente complexo, a empresa estava atrasada na entrega de um projeto anterior deles e esse foi meu processo seletivo. A urgência era tamanha que a avialiação era conseguir medir a capacidade do desenvolvedor entrevistado em resolver um problema já atual da empresa. Entreguei todo o desafio num tempo bem curto, o feedback foi bem positivo e passei.
+O projeto era relativamente complexo. Consistia em desenvolver o front-end de duas telas, a primeira era uma landing page e a segunda uma plataforma EAD. Não posso dar muitos detalhes sobre pois esse teste na realidade era um projeto real da empresa que eles estavam desenvolvendo - no qual ainda não foi lançado enquanto escrevo esse texto. O desafio maior foi na segunda tela, exigia que eu tivesse de forma sólida alguns conceitos de CSS.
+
+Entreguei tudo num tempo bem curto, eles tiveram um feedback super positivo do que fiz. Passei em tudo e agora eu sou oficialmente desenvolvedor deles.
 
 ## Os próximos passos
 
-A princípio eu seria um desenvolvedor Júnior, sendo esse meu primeiro emprego, e meu salário é de R$2.000 PJ, trabalhando cerca de seis horas por dia, mas quando posso, continuo trabalhando. Estar programando para mim anteriormente do trabalho era satisfatório e ainda continua sendo, não me importo com passar do expediente, além de trazer frutos positivos em aprendizagem a longo prazo.
-O susto foi quando eu comecei. Achei que tivesse uma equipe na empresa já, mas fui o único que passou no teste de forma esperada. A empresa já havia entrevistado outros desenvolvedores mas não deu muito certo. Com isso, eu programava sozinho o front-end e o meu superior o back-end e as vezes também ajudava com o front. Enfim, passou todo o estresse, entregamos o projeto e foi bem pesado, pelo menos para mim. Pensei algumas vezes que não conseguiria, não soube gerir a ansiedade da entrega de forma inteligente mas no final deu tudo certo. Como não posso dar muitos detalhes, serei breve: tivemos que desenvolver o front-end de uma plataforma EAD completa em cerca de uma semana e meia ou duas semanas, não sei ao certo.
+Levei meu primeiro choque logo no começo. Soube que fui o único a passar no teste de front-end dos desenvolvedores entrevistados e até então eu iria programar com o meu superior, que desenvolvia back-end. Ou seja, eu era responsável por 100% do front-end da empresa. Passando isso, nas primeiras semanas já tive um conflito interior. Comecei a ficar ansioso e não achei que fosse dar conta de todo o trabalho, foi realmente complicado conseguir entregar o front-end de uma plataforma EAD completa em quase duas semanas. Enfim, passou e aprendi bastante coisa com esse projeto, aprendi sentindo na pele as consequências dos erros e acertos que cometi durante o desenvolvimento.
 
 ## Primeiros passos como Tech Lead
 
