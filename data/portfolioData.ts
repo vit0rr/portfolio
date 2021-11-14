@@ -21,7 +21,7 @@ const portfolioData = [
     title: 'DiscordDMNuke',
     description: `Script do Discord para remover mensagens enviadas no privado (via DM).`,
     imgSrc: '/static/images/discorddmnuke.png',
-    href: 'https://github.com/vit0rr/flappyjs',
+    href: 'https://github.com/vit0rr/DiscordDMNuke',
   },
 ]
 
