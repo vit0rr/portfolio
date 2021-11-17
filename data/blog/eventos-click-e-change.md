@@ -1,7 +1,7 @@
 ---
 title: Quando usar onClick e onChange com JavaScript?
 date: '11-17-2021'
-tags: ['tech lead', 'code', 'learn', 'work']
+tags: ['javascript', 'code', 'learn']
 draft: true
 summary: Quando usar os os eventos onClick e onChange com JavaScript e não errar na hora de criar um select
 ---
