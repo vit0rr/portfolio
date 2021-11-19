@@ -104,3 +104,230 @@ O resultado final é semelhante a esse:
 Com isso, você provavelmente vai ter 100 SOL na carteira. Com isso, podemos começar a desenvolver.
 
 ### Começando o desenvolvimento
+
+Para buildar, rode:
+
+```shell
+anchor init mysolanaapp --javascript
+
+cd mysolanaapp
+```
+
+**app** - pasta do frontend
+**programs** - onde roda o código Rust para o Solana
+**test** - onde roda o test do javascript
+**migrations** - Script de deploy
+
+Anchor usa e permite a gente escrever, um [eDSL](https://en.wikipedia.org/wiki/Domain-specific_language#:~:text=embedded%20domain%2Dspecific%20language%20(eDSL,methods%2C%20macros%20etc.).) que abstrai muitas formas mais complexas de tarefas low level que normalmente precisa ser feito se você estiver usando Solana e Rust.
+
+```rust
+use anchor_lang::prelude::*;
+
+declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+
+#[program]
+pub mod mysolanaapp {
+    use super::*;
+    pub fn initialize(ctx: Context<Initialize>) -> ProgramResult {
+        Ok(())
+    }
+}
+
+#[derive(Accounts)]
+pub struct Initialize {}
+```
+
+A única coisa que ocorre nesse programa, foi a definição da função `initialize`, e quando chamada ela apenas sai do programa como Sucesso. Não há manipulação de dados.
+
+Para compilar o programa, rode:
+```shell
+anchor build
+```
+
+quando o build tiver completo, vai ter gerado uma pasta chamada `target`.
+Tambem podemos ver nosso teste do frontend em tests/mysolanaapp.js, e ele deve ser assim:
+
+```javascript
+const anchor = require('@project-serum/anchor');
+
+describe('mysolanaapp', () => {
+
+  // Configure the client to use the local cluster.
+  anchor.setProvider(anchor.Provider.env());
+
+  it('Is initialized!', async () => {
+    // Add your test here.
+    const program = anchor.workspace.Mysolanaapp;
+    const tx = await program.rpc.initialize();
+    console.log("Your transaction signature", tx);
+  });
+});
+
+```
+
+Para rodar Solana usando Anchor, precisa de duas coisas:
+
+1. Provider - é uma abstração de uma conexão à rede Solana, normalmente uma [Connection](https://solana-labs.github.io/solana-web3.js/classes/Connection.html), Wallet e [preflight commitment](https://solana-labs.github.io/solana-web3.js/modules.html#Commitment)
+
+No nosso programa, ele vai rodar e criar Provider baseado ambiente `anchor.Provider.env()`, mas no client precisa você mesmo contruir o Provider usando a Solana wallet
+
+2. program - é uma abstração que comina o Provider, idl e o programID, e nos permite chamar métodos RPC no programa.
+
+Quando tivermos essas duas coisas, podemos chamar funções no nosso programa. Exemplo: no nosso programa, temos um `initialize`, podemos invocar diretamente a função da seguinte forma:
+```javascript
+const tx = await program.rpc.functionName();
+```
+
+Agora para testar, rode:
+```shell
+anchor test
+```
+
+### Construindo o Hello World
+
+Vamos fazer um CRUD.
+O programa permitirá criar um contador que aumenta cada vez que o chamamos de um client.
+
+abra `programs/mysolanaapp/src/lib.rs` e atualize tudo para o seguinte código:
+
+```rust
+use anchor_lang::prelude::*;
+
+declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+
+#[program]
+mod mysolanaapp {
+    use super::*;
+
+    pub fn create(ctx: Context<Create>) -> ProgramResult {
+        let base_account = &mut ctx.accounts.base_account;
+        base_account.count = 0;
+        Ok(())
+    }
+
+    pub fn increment(ctx: Context<Increment>) -> ProgramResult {
+        let base_account = &mut ctx.accounts.base_account;
+        base_account.count += 1;
+        Ok(())
+    }
+}
+
+// Transaction instructions
+#[derive(Accounts)]
+pub struct Create<'info> {
+    #[account(init, payer = user, space = 16 + 16)]
+    pub base_account: Account<'info, BaseAccount>,
+    #[account(mut)]
+    pub user: Signer<'info>,
+    pub system_program: Program <'info, System>,
+}
+
+// Transaction instructions
+#[derive(Accounts)]
+pub struct Increment<'info> {
+    #[account(mut)]
+    pub base_account: Account<'info, BaseAccount>,
+}
+
+// An account that goes inside a transaction instruction
+#[account]
+pub struct BaseAccount {
+    pub count: u64,
+}
+```
+
+Agora, rode:
+```shell
+anchor build
+```
+
+Agora, vamos para o teste do contador. Cole o código no js de teste
+
+```javascript
+const assert = require("assert");
+const anchor = require("@project-serum/anchor");
+const { SystemProgram } = anchor.web3;
+
+describe("mysolanaapp", () => {
+  /* create and set a Provider */
+  const provider = anchor.Provider.env();
+  anchor.setProvider(provider);
+  const program = anchor.workspace.Mysolanaapp;
+  it("Creates a counter)", async () => {
+    /* Call the create function via RPC */
+    const baseAccount = anchor.web3.Keypair.generate();
+    await program.rpc.create({
+      accounts: {
+        baseAccount: baseAccount.publicKey,
+        user: provider.wallet.publicKey,
+        systemProgram: SystemProgram.programId,
+      },
+      signers: [baseAccount],
+    });
+
+    /* Fetch the account and check the value of count */
+    const account = await program.account.baseAccount.fetch(baseAccount.publicKey);
+    console.log('Count 0: ', account.count.toString())
+    assert.ok(account.count.toString() == 0);
+    _baseAccount = baseAccount;
+
+  });
+
+  it("Increments the counter", async () => {
+    const baseAccount = _baseAccount;
+
+    await program.rpc.increment({
+      accounts: {
+        baseAccount: baseAccount.publicKey,
+      },
+    });
+
+    const account = await program.account.baseAccount.fetch(baseAccount.publicKey);
+    console.log('Count 1: ', account.count.toString())
+    assert.ok(account.count.toString() == 1);
+  });
+});
+```
+
+Agora, precisamos do address para continuar. Para isso, rode o seguinte comando:
+```shell
+solana address -k target/deploy/mysolanaapp-keypair.json
+```
+
+O `output` disso, cole em:
+```rust
+// mysolanaapp/src/lib.rs
+
+declare_id!("program-id")
+```
+
+E em Anchor.toml, no diretório raiz:
+```rust
+[programs.localnet]
+mysolanaapp = "your-program-id"
+```
+
+Agora, rode:
+```shell
+anchor test
+```
+
+Agora, tenha certeza que `solana-test-validator` esteja rodando e rode:
+```shell
+anchor deploy
+```
+
+Nessa parte, se tudo certo ok. No meu caso, tive um erro mas a solução é simples. Ele não conseguia recuperar o program-id automaticamente, então eu tive que especificar isso durante o `anchor deploy`.
+
+Como eu não sabia disso antes, eu rodei o deploy todo via solana, usando [esse](https://docs.solana.com/cli/deploy-a-program) tutorial. Recomendo que faça o mesmo para entender o motivo das coisas, o funcionamento dos diretórios etc. Caso faça isso, te adianto que o arquivo com .so está em `target` e `deploy`. 
+
+Após ter rodado o `solana program deploy target/deploy/mysolanaapp.so`, peguei o output e rodei como `anchor deploy --program-name <address>` e deu certo. O output foi o seguinte:
+```shell
+Deploying workspace: http://localhost:8899
+Upgrade authority: /home/vitor/.config/solana/id.json
+Deploy success
+```
+
+### Building React App
+
+...
