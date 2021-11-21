@@ -6,6 +6,12 @@ draft: false
 summary: Guia completo com desenvolvimento full stack, minha introdução com crypto e web3.
 ---
 
+### Solana
+Solana é uma blockchain de escala web, suporta smart contracts e criação de apps decentralizados.
+
+... Em desenvolvimento
+
+
 ### Overview
 As ferramentas que vamos usar são:
 [Solana Tool Suite](https://docs.solana.com/cli/install-solana-cli-tools) - Aqui tem uma polida e boa documentação da CLI para integir com a Solana network
