@@ -349,4 +349,4 @@ cd app
 npm install @project-serum/anchor @solana/web3.js
 ```
 
-...
+... Em desenvolvimento
