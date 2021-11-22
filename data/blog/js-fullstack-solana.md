@@ -337,4 +337,16 @@ Deploy success
 
 ### Building React App
 
+Na raiz do projeto, crie um react app com o seguinte comando:
+```shell
+npx create-react-app app
+```
+
+Agora, instale as dependências que vamos precisar pro Anchor e Solana Web3:
+```
+cd app
+
+npm install @project-serum/anchor @solana/web3.js
+```
+
 ...
