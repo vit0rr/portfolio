@@ -11,6 +11,8 @@ Solana é uma blockchain de escala web, suporta smart contracts e criação de a
 
 Também é útil a informação de que você não precisa de conhecimentos prévios muito avançados para desenvolver com Solana. De forma geral as coisas são bem documentadas e provavelmente não terá problemas grandes com esse tutorial. Para mim, foi a porta de entrada e os desafios não foram impossíveis, aprendi e interagi bastante, então vale bastante a pena.
 
+**OBS:** O código do projeto está [nesse](https://github.com/vit0rr/solanaapp) repositório
+
 ### Overview
 As ferramentas que vamos usar são:
 [Solana Tool Suite](https://docs.solana.com/cli/install-solana-cli-tools) - Aqui tem uma polida e boa documentação da CLI para integir com a Solana network
