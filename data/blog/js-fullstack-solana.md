@@ -6,11 +6,10 @@ draft: false
 summary: Guia completo com desenvolvimento full stack, minha introdução com crypto e web3.
 ---
 
-### Solana
-Solana é uma blockchain de escala web, suporta smart contracts e criação de apps decentralizados.
+### Solana e Phantom
+Solana é uma blockchain de escala web, suporta smart contracts e criação de apps decentralizados. Enquanto isso, Phantom é uma carteira digital, ele auxilia nas transações da Solana.
 
-... Em desenvolvimento
-
+Também é útil a informação de que você não precisa de conhecimentos prévios muito avançados para desenvolver com Solana. De forma geral as coisas são bem documentadas e provavelmente não terá problemas grandes com esse tutorial. Para mim, foi a porta de entrada e os desafios não foram impossíveis, aprendi e interagi bastante, então vale bastante a pena.
 
 ### Overview
 As ferramentas que vamos usar são:
