@@ -1,7 +1,7 @@
 ---
 name: Vitor S. Almeida
 avatar: /static/images/profile1.jpg
-occupation: Front-end developer and Tech Lead
+occupation: Full-stack developer
 company:
 email: vi.souza.almeida@protonmail.com
 twitter: https://twitter.com/vit0rrk
