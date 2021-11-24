@@ -9,6 +9,5 @@ linkedin:
 github: https://github.com/vit0rr
 ---
 
-A simple front-end web developer.
-
-Tenho 17 anos, programo desde os 11.
+A developer.
+17yo.
