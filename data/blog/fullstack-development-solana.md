@@ -484,3 +484,20 @@ const AppWithProvider = () => (
 
 export default AppWithProvider;
 ```
+
+### Trocando a rede da carteira
+
+Precisamos agora mudar a nossa rede do Phantom para a adequada.
+Para isso, abra as configurações clicando na engrenagem, no final tem Change Network, e ai deixe marcado localhost.
+
+Agora, precisamos lançar tokens para nossa carteira. Para isso, clique no seu endereço que fica no topo, e no terminal rode:
+- Não esqueça de sempre rodar `solana-test-validator`
+```shell
+solana airdrop 10 <address>
+```
+Com isso, deverá ter agora 10 tokens na sua carteira.
+Vá até a pasta app (a criada pelo react) e rode npm start
+
+Nesse ponto, deve ser possível já conectar na sua carteira, e iniciar o contador.
+
+Nesse momento, se reiniciar a página ela perde o estado anterior. No artigo que tomei como base, existe [um gist](https://gist.github.com/dabit3/7cbd18b8bc4b495c4831f8674902eb42) sobre como isso funciona.
