@@ -10,7 +10,7 @@ summary: Explicando como consegui um novo emprego com crypto escrevendo um artig
 
 ### Introdução
 
-Recentemente escrevi um artigo sobre Solana, sendo ele minha porta de entrada em desenvolvimento com crypto. Fiquei um tempo estudando e escrevendo, quando publiquei no Twitter, um dia depois me chamaram para trabalhar com a stack.
+Recentemente escrevi um [artigo](/blog/fullstack-development-solana) sobre Solana, sendo ele minha porta de entrada em desenvolvimento com crypto. Fiquei um tempo estudando e escrevendo, quando publiquei no Twitter, um dia depois me chamaram para trabalhar com a stack.
 
 ### Seja generalista
 

@@ -10,7 +10,7 @@ summary: Explaining how i got a new job with crypto writing one article about wh
 
 ### Introduction
 
-I recently wrote an article about Solana, it being my first steps in crypto development. I spent some time studying and writing, when I published it on Twitter, one day later they called me to work with the stack.
+I recently wrote an [article](/blog/fullstack-development-solana) about Solana, it being my first steps in crypto development. I spent some time studying and writing, when I published it on Twitter, one day later they called me to work with the stack.
 
 ### Be generalist
 
