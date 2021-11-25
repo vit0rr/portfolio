@@ -1,16 +1,16 @@
 ---
-title: Como consegui um novo emprego escrevendo 1 artigo
+title: Como consegui um novo emprego escrevendo um artigo
 date: '11-25-2021'
 tags: ['learn','job','article']
 draft: true
-summary: Explicando como consegui um novo emprego com crypto escrevendo 1 artigo sobre o que estudava
+summary: Explicando como consegui um novo emprego com crypto escrevendo um artigo sobre o que estudava
 ---
 
 <h2>pt-br | [en](/blog/job-with-1-article)</h2>
 
 ### Introdução
 
-Recentemente escrevi um artigo sobre Solana, sendo ele minha porta de entrada em desenvolvimento com crypto. Fiquei um tempo estudando e escrevendo, quando publiquei no Twitter, 1 dia depois me chamaram para trabalhar com a stack.
+Recentemente escrevi um artigo sobre Solana, sendo ele minha porta de entrada em desenvolvimento com crypto. Fiquei um tempo estudando e escrevendo, quando publiquei no Twitter, um dia depois me chamaram para trabalhar com a stack.
 
 ### Seja generalista
 
@@ -24,9 +24,9 @@ Construir um blog, com temas que seja útil para você, descrevendo experiência
 
 **Learn in public** também faz parte do SEO pessoal. Poste suas dúvidas e respostas no Twitter marcando pessoas que podem dar RT na sua dúvida, criando uma relação ganha-ganha. Mesma coisa com comunidades, procure no Discord por exemplo.
 
-### 1 artigo, 1 trabalho
+### Um artigo, um trabalho
 
-Após a publicação do artigo, passou exatamente 1 dia e eu recebi uma proposta no e-mail para trabalhar com a stack. O artigo serviu como forma de mostrar o que sei, o que quero saber e posso saber, e isso possiblitou uma entrevista de trabalho. O meu resultado foi rápido pois tive um pouco de sorte, seu SEO pessoal e documentações pode demorar para colher os frutos, paciência é uma virtude.
+Após a publicação do artigo, passou exatamente um dia e eu recebi uma proposta no e-mail para trabalhar com a stack. O artigo serviu como forma de mostrar o que sei, o que quero saber e posso saber, e isso possiblitou uma entrevista de trabalho. O meu resultado foi rápido pois tive um pouco de sorte, seu SEO pessoal e documentações pode demorar para colher os frutos, paciência é uma virtude.
 
 Fui para a entrevista, passei e agora estou resolvendo algumas coisas - ainda não aceitei a proposta.
 

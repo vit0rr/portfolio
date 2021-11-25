@@ -1,16 +1,16 @@
 ---
-title: How i got a new job writing 1 article
+title: How i got a new job writing one article
 date: '11-23-2021'
 tags: ['learn','job','article']
 draft: false
-summary: Explaining how i got a new job with crypto writing 1 article about what i learning.
+summary: Explaining how i got a new job with crypto writing one article about what i learning.
 ---
 
 <h2>[pt-br](/blog/job-with-1-article-PtBr) | en</h2>
 
 ### Introduction
 
-I recently wrote an article about Solana, it being my first steps in crypto development. I spent some time studying and writing, when I published it on Twitter, 1 day later they called me to work with the stack.
+I recently wrote an article about Solana, it being my first steps in crypto development. I spent some time studying and writing, when I published it on Twitter, one day later they called me to work with the stack.
 
 ### Be generalist
 
@@ -24,12 +24,12 @@ Building a blog, with themes that are useful to you, describing experiences and 
 
 **Learn in public** is also part of personal SEO. Post your questions and answers on Twitter by marking people who can RT your question, creating a win-win relationship. Same thing with communities, look in Discord for example.
 
-### 1 article, 1 work
+### One article, one work
 
-After the article was published, exactly 1 day passed and I received a proposal in the email to work with the stack. The article served as a way to show what I know, what I want to know and can know, and this made a job interview possible. My result was quick as I had a bit of luck, your personal SEO and documentation can take a while to reap the rewards, patience is a virtue.
+After the article was published, exactly one day passed and I received a proposal in the email to work with the stack. The article served as a way to show what I know, what I want to know and can know, and this made a job interview possible. My result was quick as I had a bit of luck, your personal SEO and documentation can take a while to reap the rewards, patience is a virtue.
 
 I went to the interview, passed and now I'm working out some things - I still haven't accepted the proposal.
 
 ### Conclusion
 
-Crie seu SEO pessoal, para que você chegue até as pessoas. Documente suas atividades, experiências e pratique Learn in Public.
+Create your personal SEO so you can reach people. Document your activities, experiences and practice Learn in Public.
