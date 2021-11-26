@@ -127,3 +127,7 @@ p.example {
 ![absolute](https://raw.githubusercontent.com/vit0rr/portfolio/23ca09aa8fa467bcdbc03c9ed9a8b9c798560a44/public/static/images/absolute.png)
 
 Vale pontuar que sem o `margin`, isso não seria possível. Ele foi o responsável por deixar todas as margens no automático e o elemento fez o cálculo para ele deixar no meio. Outra coisa, é que isso só vale se o elemento tiver altura e largura. Ela foi definida no `p`.
+
+#### Referências:
+- [HTML & CSS Projete e construa websites](https://www.amazon.com.br/HTML-CSS-Design-Build-Websites/dp/1118008189)
+- [posição](https://developer.mozilla.org/pt-BR/docs/Web/CSS/position)
