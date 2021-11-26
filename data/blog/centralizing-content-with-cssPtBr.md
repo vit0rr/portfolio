@@ -1,18 +1,18 @@
 ---
-title: Centralizing elements with CSS
+title: Centralizando conteúdo com CSS
 date: '11-26-2021'
 tags: ['css', 'code', 'learn']
-draft: false
-summary: How to centralize elements using CSS (vertically and horizontally)
+draft: true
+summary: Como centralizar conteúdos corretamente usando CSS
 ---
 
-<h2>[pt-br](/blog/centralizing-content-with-cssPtBr) | en</h2>
+<h2>pt-br | [en](/blog/centralizing-content-with-css)</h2>
 
-### Vertically centralizing 
+### Centralizando verticalmente
 
-We can do it using `left-margin` and `right-margin`. 
+Essa é a mais simples. A gente pode fazer usando `left-margin` e `right-margin`. 
 
-Example:
+Exemplo:
 
 ```html
 <!DOCTYPE html>
@@ -55,16 +55,16 @@ p.example {
 
 ![margin-center](https://raw.githubusercontent.com/vit0rr/portfolio/c59e3aaa4bb315b22c38061ad66b8fc54c3a625d/public/static/images/margin.png)
 
-Set margins to left and right like 'auto' will make the browser put an equal space on two sides. If you don't see yet `margin: 10px auto 10px auto`, this code work like -> top, right, bottom, left
+Inserir as margens na esqueda e direita como `auto` fará o navegador inserir um espaço igual dos dois lados. Caso não esteja familiarizado com `margin: 10px auto 10px auto;`, ele trabalha de forma horária, ou seja, top, direita, baixo, esquerda.
 
-### Horizontally centralizing
+### Centralizando horizontalmente
 
-We need first to understand an important concept of CSS: the value `absolute`.
+Para isso, vamos precisar entender primeiro um conceito importante de CSS que é o valor `absolute`.
 
-When the `position` receives the value `absolute`, the box is removed from the normal flow and does not affect another element's position. Is like the element does not exist.
+Quando `position` recebe o valor `absolute`, a caixa é removida do fluxo normal e não afeta a posição dos outros elementos da página, é com se ele não existisse.
 
-The displacement properties: `top`, `bottom`, `left` e `right` specify where the element should appear about the container element. In other words, its relative parent element will be the basis for it to be absolute.
-Example:
+As propriedades de deslocamento: `top`, `bottom`,`left` e `right` especificam onde o elemento deve aparecer em relação ao elemento contêiner. Ou seja, o elemento pai relativo dele, vai ser a base para ele ficar absoluto. 
+Exemplo:
 ```css 
 h1 {
     position: absolute;
@@ -74,11 +74,11 @@ h1 {
 }
 ```
 
-Here, the title has been positioned at the top of the page and 500 pixels from its left edge. The width is defined as 250 pixels. And you could change `top` to any other value and be navigating the page with the element
+Aqui, o título foi posicionado no topo da página e a 500 pixels a partir da sua borda esqueda. A largura é definida como 250 pixels. E você poderia mudar o `top` para qualquer outro valor e ficar navegando pela página com o elemento
 
-With that in mind, to fully center an element on the screen, it's possible with `position: absolute`.
+Pensando nisso, para centralizar um elemento totalmente na tela, é possível com `position: absolute`. 
 
-Example:
+Exemplo:
 
 ```html
 <!DOCTYPE html>
@@ -128,8 +128,8 @@ p.example {
 
 ![absolute](https://raw.githubusercontent.com/vit0rr/portfolio/23ca09aa8fa467bcdbc03c9ed9a8b9c798560a44/public/static/images/absolute.png)
 
-Without the `margin`, this would not be possible. He was responsible for leaving all the margins on automatic and the element did the calculation for him to leave in the middle. Another thing is that this only applies if the element has height and width. It was defined in `p`.
+Vale pontuar que sem o `margin`, isso não seria possível. Ele foi o responsável por deixar todas as margens no automático e o elemento fez o cálculo para ele deixar no meio. Outra coisa, é que isso só vale se o elemento tiver altura e largura. Ela foi definida no `p`.
 
-#### References:
-- [HTML and CSS: Design and Build Websites](https://www.amazon.com.br/HTML-CSS-Design-Build-Websites/dp/1118008189)
-- [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+#### Referências:
+- [HTML & CSS Projete e construa websites](https://www.amazon.com.br/HTML-CSS-Design-Build-Websites/dp/1118008189)
+- [posição](https://developer.mozilla.org/pt-BR/docs/Web/CSS/position)
