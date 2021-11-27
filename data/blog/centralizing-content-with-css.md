@@ -126,6 +126,10 @@ p.example {
 }
 ```
 
+![absolute](https://raw.githubusercontent.com/vit0rr/portfolio/23ca09aa8fa467bcdbc03c9ed9a8b9c798560a44/public/static/images/absolute.png)
+
+Without the `margin`, this would not be possible. He was responsible for leaving all the margins on automatic and the element did the calculation for him to leave in the middle. Another thing is that this only applies if the element has height and width. It was defined in `p`.
+
 ### Using flex
 
 As flex is a little more complex concept about CSS, I intend to explain it in a separate post dedicated to that. However, it is simpler to center something using flex.
@@ -154,11 +158,6 @@ Example:
 }
 ```
 ![flex](https://github.com/vit0rr/portfolio/blob/393b5dc4a6619fa0c3475d96e226a449eb54b1e8/public/static/images/flex.png?raw=true)
-
-
-![absolute](https://raw.githubusercontent.com/vit0rr/portfolio/23ca09aa8fa467bcdbc03c9ed9a8b9c798560a44/public/static/images/absolute.png)
-
-Without the `margin`, this would not be possible. He was responsible for leaving all the margins on automatic and the element did the calculation for him to leave in the middle. Another thing is that this only applies if the element has height and width. It was defined in `p`.
 
 #### References:
 - [HTML and CSS: Design and Build Websites](https://www.amazon.com.br/HTML-CSS-Design-Build-Websites/dp/1118008189)
