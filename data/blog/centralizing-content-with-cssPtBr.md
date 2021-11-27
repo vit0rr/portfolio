@@ -130,6 +130,37 @@ p.example {
 
 Vale pontuar que sem o `margin`, isso não seria possível. Ele foi o responsável por deixar todas as margens no automático e o elemento fez o cálculo para ele deixar no meio. Outra coisa, é que isso só vale se o elemento tiver altura e largura. Ela foi definida no `p`.
 
+
+### Usando flex
+
+Como flex é um conceito um pouco mais complexo de CSS, pretendo explicar ele num blog post separado, dedicado nisso. Porém, é mais simples centralizar algo usando flex.
+
+Exemplo:
+
+```html
+<body>
+    <div class="example">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aliquam?</p>
+    </div>
+</body>
+```
+
+```css
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.example {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+```
+![flex](https://github.com/vit0rr/portfolio/blob/393b5dc4a6619fa0c3475d96e226a449eb54b1e8/public/static/images/flex.png?raw=true)
+
+
 #### Referências:
 - [HTML & CSS Projete e construa websites](https://www.amazon.com.br/HTML-CSS-Design-Build-Websites/dp/1118008189)
 - [posição](https://developer.mozilla.org/pt-BR/docs/Web/CSS/position)
