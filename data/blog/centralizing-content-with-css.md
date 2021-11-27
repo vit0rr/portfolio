@@ -162,3 +162,4 @@ Example:
 #### References:
 - [HTML and CSS: Design and Build Websites](https://www.amazon.com.br/HTML-CSS-Design-Build-Websites/dp/1118008189)
 - [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+- [Flexbox](https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox)

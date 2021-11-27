@@ -164,3 +164,4 @@ Exemplo:
 #### Referências:
 - [HTML & CSS Projete e construa websites](https://www.amazon.com.br/HTML-CSS-Design-Build-Websites/dp/1118008189)
 - [posição](https://developer.mozilla.org/pt-BR/docs/Web/CSS/position)
+- [Flexbox](https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox)
