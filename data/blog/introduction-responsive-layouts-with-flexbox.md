@@ -39,3 +39,9 @@ Essa única linha de CSS usando flex consegue criar um layout responsivo, com es
 - Flex items: os itens iniciados como flexible boxes dentro do flex container são os flex items. No nosso caso é `<div class="example">`.
 
 É preciso entender esse conceito para conseguir seguir decentemente pro resto do artigo. No final do artigo tem as referências, caso tenha alguma dúvida pode consulta-las, além de evidentemente poder voltar para esse treixo e ler novamente.
+
+#### References:
+
+- [Understanding Basic Concepts of CSS Flexbox](https://codeburst.io/understanding-basic-concepts-of-css-flexbox-ffa657dc39c1)
+
+- [Flexbox](https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox)
