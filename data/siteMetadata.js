@@ -2,13 +2,13 @@ const siteMetadata = {
   title: 'Vitor S.',
   author: 'Vitor S. Almeida',
   headerTitle: 'Vitor S.',
-  description: 'Vitor S. Almeida - Blog e Portfolio',
+  description: 'Vitor S. Almeida - Blog about programming, blockchain and crypto.',
   language: 'pt-br',
   siteUrl: 'https://vitorsalmeida.vercel.app/',
   siteRepo: 'https://github.com/vit0rr/portfolio',
   siteLogo: '/static/images/naruto.svg',
   image: '/static/images/profile2.png',
-  socialBanner: '/static/images/twitter-card.png',
+  socialBanner: 'https://i.imgur.com/oUy1KN9.png',
   email: 'vi.souza.almeida@protonmail.com',
   github: 'https://github.com/vit0rr',
   twitter: 'https://twitter.com/vit0rrk',
@@ -16,8 +16,8 @@ const siteMetadata = {
   locale: 'pt-BR',
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics
-    plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
-    simpleAnalytics: false, // true or false
+    plausibleDataDomain: 'vitorsalmeida.com', // e.g. tailwind-nextjs-starter-blog.vercel.app
+    simpleAnalytics: true, // true or false
     googleAnalyticsId: '', // e.g. UA-000000-2 or G-XXXXXXX
   },
   comment: {
