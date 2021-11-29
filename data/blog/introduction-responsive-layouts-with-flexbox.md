@@ -40,6 +40,8 @@ Essa única linha de CSS usando flex consegue criar um layout responsivo, com es
 
 É preciso entender esse conceito para conseguir seguir decentemente pro resto do artigo. No final do artigo tem as referências, caso tenha alguma dúvida pode consulta-las, além de evidentemente poder voltar para esse trecho e ler novamente.
 
+### Flexbox direction
+
 #### References:
 
 - [Understanding Basic Concepts of CSS Flexbox](https://codeburst.io/understanding-basic-concepts-of-css-flexbox-ffa657dc39c1)
