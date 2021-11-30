@@ -52,6 +52,18 @@ Se você tiver elementos com a mesma largura e altura, e repetir a modo que queb
 
 ![flexbox-without-wrap](https://i.imgur.com/CoFHmht.png)
 
+Como solução, existe a propriedade `flex-wrap: wrap`, e o resultado é o seguinte:
+
+![flexbox-with-wrap](https://i.imgur.com/QEriUvf.png)
+
+Com isso, sempre que ouver uma sopreposição, o elemento será movido para próxima linha.
+
+Porém, somente dessa forma não vai se ajustar como deveria. Caso eu maximaxe essa tela no meu monitor ultrawide, metade da tela ficaria em branco. Para solucionar isso, você pode definir um `flex: 200px` no elemento filho. O resultado é o seguinte:
+
+![flexpx-wrap](https://i.imgur.com/QrM6GSz.png)
+
+### Forma abreviada: `flex-flow`
+
 #### References:
 
 - [Understanding Basic Concepts of CSS Flexbox](https://codeburst.io/understanding-basic-concepts-of-css-flexbox-ffa657dc39c1)
