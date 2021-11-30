@@ -73,6 +73,72 @@ para isso, use:
 flex-flow: row wrap;
 ```
 
+### A flex navbar
+
+Vamos construir agora uma navbar bem simples, como forma de aplicar mais ou menos o que vimos.
+
+```html
+<div class="MenuWrap">
+        <a href="#" class="ListItem">Home</a>
+        <a href="#" class="ListItem">About Us</a>
+        <a href="#" class="ListItem">Products</a>
+        <a href="#" class="ListItem">Policy</a>
+        <a href="#" class="LastItem">Contact Us</a>
+</div>
+```
+
+```css
+* {
+    padding: 0px;
+    margin: 0px;
+}
+```
+
+Aqui eu apenas removo a margem e espaçamento padrão do navegador, assim a navbar vai ficar colada nas pontas.
+
+```css 
+.MenuWrap {
+    background-color: rgb(30, 32, 163);
+    font-size: 1rem;
+    min-height: 2.75rem;
+    display: flex;
+    align-items: center;
+    padding: 10px
+}
+```
+
+Em ordem, defino um background com uma tonalidade de azul, o tamanho da fonte, uma altura mínima, defino o display como flex, alinho os itens no centro e um espaçamento de 10 pixels.
+
+```css
+.ListItem,
+.LastItem {
+            color: #ebebeb;
+            text-decoration: none;
+        }
+```
+
+Aqui é apenas definido a cor e text decoration como none para remover o underline dos links.
+
+```css
+    .ListItem {
+            margin-right: 1rem;
+        }
+
+    .LastItem {
+            margin-left: auto;
+        }
+```
+
+Aqui defino o ListItem com margin para eles terem uma distância entre si e não ficarem colado e margin-left auto no LastItem que é o Contact Us. Dessa forma, o resultado é o seguinte:
+
+
+![flexnav](https://i.imgur.com/CkZifvk.png)
+
+
+Agora, caso a gente queira inverter as coisas? É bem simples. Basta colocar um `flex-direction: row-reverse;` em `MenuWrap` e mudar `margin-left: auto;` para `margin-right: auto;` e o resultado será:
+
+![inv-flex-nav](https://i.imgur.com/P6ZxJCt.png)
+
 
 
 #### References:
