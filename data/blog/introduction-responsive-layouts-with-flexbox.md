@@ -4,6 +4,7 @@ date: '11-28-2021'
 tags: ['css', 'code', 'learn', 'responsive', 'layouts']
 draft: false
 summary: Introduction to how a build responsive layouts with Flexbox in CSS
+images: "https://i.imgur.com/iwhCOzZ.png"
 ---
 
 ### Introduction
