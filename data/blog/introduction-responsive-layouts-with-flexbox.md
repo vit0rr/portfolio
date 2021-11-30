@@ -2,7 +2,7 @@
 title: Introduction to responsive layouts with flexbox in CSS
 date: '11-28-2021'
 tags: ['css', 'code', 'learn', 'responsive', 'layouts']
-draft: true
+draft: false
 summary: Introduction to how a build responsive layouts with Flexbox in CSS
 ---
 
@@ -41,6 +41,16 @@ Essa única linha de CSS usando flex consegue criar um layout responsivo, com es
 É preciso entender esse conceito para conseguir seguir decentemente pro resto do artigo. No final do artigo tem as referências, caso tenha alguma dúvida pode consulta-las, além de evidentemente poder voltar para esse trecho e ler novamente.
 
 ### Flexbox direction
+
+Com a propriedade `flex-direction` tem como especificar a direção do main axis, ou seja, em que direção os filhos da flexbox estarão arranjados. Por default o valor é row.
+
+Se você definir `flex-direction: column;` no exemplo do projeto, ele vai ficar como quando não tinha nenhum flex.
+
+### Flexbox wrap
+
+Se você tiver elementos com a mesma largura e altura, e repetir a modo que quebre o layout, ou seja, sobrepondo o elemento pai, como no exemplo:
+
+![flexbox-without-wrap](https://i.imgur.com/CoFHmht.png)
 
 #### References:
 
