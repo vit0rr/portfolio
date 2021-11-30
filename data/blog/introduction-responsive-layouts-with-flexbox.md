@@ -65,6 +65,16 @@ Porém, somente dessa forma não vai se ajustar como deveria. Caso eu maximaxe e
 
 ### Forma abreviada: `flex-flow`
 
+Agora que conhecemos algumas regras flexbox, saiba que você pode encurtar o `flex-direction` e `flex-wrap`, que normalmente ocupariam duas linhas, para apenas uma linha.
+
+para isso, use:
+
+```css
+flex-flow: row wrap;
+```
+
+
+
 #### References:
 
 - [Understanding Basic Concepts of CSS Flexbox](https://codeburst.io/understanding-basic-concepts-of-css-flexbox-ffa657dc39c1)
