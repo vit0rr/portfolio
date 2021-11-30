@@ -2,7 +2,7 @@
 title: Introduction to responsive layouts with flexbox in CSS
 date: '11-28-2021'
 tags: ['css', 'code', 'learn', 'responsive', 'layouts']
-draft: false
+draft: true
 summary: Introduction to how a build responsive layouts with Flexbox in CSS
 ---
 
