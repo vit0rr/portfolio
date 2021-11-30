@@ -76,7 +76,7 @@ Error: No default signer found, run "solana-keygen new -o /home/vitor/.config/so
 ```
 Nessa etapa, caso seja sua primeira vez rodando o comando, ele vai pedir para você gerar esse arquivo (como eu disse lá em cima). E então copie o comando entre aspas e rode, não copie o meu pois tem usuário diferente. Depois disso, rode novamente o `solana address`
 
-Agora, inicie sua rede local Solanam:
+Agora, inicie sua rede local Solana:
 ```shell
 solana-test-validator
 ```
