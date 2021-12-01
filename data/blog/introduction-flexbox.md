@@ -45,9 +45,9 @@ You need to understand this concept to be able to proceed decently for the rest 
 
 ### Flexbox direction
 
-Com a propriedade `flex-direction` tem como especificar a direção do main axis, ou seja, em que direção os filhos da flexbox estarão arranjados. Por default o valor é row.
+With the `flex-direction` property, you can specify the direction of the main axis, that is, in which direction the flexbox children will be arranged. By default the value is row.
 
-Se você definir `flex-direction: column;` no exemplo do projeto, ele vai ficar como quando não tinha nenhum flex.
+If you define `flex-direction: column;` in the example of the project, it will be like when there was no flex.
 
 ### Flexbox wrap
 
