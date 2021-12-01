@@ -1,15 +1,15 @@
 ---
-title: Introduction to flexbox in CSS
+title: Introdução a flexbox em CSS
 date: '11-28-2021'
 tags: ['css', 'code', 'learn', 'responsive', 'layouts']
-draft: false
-summary: Introduction to build flexible layouts in CSS
+draft: true
+summary: Introdução a construção de layouts flexíveis em CSS
 images: "https://i.imgur.com/iwhCOzZ.png"
 ---
 
-<h2>[pt-br](/blog/introduction-flexbox-PtBr) | en</h2>
+<h2>pt-br | [en](/blog/introduction-flexbox)</h2>
 
-### Introduction
+### Introdução
 
 A maioria ou todos os exemplos serão baseados numa página de exemplo, ela está disponível [aqui](https://gist.github.com/vit0rr/7409ea0efdf47b56728e7125a2644cb1).
 
@@ -17,7 +17,7 @@ Ela é a seguinte:
 
 ![example-flexbox-page](https://i.imgur.com/CVBWOTS.png)
 
-### Introduction to flexbox
+### Introdução a  flexbox
 
 Para usar flexbox, precisa ser aplicado no elemento pai dos elementos que você quer afetar. O resultado do `display: flex` no exemplo dessa página é o seguinte:
 ```css
@@ -75,7 +75,7 @@ para isso, use:
 flex-flow: row wrap;
 ```
 
-### A flex navbar
+### Flex navbar
 
 Vamos construir agora uma navbar bem simples, como forma de aplicar mais ou menos o que vimos.
 
@@ -143,7 +143,7 @@ Agora, caso a gente queira inverter as coisas? É bem simples. Basta colocar um 
 
 
 
-#### References:
+#### Referências:
 
 - [Understanding Basic Concepts of CSS Flexbox](https://codeburst.io/understanding-basic-concepts-of-css-flexbox-ffa657dc39c1)
 
