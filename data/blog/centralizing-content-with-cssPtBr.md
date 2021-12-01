@@ -3,7 +3,8 @@ title: Centralizando conteúdo com CSS
 date: '11-26-2021'
 tags: ['css', 'code', 'learn']
 draft: true
-summary: Como centralizar conteúdos corretamente usando CSS
+summary: Como centralizar conteúdos usando CSS
+images: https://i.giphy.com/media/13XW2MJE0XCoM0/giphy.gif
 ---
 
 <h2>pt-br | [en](/blog/centralizing-content-with-css)</h2>
