@@ -27,7 +27,7 @@ Para usar flexbox, precisa ser aplicado no elemento pai dos elementos que você 
 ```
 ![example-displayFlex](https://i.imgur.com/OnUZvoM.png)
 
-Essa única linha de CSS usando flex consegue criar um layout responsivo, com espaço entre os elementos iguais entre si estando lado a lado. Genial.
+Essa única linha de CSS usando flex consegue criar um layout responsivo, com espaço entre os elementos iguais entre si estando lado a lado.
 
 ### Flexible boxes - eixos
 

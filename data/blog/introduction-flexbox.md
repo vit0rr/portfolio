@@ -11,15 +11,15 @@ images: "https://i.imgur.com/iwhCOzZ.png"
 
 ### Introduction
 
-A maioria ou todos os exemplos serão baseados numa página de exemplo, ela está disponível [aqui](https://gist.github.com/vit0rr/7409ea0efdf47b56728e7125a2644cb1).
+Most, or all of the examples will be based on an example page, it is available [here](https://gist.github.com/vit0rr/7409ea0efdf47b56728e7125a2644cb1).
 
-Ela é a seguinte:
+The page:
 
 ![example-flexbox-page](https://i.imgur.com/CVBWOTS.png)
 
 ### Introduction to flexbox
 
-Para usar flexbox, precisa ser aplicado no elemento pai dos elementos que você quer afetar. O resultado do `display: flex` no exemplo dessa página é o seguinte:
+To use flexbox, it needs to be applied to the parent alement of the elements you want to affect. The result of the `display: flex` in the example on this page is as follows:
 ```css
 .flexbox-example {
     display: flex;
@@ -27,21 +27,21 @@ Para usar flexbox, precisa ser aplicado no elemento pai dos elementos que você 
 ```
 ![example-displayFlex](https://i.imgur.com/OnUZvoM.png)
 
-Essa única linha de CSS usando flex consegue criar um layout responsivo, com espaço entre os elementos iguais entre si estando lado a lado. Genial.
+This single line of CSS using flex menages to create a responsive layout, with space between elements equal to each other being side by side. 
 
-### Flexible boxes - eixos
+### Flexible boxes - axis
 
 ![flex_terms.png](https://i.imgur.com/upLbBGL.png)
 
-- Main axis: Eixo que corre na direção em que os flex-items estão dispostos. Esse eixo pode ser alterado com `flex-direction`.
+- Main axis: Axis that runs in the direction the flex-items are arranged. This axis can be changed with `flex-direction`.
 
-- Cross axsis: Eixo que corre perpendicular ao main exis. Se o seu main axis tiver definido para `flex-direction: column`, o cross axis vai rodar pelas linhas, e vice versa.
+- Cross axsis: Axis that runs perpendicular to the main axis. If you main axis is set to `flex-direction: column`, the cross axis will rotate through the lines, and vice versa.
 
-- Flex container: é o elemento pai definido por `display: flex`. Ou seja, no nosso caso é `<div class="flexbox-example">`.
+- Flex container: is the parent element defined by `display: flex`. That is, in our case it is `<div class="flexbox-example">`.
 
-- Flex items: os itens iniciados como flexible boxes dentro do flex container são os flex items. No nosso caso é `<div class="example">`.
+- Flex items: the items started as flexible boxes inside the flex container are flex items. In our case it is `<div class="example">`.
 
-É preciso entender esse conceito para conseguir seguir decentemente pro resto do artigo. No final do artigo tem as referências, caso tenha alguma dúvida pode consulta-las, além de evidentemente poder voltar para esse trecho e ler novamente.
+You need to understand this concept to be able to proceed decently for the rest of the article. At the end of the article, you have the references, if you have any doubts you can consult them, and of course, you can go back to this excerpt and read it again.
 
 ### Flexbox direction
 
