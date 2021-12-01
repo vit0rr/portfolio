@@ -51,17 +51,17 @@ If you define `flex-direction: column;` in the example of the project, it will b
 
 ### Flexbox wrap
 
-Se você tiver elementos com a mesma largura e altura, e repetir a modo que quebre o layout, ou seja, sobrepondo o elemento pai, como no exemplo:
+If you have elements with the same width and height, and repeat so that it breaks the layout, that is, overlapping the parent element, as in the example:
 
 ![flexbox-without-wrap](https://i.imgur.com/CoFHmht.png)
 
-Como solução, existe a propriedade `flex-wrap: wrap`, e o resultado é o seguinte:
+As a solution, there is the flex-wrap `property: wrap`, and the result is the following:
 
 ![flexbox-with-wrap](https://i.imgur.com/QEriUvf.png)
 
-Com isso, sempre que ouver uma sopreposição, o elemento será movido para próxima linha.
+Thus, whenever you hear an overlay, the element will be moved to the next line.
 
-Porém, somente dessa forma não vai se ajustar como deveria. Caso eu maximaxe essa tela no meu monitor ultrawide, metade da tela ficaria em branco. Para solucionar isso, você pode definir um `flex: 200px` no elemento filho. O resultado é o seguinte:
+However, only in this way will it not fit as it should. If I zoomed in on this screen on my ultrawide monitor, half the screen would be blank. To work around this, you can define a `flex: 200px` on the child element. The result is as follows:
 
 ![flexpx-wrap](https://i.imgur.com/QrM6GSz.png)
 
