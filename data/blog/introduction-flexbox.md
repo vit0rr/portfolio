@@ -67,9 +67,9 @@ However, only in this way will it not fit as it should. If I zoomed in on this s
 
 ### Forma abreviada: `flex-flow`
 
-Agora que conhecemos algumas regras flexbox, saiba que você pode encurtar o `flex-direction` e `flex-wrap`, que normalmente ocupariam duas linhas, para apenas uma linha.
+Now that we know some flexbox rules, be aware that you can shorten `flex-direction` and `flex-wrap`, which would normally take up two lines, to just one line.
 
-para isso, use:
+for that, use:
 
 ```css
 flex-flow: row wrap;
@@ -77,7 +77,7 @@ flex-flow: row wrap;
 
 ### A flex navbar
 
-Vamos construir agora uma navbar bem simples, como forma de aplicar mais ou menos o que vimos.
+Let's now build a very simple navbar, as a way to apply more or less what we saw.
 
 ```html
 <div class="MenuWrap">
@@ -96,7 +96,7 @@ Vamos construir agora uma navbar bem simples, como forma de aplicar mais ou meno
 }
 ```
 
-Aqui eu apenas removo a margem e espaçamento padrão do navegador, assim a navbar vai ficar colada nas pontas.
+Here I just remove the browser's default margin and spacing, so the navbar will be glued to the edges.
 
 ```css 
 .MenuWrap {
@@ -108,8 +108,7 @@ Aqui eu apenas removo a margem e espaçamento padrão do navegador, assim a navb
     padding: 10px
 }
 ```
-
-Em ordem, defino um background com uma tonalidade de azul, o tamanho da fonte, uma altura mínima, defino o display como flex, alinho os itens no centro e um espaçamento de 10 pixels.
+In order, I set a background to a shade of blue, the font size, a minimum height, set the display to flex, align the items to the center, and spacing 10 pixels.
 
 ```css
 .ListItem,
@@ -119,7 +118,7 @@ Em ordem, defino um background com uma tonalidade de azul, o tamanho da fonte, u
         }
 ```
 
-Aqui é apenas definido a cor e text decoration como none para remover o underline dos links.
+Here just set the color and text-decoration to none to remove the underline from the links.
 
 ```css
     .ListItem {
@@ -131,13 +130,13 @@ Aqui é apenas definido a cor e text decoration como none para remover o underli
         }
 ```
 
-Aqui defino o ListItem com margin para eles terem uma distância entre si e não ficarem colado e margin-left auto no LastItem que é o Contact Us. Dessa forma, o resultado é o seguinte:
+Here I define the ListItem with margin so they have a distance from each other and don't get pasted and margin-left auto in the LastItem which is the Contact Us. Thus, the result is as follows:
 
 
 ![flexnav](https://i.imgur.com/CkZifvk.png)
 
 
-Agora, caso a gente queira inverter as coisas? É bem simples. Basta colocar um `flex-direction: row-reverse;` em `MenuWrap` e mudar `margin-left: auto;` para `margin-right: auto;` e o resultado será:
+Now, in case we want to turn things around? It's quite simple. Just put a  `flex-direction: row-reverse;` in `MenuWrap` and change `margin-left: auto;` for `margin-right: auto;` and the result will be:
 
 ![inv-flex-nav](https://i.imgur.com/P6ZxJCt.png)
 
