@@ -1,9 +1,9 @@
 ---
-title: Red Flags em entrevistas
+title: Hard times create strong people
 date: '12-01-2021'
 tags: ['red flags', 'work']
 draft: true
-summary: Como identificar red flags nas entrevistas de emprego
+summary: Como um ambiente ruim me fez um desenvolvedor melhor?
 images: https://i.imgur.com/u9dp1LQ.png
 ---
 
@@ -23,5 +23,14 @@ Caso queira saber mais sobre, leia [Como foi minha primeira experiência sendo T
 
 Recentemente, escrevi um [artigo](/blog/job-with-1-article) contando como consegui receber uma proposta apenas escrevendo o que estudava.
 
-Durante a entrevista, baseado nas minhas últimas experiências, me atentei em fazer perguntas pensando evitar ambientes ruins.
-Perguntei sobre o time de desenvolvimento. Isso é importante pois estando em volta de pessoas melhores que você, te possibilita evoluir e tirar dúvidas, coisa que não tive no último. Também perguntei sobre deadlines, pois prazos anteriores eram bem apertados.
+Perguntei sobre:
+
+- Time de desenvolvimento: o time é importante pois com pessoas mais experiêntes que você, é possível evoluir.
+
+- Tempo de entrega: se a empresa for muito recente ou tiver projetos atrasados, isso talvez impacte seu desenvolvimento.
+
+- Disposição horária - se a empresa tem flexibilidade suficiente para manter seus horários, caso seja estudante etc.
+
+- Espaço de evolução - ambiente que permita você estudar coisas úteis a longo prazo
+
+Caso for menor de idade, algumas empresas podem criar contratos, como ocorreu comigo. Fique também atento com isso e recomendo fortemente que um advogado leia tudo antes. Pode ser que tenha alguns furos e essa revisão vai evitar problemas.
