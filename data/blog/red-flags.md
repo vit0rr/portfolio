@@ -2,18 +2,18 @@
 title: Identificando e evoluindo com as Red Flags
 date: '12-01-2021'
 tags: ['red flags', 'work']
-draft: true
+draft: false
 summary: Como um ambiente ruim me fez um desenvolvedor melhor?
 images: https://i.imgur.com/fgj7pmk.jpg
 ---
 
 ### Introdução
 
-Red flags são alertas importantes para se obsevar antes de começar numa empresa e na minha primeira oportunidade eu não sabia disso, servindo de experiência e possibilitando replicar perguntas para medir se um ambiente é bom ou não em futuras oportunidades, o que possibilitou prever e ter certas expectativas de novos ambientes.
+Red flags são alertas importantes para se observar antes de começar numa empresa e na minha primeira oportunidade eu não sabia disso, servindo de experiência e possibilitando replicar perguntas para medir se um ambiente é bom ou não em futuras oportunidades, o que possibilitou prever e ter certas expectativas de novos ambientes.
 
 ### Red flags no meu primeiro emprego
 
-Minha primeira oportunidade foi numa Startup e foi da seguinte forma: no processo seletivo, eu tive que desenvolver uma landing page de uma plataforma EAD de medicina e uma página do painel de aluno dessa plataforma, a Home no caso. Eu não havia suspeitado a princípio, mas esse tipo de teste não é muito comum. Esse teste era um projeto REAL da empresa, usado em processo seletivo. Não vou discutir as possíveis outras intensões disso, mas no meu caso, quando eu entrei na empresa, vi que o que desenvolvi no processo seletivo era um projeto grande extremamente atrasado no qual tive que desenvolver em duas semanas.
+Minha primeira oportunidade foi numa Startup e foi da seguinte forma: no processo seletivo, eu tive que desenvolver uma landing page de uma plataforma EAD de medicina e uma página do painel de aluno dessa plataforma, a Home no caso. Eu não havia suspeitado a princípio, mas esse tipo de teste não é muito comum. Esse teste era um projeto REAL da empresa, usado em processo seletivo. Não vou discutir as possíveis outras intenções disso, mas no meu caso, quando eu entrei na empresa, vi que o que desenvolvi no processo seletivo era um projeto grande extremamente atrasado no qual tive que desenvolver em duas semanas.
 
 Outro ponto, é que eu fui o primeiro desenvolvedor. Era o único dev front-end e o fluxo de desenvolvimento eu tive que introduzir sozinho. O meu superior, que sabia algumas coisas de PHP, nunca mexeu com GitHub e as coisas eram salvas todas no Google Drive. Concluindo, de forma geral foi bem estressante.
 
@@ -34,7 +34,7 @@ Recentemente, escrevi um [artigo](/blog/job-with-1-article) contando como conseg
 
 Perguntei sobre:
 
-- Time de desenvolvimento: o time é importante pois com pessoas mais experiêntes que você, é possível evoluir.
+- Time de desenvolvimento: o time é importante pois com pessoas mais experientes que você, é possível evoluir.
 
 - Tempo de entrega: se a empresa for muito recente ou tiver projetos atrasados, isso talvez impacte seu desenvolvimento.
 
@@ -52,7 +52,7 @@ Aprendi:
 
 - Melhor organização
 - Autoconhecimento
-- Senso de liderença
+- Senso de liderança
 - Lidar com deadlines
 - Organizar solução de problemas
 
