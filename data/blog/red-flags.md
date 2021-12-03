@@ -1,5 +1,5 @@
 ---
-title: Hard times create strong people
+title: 'Hard times create strong people'
 date: '12-01-2021'
 tags: ['red flags', 'work']
 draft: true
@@ -43,3 +43,15 @@ Perguntei sobre:
 - Espaço de evolução - ambiente que permita você estudar coisas úteis para empresa a longo prazo
 
 Caso for menor de idade, algumas empresas podem criar contratos, como ocorreu comigo. Fique também atento com isso e recomendo fortemente que um advogado leia tudo antes. Pode ser que tenha alguns furos e essa revisão vai evitar problemas.
+
+### Como o ambiente ruim me fez um desenvolvedor melhor?
+
+Dependendo da sua disposição, aceite trabalhar mesmo em ambientes ruins.
+
+Aprendi:
+
+- Melhor organização
+- Autoconhecimento
+- Senso de liderença
+- Lidar com deadlines
+- Organizar solução de problemas
