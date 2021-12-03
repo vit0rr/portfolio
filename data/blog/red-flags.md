@@ -1,5 +1,5 @@
 ---
-title: Hard times create strong people - identificando e evoluindo com red flags
+title: Identificando e evoluindo com as Red Flags
 date: '12-01-2021'
 tags: ['red flags', 'work']
 draft: true
