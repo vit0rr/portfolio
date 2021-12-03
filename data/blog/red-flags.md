@@ -55,3 +55,9 @@ Aprendi:
 - Senso de liderença
 - Lidar com deadlines
 - Organizar solução de problemas
+
+Também falo melhor sobre no artigo sobre minha [experiência sendo tech lead](/blog/experiencia-como-tech-lead). Evidentemente ainda estou em construção e não significa que os pontos citados estão plenos em mim, apenas que eu melhorei e desenvolvi melhor eles. Se exponha para sair da sua zona de conforto e evoluir, aplique [Skin in the Game](https://sibelius.substack.com/p/skin-in-the-game-for-developers).
+
+Com tudo isso, você vai aprender com seus erros e ganhar experiência. Se não tiver numa situação específica, provavelmente não tem muito a perder. Sair do primeiro emprego me possibilitou coisas incríveis pois sem risco você não ganha nem perde.
+
+![a promoção é bem próxima da demissão](https://i.imgur.com/3fpbilt.png)
