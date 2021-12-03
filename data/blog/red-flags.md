@@ -40,6 +40,6 @@ Perguntei sobre:
 
 - Disposição horária - se a empresa tem flexibilidade suficiente para manter seus horários, caso seja estudante etc.
 
-- Espaço de evolução - ambiente que permita você estudar coisas úteis a longo prazo
+- Espaço de evolução - ambiente que permita você estudar coisas úteis para empresa a longo prazo
 
 Caso for menor de idade, algumas empresas podem criar contratos, como ocorreu comigo. Fique também atento com isso e recomendo fortemente que um advogado leia tudo antes. Pode ser que tenha alguns furos e essa revisão vai evitar problemas.
