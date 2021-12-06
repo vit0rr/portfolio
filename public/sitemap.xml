@@ -2,34 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
     <loc>https://vitorsalmeida.com/</loc>
-    <lastmod>2020-11-19</lastmod>
   </url>
   <url>
+    <loc>https://vitorsalmeida.com/blog/OOP</loc>
+    <lastmod>2021-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://vitorsalmeida.com/blog</loc>
+  </url>
+  <url>
+    <loc>https://vitorsalmeida.com/tags</loc>
+  </url>
+  <url>
+    <loc>https://vitorsalmeida.com/about</loc>
+  </url>
+    <url>
     <loc>https://vitorsalmeida.com/blog/fullstack-development-solana</loc>
     <lastmod>2020-11-28</lastmod>
   </url>
   <url>
-    <loc>https://vitorsalmeida.com/blog/js-fullstack-solana</loc>
-    <lastmod>2020-11-19</lastmod>
-  </url>
-  <url>
     <loc>https://vitorsalmeida.com/blog/experiencia-como-tech-lead</loc>
-    <lastmod>2020-11-19</lastmod>
+    <lastmod>2021-11-06</lastmod>
   </url>
   <url>
-    <loc>https://vitorsalmeida.com/blog/OOP</loc>
-    <lastmod>2020-11-19</lastmod>
+    <loc>https://vitorsalmeida.com/blog/red-flags</loc>
+    <lastmod>2021-11-27</lastmod>
   </url>
   <url>
-    <loc>https://vitorsalmeida.com/blog</loc>
-    <lastmod>2020-11-19</lastmod>
+    <loc>https://vitorsalmeida.com/blog/introduction-flexbox</loc>
+    <lastmod>2021-11-27</lastmod>
   </url>
   <url>
-    <loc>https://vitorsalmeida.com/tags</loc>
-    <lastmod>2020-11-19</lastmod>
+    <loc>https://vitorsalmeida.com/blog/centralizing-content-with-css</loc>
+    <lastmod>2021-11-25</lastmod>
   </url>
   <url>
-    <loc>https://vitorsalmeida.com/about</loc>
-    <lastmod>2020-11-19</lastmod>
+    <loc>https://vitorsalmeida.com/blog/job-with-1-article</loc>
+    <lastmod>2021-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://vitorsalmeida.com/blog/jsonParse</loc>
+    <lastmod>2021-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://vitorsalmeida.com/blog/reconhecer-guia-anonima</loc>
+    <lastmod>2021-11-10</lastmod>
   </url>
 </urlset>
