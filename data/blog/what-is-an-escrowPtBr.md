@@ -7,6 +7,8 @@ summary: O que é um escrow smart contract numa blockchain?
 images: https://i.imgur.com/hj2Hg3o.gif
 ---
 
+<h2>pt-br | [en](/blog/what-is-an-escrow)</h2>
+
 ### O que é um escrow numa blockchain?
 
 Suponha que Alice que um ativo A e Bob tem um ativo B. Eles querem negociar seus ativos, mas nenhum dos dois tem a confiança dee realizar a o envio primeiro, pois Alice pode receber e não cumprir com o seu papel de enviar, assim como Bob pode receber e também não enviar nada. Nesse sentido, cria uma impasse onde ninguém quer correr o risco de enviar primeiro.

@@ -7,6 +7,8 @@ summary: What is an escrow smart contract in blockchain?
 images: https://i.imgur.com/hj2Hg3o.gif
 ---
 
+<h2>[pt-br](/blog/what-is-an-escrowPtBr) | en</h2>
+
 ### What is an escrow in blockchain?
 
 Suppose Alice has an asset _A_ and Bob has an asset _B_. They want to trade their assets, but neither has the confidence to send it first, as Alice can receive and not fulfill her sending role, just like Bob can receive and also not send anything. In this sense, it creates an impasse where no one wants to risk sending first.
