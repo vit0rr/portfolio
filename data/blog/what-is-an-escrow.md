@@ -9,11 +9,11 @@ images: https://i.imgur.com/hj2Hg3o.gif
 
 ### What is an escrow in blockchain?
 
-Suppose Alice has an asset `A` and Bob has an asset B. They want to trade their assets, but neither has the confidence to send it first, as Alice can receive and not fulfill her sending role, just like Bob can receive and also not send anything. In this sense, it creates an impasse where no one wants to risk sending first.
+Suppose Alice has an asset _A_ and Bob has an asset _B_. They want to trade their assets, but neither has the confidence to send it first, as Alice can receive and not fulfill her sending role, just like Bob can receive and also not send anything. In this sense, it creates an impasse where no one wants to risk sending first.
 
-It usually adds a third party to this exchange, A C that A and B trust. A and B can now send to C, and when received, C sends to Alice and Bob, but this method also creates problems as C can tend to one side and still need to trust the third party.
+It usually adds a third party to this exchange, A _C_ that _A_ and _B_ trust. _A and B_ can now send to _C_, and when received, _C_ sends to Alice and Bob, but this method also creates problems as _C_ can tend to one side and still need to trust the third party.
 
-The blockchain's way of accomplishing this is to replace C with code in some blockchain, specifically a smart contract, which acts the same way a third party would. As such, it is superior to having a third party as you don't have to worry if C is more on one side than the other, just check the code's behavior.
+The blockchain's way of accomplishing this is to replace _C_ with code in some blockchain, specifically a smart contract, which acts the same way a third party would. As such, it is superior to having a third party as you don't have to worry if C is more on one side than the other, just check the code's behavior.
 
 ### What is a smart contract
 
