@@ -73,3 +73,7 @@ test-bpf = []
 [lib]
 crate-type = ["cdylib", "lib"]
 ```
+
+### entrypoint.rs, programs e accounts
+
+Vá até o arquivo `lib.rs` e olhe as [`crates`](https://doc.rust-lang.org/book/ch07-01-packages-and-crates.html) necessárias, que são apresentadas com `use`. Depois disso, usamos o [macro](https://doc.rust-lang.org/stable/book/ch19-06-macros.html) `entrypoint!` para declarar a função `process_instruction` do [`entrypoint`](https://docs.solana.com/developing/on-chain-programs/developing-rust#program-entrypoint) para o programa. Entrypoints é a única forma de chamar um program
