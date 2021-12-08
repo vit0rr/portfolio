@@ -76,4 +76,10 @@ crate-type = ["cdylib", "lib"]
 
 ### entrypoint.rs, programs e accounts
 
-Vá até o arquivo `lib.rs` e olhe as [`crates`](https://doc.rust-lang.org/book/ch07-01-packages-and-crates.html) necessárias, que são apresentadas com `use`. Depois disso, usamos o [macro](https://doc.rust-lang.org/stable/book/ch19-06-macros.html) `entrypoint!` para declarar a função `process_instruction` do [`entrypoint`](https://docs.solana.com/developing/on-chain-programs/developing-rust#program-entrypoint) para o programa. Entrypoints é a única forma de chamar um program
+Vá até o arquivo `lib.rs` e olhe as [`crates`](https://doc.rust-lang.org/book/ch07-01-packages-and-crates.html) necessárias, que são apresentadas com `use`. Depois disso, usamos o [macro](https://doc.rust-lang.org/stable/book/ch19-06-macros.html) `entrypoint!` para declarar a função `process_instruction` do [`entrypoint`](https://docs.solana.com/developing/on-chain-programs/developing-rust#program-entrypoint) para o programa. Entrypoints é a única forma de chamar um program.
+
+Quando chamado, um programa é passado para o seu [BPF Loader](https://docs.solana.com/developing/on-chain-programs/overview#loaders) que processa a chamada. BPF Loaders diferentes podem exigir pontos de entrada diferentes.
+
+Existem vários BPF Loaders pois ele mesmo é um programa. Se forem feitas atualizações no programa, uma nova versão do programa deve ser implementada.
+
+O nosso carregador BPF requer a função entrypoint para receber 3 argumentos. `program_id` que é o id do programa em execução no momento. `instruction_data` são dados passados para o programa pelo caller, podem ser qualquer coisa. `accounts` é algo mais deep, teria que ver [solana programming model](https://docs.solana.com/developing/programming-model/overview). A razão que precisamos de conta é por que **Solana programs são stateless.**
