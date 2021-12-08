@@ -83,3 +83,15 @@ Quando chamado, um programa é passado para o seu [BPF Loader](https://docs.sola
 Existem vários BPF Loaders pois ele mesmo é um programa. Se forem feitas atualizações no programa, uma nova versão do programa deve ser implementada.
 
 O nosso carregador BPF requer a função entrypoint para receber 3 argumentos. `program_id` que é o id do programa em execução no momento. `instruction_data` são dados passados para o programa pelo caller, podem ser qualquer coisa. `accounts` é algo mais deep, teria que ver [solana programming model](https://docs.solana.com/developing/programming-model/overview). A razão que precisamos de conta é por que **Solana programs são stateless.**
+
+Se você quer armazenar o estado, use [contas](https://docs.solana.com/developing/programming-model/accounts). Tudo é conta em Solana. Cada conta pode conter dados e [SOL](https://docs.solana.com/terminology#sol). Cada conta ambém possui um owner e somente o dono pode devitar a conta e ajustar os dados. Exemplo de uma [conta](https://explorer.solana.com/address/6TkKqq15wXjqEjNg9zqTKADwuVATR9dW3rkNnsYme1ea).
+
+Ou seja, **as contas só podem pertercer a programs**.
+
+Programas tem total autonomia sobre as contas que pussuem. Cabe ao criador de tal programa limitar essa autonomia, e aos usuários do programa verificar se o criador realmene o fez.
+
+Todas as contas a serem lidas ou gravads devem ser passadas para a função de entrada.
+
+Agora, crie um `entrypoint.rs` ao lado de `lib.rs` e mova o código `lib.rs` para lá. E então, registre o módulo entrypoint dentro de `lib.rs`. Você terá que fazer isso para todos os arquivos que criarmos.
+
+Como eu estou escrevendo tudo em blogposts separados, quando eu escrever a continuação disso aqui vou linkar.
