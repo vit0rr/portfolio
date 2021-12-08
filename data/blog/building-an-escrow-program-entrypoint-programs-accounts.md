@@ -1,9 +1,9 @@
 ---
-title: Building the escrow program - entrypoint.rs, programs e accounts
+title: Construindo um  escrow program - entrypoint.rs, programs e accounts
 date: '12-08-2021'
 tags: ['code', 'learn', 'solana', 'blockchain', 'escrow', 'entrypoint', 'programs', 'accounts']
 draft: false
-summary: How to build an escrow program with Solana
+summary: Como construir um escrow program com Solana - entrypoint.rs, programs e accounts
 images: https://i.imgur.com/uIgXIh9.png
 ---
 
