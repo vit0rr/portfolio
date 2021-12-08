@@ -9,7 +9,7 @@ images: https://i.imgur.com/MuQSmKC.png
 
 ### Introdução
 
-Rust não tem um GC, e você precisa limpar a memória de alguma forma, mas como sem GC? A resposta é lifetime.
+Rust não tem um Garbage Colector (GC), e você precisa limpar a memória de alguma forma, mas como sem Garbage Colector (GC)? A resposta é lifetime.
 
 Vamos começar com um simples exemplo:
 
