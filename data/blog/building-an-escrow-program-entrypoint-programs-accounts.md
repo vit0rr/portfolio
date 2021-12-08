@@ -9,7 +9,7 @@ images: https://i.imgur.com/uIgXIh9.png
 
 > Estou escrevendo o tutorial em blog posts separados, e quando eu escrever a contiuação desse, irei linkar no final do artigo
 
-### Setting up the project
+### Configurando o projeto
 
 Vá até o [template repo](https://github.com/mvines/solana-bpf-program-template) e clique em `use this template`. E você também vai precisar de algumas dependências como [Rust](https://www.rust-lang.org/tools/install) e [Solana](https://docs.solana.com/cli/install-solana-cli-tools), mas se você já seguiu o tutorial [Full stack com Solana](https://vitorsalmeida.com/blog/fullstack-development-solana) que escrevi você já tem tudo que é necessário.
 
