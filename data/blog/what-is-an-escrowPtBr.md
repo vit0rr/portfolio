@@ -1,5 +1,5 @@
 ---
-title: O que é um escrow
+title: Construindo um  escrow program - O que é um escrow
 date: '12-06-2021'
 tags: ['code', 'learn', 'blockchain', 'solana', 'smart-contract']
 draft: true
