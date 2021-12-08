@@ -1,21 +1,23 @@
 ---
-title: Construindo um  escrow program - entrypoint.rs, programs e accounts
+title: Building the escrow program - entrypoint.rs, programs e accounts
 date: '12-08-2021'
 tags: ['code', 'learn', 'solana', 'blockchain', 'escrow', 'entrypoint', 'programs', 'accounts']
 draft: false
-summary: Como construir um escrow program com Solana - entrypoint.rs, programs e accounts
+summary: How to build an escrow program with Solana
 images: https://i.imgur.com/uIgXIh9.png
 ---
 
-> Estou escrevendo o tutorial em blog posts separados, e quando eu escrever a contiuação desse, irei linkar no final do artigo
+<h2>[pt-br](/blog/building-an-escrow-program-entrypoint-programs-accountsPtBr) | en</h2>
 
-### Configurando o projeto
+> I'm writing the tutorial in separate blog posts, and when I write the continuation of this one, I'll link to it at the end of the article.
 
-Vá até o [template repo](https://github.com/mvines/solana-bpf-program-template) e clique em `use this template`. E você também vai precisar de algumas dependências como [Rust](https://www.rust-lang.org/tools/install) e [Solana](https://docs.solana.com/cli/install-solana-cli-tools), mas se você já seguiu o tutorial [Full stack com Solana](https://vitorsalmeida.com/blog/fullstack-development-solana) que escrevi você já tem tudo que é necessário.
+### Setting up the project
 
-Agora, remova o código de teste do template pois isso é um assunto que deve ser tratado separadamente.
+Go to the [template repo](https://github.com/mvines/solana-bpf-program-template) and click in `use this template`. And you too need some dependencies like [Rust](https://www.rust-lang.org/tools/install) and [Solana](https://docs.solana.com/cli/install-solana-cli-tools)
 
-Vá até `lib.rs`, remova:
+Now remove the test code from the template as this is a matter that must be dealt with separately.
+
+Go to `lib.rs`, remove:
 
 ```rust
 
@@ -56,7 +58,7 @@ mod test {
 }
 ```
 
-Também remova a pasta `test`. Remova também as dependências do `Cargo.toml` de dev. E ele deve ficar dessa forma:
+Also, remove a `test` of noodles. Also remove dev's `Cargo.toml` dependencies. And it should look like this:
 
 ```json
 [package]
@@ -78,20 +80,22 @@ crate-type = ["cdylib", "lib"]
 
 ### entrypoint.rs, programs e accounts
 
-Vá até o arquivo `lib.rs` e olhe as [`crates`](https://doc.rust-lang.org/book/ch07-01-packages-and-crates.html) necessárias, que são apresentadas com `use`. Depois disso, usamos o [macro](https://doc.rust-lang.org/stable/book/ch19-06-macros.html) `entrypoint!` para declarar a função `process_instruction` do [`entrypoint`](https://docs.solana.com/developing/on-chain-programs/developing-rust#program-entrypoint) para o programa. Entrypoints é a única forma de chamar um program.
+Go to the file `lib.rs` and see [`crates`](https://doc.rust-lang.org/book/ch07-01-packages-and-crates.html) required, which are presented with `use`. After that, we use the [macro](https://doc.rust-lang.org/stable/book/ch19-06-macros.html) `entrypoint!`
+to declare the function `process_instruction` of [`entrypoint`](https://docs.solana.com/developing/on-chain-programs/developing-rust#program-entrypoint) for the program. Entrypoints is the only way to call a program.
 
-Quando chamado, um programa é passado para o seu [BPF Loader](https://docs.solana.com/developing/on-chain-programs/overview#loaders) que processa a chamada. BPF Loaders diferentes podem exigir pontos de entrada diferentes.
+When called, a program is passed to your [BPF Loader](https://docs.solana.com/developing/on-chain-programs/overview#loaders) which processes the call. Different BPF Loaders may require different entry points.
 
-Existem vários BPF Loaders pois ele mesmo é um programa. Se forem feitas atualizações no programa, uma nova versão do programa deve ser implementada.
+There are several BPF Loaders as it is a program. If updates are made to the program, a new version of the program must be implemented.
 
-O nosso carregador BPF requer a função entrypoint para receber 3 argumentos. `program_id` que é o id do programa em execução no momento. `instruction_data` são dados passados para o programa pelo caller, podem ser qualquer coisa. `accounts` é algo mais deep, teria que ver [solana programming model](https://docs.solana.com/developing/programming-model/overview). A razão que precisamos de conta é por que **Solana programs são stateless.**
+Our BPF loader requires the entrypoint function to take 3 arguments. `program_id` which is the id of the currently running program. `instruction_data` is data passed to the program by the caller, it can be anything. `accounts` is something deeper,
+would have to see [solana programming model](https://docs.solana.com/developing/programming-model/overview). The reason we need an account is because **Solana programs are stateless.**
 
-Se você quer armazenar o estado, use [contas](https://docs.solana.com/developing/programming-model/accounts). Tudo é conta em Solana. Cada conta pode conter dados e [SOL](https://docs.solana.com/terminology#sol). Cada conta ambém possui um owner e somente o dono pode devitar a conta e ajustar os dados. Exemplo de uma [conta](https://explorer.solana.com/address/6TkKqq15wXjqEjNg9zqTKADwuVATR9dW3rkNnsYme1ea).
+If you want to store the state, use [accounts](https://docs.solana.com/developing/programming-model/accounts). Everything is accounted for in Solana. Each account can contain data and [SOL](https://docs.solana.com/terminology#sol). Each account also has an owner and only the owner can delete the account and adjust the data. example of a [account](https://explorer.solana.com/address/6TkKqq15wXjqEjNg9zqTKADwuVATR9dW3rkNnsYme1ea).
 
-Ou seja, **as contas só podem pertercer a programs**.
+That is, **accounts can only belong to programs**.
 
-Programas tem total autonomia sobre as contas que pussuem. Cabe ao criador de tal programa limitar essa autonomia, e aos usuários do programa verificar se o criador realmene o fez.
+Programs have full autonomy over the accounts they have. It is up to the creator of such a program to limit this autonomy, and to the users of the program to verify whether the creator really did it.
 
-Todas as contas a serem lidas ou gravads devem ser passadas para a função de entrada.
+All accounts to be read or written must be passed to the input function.
 
-Agora, crie um `entrypoint.rs` ao lado de `lib.rs` e mova o código `lib.rs` para lá. E então, registre o módulo entrypoint dentro de `lib.rs`. Você terá que fazer isso para todos os arquivos que criarmos.
+Now, create an `entrypoint.rs` next to `lib.rs` and move the code `lib.rs` there. And then register the entrypoint module inside `lib.rs`. You will have to do this for every file we create.
