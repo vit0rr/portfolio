@@ -20,3 +20,5 @@ A forma da blockchain realizar isso é substituir o C por um código em alguma b
 ### O que é um contrato inteligente
 
 Um Smart Contract é um programa que fica na blockchain que roda quando condições predeterminadas são atendidas. No contexto do escrow por exemplo, ele pode ser usados para automatizar essa execução de um acordo, fazendo com que você não perca tempo confiando num intermediário.
+
+Parte 2 - [Construindo um escrow program - entrypoint.rs, programs e accounts](/blog/building-an-escrow-program-entrypoint-programs-accountsPtBr)

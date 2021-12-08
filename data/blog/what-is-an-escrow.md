@@ -20,3 +20,5 @@ The blockchain's way of accomplishing this is to replace _C_ with code in some b
 ### What is a smart contract
 
 A Smart Contract is a program that sits on the blockchain that runs when predetermined conditions are met. In the context of escrow, for example, it can be used to automate this execution of a deal, so you don't waste time relying on an intermediary.
+
+Part 2 - [Building an escrow program - entrypoint.rs, programs e accounts](/blog/building-an-escrow-program-entrypoint-programs-accounts)
