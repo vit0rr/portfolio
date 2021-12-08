@@ -1,11 +1,13 @@
 ---
-title: Building the escrow program
+title: Building the escrow program - entrypoint.rs, programs e accounts
 date: '12-08-2021'
-tags: ['code', 'learn', 'solana', 'blockchain', 'escrow']
+tags: ['code', 'learn', 'solana', 'blockchain', 'escrow', 'entrypoint', 'programs', 'accounts']
 draft: false
 summary: How to build an escrow program with Solana
 images: https://i.imgur.com/uIgXIh9.png
 ---
+
+> Estou escrevendo o tutorial em blog posts separados, e quando eu escrever a contiuação desse, irei linkar no final do artigo
 
 ### Setting up the project
 
@@ -93,5 +95,3 @@ Programas tem total autonomia sobre as contas que pussuem. Cabe ao criador de ta
 Todas as contas a serem lidas ou gravads devem ser passadas para a função de entrada.
 
 Agora, crie um `entrypoint.rs` ao lado de `lib.rs` e mova o código `lib.rs` para lá. E então, registre o módulo entrypoint dentro de `lib.rs`. Você terá que fazer isso para todos os arquivos que criarmos.
-
-Como eu estou escrevendo tudo em blogposts separados, quando eu escrever a continuação disso aqui vou linkar.
