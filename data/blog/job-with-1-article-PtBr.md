@@ -1,9 +1,10 @@
 ---
 title: Como consegui um novo emprego escrevendo um artigo
 date: '11-25-2021'
-tags: ['learn','job','article']
+tags: ['learn', 'job', 'article']
 draft: true
 summary: Explicando como consegui um novo emprego com crypto escrevendo um artigo sobre o que estudava
+images: https://i.imgur.com/J4ZEeyt.png
 ---
 
 <h2>pt-br | [en](/blog/job-with-1-article)</h2>
@@ -18,7 +19,7 @@ No começo, não faz sentido estudar especificamente algo pois você ainda não 
 
 ### SEO pessoal
 
-Como eu estou construindo meu SEO pessoal, todo tema que eu considero relevante para mim que seja reproduzivel para comunidade, penso em escrever sobre. Foi essa a ideia na documentação do meu artigo sobre desenvolvimento full-stack com Solana. Quando estava quase terminando, compartilhei no Twitter como divulgação, com isso, as pessoas podem enviar PRs pro projeto e eu melhorar em algo. 
+Como eu estou construindo meu SEO pessoal, todo tema que eu considero relevante para mim que seja reproduzivel para comunidade, penso em escrever sobre. Foi essa a ideia na documentação do meu artigo sobre desenvolvimento full-stack com Solana. Quando estava quase terminando, compartilhei no Twitter como divulgação, com isso, as pessoas podem enviar PRs pro projeto e eu melhorar em algo.
 
 Construir um blog, com temas que seja útil para você, descrevendo experiências e problemas, cria seu SEO pessoal, e é porta de entrada para pessoas de fora te conhecer.
 

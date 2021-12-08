@@ -1,9 +1,10 @@
 ---
 title: How i got a new job writing one article
 date: '11-23-2021'
-tags: ['learn','job','article']
+tags: ['learn', 'job', 'article']
 draft: false
 summary: Explaining how i got a new job with crypto writing one article about what i learning.
+images: https://i.imgur.com/J4ZEeyt.png
 ---
 
 <h2>[pt-br](/blog/job-with-1-article-PtBr) | en</h2>
