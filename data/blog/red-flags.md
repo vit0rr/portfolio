@@ -1,63 +1,61 @@
 ---
-title: Identificando e evoluindo com as Red Flags
+title: Identifying and Evolving with Red Flags
 date: '12-01-2021'
 tags: ['red flags', 'work']
 draft: false
-summary: Como um ambiente ruim me fez um desenvolvedor melhor?
+summary: How did a bad environment make me a better developer?
 images: https://i.imgur.com/fgj7pmk.jpg
 ---
 
-### Introdução
+<h2>[pt-br](/blog/red-flagsPtBr) | en</h2>
 
-Red flags são alertas importantes para se observar antes de começar numa empresa e na minha primeira oportunidade eu não sabia disso, servindo de experiência e possibilitando replicar perguntas para medir se um ambiente é bom ou não em futuras oportunidades, o que possibilitou prever e ter certas expectativas de novos ambientes.
+### Introduction
 
-### Red flags no meu primeiro emprego
+Red flags are important alerts to watch out for before starting a company and at my first opportunity I didn't know that, serving as an experience and allowing you to replicate questions to measure whether an environment is good or not in future opportunities, which made it possible to predict and be certain expectations of new environments.
 
-Minha primeira oportunidade foi numa Startup e foi da seguinte forma: no processo seletivo, eu tive que desenvolver uma landing page de uma plataforma EAD de medicina e uma página do painel de aluno dessa plataforma, a Home no caso. Eu não havia suspeitado a princípio, mas esse tipo de teste não é muito comum. Esse teste era um projeto REAL da empresa, usado em processo seletivo. Não vou discutir as possíveis outras intenções disso, mas no meu caso, quando eu entrei na empresa, vi que o que desenvolvi no processo seletivo era um projeto grande extremamente atrasado no qual tive que desenvolver em duas semanas.
+### Red flags on my first job
 
-Outro ponto, é que eu fui o primeiro desenvolvedor. Era o único dev front-end e o fluxo de desenvolvimento eu tive que introduzir sozinho. O meu superior, que sabia algumas coisas de PHP, nunca mexeu com GitHub e as coisas eram salvas todas no Google Drive. Concluindo, de forma geral foi bem estressante.
+My first opportunity was at a Startup and it was as follows: in the selection process, I had to develop a landing page for a EAD medicine platform and a student panel page for this platform, the Home in this case. I hadn't suspected it at first, but this type of test isn't very common. This test was a REAL project of the company, used in the selection process. I won't discuss the possible other intentions of this, but in my case, when I joined the company, I saw that what I developed in the selection process was an extremely late large project that I had to develop in two weeks.
+
+Another point is that I was the first developer. It was the only front-end dev and development flow I had to introduce myself. My superior, who knew some PHP stuff, never messed with GitHub and everything was saved in Google Drive. In conclusion, overall it was quite stressful.
 
 Red Flags:
 
-- sem espaço de evolução
-- único de desenvolvedor
-- deadlines bizarras
-- techs que não escalavam
-- má comunicação
-- má organização.
+- no space for evolution
+- developer only
+- bizarre deadlines
+- techs that didn't climb
+- bad communication
+- poor organization.
 
-Caso queira saber mais sobre, leia [Como foi minha primeira experiência sendo Tech Lead](/blog/experiencia-como-tech-lead).
+### Questions I asked in my second interview
 
-### Perguntas que fiz na minha segunda entrevista
+I recently wrote a [article](/blog/job-with-1-article) telling how I managed to receive a proposal just by writing what I studied.
 
-Recentemente, escrevi um [artigo](/blog/job-with-1-article) contando como consegui receber uma proposta apenas escrevendo o que estudava.
+I asked about:
 
-Perguntei sobre:
+- Development team: the team is important because with more experienced people than you, it is possible to evolve.
 
-- Time de desenvolvimento: o time é importante pois com pessoas mais experientes que você, é possível evoluir.
+- Delivery time: if the company is very new or has projects behind schedule, this may impact its development.
 
-- Tempo de entrega: se a empresa for muito recente ou tiver projetos atrasados, isso talvez impacte seu desenvolvimento.
+- Timetable - if the company has sufficient flexibility to maintain its schedules, if it is a student, etc.
 
-- Disposição horária - se a empresa tem flexibilidade suficiente para manter seus horários, caso seja estudante etc.
+- Evolution space - environment that allows you to study useful things for the company in the long term
 
-- Espaço de evolução - ambiente que permita você estudar coisas úteis para empresa a longo prazo
+If you are a minor, some companies may create contracts, as I did. Also be mindful of this and I strongly recommend that a lawyer read everything first. It may have some holes and this review will avoid problems.
 
-Caso for menor de idade, algumas empresas podem criar contratos, como ocorreu comigo. Fique também atento com isso e recomendo fortemente que um advogado leia tudo antes. Pode ser que tenha alguns furos e essa revisão vai evitar problemas.
+### How did the bad environment make me a better developer?
 
-### Como o ambiente ruim me fez um desenvolvedor melhor?
+Depending on your mood, accept working even in bad environments.
 
-Dependendo da sua disposição, aceite trabalhar mesmo em ambientes ruins.
+I learned:
 
-Aprendi:
+- Better organization
+- Self knowledge
+- Sense of leadership
+- Deal with deadlines
+- Organize problem solving
 
-- Melhor organização
-- Autoconhecimento
-- Senso de liderança
-- Lidar com deadlines
-- Organizar solução de problemas
+Evidently I'm still under construction and it doesn't mean that the aforementioned points are complete in me, just that I improved and developed them better. Expose yourself to get out of your comfort zone and evolve, apply [Skin in the Game](https://sibelius.substack.com/p/skin-in-the-game-for-developers).
 
-Também falo melhor sobre no artigo da minha [experiência sendo tech lead](/blog/experiencia-como-tech-lead). Evidentemente ainda estou em construção e não significa que os pontos citados estão plenos em mim, apenas que eu melhorei e desenvolvi melhor eles. Se exponha para sair da sua zona de conforto e evoluir, aplique [Skin in the Game](https://sibelius.substack.com/p/skin-in-the-game-for-developers).
-
-Com tudo isso, você vai aprender com seus erros e ganhar experiência. Se não tiver numa situação específica, provavelmente não tem muito a perder. Sair do primeiro emprego me possibilitou coisas incríveis pois sem risco você não ganha nem perde.
-
-![a promoção é bem próxima da demissão](https://i.imgur.com/3fpbilt.png)
+With all this, you will learn from your mistakes and gain experience. If you don't have a specific situation, you probably don't have much to lose. Leaving my first job allowed me incredible things because without risk you don't win or lose.
