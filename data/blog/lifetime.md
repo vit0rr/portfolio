@@ -109,3 +109,11 @@ fn main() {
   }
 }
 ```
+
+#### Referências
+
+- [Lifetime syntax](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)
+
+- [Lifetime](https://doc.rust-lang.org/rust-by-example/scope/lifetime.html)
+
+- [Understanding lifetimes in rust](https://blog.logrocket.com/understanding-lifetimes-in-rust/)
