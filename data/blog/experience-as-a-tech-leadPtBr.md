@@ -2,9 +2,11 @@
 title: Como foi minha primeira experiência sendo Tech Lead
 date: '11-07-2021'
 tags: ['tech lead', 'code', 'learn', 'work']
-draft: false
+draft: true
 summary: Como foram as primeiras semanas como Tech Lead numa startup de tecnologia?
 ---
+
+<h2>pt-br | [en](/blog/experience-as-a-tech-lead)</h2>
 
 ## Introdução
 
