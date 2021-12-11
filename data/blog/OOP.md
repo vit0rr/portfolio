@@ -1,39 +1,41 @@
 ---
-title: Entendendo programação orientada a objeto (OOP) com Java
+title: Understanding Object Oriented Programming (OOP) with Java
 date: '09-23-2021'
 tags: ['java', 'computer science', 'polymorphism', 'OOP']
 draft: false
-summary: Discussão sobre OOP com Java
+summary: Discussion of OOP with Java
 images: https://i.imgur.com/46jF8Xd.png
 ---
 
-### O que é um objeto?
+<h2>[pt-br](/blog/OOPPtBr) | en</h2>
 
-Linguagens como C, que seguem um paradigma de programação estruturada, ou seja, possuem estruturas de dados e instruções do programa atuam nesses dados. Já numa linguagem orientada a objetos - como Java, JavaScript entre outras - combinamos dados e suas instruções em objetos.
+### What is an object?
 
-Dados e lógica de programação são `combinados` em um objeto. É uma entidade autocontida contendo atributos e comportamentos. Esse tipo de paradigma é uma extensão lógica de antigas técnicas da programação estrutural e tipos de dados abstratos. Porém, vale pontuar que não necessariamente objeto é um dado abstrato com adição de polimorfismo e herança. Essa generalização é feita em alguns artigos de forma `errada`.
+Languages like C, which follow a structured programming paradigm, that is, have data structures and program instructions act on these data. In an object-oriented language - such as Java, JavaScript and others - we combine data and its instructions into objects.
 
-### Herança
+Data and programming logic are `combined` into one object. It is a self-contained entity containing attributes and behaviors. This type of paradigm is a logical extension of older structural programming techniques and abstract data types. However, it is worth pointing out that the object is not necessarily an abstract data with the addition of polymorphism and inheritance. This generalization is done in some articles the `wrong` way.
 
-### Polimorfismo
+### Heritage
 
-De forma genérica, significa "várias formas", e isso no contexto da programação representa poder fazer "certa coisa" de várias formas. O ponto é essa "certa coisa". Estamos falando de chamadas de métodos, portanto, em Java, o polimorfismo é expresso apenas em chamdas de métodos. Ou seja, polimorfismo é um pedaço de código que trabalha com múltiplos dados.
+### Polymorphism
 
-Ser objeto, não significa implicatamente ter polimorfismo. Todo objeto é polimórfico, pois a interface dele é. Mas isso não implica em necessariamente todo objeto ter polimorfismo.
+Generally speaking, it means "various ways", and this in the context of programming means being able to do "a certain thing" in various ways. The point is this "certain thing". We're talking about method calls, so in Java polymorphism is only expressed in method calls. In other words, polymorphism is a piece of code that works with multiple data.
 
-Polimorfismo é uma única [interface](<https://en.wikipedia.org/wiki/Interface_(computing)>) para dados de diferentes tipos ou um símbolo que represente vários tipos diferentes. Na prática isso ocorre com as três principais classes de polimorfismo, que são:
+Being an object does not imply having polymorphism. Every object is polymorphic as its interface is. But this does not necessarily imply that every object has polymorphism.
+
+Polymorphism is a single [interface](<https://en.wikipedia.org/wiki/Interface_(computing)>) for data of different types or a symbol representing several different types. In practice this occurs with the three main classes of polymorphism, which are:
 
 - [`Ad hoc polymorphism`](https://en.wikipedia.org/wiki/Ad_hoc_polymorphism)
 - [`Parametric polymorphism`](https://en.wikipedia.org/wiki/Parametric_polymorphism)
 - [`Subtyping`](https://en.wikipedia.org/wiki/Subtyping)
 
-Polimorfismo permite que referências de tipos de classes abstratas representem o comportamento de classes concretas que refenciam. Dessa forma, é possível tratar múltiplos tipos de uma mesma forma. Ou seja, é caracterizado como polimorfismo, quando mais de duas classes _distintas_ têm métodos do mesmo nome, fazendo com que uma função possa utilizar um objeto de qualquer uma das classes polimórficas, sem precisar tratar de forma diferente conforme a classe do objeto
+Polymorphism allows abstract class type references to represent the behavior of concrete classes they reference. In this way, it is possible to treat multiple types in the same way. That is, it is characterized as polymorphism, when more than two _distinct_ classes have methods of the same name, so that a function can use an object of any of the polymorphic classes, without having to treat it differently according to the object's class.
 
-De forma um pouco mais prática, pense num objeto "a" que chama o método "falar()" de um objeto "b", dessa forma, o objeto "b" define a forma de implementação de tal método, ou seja, o `tipo` do objeto "b" é o que de fato importa.
+A little more practically, think of an object "a" that calls the "speak()" method of an object "b", in this way, the object "b" defines the way to implement such a method, that is, the `type` of object "b" is what really matters.
 
-Exemplos de chamda polimórfica:
+Examples of polymorphic call:
 
-1. Objeto "a" cria o "b"
+1. Object "a" creates "b"
 
 ```java
 class A {
@@ -49,7 +51,7 @@ class A {
 }
 ```
 
-2. Objeto "a" recebe o objeto "b" de um objeto "c"
+2. Object "a" receives object "b" from object "c"
 
 ```java
 class A {
@@ -60,7 +62,7 @@ class A {
 }
 ```
 
-3. O objeto "a" recebe o objeto "b" numa chamda de método
+3. Object "a" receives object "b" in a method call
 
 ```java
 class A {
@@ -70,8 +72,8 @@ class A {
 }
 ```
 
-O ponto geral dos exemplos é conseguir exibir que "a" tem uma refência a "b".
-Outra coisa é que, em Java, _todas_ as chamdas de métodos a objetos são polimórficas. Isso no caso em métodos de OBJETOS, no caso de métodos estáticos ou também chamados de métodos de classes não há polimorfismo.
+The general point of the examples is to be able to show that "a" has a reference to "b".
+Another thing is that, in Java, _all_ method calls to objects are polymorphic. This in the case of OBJECT methods, in the case of static methods or also called class methods there is no polymorphism.
 
 ##### Fontes:
 
