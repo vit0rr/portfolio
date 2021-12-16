@@ -7,7 +7,7 @@ const siteMetadata = {
   siteUrl: '',
   siteRepo: 'https://github.com/vit0rr/portfolio',
   siteLogo: 'https://avatars.githubusercontent.com/u/70543018?v=4',
-  image: '',
+  image: 'https://i.imgur.com/PNpkAb4.png',
   socialBanner: '',
   email: 'vi.souza.almeida@protonmail.com',
   github: 'https://github.com/vit0rr',
