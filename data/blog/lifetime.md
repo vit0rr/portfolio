@@ -1,17 +1,19 @@
 ---
-title: Lifetime de Rust
+title: Lifetime - Rust
 date: '12-07-2021'
 tags: ['code', 'learn', 'rust', 'compiler']
-draft: false
+draft: true
 summary: O que é e como funciona lifetime em Rust?
 images: https://i.imgur.com/MuQSmKC.png
 ---
 
-### Introdução
+<h2>[pt-br](/blog/lifetimePtBr) | en</h2>
 
-Rust não tem um Garbage Colector (GC), e você precisa limpar a memória de alguma forma, mas como sem Garbage Colector (GC)? A resposta é lifetime.
+### Introduction
 
-Vamos começar com um simples exemplo:
+Rust doesn't have a Garbage Collector (GC), and you need to clear the memory somehow, but how about without Garbage Collector (GC)? The answer is lifetime.
+
+Let's start with a simple example:
 
 ```rust
 
@@ -25,7 +27,7 @@ struct App {
 
 ```
 
-Se rodar esse código, ele retorna o seguinte erro:
+If you run this code, it returns the following error:
 
 ```bash
 error[E0106]: missing lifetime specifier
@@ -41,9 +43,9 @@ help: consider introducing a named lifetime parameter
   |
 ```
 
-O compilador reclama de um lifetime, e que ele precisa ser nomeado, e também nos diz exatamente como deve ficar o código para solucionar o problema.
+The compiler complains about a lifetime, and that it needs to be named, and also tells us exactly what the code should look like to solve the problem.
 
-O exemplo que ele da, é o seguinte:
+The example he gives is as follows:
 
 ```rust
 struct App<'a> {
@@ -51,12 +53,12 @@ struct App<'a> {
 }
 ```
 
-E dessa forma, o código será compilado sem problemas.
-De forma direta, nesse código, estamos dizendo que `config`, que é do tipo `&Config` tem o mesmo tempo de vida que `App`. Isso é declarado em `<'a>`. `<>` é onde foi declarado o lifetime. E esse 'a' poderia ser qualquer outro nome.
+And that way the code will compile without any problems.
+Directly, in this code, we are saying that `config`, which is of type `&Config` has the same lifetime as `App`. This is declared in `<'a>`. `<>` is where lifetime was declared. And that 'a' could be any other name.
 
-### Segurança de referência
+### Reference security
 
-Exemplo:
+Example:
 
 ```rust
 fn greeting() {
@@ -65,9 +67,9 @@ fn greeting() {
 }
 ```
 
-Aqui, a variável `s` é definida dentro da função `greeting()` e assim que a função encerrar, `s` terá cumprido seu dígno trabalho e morrerá. Dessa forma, Rust vai limpar a memória. Logo, `s` so vive enquanto a função é executada.
+Here, the variable `s` is defined inside the `greeting()` function and as soon as the function ends, `s` will have done its decent work and will die. That way, Rust will clear the memory. Hence, it only lives while the function is executed.
 
-Vamos para outro exemplo:
+Let's go to another example:
 
 ```rust
 fn main() {
@@ -80,9 +82,9 @@ fn main() {
 }
 ```
 
-Nesse código, existe uma varíavel `r`, que recebe uma referência `x` no bloco seguinte. Depois disso, imprimimos o valor `r`.
+In this code, there is a variable `r`, which receives an `x` reference in the next block. After that, we print the value `r`.
 
-E vemos o seguinte erro:
+And we see the following error:
 
 ```shell
 error[E0597]: `x` does not live long enough
@@ -96,9 +98,9 @@ error[E0597]: `x` does not live long enough
   |                    - borrow later used here
 ```
 
-E ok, estamos imprimindo um valor `r` do qual contém referência a `x`, mas `x` não existe mais na memória nesse ponto do programa.
+And ok, we are printing an `r` value which contains reference to `x`, but `x` no longer exists in memory at this point in the program.
 
-Para fazer o código rodar, temos que mover `x` de forma que seu tempo de vida inclua o `r`.
+To make the code run, we have to move `x` so that its lifetime includes the `r`.
 
 ```rust
 fn main() {
@@ -110,7 +112,7 @@ fn main() {
 }
 ```
 
-#### Referências
+#### References
 
 - [Lifetime syntax](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)
 
