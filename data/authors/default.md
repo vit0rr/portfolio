@@ -1,7 +1,7 @@
 ---
 name: Vitor S. Almeida
 avatar: /static/images/vG1x8FK9.png
-occupation: Full-stack blockchain developer
+occupation: FullStack blockchain developer
 company: Genezys Digital Assets
 email: vi.souza.almeida@protonmail.com
 twitter: https://twitter.com/vit0rrk

@@ -3,7 +3,7 @@ const siteMetadata = {
   author: 'Vitor S. Almeida',
   headerTitle: 'Vitor S.',
   description: 'Vitor S. Almeida - FullStack developer',
-  language: 'pt-br',
+  language: 'en',
   siteUrl: '',
   siteRepo: 'https://github.com/vit0rr/portfolio',
   siteLogo: 'https://avatars.githubusercontent.com/u/70543018?v=4',
