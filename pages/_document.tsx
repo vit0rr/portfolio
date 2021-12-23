@@ -41,7 +41,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
         </Head>
-        <body className="antialiased text-black bg-white dark:bg-gray-900 dark:text-white">
+        <body className="antialiased text-black bg-amber-50 dark:bg-gray-900 dark:text-white">
           <Main />
           <NextScript />
         </body>

@@ -30,3 +30,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+.bg-amber-50 {
+  background-color: #e3d9d078;
+}
