@@ -85,9 +85,9 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           <Link
             href="/blog"
             className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
-            aria-label="todos os posts"
+            aria-label="all posts"
           >
-            Todos os posts &rarr;
+            All posts &rarr;
           </Link>
         </div>
       )}
