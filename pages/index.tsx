@@ -69,7 +69,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                           className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                           aria-label={`Read "${title}"`}
                         >
-                          Ler mais &rarr;
+                          See more &rarr;
                         </Link>
                       </div>
                     </div>
