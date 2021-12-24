@@ -1,9 +1,10 @@
 ---
-title: Why experience requirement is bullshit
+title: Why experience time requirement is bullshit
 date: '12-24-2021'
 tags: ['code', 'learn', 'work']
 draft: false
-summary: Why experience requirement is bullshit and you shouldn't care about that
+summary: Why experience time requirement is bullshit and you shouldn't care about that
+images: https://i.imgur.com/NlxdZ6u.png
 ---
 
 ### You probably have a bad matric!
