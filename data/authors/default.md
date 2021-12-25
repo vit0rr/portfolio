@@ -9,5 +9,8 @@ linkedin: https://www.linkedin.com/in/vitorsalmeida/
 github: https://github.com/vit0rr
 ---
 
-A developer.
-17yo.
+I'm Vitor,
+
+Passionate about development and open-source. I'm trying to build a better community making all my knowledge public.
+
+Here, you can find some technical content that I hope can help you with something.
