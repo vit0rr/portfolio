@@ -2,7 +2,7 @@
 title: Lifetime - Rust
 date: '12-07-2021'
 tags: ['code', 'learn', 'rust', 'compiler']
-draft: false
+draft: true
 summary: O que é e como funciona lifetime em Rust?
 images: https://i.imgur.com/MuQSmKC.png
 ---

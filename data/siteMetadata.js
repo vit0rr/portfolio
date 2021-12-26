@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'Vitor S.',
   author: 'Vitor S. Almeida',
   headerTitle: 'Vitor S.',
-  description: 'Vitor S. Almeida - FullStack developer',
+  description: 'My lasted posts',
   language: 'en',
   siteUrl: '',
   siteRepo: 'https://github.com/vit0rr/portfolio',
