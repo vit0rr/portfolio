@@ -62,6 +62,89 @@ export default function Home() {
             </article>
           </li>
         </ul>
+
+        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+          <li className="py-12">
+            <article>
+              <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+                <dl>
+                  <dt className="sr-only">Published on</dt>
+                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                    <time dateTime="2021-12-01T00:00:00.000Z">Tuesday, November 30, 2021</time>
+                  </dd>
+                </dl>
+                <div className="space-y-5 xl:col-span-3">
+                  <div className="space-y-6">
+                    <div>
+                      <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                        <Link
+                          href={`/blog/red-flags`}
+                          className="text-gray-900 dark:text-gray-100 dark:hover:text-gray-400 hover:text-gray-500"
+                        >
+                          Identifying and Evolving with Red Flags
+                        </Link>
+                      </h2>
+                    </div>
+                    <div className="prose text-gray-500 max-w-none dark:text-gray-400">
+                      How did a bad environment make me a better developer?
+                    </div>
+                  </div>
+                  <div className="text-base font-medium leading-6">
+                    <Link
+                      href={`/blog/red-flags`}
+                      className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
+                      aria-label={`Read "Why experience time requirement is bullshit"`}
+                    >
+                      See more &rarr;
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+
+        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+          <li className="py-12">
+            <article>
+              <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+                <dl>
+                  <dt className="sr-only">Published on</dt>
+                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                    <time dateTime="2021-11-23T00:00:00.000Z">Monday, November 22, 2021</time>
+                  </dd>
+                </dl>
+                <div className="space-y-5 xl:col-span-3">
+                  <div className="space-y-6">
+                    <div>
+                      <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                        <Link
+                          href={`/blog/job-with-1-article`}
+                          className="text-gray-900 dark:text-gray-100 dark:hover:text-gray-400 hover:text-gray-500"
+                        >
+                          How i got a new job writing one article
+                        </Link>
+                      </h2>
+                    </div>
+                    <div className="prose text-gray-500 max-w-none dark:text-gray-400">
+                      Explaining how i got a new job with crypto writing one article about what i
+                      learning
+                    </div>
+                  </div>
+                  <div className="text-base font-medium leading-6">
+                    <Link
+                      href={`/blog/job-with-1-article`}
+                      className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
+                      aria-label={`Read "Why experience time requirement is bullshit"`}
+                    >
+                      See more &rarr;
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
       </div>
     </>
   )
