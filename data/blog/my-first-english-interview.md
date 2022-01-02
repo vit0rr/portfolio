@@ -13,7 +13,7 @@ The opportunity came to me. I don't have reasons to decline this meeting. I acce
 
 In the meeting, I've had my first long talk in English, learned new things, received tips and suggestions for my career out of Brazil. All feedback that I received in this call was good for me. Even failing and didn't get the job, I learned a lot of things only by not refusing the meeting.
 
-If you are still starting your career and don't have a lot of experience, not make sense to refuse ANY opportunity to learn something, be it a meeting or anything else. Just accept. You have nothing to lose. This mentality provided me with a lot of knowledge. In a short period (two months), I got two opportunities, one that's being a blockchain job. Just with articles, [learn in public](https://www.swyx.io/learn-in-public/) and opensource.
+If you are still starting your career and don't have a lot of experience, not make sense to refuse ANY opportunity to learn something, be it a meeting or anything else. Just accept. You have nothing to lose. This mentality provided me with a lot of knowledge. In a short period, I got two opportunities, one that's being a blockchain job. Just with articles, [learn in public](https://www.swyx.io/learn-in-public/) and opensource.
 
 ### "I'm not ready for this"
 
