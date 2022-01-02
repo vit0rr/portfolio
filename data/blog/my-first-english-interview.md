@@ -17,6 +17,6 @@ If you are still starting your career and don't have a lot of experience, it doe
 
 ### "I'm not ready for this"
 
-The market is not up for Juniors. I recommend you to read [this](https://twitter.com/GergelyOrosz/status/1476856174230315025) thread. The startups want seniors because they have more experience than you and can solve more problems. But how to compete with this? With more experience. When someone says "I'm a Junior" or something like that, this person is limiting themselves. Say "I'm not ready for this" is bullshit.
+The market is not up for Juniors. I recommend you to read [this](https://twitter.com/GergelyOrosz/status/1476856174230315025) thread. The startups want seniors because they have more experience than you and can solve more problems. But how to compete with this? With more experience. When someone saying "I'm a Junior" or something like that, this person is limiting themselves. Say "I'm not ready for this" is bullshit.
 
 If you don't have experience, you will never know when is the best time to apply for some job. The decision to wait for a "better moment" makes you lose opportunities and knowledge. Accept, learn, and try again. The more you fail, the closer you are to getting it. Why? Experience. How to get more experience? More opensource, interviews, projects, and you will get more experience to apply for any opportunities.
