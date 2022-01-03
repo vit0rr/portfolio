@@ -22,3 +22,9 @@ Se você está iniciando sua carreira e não tem muita experiência, não faz ne
 O mercado não está bom para Juniors. Eu recomendo você ler [essa](https://twitter.com/GergelyOrosz/status/1476856174230315025) thread. As startups querem seniors pois essas pessoas têm mais experiência que você e consegue resolver mais problemas. Mas como competir com isso? Com mais experiência. Quando alguém diz "Eu sou um Junior", ou qualquer coisa do tipo, essa pessoa está se limitando. Dizer "Eu não estou pronto para isso" é besteira.
 
 Se você não tem experiência, você nunca vai saber quando é o melhor momento para aplicar em alguma vaga. A decisão de esperar pelo "melhor momento" faz você perder oportunidades e conhecimento. Aceite, estude, e tente novamente. Quanto mais você falhar, mais perto vai estar de conseguir o que quer. Por que? Experiência. Como conseguir mais experiência? Mais opensource, interviews, projetos, e você vai conseguir aplicar para qualquer oportunidade.
+
+#### Recomendações
+
+- [Why experience time requirement is bullshit](https://vitorsalmeida.com/blog/experience-requirement-is-bullshit)
+
+- [Como consegui um novo emprego escrevendo um artigo](https://vitorsalmeida.com/blog/job-with-1-article-PtBr)
