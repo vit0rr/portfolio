@@ -1,9 +1,9 @@
 ---
-title: How i got a new job writing one article
+title: How I got a new job writing one article
 date: '11-23-2021'
 tags: ['learn', 'job', 'article']
 draft: false
-summary: Explaining how i got a new job with crypto writing one article about what i learning.
+summary: Explaining how I got a new job with crypto writing one article about what I learning.
 images: https://i.imgur.com/J4ZEeyt.png
 ---
 
