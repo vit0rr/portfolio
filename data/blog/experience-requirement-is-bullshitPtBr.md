@@ -2,7 +2,7 @@
 title: Por que requisito de tempo de experiência é besteira
 date: '12-24-2021'
 tags: ['code', 'learn', 'work']
-draft: false
+draft: true
 summary: Por que requisito de tempo de experiência é besteira e porque você não deveria se importar com isso
 images: https://i.imgur.com/NlxdZ6u.png
 ---
