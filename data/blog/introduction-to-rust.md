@@ -19,7 +19,7 @@ We have four types in Rust.
 
 Integers can be unsigned(`usize`) or signed(`isize`).
 
-`Usigned` -> is for values that can't be negative. Ensure positive values OR if you don't need negative integers. Like memory address
+`Unsigned` -> is for values that can't be negative. Ensure positive values OR if you don't need negative integers. Like memory address
 
 `Signed` -> is for values that can be negative. Like offsets to addresses.
 Examples of integers:
