@@ -9,11 +9,11 @@ images: https://i.imgur.com/Qpzr40o.png
 
 ### Basic Data types in Rust
 
-We have four types in Rust.
+We have five types in Rust.
 
 - integers
 - floating-point
-- numbers
+- compound types
 - booleans
 - characters
 
