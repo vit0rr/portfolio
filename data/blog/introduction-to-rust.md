@@ -61,3 +61,10 @@ fn main() {
     println!("the first word is: {}", word);
 }
 ```
+
+#### References:
+
+- [Primitive Type str](https://doc.rust-lang.org/std/primitive.str.html)
+- [Struct Vec](https://doc.rust-lang.org/std/vec/struct.Vec.html)
+- [Data Types](https://doc.rust-lang.org/book/ch03-02-data-types.html)
+- [Offset](<https://en.wikipedia.org/wiki/Offset_(computer_science)>)
