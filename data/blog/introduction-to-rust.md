@@ -4,7 +4,7 @@ date: '01-08-2022'
 tags: ['rust', 'learn', 'code']
 draft: true
 summary: Introduction to Rust with basic concepts
-images: https://i.imgur.com/TQCrNO4.png
+images: https://i.imgur.com/Qpzr40o.png
 ---
 
 ### Basic Data types in Rust
