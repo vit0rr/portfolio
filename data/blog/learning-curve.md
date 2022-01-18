@@ -9,7 +9,7 @@ images: https://i.imgur.com/uzRAAdi.png
 
 Why? Because don't care.
 
-You don't need a prepare to learn something. Need more practice and less overthinking. Learning is not linear, and you don't get expected results when starting something.
+You don't need a prepare to learn something. You need more practice and less overthinking. Learning is not linear, and you don't get expected results when starting something.
 
 ### What's mean "Learning curve"?
 
