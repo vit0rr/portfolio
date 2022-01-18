@@ -7,9 +7,11 @@ summary: Stop thinking about learning curve
 images: https://i.imgur.com/uzRAAdi.png
 ---
 
-Why? Because don't care.
+Why? Because it doesn't care.
 
-You don't need a prepare to learn something. You need more practice and less overthinking. Learning is not linear, and you don't get expected results when starting something.
+You don't need to prepare to learn something. You need more practice and less overthinking. Learning is not linear, and you will not get expected results when you start something.
+
+Read ["Study Backwards"](https://sibelius.substack.com/p/study-backwards). You should not start with the technology.
 
 ### What's mean "Learning curve"?
 
