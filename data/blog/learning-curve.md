@@ -2,7 +2,7 @@
 title: Stop thinking about learning curve
 date: '01-18-2022'
 tags: ['learn', 'work']
-draft: false
+draft: true
 summary: Stop thinking about learning curve
 images: https://i.imgur.com/uzRAAdi.png
 ---
