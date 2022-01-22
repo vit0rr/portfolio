@@ -10,5 +10,3 @@ github: https://github.com/vit0rr
 ---
 
 Passionate about development and open-source. I'm trying to build a better community making all my knowledge public.
-
-Here, you can find some contents that I hope can help you with something.
