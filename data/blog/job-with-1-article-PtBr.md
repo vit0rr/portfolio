@@ -15,7 +15,7 @@ Recentemente escrevi um [artigo](/blog/fullstack-development-solana) sobre Solan
 
 ### Seja generalista
 
-No começo, não faz sentido estudar especificamente algo pois você ainda não sabe o que quer. O conceito deve ser o mesmo das escolas, aprender diversos temas paralelamente para afunilar com o tempo, descobrir seus gostos e afins. Dessa forma foi que eu de desenvolvedor front-end comecei a estudar crypto como full-stack. Essa metodologia permite você cruzar com temas que se completam e formar a snowboll do conhecimento, onde os temas se completam e você fica melhor em resolver problemas. Por esse motivo inclusive que recomendaria que todo desenvolver fosse full-stack. Saber front-end para um dev back o torna melhor assim como saber back para um desenvolvedor front-end o torna melhor. Estude tudo que conseguir, todo conhecimento se completa.
+No começo, não faz sentido estudar especificamente algo pois você ainda não sabe o que quer. O conceito deve ser o mesmo das escolas, aprender diversos temas paralelamente para afunilar com o tempo, descobrir seus gostos e afins. Dessa forma foi que eu de desenvolvedor front-end comecei a estudar crypto como full-stack. Essa metodologia permite você cruzar com temas que se completam e formar a snowball do conhecimento, onde os temas se completam e você fica melhor em resolver problemas. Por esse motivo inclusive que recomendaria que todo desenvolver fosse full-stack. Saber front-end para um dev back o torna melhor assim como saber back para um desenvolvedor front-end o torna melhor. Estude tudo que conseguir, todo conhecimento se completa.
 
 ### SEO pessoal
 
