@@ -23,4 +23,4 @@ With excuses, you never get better because you risk less, and with less ristk, y
 
 Exiting to a job safer is easy. Improving the job, coding better, and showing solutions is difficult, and some people prefer running away the solving big problems. When tou do this, you get stuck, staged, mediocre.
 
-Don't search for safe environments. I recommend you to read the Zero to One book, and understand that you shouldn't work in a FAANG, but in the next FAANG. Make what other people made before don't have innovation. Again, you will be mediocre.
+Don't search for safe environments. I recommend you to read the [Zero to One](https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296) book, and understand that you shouldn't work in a FAANG, but in the next FAANG. Make what other people made before don't have innovation. Again, you will be mediocre.
