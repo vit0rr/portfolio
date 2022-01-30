@@ -13,7 +13,7 @@ const siteMetadata = {
   github: 'https://github.com/vit0rr',
   twitter: 'https://twitter.com/vit0rrk',
   linkedin: 'https://www.linkedin.com/in/vitorsalmeida/',
-  locale: 'pt-BR',
+  locale: 'BR',
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics
     plausibleDataDomain: 'vitorsalmeida.com', // e.g. tailwind-nextjs-starter-blog.vercel.app
