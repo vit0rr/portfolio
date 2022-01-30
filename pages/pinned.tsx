@@ -29,7 +29,7 @@ export default function Home() {
                 <dl>
                   <dt className="sr-only">Published on</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time dateTime="2021-12-24T03:00:00.000Z">Friday, December 24, 2021</time>
+                    <time dateTime="2021-12-24T03:00:00.000Z">December 24, 2021</time>
                   </dd>
                 </dl>
                 <div className="space-y-5 xl:col-span-3">
@@ -70,7 +70,7 @@ export default function Home() {
                 <dl>
                   <dt className="sr-only">Published on</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time dateTime="2021-12-01T00:00:00.000Z">Tuesday, November 30, 2021</time>
+                    <time dateTime="2021-12-01T00:00:00.000Z">November 30, 2021</time>
                   </dd>
                 </dl>
                 <div className="space-y-5 xl:col-span-3">
@@ -111,7 +111,7 @@ export default function Home() {
                 <dl>
                   <dt className="sr-only">Published on</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time dateTime="2021-11-23T00:00:00.000Z">Monday, November 22, 2021</time>
+                    <time dateTime="2021-11-23T00:00:00.000Z">November 22, 2021</time>
                   </dd>
                 </dl>
                 <div className="space-y-5 xl:col-span-3">

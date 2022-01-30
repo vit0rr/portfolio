@@ -14,6 +14,12 @@ interface Props {
   prev?: { slug: string; title: string }
 }
 
+const postDateTemplate: Intl.DateTimeFormatOptions = {
+  year: 'numeric',
+  month: 'numeric',
+  day: 'numeric',
+}
+
 export default function PostLayout({ frontMatter, next, prev, children }: Props) {
   const { slug, date, title } = frontMatter
 
@@ -28,7 +34,7 @@ export default function PostLayout({ frontMatter, next, prev, children }: Props)
                 <div>
                   <dt className="sr-only">Published on</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time dateTime={date}>{formatDate(date)}</time>
+                    {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                   </dd>
                 </div>
               </dl>

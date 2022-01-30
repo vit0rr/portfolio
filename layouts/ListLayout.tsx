@@ -3,12 +3,19 @@ import Tag from '@/components/Tag'
 import { ComponentProps, useState } from 'react'
 import Pagination from '@/components/Pagination'
 import formatDate from '@/lib/utils/formatDate'
+import siteMetadata from '@/data/siteMetadata'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 interface Props {
   posts: PostFrontMatter[]
   title: string
   initialDisplayPosts?: PostFrontMatter[]
   pagination?: ComponentProps<typeof Pagination>
+}
+
+const postDateTemplate: Intl.DateTimeFormatOptions = {
+  year: 'numeric',
+  month: 'numeric',
+  day: 'numeric',
 }
 
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }: Props) {
@@ -63,7 +70,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                   <dl>
                     <dt className="sr-only">Published on</dt>
                     <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                      <time dateTime={date}>{formatDate(date)}</time>
+                      {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                     </dd>
                   </dl>
                   <div className="space-y-3 xl:col-span-3">
