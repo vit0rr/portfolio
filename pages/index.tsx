@@ -13,6 +13,7 @@ const postDateTemplate: Intl.DateTimeFormatOptions = {
   year: 'numeric',
   month: 'numeric',
   day: 'numeric',
+  timeZone: 'UTC',
 }
 
 export const getStaticProps: GetStaticProps<{ posts: PostFrontMatter[] }> = async () => {
