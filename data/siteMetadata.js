@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: 'Vitor S.',
   author: 'Vitor S. Almeida',
-  headerTitle: 'Vitor S.',
+  headerTitle: "Vitor's Blog",
   description: 'My lasted posts',
   language: 'pt-br',
   siteUrl: '',
