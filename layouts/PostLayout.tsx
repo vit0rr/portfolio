@@ -17,7 +17,7 @@ const discussUrl = (slug) =>
 
 const postDateTemplate: Intl.DateTimeFormatOptions = {
   year: 'numeric',
-  month: 'numeric',
+  month: 'short',
   day: 'numeric',
   timeZone: 'UTC',
 }

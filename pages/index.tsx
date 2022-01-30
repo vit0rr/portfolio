@@ -11,7 +11,7 @@ const MAX_DISPLAY = 5
 
 const postDateTemplate: Intl.DateTimeFormatOptions = {
   year: 'numeric',
-  month: 'numeric',
+  month: 'short',
   day: 'numeric',
   timeZone: 'UTC',
 }
