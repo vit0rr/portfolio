@@ -19,6 +19,7 @@ const postDateTemplate: Intl.DateTimeFormatOptions = {
   year: 'numeric',
   month: 'numeric',
   day: 'numeric',
+  timeZone: 'UTC',
 }
 
 interface Props {

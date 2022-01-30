@@ -16,6 +16,7 @@ const postDateTemplate: Intl.DateTimeFormatOptions = {
   year: 'numeric',
   month: 'numeric',
   day: 'numeric',
+  timeZone: 'UTC',
 }
 
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }: Props) {

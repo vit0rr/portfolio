@@ -18,6 +18,7 @@ const postDateTemplate: Intl.DateTimeFormatOptions = {
   year: 'numeric',
   month: 'numeric',
   day: 'numeric',
+  timeZone: 'UTC',
 }
 
 export default function PostLayout({ frontMatter, next, prev, children }: Props) {
