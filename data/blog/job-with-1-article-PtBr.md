@@ -9,6 +9,8 @@ images: https://i.imgur.com/J4ZEeyt.png
 
 <h2>pt-br | [en](/blog/job-with-1-article)</h2>
 
+![image](https://i.imgur.com/J4ZEeyt.png)
+
 ### Introdução
 
 Recentemente escrevi um [artigo](/blog/fullstack-development-solana) sobre Solana, sendo ele minha porta de entrada em desenvolvimento com crypto. Fiquei um tempo estudando e escrevendo, quando publiquei no Twitter, um dia depois me chamaram para trabalhar com a stack.

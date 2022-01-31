@@ -9,6 +9,8 @@ images: https://i.imgur.com/J4ZEeyt.png
 
 <h2>[pt-br](/blog/job-with-1-article-PtBr) | en</h2>
 
+![image](https://i.imgur.com/J4ZEeyt.png)
+
 ### Introduction
 
 I recently wrote an [article](/blog/fullstack-development-solana) about Solana, it being my first steps in crypto development. I spent some time studying and writing, when I published it on Twitter, one day later they called me to work with the stack.
