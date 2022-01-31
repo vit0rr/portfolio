@@ -7,6 +7,8 @@ summary: Making excuses for your problems is the fast way to run away from hard 
 images: https://i.imgur.com/xwXZ3zl.png
 ---
 
+### en | [ptBR](/blog/ptBR/vida-facil-com-desculpas)
+
 ![image](https://i.imgur.com/xwXZ3zl.png)
 
 On Twitter, I saw frequently excuses for different things and challenges that peoples have in life. The most excuses for something is "X is very difficult" or think "I don't need or learn Y". This mentality is wrong.
