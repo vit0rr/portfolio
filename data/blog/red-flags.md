@@ -9,6 +9,8 @@ images: https://i.imgur.com/fgj7pmk.jpg
 
 <h2>[pt-br](/blog/red-flagsPtBr) | en</h2>
 
+![image](https://i.imgur.com/fgj7pmk.jpg)
+
 ### Introduction
 
 Red flags are important alerts to watch out for before starting a company and at my first opportunity I didn't know that, serving as an experience and allowing you to replicate questions to measure whether an environment is good or not in future opportunities, which made it possible to predict and be certain expectations of new environments.

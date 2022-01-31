@@ -9,6 +9,8 @@ images: https://i.imgur.com/fgj7pmk.jpg
 
 <h2>pt-br | [en](/blog/red-flags)</h2>
 
+![image](https://i.imgur.com/fgj7pmk.jpg)
+
 ### Introdução
 
 Red flags são alertas importantes para se observar antes de começar numa empresa e na minha primeira oportunidade eu não sabia disso, servindo de experiência e possibilitando replicar perguntas para medir se um ambiente é bom ou não em futuras oportunidades, o que possibilitou prever e ter certas expectativas de novos ambientes.
