@@ -7,6 +7,8 @@ summary: Stop thinking about learning curve
 images: https://i.imgur.com/uzRAAdi.png
 ---
 
+<h3>en | [ptBR](/blog/ptBR/pare-de-pensar-sobre-curva-de-aprendizagem)</h3>
+
 ![image](https://i.imgur.com/uzRAAdi.png)
 
 Why? Because it doesn't care.
