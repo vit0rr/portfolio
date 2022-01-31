@@ -39,7 +39,7 @@ const LayoutWrapper = ({ children }: Props) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100"
+                  className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100 dark:hover:text-gray-400 hover:text-gray-500"
                 >
                   {link.title}
                 </Link>
