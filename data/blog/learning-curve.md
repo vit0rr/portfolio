@@ -7,6 +7,8 @@ summary: Stop thinking about learning curve
 images: https://i.imgur.com/uzRAAdi.png
 ---
 
+![image](https://i.imgur.com/uzRAAdi.png)
+
 Why? Because it doesn't care.
 
 You don't need to prepare to learn something. You need more practice and less overthinking. Learning is not linear, and you will not get expected results when you start something.
