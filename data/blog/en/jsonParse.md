@@ -6,7 +6,7 @@ draft: false
 summary: Understanding JSON.parse() and why JSON.parse("false") is false and Boolean("false") is true
 ---
 
-<h2>[pt-br](/blog/ptBR/jsonParsePtBr) | en</h2>
+<h3>en | [ptBR](/blog/ptBR/jsonParsePtBr)</h3>
 
 ### JSON
 
