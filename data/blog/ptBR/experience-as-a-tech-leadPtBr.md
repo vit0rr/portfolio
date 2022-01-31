@@ -6,7 +6,7 @@ draft: true
 summary: Como foram as primeiras semanas como Tech Lead numa startup de tecnologia?
 ---
 
-<h2>pt-br | [en](/blog/en/experience-as-a-tech-lead)</h2>
+<h3>[en](/blog/en/experience-as-a-tech-lead) | ptBR</h3>
 
 ## Introdução
 

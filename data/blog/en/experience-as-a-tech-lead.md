@@ -6,7 +6,7 @@ draft: false
 summary: How were the first few weeks as a Tech Lead in a tech startup?
 ---
 
-<h2>[pt-br](/blog/ptBR/experience-as-a-tech-leadPtBr) | en</h2>
+<h3>en | [ptBR](/blog/ptBR/experience-as-a-tech-leadPtBr)</h3>
 
 ## Introduction
 
