@@ -9,48 +9,46 @@ images: https://i.giphy.com/media/13XW2MJE0XCoM0/giphy.gif
 
 <h2>[pt-br](/blog/centralizing-content-with-cssPtBr) | en</h2>
 
-### Vertically centralizing 
+### Vertically centralizing
 
-We can do it using `left-margin` and `right-margin`. 
+We can do it using `left-margin` and `right-margin`.
 
 Example:
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Example</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <p class="example">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Eveniet dolorem architecto in optio natus quae iste quos 
-        inventore soluta eligendi reiciendis unde, esse laboriosam 
-        ducimus minima cumque veritatis. Illum, earum.
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorem architecto in optio
+      natus quae iste quos inventore soluta eligendi reiciendis unde, esse laboriosam ducimus minima
+      cumque veritatis. Illum, earum.
     </p>
-
-</body>
+  </body>
 </html>
 ```
 
 ```css
 body {
-    text-align: center;
+  text-align: center;
 }
 
 p {
-    width: 300px;
-    padding: 50px;
-    border: 20px solid rgb(31, 31, 145);
+  width: 300px;
+  padding: 50px;
+  border: 20px solid rgb(31, 31, 145);
 }
 
 p.example {
-    margin: 10px auto 10px auto;
-    text-align: left;
+  margin: 10px auto 10px auto;
+  text-align: left;
 }
 ```
 
@@ -66,12 +64,13 @@ When the `position` receives the value `absolute`, the box is removed from the n
 
 The displacement properties: `top`, `bottom`, `left` e `right` specify where the element should appear about the container element. In other words, its relative parent element will be the basis for it to be absolute.
 Example:
-```css 
+
+```css
 h1 {
-    position: absolute;
-    top: 0px;
-    left: 500px;
-    width: 250px;
+  position: absolute;
+  top: 0px;
+  left: 500px;
+  width: 250px;
 }
 ```
 
@@ -84,46 +83,43 @@ Example:
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Example</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <p class="example">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Eveniet dolorem architecto in optio natus quae iste quos 
-        inventore soluta eligendi reiciendis unde, esse laboriosam 
-        ducimus minima cumque veritatis. Illum, earum.
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorem architecto in optio
+      natus quae iste quos inventore soluta eligendi reiciendis unde, esse laboriosam ducimus minima
+      cumque veritatis. Illum, earum.
     </p>
-
-</body>
+  </body>
 </html>
 ```
 
 ```css
 body {
-    text-align: center;
+  text-align: center;
 }
 
 p {
-    width: 300px;
-    padding: 50px;
-    border: 20px solid rgb(31, 31, 145);
+  width: 300px;
+  padding: 50px;
+  border: 20px solid rgb(31, 31, 145);
 }
 
 p.example {
-    height: 120px;
-    position: absolute;
-    margin: auto;
-    text-align: left;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    
+  height: 120px;
+  position: absolute;
+  margin: auto;
+  text-align: left;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
 }
 ```
 
@@ -139,28 +135,30 @@ Example:
 
 ```html
 <body>
-    <div class="example">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aliquam?</p>
-    </div>
+  <div class="example">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aliquam?</p>
+  </div>
 </body>
 ```
 
 ```css
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .example {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 ```
+
 ![flex](https://github.com/vit0rr/portfolio/blob/393b5dc4a6619fa0c3475d96e226a449eb54b1e8/public/static/images/flex.png?raw=true)
 
 #### References:
+
 - [HTML and CSS: Design and Build Websites](https://www.amazon.com.br/HTML-CSS-Design-Build-Websites/dp/1118008189)
 - [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
 - [Flexbox](https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox)

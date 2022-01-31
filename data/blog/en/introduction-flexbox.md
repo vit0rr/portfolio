@@ -4,7 +4,7 @@ date: '11-28-2021'
 tags: ['css', 'code', 'learn', 'responsive', 'layouts', 'flex']
 draft: false
 summary: Introduction to build flexible layouts in CSS
-images: "https://i.imgur.com/iwhCOzZ.png"
+images: 'https://i.imgur.com/iwhCOzZ.png'
 ---
 
 <h2>[pt-br](/blog/introduction-flexbox-PtBr) | en</h2>
@@ -20,14 +20,16 @@ The page:
 ### Introduction to flexbox
 
 To use flexbox, it needs to be applied to the parent alement of the elements you want to affect. The result of the `display: flex` in the example on this page is as follows:
+
 ```css
 .flexbox-example {
-    display: flex;
+  display: flex;
 }
 ```
+
 ![example-displayFlex](https://i.imgur.com/OnUZvoM.png)
 
-This single line of CSS using flex menages to create a responsive layout, with space between elements equal to each other being side by side. 
+This single line of CSS using flex menages to create a responsive layout, with space between elements equal to each other being side by side.
 
 ### Flexible boxes - axis
 
@@ -81,66 +83,63 @@ Let's now build a very simple navbar, as a way to apply more or less what we saw
 
 ```html
 <div class="MenuWrap">
-        <a href="#" class="ListItem">Home</a>
-        <a href="#" class="ListItem">About Us</a>
-        <a href="#" class="ListItem">Products</a>
-        <a href="#" class="ListItem">Policy</a>
-        <a href="#" class="LastItem">Contact Us</a>
+  <a href="#" class="ListItem">Home</a>
+  <a href="#" class="ListItem">About Us</a>
+  <a href="#" class="ListItem">Products</a>
+  <a href="#" class="ListItem">Policy</a>
+  <a href="#" class="LastItem">Contact Us</a>
 </div>
 ```
 
 ```css
 * {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 ```
 
 Here I just remove the browser's default margin and spacing, so the navbar will be glued to the edges.
 
-```css 
+```css
 .MenuWrap {
-    background-color: rgb(30, 32, 163);
-    font-size: 1rem;
-    min-height: 2.75rem;
-    display: flex;
-    align-items: center;
-    padding: 10px
+  background-color: rgb(30, 32, 163);
+  font-size: 1rem;
+  min-height: 2.75rem;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 ```
+
 In order, I set a background to a shade of blue, the font size, a minimum height, set the display to flex, align the items to the center, and spacing 10 pixels.
 
 ```css
 .ListItem,
 .LastItem {
-            color: #ebebeb;
-            text-decoration: none;
-        }
+  color: #ebebeb;
+  text-decoration: none;
+}
 ```
 
 Here just set the color and text-decoration to none to remove the underline from the links.
 
 ```css
-    .ListItem {
-            margin-right: 1rem;
-        }
+.ListItem {
+  margin-right: 1rem;
+}
 
-    .LastItem {
-            margin-left: auto;
-        }
+.LastItem {
+  margin-left: auto;
+}
 ```
 
 Here I define the ListItem with margin so they have a distance from each other and don't get pasted and margin-left auto in the LastItem which is the Contact Us. Thus, the result is as follows:
 
-
 ![flexnav](https://i.imgur.com/CkZifvk.png)
 
-
-Now, in case we want to turn things around? It's quite simple. Just put a  `flex-direction: row-reverse;` in `MenuWrap` and change `margin-left: auto;` for `margin-right: auto;` and the result will be:
+Now, in case we want to turn things around? It's quite simple. Just put a `flex-direction: row-reverse;` in `MenuWrap` and change `margin-left: auto;` for `margin-right: auto;` and the result will be:
 
 ![inv-flex-nav](https://i.imgur.com/P6ZxJCt.png)
-
-
 
 #### References:
 
