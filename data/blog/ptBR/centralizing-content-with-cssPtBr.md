@@ -7,7 +7,7 @@ summary: Como centralizar conteúdos usando CSS
 images: https://i.giphy.com/media/13XW2MJE0XCoM0/giphy.gif
 ---
 
-<h2>pt-br | [en](/blog/centralizing-content-with-css)</h2>
+<h2>pt-br | [en](/blog/en/centralizing-content-with-css)</h2>
 
 ### Centralizando verticalmente
 

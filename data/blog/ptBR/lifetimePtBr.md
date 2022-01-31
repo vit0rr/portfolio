@@ -7,7 +7,7 @@ summary: O que é e como funciona lifetime em Rust?
 images: https://i.imgur.com/MuQSmKC.png
 ---
 
-<h2>pt-br | [en](/blog/lifetime)</h2>
+<h2>pt-br | [en](/blog/en/lifetime)</h2>
 
 ### Introdução
 

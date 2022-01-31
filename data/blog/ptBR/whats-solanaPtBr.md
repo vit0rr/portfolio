@@ -6,7 +6,7 @@ draft: true
 summary: O que é Solana? Uma introdução na blockchain
 ---
 
-<h2>pt-br | [en](/blog/whats-solana)</h2>
+<h2>pt-br | [en](/blog/en/whats-solana)</h2>
 
 ### Programs
 

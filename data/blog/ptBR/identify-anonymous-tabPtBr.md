@@ -7,7 +7,7 @@ summary: Como o Brainly consegue restringir seu acesso baseado na informação d
 images: https://i.imgur.com/1fq8QBf.png
 ---
 
-<h2>pt-br | [en](/blog/identify-anonymous-tab)</h2>
+<h2>pt-br | [en](/blog/en/identify-anonymous-tab)</h2>
 
 ### Introdução
 

@@ -7,7 +7,7 @@ summary: Introdução a construção de layouts flexíveis em CSS
 images: 'https://i.imgur.com/iwhCOzZ.png'
 ---
 
-<h2>pt-br | [en](/blog/introduction-flexbox)</h2>
+<h2>pt-br | [en](/blog/en/introduction-flexbox)</h2>
 
 ### Introdução
 

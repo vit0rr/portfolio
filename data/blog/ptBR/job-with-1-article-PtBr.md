@@ -7,7 +7,7 @@ summary: Explicando como consegui um novo emprego com crypto escrevendo um artig
 images: https://i.imgur.com/J4ZEeyt.png
 ---
 
-<h2>pt-br | [en](/blog/job-with-1-article)</h2>
+<h2>pt-br | [en](/blog/en/job-with-1-article)</h2>
 
 ![image](https://i.imgur.com/J4ZEeyt.png)
 
