@@ -7,7 +7,7 @@ summary: Por que requisito de tempo de experiência é besteira e porque você n
 images: https://i.imgur.com/NlxdZ6u.png
 ---
 
-<h2>pt-br | [en](/blog/experience-requirement-is-bullshit)</h2>
+<h3>[en](/blog/en/experience-requirement-is-bullshit) | ptBR</h3>
 
 ![image](https://i.imgur.com/NlxdZ6u.png)
 

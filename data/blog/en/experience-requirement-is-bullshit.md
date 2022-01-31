@@ -7,7 +7,7 @@ summary: Why experience time requirement is bullshit and you shouldn't care abou
 images: https://i.imgur.com/NlxdZ6u.png
 ---
 
-<h2>[pt-br](/blog/experience-requirement-is-bullshitPtBr) | en</h2>
+<h3>en | [ptBR](/blog/ptBR/requisitos-de-experiencia-e-besteira)</h3>
 
 ![image](https://i.imgur.com/NlxdZ6u.png)
 
