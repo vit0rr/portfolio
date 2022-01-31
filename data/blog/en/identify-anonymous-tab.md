@@ -7,7 +7,7 @@ summary: How does Brainly manage to restrict your access based on whether your t
 images: https://i.imgur.com/1fq8QBf.png
 ---
 
-<h2>[pt-br](/blog/identify-anonymous-tabPtBr) | en</h2>
+<h2>[pt-br](/blog/ptBR/identify-anonymous-tabPtBr) | en</h2>
 
 ### Introduction
 
