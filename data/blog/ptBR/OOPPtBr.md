@@ -7,7 +7,7 @@ summary: Discussão sobre OOP com Java
 images: https://i.imgur.com/46jF8Xd.png
 ---
 
-<h2>pt-br | [en](/blog/en/OOP)</h2>
+<h3>[en](/blog/en/OOP) | ptBR</h3>
 
 ### O que é um objeto?
 

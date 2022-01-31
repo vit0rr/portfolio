@@ -7,7 +7,7 @@ summary: Discussion of OOP with Java
 images: https://i.imgur.com/46jF8Xd.png
 ---
 
-<h2>[pt-br](/blog/ptBR/OOPPtBr) | en</h2>
+<h3>en | [ptBR](/blog/ptBR/OOPPtBr)</h3>
 
 ### What is an object?
 
