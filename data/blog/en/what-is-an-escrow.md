@@ -7,7 +7,7 @@ summary: What is an escrow smart contract in blockchain?
 images: https://i.imgur.com/hj2Hg3o.gif
 ---
 
-<h3>[pt-br](/blog/ptBR/oque-e-um-escrow) | en</h3>
+<h3>en | [ptBR](/blog/ptBR/oque-e-um-escrow)</h3>
 
 ### What is an escrow in blockchain?
 
