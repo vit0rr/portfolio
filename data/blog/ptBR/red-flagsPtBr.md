@@ -7,7 +7,7 @@ summary: Como um ambiente ruim me fez um desenvolvedor melhor?
 images: https://i.imgur.com/fgj7pmk.jpg
 ---
 
-<h2>pt-br | [en](/blog/en/red-flags)</h2>
+<h3>[en](/blog/en/red-flags) | ptBR</h3>
 
 ![image](https://i.imgur.com/fgj7pmk.jpg)
 
