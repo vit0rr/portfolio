@@ -7,7 +7,7 @@ summary: Como foi minha primeira entrevista em inglês como desenvolvedor blockc
 images: https://i.imgur.com/ot97RRR.png
 ---
 
-<h2>pt-br | [en](/blog/my-first-english-interview)</h2>
+<h3>[en](/blog/en/my-first-english-interview) | ptBR </h3>
 
 ![image](https://i.imgur.com/ot97RRR.png)
 

@@ -7,7 +7,7 @@ summary: How was my first English interview about blockchain development work
 images: https://i.imgur.com/ot97RRR.png
 ---
 
-<h2>[pt-br](/blog/my-first-english-interviewPtBr) | en</h2>
+<h3>en | [ptBR](/blog/ptBR/minha-primeira-entrevista-em-ingles)</h3>
 
 ![image](https://i.imgur.com/ot97RRR.png)
 
