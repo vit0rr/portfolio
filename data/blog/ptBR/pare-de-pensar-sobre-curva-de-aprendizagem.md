@@ -2,7 +2,7 @@
 title: Pare de pensar sobre curva de aprendizagem
 date: '01-18-2022'
 tags: ['learn', 'work']
-draft: false
+draft: true
 summary: Pare de pensar sobre curva de aprendizagem
 images: https://i.imgur.com/uzRAAdi.png
 ---
