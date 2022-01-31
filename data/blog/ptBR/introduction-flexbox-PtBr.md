@@ -4,7 +4,7 @@ date: '11-28-2021'
 tags: ['css', 'code', 'learn', 'responsive', 'layouts']
 draft: true
 summary: Introdução a construção de layouts flexíveis em CSS
-images: "https://i.imgur.com/iwhCOzZ.png"
+images: 'https://i.imgur.com/iwhCOzZ.png'
 ---
 
 <h2>pt-br | [en](/blog/introduction-flexbox)</h2>
@@ -17,14 +17,16 @@ Ela é a seguinte:
 
 ![example-flexbox-page](https://i.imgur.com/CVBWOTS.png)
 
-### Introdução a  flexbox
+### Introdução a flexbox
 
 Para usar flexbox, precisa ser aplicado no elemento pai dos elementos que você quer afetar. O resultado do `display: flex` no exemplo dessa página é o seguinte:
+
 ```css
 .flexbox-example {
-    display: flex;
+  display: flex;
 }
 ```
+
 ![example-displayFlex](https://i.imgur.com/OnUZvoM.png)
 
 Essa única linha de CSS usando flex consegue criar um layout responsivo, com espaço entre os elementos iguais entre si estando lado a lado.
@@ -81,31 +83,31 @@ Vamos construir agora uma navbar bem simples, como forma de aplicar mais ou meno
 
 ```html
 <div class="MenuWrap">
-        <a href="#" class="ListItem">Home</a>
-        <a href="#" class="ListItem">About Us</a>
-        <a href="#" class="ListItem">Products</a>
-        <a href="#" class="ListItem">Policy</a>
-        <a href="#" class="LastItem">Contact Us</a>
+  <a href="#" class="ListItem">Home</a>
+  <a href="#" class="ListItem">About Us</a>
+  <a href="#" class="ListItem">Products</a>
+  <a href="#" class="ListItem">Policy</a>
+  <a href="#" class="LastItem">Contact Us</a>
 </div>
 ```
 
 ```css
 * {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 ```
 
 Aqui eu apenas removo a margem e espaçamento padrão do navegador, assim a navbar vai ficar colada nas pontas.
 
-```css 
+```css
 .MenuWrap {
-    background-color: rgb(30, 32, 163);
-    font-size: 1rem;
-    min-height: 2.75rem;
-    display: flex;
-    align-items: center;
-    padding: 10px
+  background-color: rgb(30, 32, 163);
+  font-size: 1rem;
+  min-height: 2.75rem;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 ```
 
@@ -114,34 +116,30 @@ Em ordem, defino um background com uma tonalidade de azul, o tamanho da fonte, u
 ```css
 .ListItem,
 .LastItem {
-            color: #ebebeb;
-            text-decoration: none;
-        }
+  color: #ebebeb;
+  text-decoration: none;
+}
 ```
 
 Aqui é apenas definido a cor e text decoration como none para remover o underline dos links.
 
 ```css
-    .ListItem {
-            margin-right: 1rem;
-        }
+.ListItem {
+  margin-right: 1rem;
+}
 
-    .LastItem {
-            margin-left: auto;
-        }
+.LastItem {
+  margin-left: auto;
+}
 ```
 
 Aqui defino o ListItem com margin para eles terem uma distância entre si e não ficarem colado e margin-left auto no LastItem que é o Contact Us. Dessa forma, o resultado é o seguinte:
 
-
 ![flexnav](https://i.imgur.com/CkZifvk.png)
-
 
 Agora, caso a gente queira inverter as coisas? É bem simples. Basta colocar um `flex-direction: row-reverse;` em `MenuWrap` e mudar `margin-left: auto;` para `margin-right: auto;` e o resultado será:
 
 ![inv-flex-nav](https://i.imgur.com/P6ZxJCt.png)
-
-
 
 #### Referências:
 
