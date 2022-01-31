@@ -9,6 +9,8 @@ images: https://i.imgur.com/NlxdZ6u.png
 
 <h2>pt-br | [en](/blog/experience-requirement-is-bullshit)</h2>
 
+![image](https://i.imgur.com/NlxdZ6u.png)
+
 ### Você provavelmente tem métricas ruins
 
 Em algunas requisitos de vaga, já vi "X tempo com Y tecnologia" e isso é errado. Eu não ligo se você é um desenvolvedor de dois ou cinco anos. Eu quero que você resolva meus problemas e posso te pagar pra isso. Mas a maioria das pessoas não pensam sobre.
