@@ -9,6 +9,8 @@ images: https://i.imgur.com/ot97RRR.png
 
 <h2>pt-br | [en](/blog/my-first-english-interview)</h2>
 
+![image](https://i.imgur.com/ot97RRR.png)
+
 Eu participei da minha primeira entrevista de trabalho em inglês como desenvolvedor blockchain. Os requisitos da vaga eram complexas, e eu sabia que não conseguiria o trabalho.
 
 A oportunidade veio até mim. Eu não tive razões para recusar o meeting. Aceitei e foi bom para mim.

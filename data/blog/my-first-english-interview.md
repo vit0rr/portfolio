@@ -9,6 +9,8 @@ images: https://i.imgur.com/ot97RRR.png
 
 <h2>[pt-br](/blog/my-first-english-interviewPtBr) | en</h2>
 
+![image](https://i.imgur.com/ot97RRR.png)
+
 I've attended my first job interview in English to work with blockchain development. The requirement was complex, and I knew that I wouldn't get the job.
 
 The opportunity came to me. I don't have reasons to decline this meeting. I accepted and did well for myself.
