@@ -7,7 +7,7 @@ summary: Introduction to build flexible layouts in CSS
 images: 'https://i.imgur.com/iwhCOzZ.png'
 ---
 
-<h3>en | [ptBR](/blog/ptBR/introduction-flexbox-PtBr)</h3>
+<h3>en | [ptBR](/blog/ptBR/introducao-flexbox)</h3>
 
 ### Introduction
 
