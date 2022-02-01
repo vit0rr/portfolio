@@ -1,5 +1,5 @@
 ---
-title: Como foi minha primeira experiência sendo Tech Lead
+title: How was my first experience as a Tech Lead
 date: '11-07-2021'
 tags: ['tech lead', 'code', 'learn', 'work']
 draft: false
