@@ -7,7 +7,7 @@ summary: Explaining how I got a new job with crypto writing one article about wh
 images: https://i.imgur.com/J4ZEeyt.png
 ---
 
-<h3>en | [ptBR](/blog/ptBR/job-with-1-article-PtBr)</h3>
+<h3>en | [ptBR](/blog/ptBR/trabalho-com-um-artigo)</h3>
 
 ![image](https://i.imgur.com/J4ZEeyt.png)
 
