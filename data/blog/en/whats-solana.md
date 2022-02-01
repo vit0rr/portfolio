@@ -6,7 +6,7 @@ draft: true
 summary: What's Solana? A introduction in this blockchain
 ---
 
-<h2>[pt-br](/blog/ptBR/whats-solanaPtBr) | en</h2>
+<h2>[pt-br](/blog/ptBR/oque-e-solana) | en</h2>
 
 ### Programs
 
