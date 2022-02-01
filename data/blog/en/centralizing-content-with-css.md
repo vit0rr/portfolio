@@ -7,7 +7,7 @@ summary: How to centralize elements using CSS (vertically and horizontally)
 images: https://i.giphy.com/media/13XW2MJE0XCoM0/giphy.gif
 ---
 
-<h3>en | [ptBR](/blog/ptBR/centralizing-content-with-cssPtBr)</h3>
+<h3>en | [ptBR](/blog/ptBR/centralizando-coisas-com-css)</h3>
 
 ### Vertically centralizing
 
