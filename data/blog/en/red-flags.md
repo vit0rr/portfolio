@@ -7,7 +7,7 @@ summary: How did a bad environment make me a better developer?
 images: https://i.imgur.com/fgj7pmk.jpg
 ---
 
-<h3>en | [ptBR](/blog/ptBR/red-flagsPtBr)</h3>
+<h3>en | [ptBR](/blog/ptBR/red-flags)</h3>
 
 ![image](https://i.imgur.com/fgj7pmk.jpg)
 
