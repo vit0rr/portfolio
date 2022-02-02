@@ -4,7 +4,7 @@ date: '01-31-2022'
 tags: ['java', 'computer science', 'polymorphism', 'OOP']
 draft: true
 summary: What is a bubble and why is important to know
-images: https://i.imgur.com/BYKPrVu.png
+images: https://i.imgur.com/hu2JZef.png
 ---
 
 <h3>en | [ptBR](/blog/ptBR/oque-e-uma-bolha)</h3>
