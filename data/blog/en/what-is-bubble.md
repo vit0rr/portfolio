@@ -13,7 +13,7 @@ images: https://i.imgur.com/hu2JZef.png
 
 Every market bubble bursts. The question is when and what you learn with this. In 1990, it was a time with a lot of confidence and few results. The Internet bubble was startups that thought it possible to go from Zero to One. But some few startups(dot com) was got it.
 
-![image](https://i.imgur.com/hu2JZef.png)
+The proportion of confidence and results don't was matched. The consequences of this is was a lot of people losing money and losing jobs
 
 With the belief that everyone was possible to go from Zero to One, people began to invest desperately in startups and some left their jobs betting only on the financial market. But there was a big problem, as the following image describes:
 
