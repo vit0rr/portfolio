@@ -4,7 +4,7 @@ date: '02-02-2022'
 tags: ['java', 'computer science', 'polymorphism', 'OOP']
 draft: true
 summary: O que é uma bolha e o motivo de ser importante.
-images: https://i.imgur.com/BYKPrVu.png
+images: https://i.imgur.com/hu2JZef.png
 ---
 
 <h3>[en](/blog/en/what-is-bubble) | ptBR</h3>
