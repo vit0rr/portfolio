@@ -11,9 +11,9 @@ images: https://i.imgur.com/hu2JZef.png
 
 ![image](https://i.imgur.com/hu2JZef.png)
 
-Every market bubble bursts. The question is when and what you learn with this. In 1990, it was a time with a lot of confidence and few results. The Internet bubble was startups that thought it possible to go from Zero to One. But some few startups(dot com) was got it.
+Toda bolha de mercado estoura. A questão é quanto e o que você aprendeu com ela. Em 1990, foi uma época de muita confiança e pouco resultado. A Bolha da Internet foi de startups que pensavam ser possível ir de Zero a Um. Mas apenas algumas startups (Ponto Com) realmente conseguiram.
 
-![image](https://i.imgur.com/hu2JZef.png)
+A proporção de confiança e resultados não batia. A consequência disso foi muitas pessoas perdendo dinheiro e o emprego.
 
 With the belief that everyone was possible to go from Zero to One, people began to invest desperately in startups and some left their jobs betting only on the financial market. But there was a big problem, as the following image describes:
 
