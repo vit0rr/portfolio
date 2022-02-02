@@ -15,7 +15,7 @@ Toda bolha de mercado estoura. A questão é quanto e o que você aprendeu com e
 
 A proporção de confiança e resultados não batia. A consequência disso foi muitas pessoas perdendo dinheiro e o emprego.
 
-With the belief that everyone was possible to go from Zero to One, people began to invest desperately in startups and some left their jobs betting only on the financial market. But there was a big problem, as the following image describes:
+Com a crença de que todo mundo consegue ir de Zero a Um, pessoas começaram a investir desesperadamente nas Ponto Com, saíram dos seus empregos para viver apenas de mercado financeiro. Mas houve um grande problema aqui, e ele é descrito nessa imagem:
 
 ![image](https://i.imgur.com/SdFPAfn.png)
 
