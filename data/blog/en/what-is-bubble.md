@@ -7,7 +7,7 @@ summary: What is a bubble and why is important to know
 images: https://i.imgur.com/BYKPrVu.png
 ---
 
-<h3>en | [ptBR]()</h3>
+<h3>en | [ptBR](/blog/ptBR/oque-e-uma-bolha)</h3>
 
 ![image](https://i.imgur.com/BYKPrVu.png)
 
