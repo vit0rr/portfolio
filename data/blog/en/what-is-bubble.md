@@ -19,6 +19,13 @@ With the belief that everyone was possible to go from Zero to One, people began 
 
 ![image](https://i.imgur.com/SdFPAfn.png)
 
+### How some startups don't lose and die with bubbles?
+
+Globalization causes a bubble. But what is globalization?
+In the context of the market, globalization is all that go from 1 -> N. This means that startups don't create something. Each FAANG goes from 0 -> 1. This is innovation. No one has the same idea as your startup has. This is innovation and the best way is probably the new way, never what someone doe before you. If some startup that makes something that already exists, this is not innovation and isn't unique, is part of globalization.
+
+So, how some startups don't lose and die with bubbles? Going 0 -> 1. And not 1 -> N.
+
 #### References:
 
 - [Zero to One](https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296)
