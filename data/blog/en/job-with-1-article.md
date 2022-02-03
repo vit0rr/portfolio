@@ -1,7 +1,7 @@
 ---
 title: How I got a new job writing one article
 date: '11-23-2021'
-tags: ['Essay']
+tags: ['Essay', 'Pinned']
 draft: false
 summary: Explaining how I got a new job with crypto writing one article about what I learning.
 images: https://i.imgur.com/J4ZEeyt.png
