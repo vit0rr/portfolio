@@ -1,7 +1,7 @@
 ---
 title: How websites detect anonymous tab with JavaScript
 date: '08-11-2021'
-tags: ['javascript', 'code', 'security']
+tags: ['Tutorials']
 draft: false
 summary: How does Brainly manage to restrict your access based on whether your tab is anonymous or not?
 images: https://i.imgur.com/1fq8QBf.png
