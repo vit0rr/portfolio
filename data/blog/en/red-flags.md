@@ -1,7 +1,7 @@
 ---
 title: Identifying and Evolving with Red Flags
 date: '12-01-2021'
-tags: ['Essay']
+tags: ['Essay', 'Pinned']
 draft: false
 summary: How did a bad environment make me a better developer?
 images: https://i.imgur.com/fgj7pmk.jpg
