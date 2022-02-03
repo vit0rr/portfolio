@@ -1,7 +1,7 @@
 ---
 title: Why experience time requirement is bullshit
 date: '12-24-2021'
-tags: ['code', 'learn', 'work', 'pinned']
+tags: ['Essay']
 draft: false
 summary: Why experience time requirement is bullshit and you shouldn't care about that
 images: https://i.imgur.com/NlxdZ6u.png
