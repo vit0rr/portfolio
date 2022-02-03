@@ -1,7 +1,7 @@
 ---
 title: Desenvolvimento full stack Solana com React, Anchor, Rust, e Phantom
 date: '11-18-2021'
-tags: ['javascript', 'code', 'learn', 'full stack', 'solana', 'react', 'anchor', 'rust', 'phantom']
+tags: ['Tutorials']
 draft: false
 summary: Guia completo com desenvolvimento full stack, minha introdução com crypto e web3.
 ---
