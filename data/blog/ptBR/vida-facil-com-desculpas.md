@@ -1,7 +1,7 @@
 ---
 title: Como viver uma vida mais fácil criando desculpas?
 date: '1-28-2022'
-tags: ['learn', 'job', 'article']
+tags: ['Essay']
 draft: true
 summary: Criando desculpas para seus problemasa é a forma mais rápida para fugir de coisas difíceis
 images: https://i.imgur.com/xwXZ3zl.png
