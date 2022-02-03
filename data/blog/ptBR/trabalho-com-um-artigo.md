@@ -1,7 +1,7 @@
 ---
 title: Como consegui um novo emprego escrevendo um artigo
 date: '11-25-2021'
-tags: ['learn', 'job', 'article']
+tags: ['Essay']
 draft: true
 summary: Explicando como consegui um novo emprego com crypto escrevendo um artigo sobre o que estudava
 images: https://i.imgur.com/J4ZEeyt.png
