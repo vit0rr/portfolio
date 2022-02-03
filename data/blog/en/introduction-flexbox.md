@@ -1,7 +1,7 @@
 ---
 title: Introduction to flexbox in CSS
 date: '11-28-2021'
-tags: ['css', 'code', 'learn', 'responsive', 'layouts', 'flex']
+tags: ['Tutorials']
 draft: false
 summary: Introduction to build flexible layouts in CSS
 images: 'https://i.imgur.com/iwhCOzZ.png'
