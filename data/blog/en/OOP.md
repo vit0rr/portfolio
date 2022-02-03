@@ -1,7 +1,7 @@
 ---
 title: Understanding Object Oriented Programming (OOP) with Java
 date: '09-23-2021'
-tags: ['java', 'computer science', 'polymorphism', 'OOP']
+tags: ['Tutorials']
 draft: false
 summary: Discussion of OOP with Java
 images: https://i.imgur.com/46jF8Xd.png

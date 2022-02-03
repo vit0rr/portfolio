@@ -1,7 +1,7 @@
 ---
 title: Entendendo programação orientada a objeto (OOP) com Java
 date: '09-23-2021'
-tags: ['java', 'computer science', 'polymorphism', 'OOP']
+tags: ['Tutorials']
 draft: true
 summary: Discussão sobre OOP com Java
 images: https://i.imgur.com/46jF8Xd.png
