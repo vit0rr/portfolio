@@ -1,7 +1,7 @@
 ---
 title: O que é uma bolha
 date: '02-02-2022'
-tags: ['java', 'computer science', 'polymorphism', 'OOP']
+tags: ['Essay']
 draft: true
 summary: O que é uma bolha e o motivo de ser importante.
 images: https://i.imgur.com/hu2JZef.png
