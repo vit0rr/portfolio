@@ -1,7 +1,7 @@
 ---
 title: How was my first experience as a Tech Lead
 date: '11-07-2021'
-tags: ['tech lead', 'code', 'learn', 'work']
+tags: ['Essay']
 draft: false
 summary: How were the first few weeks as a Tech Lead in a tech startup?
 ---

@@ -1,7 +1,7 @@
 ---
 title: Como foi minha primeira experiência sendo Tech Lead
 date: '11-07-2021'
-tags: ['tech lead', 'code', 'learn', 'work']
+tags: ['Essay']
 draft: true
 summary: Como foram as primeiras semanas como Tech Lead numa startup de tecnologia?
 ---
