@@ -1,7 +1,7 @@
 ---
 title: Centralizing elements with CSS
 date: '11-26-2021'
-tags: ['css', 'code', 'learn']
+tags: ['Tutorials']
 draft: false
 summary: How to centralize elements using CSS (vertically and horizontally)
 images: https://i.giphy.com/media/13XW2MJE0XCoM0/giphy.gif
