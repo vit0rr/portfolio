@@ -1,7 +1,7 @@
 ---
 title: O que é Solana?
 date: '12-09-2021'
-tags: ['solana', 'blockchain']
+tags: ['Tutorials']
 draft: true
 summary: O que é Solana? Uma introdução na blockchain
 ---
