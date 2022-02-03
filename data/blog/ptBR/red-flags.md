@@ -1,7 +1,7 @@
 ---
 title: Identificando e evoluindo com as Red Flags
 date: '12-01-2021'
-tags: ['red flags', 'work']
+tags: ['Essay']
 draft: true
 summary: Como um ambiente ruim me fez um desenvolvedor melhor?
 images: https://i.imgur.com/fgj7pmk.jpg
