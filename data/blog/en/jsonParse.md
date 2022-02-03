@@ -1,7 +1,7 @@
 ---
 title: How works JSON.parse()
 date: '09-13-2021'
-tags: ['javascript', 'code']
+tags: ['Tutorials']
 draft: false
 summary: Understanding JSON.parse() and why JSON.parse("false") is false and Boolean("false") is true
 ---
