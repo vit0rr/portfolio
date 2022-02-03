@@ -1,7 +1,7 @@
 ---
 title: O que aprendi na minha primeira entrevista em inglês?
 date: '12-31-2021'
-tags: ['interview', 'learn', 'work']
+tags: ['Essay']
 draft: true
 summary: Como foi minha primeira entrevista em inglês como desenvolvedor blockchain
 images: https://i.imgur.com/ot97RRR.png
