@@ -1,7 +1,7 @@
 ---
 title: O que é um escrow
 date: '12-06-2021'
-tags: ['code', 'learn', 'blockchain', 'solana', 'smart-contract']
+tags: ['Tutorials']
 draft: true
 summary: O que é um escrow smart contract numa blockchain?
 images: https://i.imgur.com/hj2Hg3o.gif
