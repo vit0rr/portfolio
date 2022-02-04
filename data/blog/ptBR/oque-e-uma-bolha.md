@@ -26,6 +26,10 @@ No contexto de mercado, globalização é tudo que vai de 1 -> N. Isso significa
 
 Então, como algumas startups não perdem e morrem com bolhas? Indo de 0 -> 1. E não de 1 -> N.
 
+### Toda bolha vem com uma inovação
+
+A melhor forma de sobreviver a uma bolha é com uma startup única. Por que? Pois todo monopólio representa inovação, não tem competição. Exemplos? Todas as FAANG (Facebook, Amazon, Apple, Netflix, e Google). Todas essas empresas já foram ou são acusadas de monopólio por serem únicas.
+
 #### References:
 
 - [Zero to One](https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296)
