@@ -26,6 +26,10 @@ In the context of the market, globalization is all that go from 1 -> N. This mea
 
 So, how some startups don't lose and die with bubbles? Going 0 -> 1. And not 1 -> N.
 
+### Every bubble come with innovation
+
+The best way to survive a bubble is with a unique startup. Why? Because every monopoly represents innovation, don't have competition. Examples? Every FAANG (Facebook, Amazon, Apple, Netflix, and Google). All these companies have been or are accused of monopoly because are uniques.
+
 #### References:
 
 - [Zero to One](https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296)
