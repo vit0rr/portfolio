@@ -2,7 +2,7 @@
 title: What is bubble
 date: '01-31-2022'
 tags: ['Essay']
-draft: false
+draft: true
 summary: What is a bubble and why is important to know
 images: https://i.imgur.com/hu2JZef.png
 ---
