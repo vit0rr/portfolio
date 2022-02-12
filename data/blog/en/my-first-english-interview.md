@@ -29,4 +29,4 @@ If you don't have experience, you will never know when is the best time to apply
 
 - [Why experience time requirement is bullshit](https://vitorsalmeida.com/blog/experience-requirement-is-bullshit)
 
-- [How I got a new job writing one article](https://vitorsalmeida.com/blog/job-with-1-article)
+- [How I got a new job writing one article](https://vitorsalmeida.com/blog/en/job-with-1-article)
