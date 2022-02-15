@@ -9,4 +9,4 @@ linkedin: https://www.linkedin.com/in/vitorsalmeida/
 github: https://github.com/vit0rr
 ---
 
-Passionate about development and open-source. I'm trying to build a better community making all my knowledge public.
+Passionate about development and open-source. Helping Solana community
