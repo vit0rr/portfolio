@@ -53,3 +53,19 @@ Ok, você tem uma ideia e agora projetou a sua linguagem genial de programação
 Muito disso é automático para os humanos. os compiladores funcionam da mesma maneira, exceto que temos que programar explicitamente os computadores para fazer isso. O exemplo do telégrafo descreve um compilador simples que consiste em 4 estágios: lex, parse, type-check e então traduz em instruções de máquina. O operador também precisa de algumas ferramentas adicionais para realmente extrair o código Morse. Para linguagens de programação, este é o ambiente de tempo de execusão.
 
 Em muitas linguagens práticas, você não pode simplesmente ir diretamente de código-fonte para código de máquina, há uma redução, onde remove as construções de linguagem estágio por estágio, até ficarmos com um pequeno conjunto de instruções que podem ser executadas. Essa redução torna os estágios posteriores mais fáceis, pois eles operam de forma mais simples. Os estágios do compilador são agrupados em front-end, middle-end e back-end, onde front-end faz grande parte da análise/verificação de tipos, middle e back-end simplificam e otimizam o código.
+
+### Opções de design do compilador
+
+O operador traduz as palavras dinamicamente em código Morse à medida que as transmitem ou converte as palavras em código Morse antecipadamente e depois transmitem o código Morse? Linguagens interpretadas como Python fazem o primeiro, enquanto linguagens compiladas adiantadas como C fazem o último. java na verdade está entre os dois - ele usa um compilador just-in-time que faz a maior parte do trabalho de antemão, traduzindo programas para bytecode e então em tempo de execução compila bytecode para código de máquina.
+
+o LLVM IR atua como um trampolim entre o programa e o código de máquina. C, C++, Rust e uma série de outras linguagens tem como alvo o LLVM IR, que então compila o código para uma vaeriedade de arquitetura de processadores. Aqui uma ilustração representando o processo de envolvendo LLVM:
+
+![llvm](https://i.imgur.com/ujTIIzp.png)
+
+Static vs dynamic typing?
+
+No primeiro caso, o operador verifica se as palavras fazem sentido antes de começar a tocar. Ou, eles não fazem e então no meio do caminho eles reclamam de que algo não faz sentido e param. A digitação dinâmica pode ser vista como maios rápida para experimentar (Python e JS), mas quando você envia essa mensagem, você não sabe se o operador irá parar no meio do caminho. Ou seja, se ele vai crashar.
+
+Em termos um pouco mais técnicos, tipagem dinâmica é quando a verificação de tipo, é realizada em tempo de execução, e não em tempo de compilação.
+
+A estática, é o contrário da dinâmica. Os tipos são verificados em tempo de compilação.
