@@ -4,6 +4,7 @@ date: '03-02-2022'
 tags: ['Tutorials']
 draft: false
 summary: Como eu escrevi minha própria linguagem de programação?
+images: https://i.imgur.com/ujTIIzp.png
 ---
 
 ### Introdução
