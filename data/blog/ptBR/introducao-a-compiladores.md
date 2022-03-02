@@ -69,3 +69,9 @@ No primeiro caso, o operador verifica se as palavras fazem sentido antes de come
 Em termos um pouco mais técnicos, tipagem dinâmica é quando a verificação de tipo, é realizada em tempo de execução, e não em tempo de compilação.
 
 A estática, é o contrário da dinâmica. Os tipos são verificados em tempo de compilação.
+
+### Tipos
+
+Na analogia com o telégrafo, o operador classifica as palavras em adjetivos, verbos etc, e o nosso sistema de tipo faz isso. Classificamos os valores do programa com base no comportamento que gostaríamos que ele tivesse. Por exemplo, `int`, para números que podem ser multiplicados juntos, `String` para fluxos de caracteres que podem ser concatenados juntos. A função do verificador de tipos é evitar que um comportamento indesejável aconteça, como concatenar `int` ou multiplicar `String`. Essas operações não fazem sentido, portanto, não devem ser permitidas. Com a verificação de tipo, o programador anota valores com tipos e o compilador verifica se estão corretos. Com inferência de tipos, o compilador infere e verifica os tipos. Chamamos as regras que verificam de typing judgements, e uma coleção delas (junto com os tipos) formam um sistemma de tipos.
+
+Porém, sistemas de tipos não verificam apenas se é `int` ou `String`. Sistemas de tipos são mais ricos, complexos. O sistema de tipos do Rust por exemplo, garante a segurança da memória e a liberdade de corrida de dados, além de verificar os tipos tradicionais que citamos `int` e `String`.
