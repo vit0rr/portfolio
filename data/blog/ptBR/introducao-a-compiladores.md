@@ -1,14 +1,14 @@
 ---
 title: Introdução a compiladores
-date: '02-27-2022'
+date: '03-02-2022'
 tags: ['Tutorials']
-draft: true
+draft: false
 summary: Como eu escrevi minha própria linguagem de programação?
 ---
 
 ### Introdução
 
-Estou fazendo esse artigo para mim. Tenho interesse nos assuntos tratados no artigo [How I wrote my own "proper" programming language](https://mukulrathi.com/create-your-own-programming-language/intro-to-compiler/) e pretendo estudar ele por completo, passando por todos os passos.
+Estou fazendo esse texto para mim. Tenho interesse nos assuntos tratados no artigo [How I wrote my own "proper" programming language](https://mukulrathi.com/create-your-own-programming-language/intro-to-compiler/) e pretendo estudar ele por completo, passando por todos os passos.
 
 Como a melhor forma de aprender e estudar algo é escrevendo sobre isso (pelo menos para mim), eu vou traduzir o artigo para que eu possa entender melhor. Não é uma tradução direta, vou mudar, remover ou acrescentar coisas durante o texto.
 
@@ -16,7 +16,7 @@ Como a melhor forma de aprender e estudar algo é escrevendo sobre isso (pelo me
 
 ![img](https://mukulrathi.com/static/67552b3afe850eb6515a639276f98f47/00ea0/compiler-pipeline.webp)
 
-A imagem acima é ó compilador da linguagem "Bolt" que vamos construir.
+A imagem acima é o compilador da linguagem "Bolt" que vamos construir.
 
 Você não precisa saber muita coisa sobre C++ e OCaml, vamos ir aprendendo durante o processo.
 
