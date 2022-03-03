@@ -3,7 +3,7 @@ title: Introdução a compiladores
 date: '03-02-2022'
 tags: ['Tutorials']
 draft: false
-summary: Como eu escrevi minha própria linguagem de programação?
+summary: Introdução a compiladores - Escrevendo a própria linguagemde programação
 images: https://i.imgur.com/ujTIIzp.png
 ---
 
