@@ -7,6 +7,19 @@ summary: Introdução a compiladores - Escrevendo a própria linguagem de progra
 images: https://i.imgur.com/ujTIIzp.png
 ---
 
+1. Como criar minha linguagem de programação?
+   1. Introdução a compiladores
+   2. [Como estruturar um projeto de compilador?]()
+   3. ~Escrevendo um Lexer e Parser usando OCamllex e Menhir~
+   4. ~Uma introdução à teoria de tipos e implementação de um verificador de tipos~
+   5. ~Tutorial sobre análise de fluxo de dados de vivacidade e alias~
+   6. ~Pegando nossa linguagem de alto nível e simplificando~
+   7. ~Tutorial do Protobuf para OCaml e C++~
+   8. ~Guia para LLVM para criadores de linguagem de programação~
+   9. ~Implementando a simultaneidade e nossa biblioteca de tempo de execução~
+   10. ~Adicionando polimorfismo~
+   11. ~Adicionando herança e Substituição de Método na nossa linguagem~
+
 ### Introdução
 
 Estou fazendo esse texto para mim. Tenho interesse nos assuntos tratados no artigo [How I wrote my own "proper" programming language](https://mukulrathi.com/create-your-own-programming-language/intro-to-compiler/) e pretendo estudar ele por completo, passando por todos os passos.
