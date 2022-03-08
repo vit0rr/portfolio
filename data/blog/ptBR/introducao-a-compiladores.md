@@ -8,7 +8,7 @@ images: https://i.imgur.com/ujTIIzp.png
 ---
 
 1. Como criar minha linguagem de programação?
-   1. Introdução a compiladores
+   1. _Introdução a compiladores_
    2. [Como estruturar um projeto de compilador?](/blog/ptBR/como-estruturar-um-projeto-de-compilador)
    3. ~Escrevendo um Lexer e Parser usando OCamllex e Menhir~
    4. ~Uma introdução à teoria de tipos e implementação de um verificador de tipos~
