@@ -1,6 +1,6 @@
 ---
 title: Como estruturar um projeto de compilador?
-date: '03-02-2022'
+date: '03-08-2022'
 tags: ['Tutorials']
 draft: false
 summary: Como estruturar um projeto de compilador? - Escrevendo a própria linguagem de programação
