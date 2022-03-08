@@ -17,7 +17,7 @@ You don't need to prepare to learn something. You need more practice and less ov
 
 Read ["Study Backwards"](https://sibelius.substack.com/p/study-backwards). You should not start with the technology.
 
-### What's mean "Learning curve"?
+### What does learning curve mean?
 
 Is a term to define a curve of learning based on what you know and don't know. Example: I want to learn ReactJS, but I don't have ANY knowledge about JS. My curve will be high.
 
