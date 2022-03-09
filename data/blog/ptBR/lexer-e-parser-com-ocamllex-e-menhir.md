@@ -7,6 +7,19 @@ summary: Escrevendo um Lexer e Parser com OCamllex e Menhir - Escrevendo a próp
 images: https://i.imgur.com/pCBSiRJ.png
 ---
 
+1. Como criar minha linguagem de programação?
+   1. [Introdução a compiladores](/blog/ptBR/introducao-a-compiladores)
+   2. [Como estruturar um projeto de compilador?](/blog/ptBR/como-estruturar-um-projeto-de-compilador)
+   3. _Escrevendo um Lexer e Parser usando OCamllex e Menhir_
+   4. ~Uma introdução à teoria de tipos e implementação de um verificador de tipos~
+   5. ~Tutorial sobre análise de fluxo de dados de vivacidade e alias~
+   6. ~Pegando nossa linguagem de alto nível e simplificando~
+   7. ~Tutorial do Protobuf para OCaml e C++~
+   8. ~Guia para LLVM para criadores de linguagem de programação~
+   9. ~Implementando a simultaneidade e nossa biblioteca de tempo de execução~
+   10. ~Adicionando polimorfismo~
+   11. ~Adicionando herança e Substituição de Método na nossa linguagem~
+
 ## Tokens de Lexing
 
 Os caracteres individuais não significam muito, então primeiro precisamos dividir o fluxo em tokens (que são análogos a "palavras" em frases). Esses tokens atribuem significados: esse grupo de caracteres é uma palavra-chave específica em nossa linguagem (`if`, `int`, `class`) ou é um identificador (`banana`)?
