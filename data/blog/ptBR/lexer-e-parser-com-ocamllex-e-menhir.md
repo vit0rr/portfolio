@@ -96,4 +96,80 @@ let newline = '\r' | '\n' | "\r\n"
 
 ## Regras de Lexing
 
-Em seguida, precisamos especificar regras para o OCamllex verificar a entrada; Cada regra é especificada
+Em seguida, precisamos especificar regras para o OCamllex verificar a entrada; Cada regra é especificada em um formato de correspondência de padrões e especificamos oes regexes em ordem de prioridade (mais alta primeiro):
+
+```f#
+rule <rule_name> = parse
+| <regex>  {  TOKEN_NAME } (* output a token *)
+| <regex>  { ... } (* or execute other code *)
+
+and <another_rule> = parse
+  | ...
+```
+
+As regras são recursivas: uma vez ue ele corresponde a um token, ele chama a si mesmo para recomeçar e corresponder ao próximo token. Múltiplas regras são mutuamente recursivas, ou seja, podemos chamar cada regra recurviamente na definição de outra. Ter várias regras é útil se você quiser tratar o fluxo de caracteres de maneira diferente em diferentes casos.
+
+Por exemplo, queremos que nossa regra principal leia tokens. No entanto, queremos tratar os comentários de forma diferente, não emitindo nenhum token até chegarmos ao final do comentário. Outro caso são as strings no Bolt: queremos tratar os caracteres que estamos lendo como parte de uma string, não como um token correspondente. Esses casos podem ser vistsos no seguinte código Bolt:
+
+```java
+let x = 4 //comentário
+
+/*
+  comentário
+ */
+
+ printf("valor de x é %d", x)
+```
+
+Agora que temos nossos requisitos para nosso lexer, podemos definir as regras em nosso arquivo de especificação OCamllex. Os pontos-chave são:
+
+- Temos 4 regras: `read_token`, `read_single_line_comment`, `read_milti_line_comment`, `read_string`.
+- Precisamos lidar com `eof` explicitamente (isso significa o fim do arquivo) e incluir um caso `_` genérico para corresponder a todos os outros regexes.
+- Usamos `Lexing.lexeme lexbuf` para obter a strinf correspondida pela regex.
+- Para `read_string`, criamos outro buffer para armazenar os caracteres: não usamos `Lexing.lexeme lexbuf` porque queremos manipular explicitamente os caracteres do escape. `Buffer.create 17` aloca um buffer redimensionável que inicialmente tem um tamanho de 17 bytes.
+- Usamos `raise SuntaxError` para tratamento de erros (caracteres de entrada inesperados).
+- Ao ler tokens, pulamos os espaços em branco chamando `read_token lexbuf` em vez de omitir um token. Da mesma forma, para uma nova linha chamamos nossa função aximilar `next_line` para pular o caractere de nova linha.
+
+```f#
+// lexer.mll
+
+rule read_token =
+  parse
+  | "(" { LPAREN }
+  | "printf" {PRINTF }
+  | "whitespace" { read_token lexbuf }
+  | "//" { single_line_comment lexbuf }
+  | "/*" { multi_line_comment lexbuf }
+  | "int" { INT (int_of_string (Lexing.lexeme lexbuf))}
+  | "id" { ID (Lexing.lexeme lexbuf) }
+    | '"'      { read_string (Buffer.create 17) lexbuf }
+  | "newline" { next_line lexbuf; read_token lexbuf }
+  | eof { EOF }
+  | _ {raise (SyntaxError ("Lexer - Illegal character: " ^ Lexing.lexeme lexbuf)) }
+
+and read_single_line_comment = parse
+  | "newline" { next_line lexbuf; read_token lexbuf }
+  | eof { EOF }
+  | _ { read_single_line_comment lexbuf }
+
+and read_multi_line_comment = parse
+  | "*/" { read_token lexbuf }
+  | "newline" { next_line lexbuf; read_multi_line_comment lexbuf }
+  | eof { raise (SyntaxError ("Lexer - Unexpected EOF - please terminate your comment.")) }
+  | _ { read_multi_line_comment lexbuf }
+
+and read_string buf = parse
+  | '"'       { STRING (Buffer.contents buf) }
+  | '\\' 'n'  { Buffer.add_char buf '\n'; read_string buf lexbuf }
+   (* Other regexes to handle escaping special characters *)
+  | [^ '"' '\\']+
+    { Buffer.add_string buf (Lexing.lexeme lexbuf);
+      read_string buf lexbuf
+    }
+  | _ { raise (SyntaxError ("Illegal string character: " ^ Lexing.lexeme lexbuf)) }
+  | eof { raise (SyntaxError ("String is not terminated")) }
+```
+
+## Saída do OCamllex
+
+O OCamllex gera um `Lexer` módulo do `lexer.mlll`, a partir do qual você pode chamar `Lexer.read_token` ou qualquer uma das outras regras, bem como as funções auxiliares definidas no cabeçalho. Se você estiver curioso, depois de executar `make build`, poderá ver o módulo gerado na `lexer.ml` em `_build` ou na pasta que gerar o `lexer.ml`, como a root.
