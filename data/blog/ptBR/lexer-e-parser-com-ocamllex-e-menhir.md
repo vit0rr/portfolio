@@ -76,3 +76,24 @@ let next_line lexbuf =
     }
 }
 ```
+
+## Regexes
+
+Em seguida, precisamos especificar as expressões regulares que estamos usando para corresponder aos tokens. Para a maioria dos tokens, esta é uma string simples, por exemplo, `true` para o token `TRUE`. No entando, outros tokens têm regexes mais complexas, por exemploi, para inteiros e indentificadores. A sintaxe regex do OCamllex é como a maioria das bibliotecas regex:
+
+```f#
+// lexer.mll
+
+(* Definir regexes auxiliares *)
+let digit = ['0'-'9']
+let alpha = ['a'-'z' 'A'-'Z']
+
+let int = '-'? digit+  (* regex para inteiros *)
+let id = (alpha) (alpha|digit|'_')* (* regex para  identificador*)
+let whitespace = [' ' '\t']+
+let newline = '\r' | '\n' | "\r\n"
+```
+
+## Regras de Lexing
+
+Em seguida, precisamos especificar regras para o OCamllex verificar a entrada; Cada regra é especificada
