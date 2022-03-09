@@ -21,7 +21,7 @@ Como dividemos o fluxo de caracteres em tokens? Combinamos com o padrão. Você 
 
 Aqui está um lexer bem simples que reconhece as palavras-chave "IN", "INT" e identificadores (nomes de variáveis / função), e os tokens são separados por espaços. Observe que verificamos o caso IN antes do caso da variável "default" (ordem e prioridade).
 
-```python
+````python
 // é um pseudocódigo para explicar um lexer simplificado
 
 charsSeenSoFar = "in"
@@ -44,5 +44,35 @@ while(streamHasMoreCharacters){
     // longest match: we'll try to pattern match "int" next iteration
     charSeenSoFar += nextChar
   }
+}
+
+## OCamlllex
+
+Embora você possa simplificar manualmente um pseudocódigo de pattern-matching, na prática é bastante complicado, especialmente à medida que nossa linguagem fica maior. Em vez disso, vamos usar o gerador de lexer OCamllex. OCamllex é uma biblioteca OCaml que podemos usar em nosso compilador adicionando-a como uma dependência ao nosso arquivo de compilação Dune.
+
+```dune
+( ocamllex lexer )
+````
+
+A especificação para o lexer está no lexer.mll.
+
+## Cabeçalho OCaml
+
+Para começar, opcionalmente fornecemos um cabeçalho contendo o código auxiliar OCaml. Definimos uma `SyntaxError` exceção e uma função `nextline`, que move o ponteiro para a próxima linha do buffer `lexbuf` em que o programa é lido:
+
+```f#
+//lexer.mll
+{
+open Lexing
+open Parser
+
+exception SyntaxError of string
+
+let next_line lexbuf =
+  let pos = lexbuf.lex_curr_p in
+  lexbuf.lex_curr_p <-
+    { pos with pos_bol = lexbuf.lex_curr_pos;
+               pos_lnum = pos.pos_lnum + 1
+    }
 }
 ```
