@@ -2,7 +2,7 @@
 title: Escrevendo um Lexer e Parser usando OCamllex e Menhir
 date: '03-09-2022'
 tags: ['Tutorials']
-draft: true
+draft: false
 summary: Escrevendo um Lexer e Parser com OCamllex e Menhir - Escrevendo a própria linguagem de programação
 images: https://i.imgur.com/pCBSiRJ.png
 ---
@@ -60,7 +60,7 @@ A especificação para o lexer está no lexer.mll.
 
 Para começar, opcionalmente fornecemos um cabeçalho contendo o código auxiliar OCaml. Definimos uma `SyntaxError` exceção e uma função `nextline`, que move o ponteiro para a próxima linha do buffer `lexbuf` em que o programa é lido:
 
-```f#
+```javascript
 //lexer.mll
 {
 open Lexing
@@ -81,7 +81,7 @@ let next_line lexbuf =
 
 Em seguida, precisamos especificar as expressões regulares que estamos usando para corresponder aos tokens. Para a maioria dos tokens, esta é uma string simples, por exemplo, `true` para o token `TRUE`. No entando, outros tokens têm regexes mais complexas, por exemploi, para inteiros e indentificadores. A sintaxe regex do OCamllex é como a maioria das bibliotecas regex:
 
-```f#
+```javascript
 // lexer.mll
 
 (* Definir regexes auxiliares *)
@@ -98,7 +98,7 @@ let newline = '\r' | '\n' | "\r\n"
 
 Em seguida, precisamos especificar regras para o OCamllex verificar a entrada; Cada regra é especificada em um formato de correspondência de padrões e especificamos oes regexes em ordem de prioridade (mais alta primeiro):
 
-```f#
+```javascript
 rule <rule_name> = parse
 | <regex>  {  TOKEN_NAME } (* output a token *)
 | <regex>  { ... } (* or execute other code *)
@@ -130,7 +130,7 @@ Agora que temos nossos requisitos para nosso lexer, podemos definir as regras em
 - Usamos `raise SuntaxError` para tratamento de erros (caracteres de entrada inesperados).
 - Ao ler tokens, pulamos os espaços em branco chamando `read_token lexbuf` em vez de omitir um token. Da mesma forma, para uma nova linha chamamos nossa função aximilar `next_line` para pular o caractere de nova linha.
 
-```f#
+```python
 // lexer.mll
 
 rule read_token =
@@ -169,6 +169,8 @@ and read_string buf = parse
   | _ { raise (SyntaxError ("Illegal string character: " ^ Lexing.lexeme lexbuf)) }
   | eof { raise (SyntaxError ("String is not terminated")) }
 ```
+
+Após ter criado manualmente esse arquivo, chamado `lexer.mll`, você pode copiar e colar o código acima. Espero que nesse ponto já tenha instalado OCaml, e vamos precisamos o opam, para instalar o ocamllex. Com tudo isso instalado, você vou conseguir rodar o comando `ocamllex lexer.mll`, e ai ele vai gerar um lexer.ml caso tudo tenha dado certo.
 
 ## Saída do OCamllex
 
