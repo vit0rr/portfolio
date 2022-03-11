@@ -188,3 +188,44 @@ Após ter criado manualmente esse arquivo, chamado `lexer.mll`, você pode copia
 ## Saída do OCamllex
 
 O OCamllex gera um `Lexer` módulo do `lexer.mlll`, a partir do qual você pode chamar `Lexer.read_token` ou qualquer uma das outras regras, bem como as funções auxiliares definidas no cabeçalho. Se você estiver curioso, depois de executar `make build`, poderá ver o módulo gerado na `lexer.ml` em `_build` ou na pasta que gerar o `lexer.ml`, como a root.
+
+## Grammer
+
+Especificamos a estrutura dos programas em Bolt usando uma gramática, que consiste em um conjunto de regras (produções) sobre como podemos construir expressões Bolt.
+
+Por exemplo, um programa consiste em uma lista de definições de classe, seguidas por algumas definições de funções seguidas pela expressão principal. Isso ficaria assim (usando o plutal X_defns" para se referir informalmente a uma lista de "X_defn").
+
+**program ::= class_defns function_defns main_expr**
+
+Essa regra de nível superior também possui regras para cada uma das expressões do lado direito. Expressões que podem ser expandidas ainda mais com regras sãp chamadas de non-terminals, e aquelas que não podem, ou seja, os tokens, são chamados de terminals. Vejamos a regra class_defn e as regras main_expr.
+
+Uma definição de classe consiste em um token `CLASS` de palavra-chave (os tokens estão em MAIÚSCULO) seguindo por um token `ID` (identificador = o nome da classe) e, em seguida, o corpo é delimitado por chaves. O corpo consiste em definições capacidade (isso é específico do Bolt - usado para evitar corridasde dados), definições de campo e, em seguida, definições de método. Aqui os tokens `CLASS`, `ID`, `LBRACE` são terminais, e são não terminais (eles têm suas próprias regras que os expandem) `RBRACE`, `capability_defn`, `field_defns`, `method_defns`
+
+**class_defn::=CLASS ID LRACE capability_defn field_defns method_defns RBACE**
+
+Uma definição de classe que satisfaça as regras:
+
+```java
+//class_example.bolt
+class Foo { // Foo is the identifier
+  capability linear Bar; // capability definition (has its own rule)
+  // field defns
+  var int f : Bar; // (field has Bolt-specific capability annotatation)
+  const bool g : Bar;
+  //method defns
+  int getF() : Bar {  // method definition (again has its own rule)
+    this.f
+  }
+}
+```
+
+E nossa expressão principal tem a seguinte regra:
+
+**main_expr::=TYPE_VOID MAIN LPAREN RPAREN block_expr**
+
+```java
+//main_example.bolt
+void main() {
+  ...
+}
+```
