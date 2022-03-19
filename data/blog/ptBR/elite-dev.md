@@ -1,3 +1,12 @@
+---
+title: Se torne um Dev de Elite
+date: '03-19-2022'
+tags: ['Essay']
+draft: true
+summary: Explicando o que é um dev de elite e o motivo deles darem mais certo que a maioria
+images: https://i.imgur.com/EE1TdsZ.png
+---
+
 ### O que é um Dev de Elite?
 
 Uma analogia direta é com atletas de elite. Eles sempre estão acima do limite, não param nunca e mesmo quando se machucam continuam ativos de alguma forma. Esse atleta está pronto para tudo.
