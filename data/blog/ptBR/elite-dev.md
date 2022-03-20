@@ -3,8 +3,7 @@ title: Como entrar no Bope dos Devs
 date: '03-19-2022'
 tags: ['Essay']
 draft: true
-summary: Como o capitão nascimento seria se fosse Dev
-images: https://i.imgur.com/EE1TdsZ.png
+summary: Como seria o paralelo entre atletas de elite e devs de elite?
 ---
 
 ### O que é um Dev de Elite?
