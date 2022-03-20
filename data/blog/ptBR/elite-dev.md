@@ -1,5 +1,5 @@
 ---
-title: Como entrar no Bope dos Devs
+title: Dev 10x
 date: '03-19-2022'
 tags: ['Essay']
 draft: true
