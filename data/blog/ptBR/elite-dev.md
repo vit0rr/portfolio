@@ -1,9 +1,9 @@
 ---
-title: Se torne um Dev de Elite
+title: Como entrar no Bope dos Devs
 date: '03-19-2022'
 tags: ['Essay']
 draft: true
-summary: Explicando o que é um dev de elite e o motivo deles darem mais certo que a maioria
+summary: Como o capitão nascimento seria se fosse Dev
 images: https://i.imgur.com/EE1TdsZ.png
 ---
 
@@ -15,10 +15,10 @@ Um dev de elite precisa estar pronto para resolver qualquer coisa. Ele vai codar
 
 ### O limite
 
-A maioria das pessas buscam segurança de mais, e isso não é bom. É algo bem lógico na realidade. Pense como que você consegue ter resultados melhores se você faz sempre a mesma coisa e provavelmente estando na mesma margem que outras pessoas que fazem também as mesmas coisas que você. No final acaba sendo alguém facilmente substituido. Não faça apenas o que passam para você.
+A maioria das pessoas desenvolvedoras busca segurança em excesso, algo ilógico que pode vir a se tornar um problema a longo prazo. Não é possível obter resultados melhores se está sempre batendo na mesma tecla, isso só revela que você está na mesma situação que milhares de pessoas e enfatiza ainda mais sua zona de conforto. No fim, pessoas assim acabam sendo facilmente substituídas. Estar na média não é o suficiente.
 
-Sempre busque seu limite, conheça. Assim você consegue medir o quão longe consegue ir sem capotar, e trabalhar em cima do seu limite. Um carro rápido de mais provavelmente vai capotar na primeira curva que ver. Mas por que isso não ocorre com tanta frequência em corridas profissionais? Pois eles conhecem o limite do carro deles. Isso se aplica para nós também. Conhecer nosso limite é essencial caso queira estar sempre melhorando.
+Sempre busque seu limite, conheça. Dessa forma é possível medir o quão longe você é capaz de ir. Um carro rápido de mais irá capotar na primeira curva que ultrapassar, mas por que isso não ocorre com tanta frequência em corridas profissionais? Eles sabem dos próprios limites, isso é algo essencial caso o objetivo seja melhorar sempre.
 
 ### Capotar não é um problema
 
-Não tenha medo de capotar. Se você não está conseguindo lidar com 100% de tudo, provavelmente está conseguindo chegar no seu limite, e caso deixe as bolas cair, isso não é um problema. Agora resta trabalhar em cima disso, se tornar algo constante e sempre evoluindo.
+Se você não está conseguindo lidar com 100% de tudo, provavelmente está conseguindo chegar no seu limite, e isso não é um problema. Agora resta trabalhar em cima disso, se tornar algo constante e sempre evoluindo.
