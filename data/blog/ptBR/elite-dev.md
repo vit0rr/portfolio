@@ -6,7 +6,7 @@ draft: true
 summary: Como seria o paralelo entre atletas de elite e devs de elite?
 ---
 
-### O que é um Dev de Elite?
+### O que é um Dev 10x ou Dev de Elite?
 
 Uma analogia direta é com atletas de elite. Eles sempre estão acima do limite, não param nunca e mesmo quando se machucam continuam ativos de alguma forma. Esse atleta está pronto para tudo.
 
@@ -21,3 +21,11 @@ Sempre busque seu limite, conheça. Dessa forma é possível medir o quão longe
 ### Capotar não é um problema
 
 Se você não está conseguindo lidar com 100% de tudo, provavelmente está conseguindo chegar no seu limite, e isso não é um problema. Agora resta trabalhar em cima disso, se tornar algo constante e sempre evoluindo.
+
+### Resolva mais problemas
+
+- Assim como dito no começo, essa pessoa desenvolvedora é capaz de resolver qualquer coisa. Para isso, você vai precisar ter tido contato com diversos problemas. Uma forma de começar a se tornar esse dev de Elite é resolver mais exercícios do tipo [codewars](https://www.codewars.com/). Se você vê um problema e não faz a manor ideia de como resolver, ainda precisa melhorar muito.
+
+- Expanda isso para o seu trabalho. Seja proativo. Não resolva apenas os seus problemas e o que te for passado, pense também em que os outros estão fazendo e em formas de melhorar o que essas outras pessoas fazem. Quanto mais exposição melhor.
+
+- Tente escrever sobre isso tudo. Compartilhe suas ideias e conclusões publicamente para tentar o máximo de pessoas em volta da sua lógica. Dessa forma, consegue achar um caminho pra a verdade através do que outras pessoas pensam e estudam sobre o mesmo assunto. Esse processo de escrita pode ser um blog ou um tweet, não impota muito. Apenas compartilhe.
