@@ -4,6 +4,7 @@ date: '03-19-2022'
 tags: ['Essay']
 draft: true
 summary: Como seria o paralelo entre atletas de elite e devs de elite?
+images: https://i.imgur.com/W90rEYF.png
 ---
 
 ### O que é um Dev 10x ou Dev de Elite?
