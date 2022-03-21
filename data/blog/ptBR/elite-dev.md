@@ -29,3 +29,7 @@ Se você não está conseguindo lidar com 100% de tudo, provavelmente está cons
 - Expanda isso para o seu trabalho. Seja proativo. Não resolva apenas os seus problemas e o que te for passado, pense também em que os outros estão fazendo e em formas de melhorar o que essas outras pessoas fazem. Quanto mais exposição melhor.
 
 - Tente escrever sobre isso tudo. Compartilhe suas ideias e conclusões publicamente para tentar o máximo de pessoas em volta da sua lógica. Dessa forma, consegue achar um caminho pra a verdade através do que outras pessoas pensam e estudam sobre o mesmo assunto. Esse processo de escrita pode ser um blog ou um tweet, não impota muito. Apenas compartilhe.
+
+### Motivação
+
+Nada disso vai funcionar se você não estar 100% envolvido. Se estiver em tecnologia por hype, dinheiro e motivos semelhantes provavelmente não vai conseguir chegar ao seu limite pois esse não é o seu objetivo principal.
