@@ -1,8 +1,8 @@
 ---
 title: Dev 10x
-date: '03-19-2022'
+date: '03-21-2022'
 tags: ['Essay']
-draft: true
+draft: false
 summary: How would be the parallel between elite athletes and elite devs?
 images: https://i.imgur.com/W90rEYF.png
 ---
@@ -27,12 +27,11 @@ If you can't keep up 100% with everything, probably you are reaching your limit,
 
 ### Solve more problems
 
-- As said in the begging, the dev is capable can solve anything. For this, you need to be in touch with a wild range of problems. A way to start the transition for an Elite dev  is to solve more exercicies like [codewars](https://www.codewars.com/). If you face a problem and has no idea how to solve it, you must improve a lot.
+- As said in the begging, the dev is capable can solve anything. For this, you need to be in touch with a wild range of problems. A way to start the transition for an Elite dev is to solve more exercicies like [codewars](https://www.codewars.com/). If you face a problem and has no idea how to solve it, you must improve a lot.
 
 - Expand this to your work. Be proactive. Don't solve only your problems and the ones given to you, think about what the othes are doing and ways to improve what they are doing. The more exposition you get the better it is.
 
 - Try to write about all of it. Share you ideas and conclusions publicly to keep most peolpe around your thoughts. This way, you can find a way towards the truth through people that think and study about the some topic. THis proccess of writing can be a blog or a tweet, doesn't really matter. Just share your mind.
-
 
 ### Motivation
 
