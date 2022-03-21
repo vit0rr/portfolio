@@ -27,7 +27,7 @@ If you can't keep up 100% with everything, probably you are reaching your limit,
 
 ### Solve more problems
 
-- As said in the begging, the dev is capable can solve anything. For this, you need to be in touch with a wild range of problems. A way to start the transition for an Elite dev is to solve more exercises like [codewars](https://www.codewars.com/). If you face a problem and have no idea how to solve it, you must improve a lot.
+- As said in the beginning, the dev is capable can solve anything. For this, you need to be in touch with a wild range of problems. A way to start the transition for an Elite dev is to solve more exercises like [codewars](https://www.codewars.com/). If you face a problem and have no idea how to solve it, you must improve a lot.
 
 - Expand this to your work. Be proactive. Don't solve only your problems and the ones given to you, think about what the others are doing and ways to improve what they are doing. The more exposition you get the better it is.
 
