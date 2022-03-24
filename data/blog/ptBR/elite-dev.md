@@ -9,6 +9,8 @@ images: https://i.imgur.com/W90rEYF.png
 
 <h3>[en](/blog/en/elite-dev) | ptBR</h3>
 
+![image](https://i.imgur.com/W90rEYF.png)
+
 ### O que é um Dev 10x ou Dev de Elite?
 
 Uma analogia direta é com atletas de elite. Eles sempre estão acima do limite, não param nunca e mesmo quando se machucam continuam ativos de alguma forma. Esse atleta está pronto para tudo.
