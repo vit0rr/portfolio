@@ -4,12 +4,12 @@ date: '01-18-2022'
 tags: ['Essay']
 draft: true
 summary: Pare de pensar sobre curva de aprendizagem
-images: https://i.imgur.com/uzRAAdi.png
+images: /static/images/banners/learning-curve.png
 ---
 
 <h3>[en](/blog/en/learning-curve) | ptBR</h3>
 
-![image](https://i.imgur.com/uzRAAdi.png)
+![image](/static/images/banners/learning-curve.png)
 
 Por que? Pois isso não importa.
 

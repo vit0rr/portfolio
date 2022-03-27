@@ -4,12 +4,12 @@ date: '01-18-2022'
 tags: ['Essay', 'Pinned']
 draft: false
 summary: Stop thinking about learning curve
-images: https://i.imgur.com/uzRAAdi.png
+images: /static/images/banners/learning-curve.png
 ---
 
 <h3>en | [ptBR](/blog/ptBR/pare-de-pensar-sobre-curva-de-aprendizagem)</h3>
 
-![image](https://i.imgur.com/uzRAAdi.png)
+![image](/static/images/banners/learning-curve.png)
 
 Why? Because it doesn't care.
 
