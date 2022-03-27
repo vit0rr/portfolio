@@ -4,12 +4,12 @@ date: '1-28-2022'
 tags: ['Essay']
 draft: true
 summary: Criando desculpas para seus problemasa é a forma mais rápida para fugir de coisas difíceis
-images: https://i.imgur.com/xwXZ3zl.png
+images: /static/images/banners/easy-life-making-excuses.png
 ---
 
 <h3>[en](/blog/en/easy-life-making-excuses) | ptBR</h3>
 
-![image](https://i.imgur.com/xwXZ3zl.png)
+![image](/static/images/banners/easy-life-making-excuses.png)
 
 No Twitter, eu vejo frequentemente desculpas para diferentes problemas que pessoas tem na vida. A desculpa que mais vejo é "X é muito difícil" ou pensar "Eu não preciso aprender Y". Essa mentalidade está errada.
 

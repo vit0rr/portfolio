@@ -4,12 +4,12 @@ date: '1-28-2022'
 tags: ['Essay']
 draft: false
 summary: Making excuses for your problems is the fast way to run away from hard things.
-images: https://i.imgur.com/xwXZ3zl.png
+images: /static/images/banners/easy-life-making-excuses.png
 ---
 
 ### en | [ptBR](/blog/ptBR/vida-facil-com-desculpas)
 
-![image](https://i.imgur.com/xwXZ3zl.png)
+![image](/static/images/banners/easy-life-making-excuses.png)
 
 On Twitter, I saw frequently excuses for different things and challenges that peoples have in life. The most excuses for something is "X is very difficult" or think "I don't need or learn Y". This mentality is wrong.
 
