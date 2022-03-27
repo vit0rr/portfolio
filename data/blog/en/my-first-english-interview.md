@@ -4,12 +4,12 @@ date: '12-31-2021'
 tags: ['Essay', 'Pinned']
 draft: false
 summary: How was my first English interview about blockchain development work
-images: https://i.imgur.com/ot97RRR.png
+images: /static/images/banners/my-first-english-interview.png
 ---
 
-<h3>en | [ptBR](/blog/ptBR/minha-primeira-entrevista-em-ingles)</h3>
+<h3>en | [ptBR](/blog/ptBR/minha-primeira-entrevista-em-ingles)</h3> 
 
-![image](https://i.imgur.com/ot97RRR.png)
+![image](/static/images/banners/my-first-english-interview.png)
 
 I've attended my first job interview in English to work with blockchain development. The requirement was complex, and I knew that I wouldn't get the job.
 

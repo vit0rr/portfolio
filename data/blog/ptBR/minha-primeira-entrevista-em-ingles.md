@@ -4,12 +4,12 @@ date: '12-31-2021'
 tags: ['Essay']
 draft: true
 summary: Como foi minha primeira entrevista em inglês como desenvolvedor blockchain
-images: https://i.imgur.com/ot97RRR.png
+images: /static/images/banners/my-first-english-interview.png
 ---
 
 <h3>[en](/blog/en/my-first-english-interview) | ptBR </h3>
 
-![image](https://i.imgur.com/ot97RRR.png)
+![image](/static/images/banners/my-first-english-interview.png)
 
 Eu participei da minha primeira entrevista de trabalho em inglês como desenvolvedor blockchain. Os requisitos da vaga eram complexas, e eu sabia que não conseguiria o trabalho.
 
