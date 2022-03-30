@@ -2,7 +2,7 @@
 title: How to get your first freelance job?
 date: '12-31-2021'
 tags: ['Essay']
-draft: true
+draft: false
 summary: What is the process for creating an image, visibility and being called for freelancing?
 images: /static/images/banners/first-freela.png
 ---
