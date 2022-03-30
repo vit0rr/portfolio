@@ -1,6 +1,6 @@
 ---
 title: Como conseguir o primeiro freela?
-date: '12-31-2021'
+date: '03-30-2022'
 tags: ['Essay']
 draft: true
 summary: Qual o processo para criar uma imagem, visibilidade e ser chamado para freelas?
