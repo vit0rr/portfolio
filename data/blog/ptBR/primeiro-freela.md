@@ -7,6 +7,10 @@ summary: Qual o processo para criar uma imagem, visibilidade e ser chamado para 
 images: /static/images/banners/first-freela.png
 ---
 
+<h3>[en](/blog/en/first-freelance) | ptBR</h3>
+
+![image](/static/images/banners/first-freela.png)
+
 ### Seu portfólio importa menos do que parece
 
 Se você tem apenas exercícios e projetos pessoais no seu GitHub, saiba que isso vai te ajudar menos do que parece a conseguir o primeiro freela.
@@ -37,4 +41,4 @@ Os efeitos colaterais disso tudo também vai fazer você conseguir boas oportuni
 
 Algumas das propostas que recebi foram indicações de quem sabia meu conhecimento em Solana, e elas só sabiam disso pois eu permiti e mostrei para todo mundo.
 
-Outra coisa é que "parecer" saber, faz como que você realmente saiba um dia. Comentar sobre algo e estar envolvido naquilo diariamente faz com que você evolua independentemente. Mas tome cuidado para não mentir pra si mesmo. Não pare de programar nunca. Recomendo a leitura do meu artigo [Dev 10x](/blog/en/elite-dev)
+Outra coisa é que "parecer" saber, faz como que você realmente saiba um dia. Comentar sobre algo e estar envolvido naquilo diariamente faz com que você evolua independentemente. Mas tome cuidado para não mentir pra si mesmo. Não pare de programar nunca. Recomendo a leitura do meu artigo [Dev 10x](/blog/ptBR/elite-dev)
