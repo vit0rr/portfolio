@@ -53,7 +53,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                     <div className="space-y-5 xl:col-span-3">
                       <div className="space-y-6">
                         <div>
-                          <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                          <h2 className="text-2xl leading-8 tracking-tight">
                             <Link
                               href={`/blog/${slug}`}
                               className="text-gray-900 dark:text-gray-100 dark:hover:text-gray-400 hover:text-gray-500"
@@ -77,7 +77,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                           className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                           aria-label={`Read "${title}"`}
                         >
-                          See more &rarr;
+                          See more <span className="font-bold">&rarr;</span>
                         </Link>
                       </div>
                     </div>
