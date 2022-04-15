@@ -4,12 +4,12 @@ date: '12-24-2021'
 tags: ['Essay']
 draft: true
 summary: Por que requisito de tempo de experiência é besteira e porque você não deveria se importar com isso
-images: https://i.imgur.com/NlxdZ6u.png
+images: /static/images/posts/experience-requirement-is-bullshit/clock.png
 ---
 
 <h3>[en](/blog/en/experience-requirement-is-bullshit) | ptBR</h3>
 
-![image](https://i.imgur.com/NlxdZ6u.png)
+![image](/static/images/posts/experience-requirement-is-bullshit/clock.png)
 
 ### Você provavelmente tem métricas ruins
 

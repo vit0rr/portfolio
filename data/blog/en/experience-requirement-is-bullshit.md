@@ -4,12 +4,12 @@ date: '12-24-2021'
 tags: ['Essay']
 draft: false
 summary: Why experience time requirement is bullshit and you shouldn't care about that
-images: https://i.imgur.com/NlxdZ6u.png
+images: /static/images/posts/experience-requirement-is-bullshit/clock.png
 ---
 
 <h3>en | [ptBR](/blog/ptBR/requisitos-de-experiencia-e-besteira)</h3>
 
-![image](https://i.imgur.com/NlxdZ6u.png)
+![image](/static/images/posts/experience-requirement-is-bullshit/clock.png)
 
 ### You probably have a bad metric!
 
