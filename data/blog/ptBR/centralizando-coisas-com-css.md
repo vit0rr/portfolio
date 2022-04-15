@@ -52,7 +52,7 @@ p.example {
 }
 ```
 
-![margin-center](https://raw.githubusercontent.com/vit0rr/portfolio/c59e3aaa4bb315b22c38061ad66b8fc54c3a625d/public/static/images/margin.png)
+![margin-center](/static/images/posts/centralizing-content-with-css/margin.png)
 
 Inserir as margens na esqueda e direita como `auto` fará o navegador inserir um espaço igual dos dois lados. Caso não esteja familiarizado com `margin: 10px auto 10px auto;`, ele trabalha de forma horária, ou seja, top, direita, baixo, esquerda.
 
@@ -123,7 +123,7 @@ p.example {
 }
 ```
 
-![absolute](https://raw.githubusercontent.com/vit0rr/portfolio/23ca09aa8fa467bcdbc03c9ed9a8b9c798560a44/public/static/images/absolute.png)
+![absolute](/static/images/posts/centralizing-content-with-css/absolute.png)
 
 Vale pontuar que sem o `margin`, isso não seria possível. Ele foi o responsável por deixar todas as margens no automático e o elemento fez o cálculo para ele deixar no meio. Outra coisa, é que isso só vale se o elemento tiver altura e largura. Ela foi definida no `p`.
 
@@ -155,7 +155,7 @@ Exemplo:
 }
 ```
 
-![flex](https://github.com/vit0rr/portfolio/blob/393b5dc4a6619fa0c3475d96e226a449eb54b1e8/public/static/images/flex.png?raw=true)
+![flex](/static/images/posts/centralizing-content-with-css/flex.png)
 
 #### Referências:
 

@@ -52,7 +52,7 @@ p.example {
 }
 ```
 
-![margin-center](https://raw.githubusercontent.com/vit0rr/portfolio/c59e3aaa4bb315b22c38061ad66b8fc54c3a625d/public/static/images/margin.png)
+![margin-center](/static/images/posts/centralizing-content-with-css/margin.png)
 
 Set margins to left and right like 'auto' will make the browser put an equal space on two sides. If you don't see yet `margin: 10px auto 10px auto`, this code work like -> top, right, bottom, left
 
@@ -123,7 +123,7 @@ p.example {
 }
 ```
 
-![absolute](https://raw.githubusercontent.com/vit0rr/portfolio/23ca09aa8fa467bcdbc03c9ed9a8b9c798560a44/public/static/images/absolute.png)
+![absolute](/static/images/posts/centralizing-content-with-css/absolute.png)
 
 Without the `margin`, this would not be possible. He was responsible for leaving all the margins on automatic and the element did the calculation for him to leave in the middle. Another thing is that this only applies if the element has height and width. It was defined in `p`.
 
@@ -155,7 +155,7 @@ Example:
 }
 ```
 
-![flex](https://github.com/vit0rr/portfolio/blob/393b5dc4a6619fa0c3475d96e226a449eb54b1e8/public/static/images/flex.png?raw=true)
+![flex](/static/images/posts/centralizing-content-with-css/flex.png)
 
 #### References:
 
