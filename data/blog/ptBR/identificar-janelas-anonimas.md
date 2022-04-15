@@ -175,14 +175,14 @@ A solução de - use o Chrome - não é muito legal, mas é uma. Então caso que
 
 Os testes serão feitos com o site do Brainly e no navegador Firefox.
 Nesse exemplo, acessei o site na guia anônima do Firefox sem qualquer extensão, e a resposta foi bloqueada.
-![Firefox na guia anônima sendo bloqueado](https://raw.githubusercontent.com/vit0rr/portfolio/main/public/static/images/anonFirefoxBlock.png)
+![Firefox na guia anônima sendo bloqueado](/static/images/posts/identify-anonymous-tab/anonFirefoxAllow.png)
 
 #### Bloqueando JavaScript
 
 Agora, caso você impeça a renderização do JavaScript, e para isso basta usar alguma extensão gratuita na Store do Firefox. Também tem como através da proteção total do navegador Tor, mas é como usar uma bazuca contra uma formiga, não há necessidade desse método, mas saiba que existe.
 
 A extensão que recomendo é a [Disable JavaScript](https://github.com/dpacassi/disable-javascript#supported-browsers). Com ela, o resultado foi o seguinte:
-![Firefox na guia anônima não sendo bloqueado](https://raw.githubusercontent.com/vit0rr/portfolio/main/public/static/images/anonFirefoxAllow.png)
+![Firefox na guia anônima não sendo bloqueado](/static/images/posts/identify-anonymous-tab/anonFirefoxAllow.png)
 
 A visualização fica prejudicada, mas é possível burlar completamente a proteção relacionada a guia anônima e múltiplos acessos.
 

@@ -173,14 +173,14 @@ The solution - use Chrome - isn't very cool, but it is one. So if you want somet
 
 The tests will be done with the Brainly website and in the Firefox browser.
 In this example, I accessed the site from the anonymous Firefox tab without any extensions, and the response was blocked.
-![Firefox na guia anônima sendo bloqueado](https://raw.githubusercontent.com/vit0rr/portfolio/main/public/static/images/anonFirefoxBlock.png)
+![Firefox na guia anônima sendo bloqueado](/static/images/posts/identify-anonymous-tab/anonFirefoxAllow.png)
 
 #### Blocking JavaScript
 
 Now, in case you prevent JavaScript rendering, and for that just use some free extension on the Firefox Store. It's also like through the full protection of the Tor browser, but it's like using a bazooka against an ant, there's no need for this method, but be aware that it exists.
 
 The extension I recommend is the [Disable JavaScript](https://github.com/dpacassi/disable-javascript#supported-browsers). With it, the result was the following:
-![Firefox na guia anônima não sendo bloqueado](https://raw.githubusercontent.com/vit0rr/portfolio/main/public/static/images/anonFirefoxAllow.png)
+![Firefox na guia anônima não sendo bloqueado](/static/images/posts/identify-anonymous-tab/anonFirefoxAllow.png)
 
 Viewing is impaired, but it is possible to completely bypass the protection related to anonymous tab and multiple access.
 
