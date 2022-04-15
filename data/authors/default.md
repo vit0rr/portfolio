@@ -1,6 +1,6 @@
 ---
 name: Vitor
-avatar: /static/images/ava.jpg
+avatar: /static/images/avatars/ava.jpg
 occupation: Software engineer
 company: Genezys Digital Assets
 email: vi.souza.almeida@protonmail.com
