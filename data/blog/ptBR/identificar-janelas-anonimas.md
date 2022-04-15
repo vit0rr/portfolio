@@ -4,10 +4,12 @@ date: '08-11-2021'
 tags: ['Tutorials']
 draft: true
 summary: Como o Brainly consegue restringir seu acesso baseado na informação de se sua guia é anônima ou não?
-images: https://i.imgur.com/1fq8QBf.png
+images: /static/images/posts/identify-anonymous-tab/banner.png
 ---
 
 <h3>[en](/blog/en/identify-anonymous-tab) | ptBR</h3>
+
+![image](/static/images/posts/identify-anonymous-tab/banner.png)
 
 ### Introdução
 

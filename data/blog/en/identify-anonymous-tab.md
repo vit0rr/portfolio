@@ -4,11 +4,12 @@ date: '08-11-2021'
 tags: ['Tutorials']
 draft: false
 summary: How does Brainly manage to restrict your access based on whether your tab is anonymous or not?
-images: https://i.imgur.com/1fq8QBf.png
+images: /static/images/posts/identify-anonymous-tab/banner.png
 ---
 
 <h3>en | [ptBR](/blog/ptBR/identificar-janelas-anonimas)</h3>
 
+![image](/static/images/posts/identify-anonymous-tab/banner.png)
 ### Introduction
 
 Some websites are able to block certain access based on the user's anonymous guide information. This can be useful to avoid bypassing some access controls, like with Brainly. Basically, there is a limit for viewing responses, and if this limit is reached, the site is blocked and you have to watch ads or pay. This is because, this limit is based on some local storage or with some information based on the current session, and this is cleared if accessed via an anonymous tab.
