@@ -4,7 +4,7 @@ date: '12-06-2021'
 tags: ['Tutorials']
 draft: false
 summary: What is an escrow smart contract in blockchain?
-images: https://i.imgur.com/hj2Hg3o.gif
+images: /static/images/posts/what-is-an-escrow/hj2Hg3o.gif
 ---
 
 <h3>en | [ptBR](/blog/ptBR/oque-e-um-escrow)</h3>
