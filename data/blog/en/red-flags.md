@@ -4,12 +4,12 @@ date: '12-01-2021'
 tags: ['Essay']
 draft: false
 summary: How did a bad environment make me a better developer?
-images: https://i.imgur.com/fgj7pmk.jpg
+images: /static/images/posts/red-flags/fgj7pmk.jpg
 ---
 
 <h3>en | [ptBR](/blog/ptBR/red-flags)</h3>
 
-![image](https://i.imgur.com/fgj7pmk.jpg)
+![image](/static/images/posts/red-flags/fgj7pmk.jpg)
 
 ### Introduction
 
