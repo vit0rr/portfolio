@@ -4,10 +4,12 @@ date: '11-28-2021'
 tags: ['Tutorials']
 draft: true
 summary: Introdução a construção de layouts flexíveis em CSS
-images: 'https://i.imgur.com/iwhCOzZ.png'
+images: '/static/images/banners/introduction-flexbox.png'
 ---
 
 <h3>[en](/blog/en/introduction-flexbox) | ptBR</h3>
+
+![image](/static/images/banners/introduction-flexbox.png)
 
 ### Introdução
 
@@ -15,7 +17,7 @@ A maioria ou todos os exemplos serão baseados numa página de exemplo, ela est�
 
 Ela é a seguinte:
 
-![example-flexbox-page](https://i.imgur.com/CVBWOTS.png)
+![example-flexbox-page](/static/images/posts/introduction-flexbox/CVBWOTS.png)
 
 ### Introdução a flexbox
 
@@ -27,13 +29,13 @@ Para usar flexbox, precisa ser aplicado no elemento pai dos elementos que você 
 }
 ```
 
-![example-displayFlex](https://i.imgur.com/OnUZvoM.png)
+![example-displayFlex](/static/images/posts/introduction-flexbox/OnUZvoM.png)
 
 Essa única linha de CSS usando flex consegue criar um layout responsivo, com espaço entre os elementos iguais entre si estando lado a lado.
 
 ### Flexible boxes - eixos
 
-![flex_terms.png](https://i.imgur.com/upLbBGL.png)
+![flex_terms.png](/static/images/posts/introduction-flexbox/upLbBGL.png)
 
 - Main axis: Eixo que corre na direção em que os flex-items estão dispostos. Esse eixo pode ser alterado com `flex-direction`.
 
@@ -55,17 +57,17 @@ Se você definir `flex-direction: column;` no exemplo do projeto, ele vai ficar 
 
 Se você tiver elementos com a mesma largura e altura, e repetir a modo que quebre o layout, ou seja, sobrepondo o elemento pai, como no exemplo:
 
-![flexbox-without-wrap](https://i.imgur.com/CoFHmht.png)
+![flexbox-without-wrap](/static/images/posts/introduction-flexbox/CoFHmht.png)
 
 Como solução, existe a propriedade `flex-wrap: wrap`, e o resultado é o seguinte:
 
-![flexbox-with-wrap](https://i.imgur.com/QEriUvf.png)
+![flexbox-with-wrap](/static/images/posts/introduction-flexbox/QEriUvf.png)
 
 Com isso, sempre que ouver uma sopreposição, o elemento será movido para próxima linha.
 
 Porém, somente dessa forma não vai se ajustar como deveria. Caso eu maximaxe essa tela no meu monitor ultrawide, metade da tela ficaria em branco. Para solucionar isso, você pode definir um `flex: 200px` no elemento filho. O resultado é o seguinte:
 
-![flexpx-wrap](https://i.imgur.com/QrM6GSz.png)
+![flexpx-wrap](/static/images/posts/introduction-flexbox/QrM6GSz.png)
 
 ### Forma abreviada: `flex-flow`
 
@@ -135,11 +137,11 @@ Aqui é apenas definido a cor e text decoration como none para remover o underli
 
 Aqui defino o ListItem com margin para eles terem uma distância entre si e não ficarem colado e margin-left auto no LastItem que é o Contact Us. Dessa forma, o resultado é o seguinte:
 
-![flexnav](https://i.imgur.com/CkZifvk.png)
+![flexnav](/static/images/posts/introduction-flexbox/CkZifvk.png)
 
 Agora, caso a gente queira inverter as coisas? É bem simples. Basta colocar um `flex-direction: row-reverse;` em `MenuWrap` e mudar `margin-left: auto;` para `margin-right: auto;` e o resultado será:
 
-![inv-flex-nav](https://i.imgur.com/P6ZxJCt.png)
+![inv-flex-nav](/static/images/posts/introduction-flexbox/P6ZxJCt.png)
 
 #### Referências:
 

@@ -4,10 +4,12 @@ date: '11-28-2021'
 tags: ['Tutorials']
 draft: false
 summary: Introduction to build flexible layouts in CSS
-images: 'https://i.imgur.com/iwhCOzZ.png'
+images: '/static/images/banners/introduction-flexbox.png'
 ---
 
 <h3>en | [ptBR](/blog/ptBR/introducao-flexbox)</h3>
+
+![image](/static/images/banners/introduction-flexbox.png)
 
 ### Introduction
 
@@ -15,7 +17,7 @@ Most, or all of the examples will be based on an example page, it is available [
 
 The page:
 
-![example-flexbox-page](https://i.imgur.com/CVBWOTS.png)
+![image](/static/images/posts/introduction-flexbox/CVBWOTS.png)
 
 ### Introduction to flexbox
 
@@ -27,13 +29,13 @@ To use flexbox, it needs to be applied to the parent alement of the elements you
 }
 ```
 
-![example-displayFlex](https://i.imgur.com/OnUZvoM.png)
+![example-displayFlex](/static/images/posts/introduction-flexbox/OnUZvoM.png)
 
 This single line of CSS using flex menages to create a responsive layout, with space between elements equal to each other being side by side.
 
 ### Flexible boxes - axis
 
-![flex_terms.png](https://i.imgur.com/upLbBGL.png)
+![flex_terms.png](/static/images/posts/introduction-flexbox/upLbBGL.png)
 
 - Main axis: Axis that runs in the direction the flex-items are arranged. This axis can be changed with `flex-direction`.
 
@@ -55,17 +57,17 @@ If you define `flex-direction: column;` in the example of the project, it will b
 
 If you have elements with the same width and height, and repeat so that it breaks the layout, that is, overlapping the parent element, as in the example:
 
-![flexbox-without-wrap](https://i.imgur.com/CoFHmht.png)
+![flexbox-without-wrap](/static/images/posts/introduction-flexbox/CoFHmht.png)
 
 As a solution, there is the flex-wrap `property: wrap`, and the result is the following:
 
-![flexbox-with-wrap](https://i.imgur.com/QEriUvf.png)
+![flexbox-with-wrap](/static/images/posts/introduction-flexbox/QEriUvf.png)
 
 Thus, whenever you hear an overlay, the element will be moved to the next line.
 
 However, only in this way will it not fit as it should. If I zoomed in on this screen on my ultrawide monitor, half the screen would be blank. To work around this, you can define a `flex: 200px` on the child element. The result is as follows:
 
-![flexpx-wrap](https://i.imgur.com/QrM6GSz.png)
+![flexpx-wrap](/static/images/posts/introduction-flexbox/QrM6GSz.png)
 
 ### Forma abreviada: `flex-flow`
 
@@ -135,11 +137,11 @@ Here just set the color and text-decoration to none to remove the underline from
 
 Here I define the ListItem with margin so they have a distance from each other and don't get pasted and margin-left auto in the LastItem which is the Contact Us. Thus, the result is as follows:
 
-![flexnav](https://i.imgur.com/CkZifvk.png)
+![flexnav](/static/images/posts/introduction-flexbox/CkZifvk.png)
 
 Now, in case we want to turn things around? It's quite simple. Just put a `flex-direction: row-reverse;` in `MenuWrap` and change `margin-left: auto;` for `margin-right: auto;` and the result will be:
 
-![inv-flex-nav](https://i.imgur.com/P6ZxJCt.png)
+![inv-flex-nav](/static/images/posts/introduction-flexbox/P6ZxJCt.png)
 
 #### References:
 
