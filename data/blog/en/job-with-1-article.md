@@ -4,12 +4,12 @@ date: '11-23-2021'
 tags: ['Essay', 'Pinned']
 draft: false
 summary: Explaining how I got a new job with crypto writing one article about what I learning.
-images: https://i.imgur.com/J4ZEeyt.png
+images: /static/images/posts/job-with-1-article/J4ZEeyt.png
 ---
 
 <h3>en | [ptBR](/blog/ptBR/trabalho-com-um-artigo)</h3>
 
-![image](https://i.imgur.com/J4ZEeyt.png)
+![image](/static/images/posts/job-with-1-article/J4ZEeyt.png)
 
 ### Introduction
 
