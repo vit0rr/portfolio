@@ -4,10 +4,12 @@ date: '09-23-2021'
 tags: ['Tutorials']
 draft: false
 summary: Discussion of OOP with Java
-images: https://i.imgur.com/46jF8Xd.png
+images: /static/images/posts/oop/46jF8Xd.png
 ---
 
 <h3>en | [ptBR](/blog/ptBR/OOPPtBr)</h3>
+
+![image](/static/images/posts/oop/46jF8Xd.png)
 
 ### What is an object?
 
