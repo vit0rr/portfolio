@@ -4,8 +4,10 @@ date: '01-08-2022'
 tags: ['Tutorials']
 draft: true
 summary: Introduction to Rust with basic concepts
-images: https://i.imgur.com/Qpzr40o.png
+images: /static/images/posts/Qpzr40o.png
 ---
+
+![image](/static/images/posts/Qpzr40o.png)
 
 ### Basic Data types in Rust
 
