@@ -4,12 +4,12 @@ date: '12-01-2021'
 tags: ['Essay']
 draft: true
 summary: Como um ambiente ruim me fez um desenvolvedor melhor?
-images: https://i.imgur.com/fgj7pmk.jpg
+images: /static/images/posts/red-flags/fgj7pmk.jpg
 ---
 
 <h3>[en](/blog/en/red-flags) | ptBR</h3>
 
-![image](https://i.imgur.com/fgj7pmk.jpg)
+![image](/static/images/posts/red-flags/fgj7pmk.jpg)
 
 ### Introdução
 
