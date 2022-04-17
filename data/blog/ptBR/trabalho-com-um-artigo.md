@@ -4,12 +4,12 @@ date: '11-25-2021'
 tags: ['Essay']
 draft: true
 summary: Explicando como consegui um novo emprego com crypto escrevendo um artigo sobre o que estudava
-images: https://i.imgur.com/J4ZEeyt.png
+images: /static/images/posts/job-with-1-article/J4ZEeyt.png
 ---
 
 <h3>[en](/blog/en/job-with-1-article) | ptBR</h3>
 
-![image](https://i.imgur.com/J4ZEeyt.png)
+![image](/static/images/posts/job-with-1-article/J4ZEeyt.png)
 
 ### Introdução
 
