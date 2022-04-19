@@ -2,7 +2,7 @@
 name: Vitor
 avatar: /static/images/avatars/ava.jpg
 occupation: Software engineer
-company: Genezys Digital Assets
+company: Genezys Global Tech
 email: vi.souza.almeida@protonmail.com
 twitter: https://twitter.com/vit0rrk
 linkedin: https://www.linkedin.com/in/vitorsalmeida/
