@@ -4,7 +4,6 @@ date: '03-08-2022'
 tags: ['Tutorials']
 draft: true
 summary: Como estruturar um projeto de compilador? - Escrevendo a própria linguagem de programação
-images: https://i.imgur.com/XgpVWwW.png
 ---
 
 1. Como criar minha linguagem de programação?
