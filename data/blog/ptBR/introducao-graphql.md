@@ -22,7 +22,22 @@ A maioria das aplicações hoje precisam buscar dados de um servidor, onde esses
 E aqui é onde surge alguns equaívocos. Algumas pessoas confudem como se GraphQL fosse uma tecnologia de banco de dados, e não é. Ela é uma linguagem de cunsulta para APIs, e não para banco de dados. Nesse sentido, GraphQL é independente de banco de dados e pode ser usado efetivamente em qualquer contexto, desde que uma API seja usada.
 
 Se quiser um artigo mais completo dos motivos do uso de GrapQL, leia [esse artigo](https://www.prisma.io/blog/top-5-reasons-to-use-graphql-b60cfa683511)
+### Uma alternativa mais eficiente ao REST
+
+[REST](https://en.wikipedia.org/wiki/Representational_state_transfer) tem sindo a maneira mais popular de expor dados de um servidor. Quando esse conceito foi desenvolvido, as aplicações eram bem mais simples que as de hoje. REST, portanto, foi um bom ajuste para muitas aplicações. Mas o cenário de APIs mudou bastante nos últimos anos. Existem três fatores que desafiam a maneira como as APIs sãoprojetadas:
+
+1. **Carregamento de dados mais eficientes pelo aumento do uso de dados móveis**
 
 
+   O aumento do uso móvel (celular), dispositivos de baixa potência e redes desleixadas foram as razões inicias pelas quais o Facebook desenvolveu o GraphQL. O GraphQL minimiza a quantidade de dados que precisam ser transferidos pela rede e, portanto, melhora o uso em piores condições, tornando no geral uma opção muito mais escalável.
 
+2. **Variedade de estrutura e de front-end**
+   
+   O cenário com muita variabilidade de estrutura e plataformas de front-end que executam aplicativos client dificultam a criação e manutanção de uma API que precise atender aos requisitos de todos. Com GraphQL, cada client pode a cessar exatamente os dados que ele precisa. 
+
+3. **Desenvolvimento rápido**
+   
+   Implementação contínua tornou-se um padrão para diversas empresas, e atualizações frequentes de produtos se tornou algo importante. Com APIs REST, a maneira como os dados são expostos pelo servidor geralmente precisa ser modificada para atender aos requisitos de mudança de design no lado do client. Isso dificulta práticas de desenvolvimento rápido.
+
+## Referências:
 - [Instroduction to GrapQL](https://www.howtographql.com/basics/0-introduction/)
