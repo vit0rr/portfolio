@@ -40,4 +40,4 @@ Se quiser um artigo mais completo dos motivos do uso de GrapQL, leia [esse artig
    Implementação contínua tornou-se um padrão para diversas empresas, e atualizações frequentes de produtos se tornaram algo importante. Com APIs REST, a maneira como os dados são expostos pelo servidor geralmente precisa ser modificada para atender aos requisitos de mudança de design no lado do client. Isso dificulta práticas de desenvolvimento rápido.
 
 ## Referências:
-- [Instroduction to GrapQL](https://www.howtographql.com/basics/0-introduction/)
+- [Instroduction to GraphQL](https://www.howtographql.com/basics/0-introduction/)
