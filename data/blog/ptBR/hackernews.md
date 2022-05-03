@@ -2,7 +2,7 @@
 title: Tutorial fullstack com NodeJS, TypeScript, Helix, GraphQL e SQLite
 date: '05-02-2022'
 tags: ['Tutorials']
-draft: true
+draft: false
 summary: Tutorial node-typescript-helix
 images: '/static/images/banners/introduction-graphql.png'
 ---
@@ -52,3 +52,73 @@ Requisitos:
 
 - NodeJS instalado. Recomendo a 16.
 - Execute `node -v`, `npm -v`, `npx -v` em seu terminal e verifique se todos esses comandos funciona. Do contrário, instale o que tiver faltando e arrume.
+
+### Criando o projeto Node.js e TypeScript
+
+Em sua pasta do projeto, e caso não tenha uma, crie. Digitamos `npm init -y` no terminal dentro dessa pasta.
+
+Isso vai criar um novo arquivo camado `package.json`. 
+
+Esse novo arquivo, é onde fica a configuração do NodeJS que você esctá criando. Ele lista todas as dependências e outras opções de configuração (como scripts) necessárias para o projeto.
+
+Para adicionar suporte ao TypeScript para seu projeto NodeJS, rode esse comando no diretório do seu projeto:
+
+```shell
+npm install --save-dev typescript @types/node ts-node ts-node-dev
+```
+
+E depois disso, você já vai conseguir ver modificações que foram feitas no package.json.
+
+O comando acima, fornecerá as seguintes bibliotecas instaladas:
+- typescript: é o suporte e o compilador básico da linguagem TypeScript.
+- #types/node: é um pacote que contém os tipos básicos de TypeScript para o ambiente NodeJS.
+- ts-node e ts-node-dev: bibliotecas que permitem executar arquivos `.ts` diretamente, sem uma etapa de compilação para JavaScript. 
+
+Assim como temos o `package.json`, agora temos que gerar o nosso `tsconfig.json`. Nele fica a configuração do TypeScript e ele existe por projeto. É nesse arquivo que você informa ao compilador TypeScript quais arquivos compilar e como compilar. Para isso, rode:
+
+```shell
+npx tsc --init
+```
+
+Agora, dentro do `package.json`, adicione na parte de "scripts" o seguinte script:
+
+```json
+{
+  "name": "hackernews-node-ts",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "ts-node-dev --exit-child src/index.ts",
+    "start": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^16.9.2",
+    "ts-node": "^10.2.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.3"
+  }
+}
+```
+
+Isso vai permitir que você execute os seguintes comandos no diretório do projeto:
+- `npm run start` - inicia o servidor
+- `npm run dev` - iniciará o servidor e o reiniciará a cada alteração
+
+Agora crie um ponto de entrada raiz para o seu projeto. Crie uma pasta `src` e dentro dela, o arquivo `index.ts`, com o seguinte código:
+
+```javascript
+console.log('Hello World!');
+```
+
+E para rodar o servidor em watch mode, execute no terminal:
+```shell
+npm run dev
+```
+
+O watch mode, vai executar novamente automaticamente caso detecte uma alteração em algum arquivo. Quando rodar, vai aparecer em seu console:
+
+```shell
+Hello World!
+```
+
+E boa, agora você tem um ptojeto NodeJS, TypeScript com scripts de desenvolvimento configurados. O próximo passo é configurar um esquema básico do GraphQL e um servidor GraphQL!
