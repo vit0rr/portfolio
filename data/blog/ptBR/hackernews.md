@@ -122,3 +122,11 @@ Hello World!
 ```
 
 E boa, agora você tem um ptojeto NodeJS, TypeScript com scripts de desenvolvimento configurados. O próximo passo é configurar um esquema básico do GraphQL e um servidor GraphQL!
+
+### Começando
+
+Vamos aprender como funciona o GraphQL schema
+
+1. Como ele funciona como um contrato de API entre o consumir e o provedor
+2. Como você pode usar a biblioteca graphql como um mecanismo básico de execução do GraphQL
+3. O que é uma operaçao GraphQÇ e como você pode usá-la
