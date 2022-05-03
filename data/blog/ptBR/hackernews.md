@@ -43,3 +43,12 @@ Em seguida, você permitirá que os consumidores da API restrijam a lista de ite
 Vamos começar.
 
 ### Configuração do projeto
+
+Nessa parte, vamos aprender a criar um projeto NodeJS básico com TypeScript.
+
+Essa etapa é para configuração inicial do NodeJS, configuração básica para projetos TypeScript e como configurar scripts de desenvolvimentro.
+
+Requisitos:
+
+- NodeJS instalado. Recomendo a 16.
+- Execute `node -v`, `npm -v`, `npx -v` em seu terminal e verifique se todos esses comandos funciona. Do contrário, instale o que tiver faltando e arrume.
