@@ -130,3 +130,71 @@ Vamos aprender como funciona o GraphQL schema
 1. Como ele funciona como um contrato de API entre o consumir e o provedor
 2. Como você pode usar a biblioteca graphql como um mecanismo básico de execução do GraphQL
 3. O que é uma operaçao GraphQÇ e como você pode usá-la
+
+### Introdução ao GraphQL
+
+Se já estiver um pouco familiarizado com o básico do GraphQL, uma visão rápida é:
+
+- O GraphQL schema é onde seus tipos GraphQL são definidos
+- Os tipos do GraphQL são conectados uns aos outros usando campos e formam um gráfico
+- Os tipos `Query` e `Mutation` são especiais, pois atuam como ponto de entrada para o gráfico
+- O GraphQL schema atua como provedor de dados e oferece um conjunto de recursos que o consumir pode usar.
+- Para obter dados de um GraphQL schema, você precisa escrever uma operação GraphQL (a query) que seleciona os dados e campos necessários
+
+A gente vai escrever um GraphQL schema simples e o consumirá diretamente, apenas para o processo de aprendizagem.
+
+Mais tarde, vamos susbstituir a execução direta por um servidor GraphQL (baseado no protocolo HTTP) e adicionará ferramentas de desenvolvedor que tornarão super simples a consulta e o acesso
+
+### Criando seu primeiro GraphQL schema
+
+Há muitas maneiras de criar um GraphQL schema. Aqui a gente vai primeiro criar usando a biblioteca `@graphql-tools/schema`.
+
+Comece instalando `graphql` e `@graphql-tools/schema` no seu projeto, com o seguinte comando:
+
+```shell
+npm install --save graphql @graphql-tools/schema graphql-import-node
+```
+
+O comando acma fornecerá as seguintes bibliotecas instaladas no projeto:
+- graphql: é a implementação do mecanismo GraphQL. 
+- @graphql-tools/schema é uma biblioteca para criar schemas executáveis do GraphQL.
+- graphql-import-node é necessário ára permitir a importação de arquivos .graphql.
+
+Um GraphQL schema pode ser escrito com GraphQL SDL (Schema Definition Language), que é a lingaugem GraphQL para definir sua API/contrato. 
+
+Vamos criar nosso primeiro GraphQL schema muito simples.
+
+Para começar, você precisa de um arquivo SDL definindo nosso contrato.
+
+Crie um `src/schema.graphql` com o seguinte conteúdo:
+
+```js
+type Query {
+  info: String!
+}
+```
+
+Agora, você pode criar seu schema executável executável e implementá-lo.
+
+Crie um arquivo novo em `src/schema.ts` com o seguinte código:
+
+```javascript
+import { makeExecutableSchema } from "@graphql-tools/schema";
+import typeDefs from "./schema.graphql";
+
+const resolvers = {
+  Query: {
+    info: () => 'Test',
+  }
+}
+
+export const schema = makeExecutableSchema({
+  typeDefs,
+  resolvers,
+});
+```
+
+No snippet de código acima, criou ou usou as seguintes variáveis:
+
+- `typeDefs`: está é a sua definição de GraphQL schema. Criamos um tipo `Query` que expõe um campo chamado `info`, do tipo `String`. Você pode importá-lo diretamente do arquivo `.graphql` graças ao `graphql-import-node`.
+- `resolvers`: 
