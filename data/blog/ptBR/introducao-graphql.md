@@ -2,7 +2,7 @@
 title: Introdução ao GraphQL
 date: '05-02-2022'
 tags: ['Tutorials']
-draft: false
+draft: true
 summary: Uma introdução ao GraphQL
 images: '/static/images/banners/introduction-graphql.png'
 ---

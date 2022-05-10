@@ -2,7 +2,7 @@
 title: Tutorial fullstack com NodeJS, TypeScript, Helix, GraphQL e SQLite
 date: '05-02-2022'
 tags: ['Tutorials']
-draft: false
+draft: true
 summary: Tutorial node-typescript-helix
 images: '/static/images/banners/introduction-graphql.png'
 ---
@@ -197,4 +197,6 @@ export const schema = makeExecutableSchema({
 No snippet de código acima, criou ou usou as seguintes variáveis:
 
 - `typeDefs`: está é a sua definição de GraphQL schema. Criamos um tipo `Query` que expõe um campo chamado `info`, do tipo `String`. Você pode importá-lo diretamente do arquivo `.graphql` graças ao `graphql-import-node`.
-- `resolvers`: 
+- `resolvers`: as funções de resolvers fazem parte do GraphQL schema e são a implementação real do GraphQL schema (o código/lógica)
+- `schema`: uma combinação do GraphQL SLD e dos resolvers. A função `makeExecutableSchema` é responsável por colá-los em um schema executável que podemos usar posteriormente.
+
