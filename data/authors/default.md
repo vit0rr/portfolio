@@ -2,7 +2,6 @@
 name: Vitor
 avatar: /static/images/avatars/vG1x8FK9.png
 occupation: Software engineer
-company: Genezys Global Tech
 email: vi.souza.almeida@protonmail.com
 twitter: https://twitter.com/vit0rrk
 linkedin: https://www.linkedin.com/in/vitorsalmeida/
