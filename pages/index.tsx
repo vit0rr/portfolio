@@ -4,6 +4,7 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import Image from 'next/image'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 
 const MAX_DISPLAY = 5
@@ -37,7 +38,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
+            const { slug, date, title, summary, tags, images } = frontMatter
             return (
               <li key={slug} className="py-12">
                 <article>
@@ -49,6 +50,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                           {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                         </time>
                       </dd>
+                      <Image src={images} key={images} width={120} height={120} alt="preview" />
                     </dl>
                     <div className="space-y-5 xl:col-span-3">
                       <div className="space-y-6">
