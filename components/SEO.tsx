@@ -100,24 +100,16 @@ export const BlogSEO = ({
   date,
   lastmod,
   url,
-  images = [],
+  images = '',
 }: BlogSeoProps) => {
   const router = useRouter()
   const publishedAt = new Date(date).toISOString()
   const modifiedAt = new Date(lastmod || date).toISOString()
-  const imagesArr =
-    images.length === 0
-      ? [siteMetadata.socialBanner]
-      : typeof images === 'string'
-      ? [images]
-      : images
 
-  const featuredImages = imagesArr.map((img) => {
-    return {
-      '@type': 'ImageObject',
-      url: `${siteMetadata.siteUrl}${img}`,
-    }
-  })
+  const featuredImage = {
+    '@type': 'ImageObject',
+    url: `${siteMetadata.siteUrl}${images}`,
+  }
 
   let authorList
   if (authorDetails) {
@@ -142,7 +134,7 @@ export const BlogSEO = ({
       '@id': url,
     },
     headline: title,
-    image: featuredImages,
+    image: [featuredImage],
     datePublished: publishedAt,
     dateModified: modifiedAt,
     author: authorList,
@@ -157,7 +149,7 @@ export const BlogSEO = ({
     description: summary,
   }
 
-  const twImageUrl = featuredImages[0].url
+  const twImageUrl = featuredImage.url
 
   return (
     <>
@@ -165,7 +157,7 @@ export const BlogSEO = ({
         title={title}
         description={summary}
         ogType="article"
-        ogImage={featuredImages}
+        ogImage={[featuredImage]}
         twImage={twImageUrl}
       />
       <Head>

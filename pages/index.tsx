@@ -4,6 +4,7 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import Image from 'next/image'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 
 const MAX_DISPLAY = 5
@@ -49,7 +50,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                           {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                         </time>
                       </dd>
-                      {/* <Image src={images} key={images} width={120} height={120} alt="preview" /> */}
+                      <Image src={images} key={images} width={120} height={120} alt="preview" />
                     </dl>
                     <div className="space-y-5 xl:col-span-3">
                       <div className="space-y-6">
