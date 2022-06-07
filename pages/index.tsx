@@ -42,14 +42,14 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
             return (
               <li key={slug} className="py-12">
                 <article>
-                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0">
                     <dl>
                       <dt className="sr-only">Published on</dt>
-                      <dd className="text-base font-medium mb-5 leading-6 text-gray-500 dark:text-gray-400">
+                      {/* <dd className="text-base font-medium mb-5 leading-6 text-gray-500 dark:text-gray-400">
                         <time dateTime={date}>
                           {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                         </time>
-                      </dd>
+                      </dd> */}
                       <div className="justify-center mr-5 drop-shadow-md block hidden xl:block">
                         <Image
                           src={images}
