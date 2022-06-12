@@ -11,7 +11,7 @@ images: /static/images/banners/difference-between-state.jpg
 
 ### The logic inside React components
 
-Some codes examples are imported from [here](https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/synchronizing-with-effects#what-are-effects-and-how-are-they-different-from-events).
+_Code examples are imported from [here](https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/synchronizing-with-effects#what-are-effects-and-how-are-they-different-from-events)._
 
 You need to be familiar with two types of logic:
 
@@ -46,10 +46,26 @@ At in the top level of your component, call it and put some code inside your eff
 ```js
 function MyComponent(){
     useEffect(() => {
-        //
+        // Code
     });
     return <div />;
 }
 ```
 
 Every time the component `MyComponent` render, React will update the screen _and then_ run the code inside of useEffect. **The code inside effect only will run after React load the component**.
+
+Now let's see how to use effect with some external system. Consider a React componente named `<VideoPlayer>` that have a prop isPlaying.
+
+```js
+<VideoPlayer isPlaying={isPlaying} />;
+```
+
+The component VideoPlayer renders a built-in browser `<video>` tag:
+
+```js
+function VideoPlayer({src, isPlaying}) {
+    return <video src={src} >;
+}
+```
+
+The `<video>` tag does not have an `isPlaying` prop. `play()` and `pause()` method looks the only way to control it. We need to synchronize the value of `isPlaying` prop. You need to synchronize the value of `isPlaying` prop, which tells whether the video should currently be playing, with imperative calls like play() or pause().
