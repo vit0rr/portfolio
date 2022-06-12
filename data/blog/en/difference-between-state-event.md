@@ -11,6 +11,8 @@ images: /static/images/banners/difference-between-state.jpg
 
 ### The logic inside React components
 
+Some codes examples are imported from [here](https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/synchronizing-with-effects#what-are-effects-and-how-are-they-different-from-events).
+
 You need to be familiar with two types of logic:
 
 - Rendering code is what lives on the top of your component. This is where you take the props and state, transform them, and return the JSX that you want to see on screen. [Keep components pure](https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/keeping-components-pure). It should only calculate the result, nothing anything else.
@@ -24,3 +26,30 @@ Effects let you specify side effects rendering itself and not by a particular ev
 ## Maybe you don't need an effect
 
 Don't run to add effects to your components. Effects are used to "step out" of your code and sync with some external system. If your effect only adjust some state based on other state, maybe you don't need an effect.
+
+## How to write an effect
+
+1. Declare and effect
+2. Specify the effect dependencies
+3. Add cleanup or stop if needed
+
+## 1: Declare an effect
+
+First of all you you need to import the useEffect hook in your React component:
+
+```js
+import { useEffect } from 'react';
+```
+
+At in the top level of your component, call it and put some code inside your effect:
+
+```js
+function MyComponent(){
+    useEffect(() => {
+        //
+    });
+    return <div />;
+}
+```
+
+Every time the component `MyComponent` render, React will update the screen _and then_ run the code inside of useEffect. **The code inside effect only will run after React load the component**.
