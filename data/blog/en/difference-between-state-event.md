@@ -20,3 +20,7 @@ You need to be familiar with two types of logic:
 But this isn't enough. A ChatRoom, for example, that must connect to the chat server wheever it's visible on the screen. Connecting to a chat server it's a side effect then can't happen during the rendering the component. But, there is no single event like a click or typing that caused ChatRoom to be displayed. And now?
 
 Effects let you specify side effects rendering itself and not by a particular event like click. Send some message in the chat is an event because is directly caused by some user action, like the click on the button or something like that. Setiing up a server is an effect bacause the connection happen with witch interaction that cause the component to appear. It's worth to you know that Effects run at the end of the [rendering process](https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/render-and-commit) after the screen updates. Here is a nice moment to synchronize the React component with some external system like network.
+
+## Maybe you don't need an effect
+
+Don't run to add effects to your components. Effects are used to "step out" of your code and sync with some external system. If your effect only adjust some state based on other state, maybe you don't need an effect.
