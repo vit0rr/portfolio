@@ -2,7 +2,7 @@
 title: What's is and the difference between State and Event on ReactJS
 date: '5-4-2022'
 tags: ['Tutorial']
-draft: true
+draft: false
 summary: Explanning what is and the difference between State and Event on ReactJS
 images: /static/images/banners/difference-between-state.jpg
 ---
