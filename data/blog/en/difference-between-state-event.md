@@ -1,5 +1,5 @@
 ---
-title: What's is and the difference between State and Event on ReactJS
+title: What's is, and the difference between State and Event on ReactJS
 date: '5-4-2022'
 tags: ['Tutorial']
 draft: false
@@ -19,13 +19,13 @@ You need to be familiar with two types of logic:
 
 - [Event handlers](https://developer.mozilla.org/en-US/docs/Web/Events/Event_handlers) are functions that do something rather than just calculate them. An event handlers contain [side effects](<https://en.wikipedia.org/wiki/Side_effect_(computer_science)#>) that can change the program state and are caused by specific user action, like a button click or typing.
 
-But this isn't enough. A ChatRoom, for example, that must connect to the chat server wheever it's visible on the screen. Connecting to a chat server it's a side effect then can't happen during the rendering the component. But, there is no single event like a click or typing that caused ChatRoom to be displayed. And now?
+But this isn't enough. A ChatRoom, for example, must connect to the chat server whenever it's visible on the screen. Connecting to a chat server it's a side effect then can't happen during the rendering the component. But, there is no single event like a click or typing that caused ChatRoom to be displayed. And now?
 
-Effects let you specify side effects rendering itself and not by a particular event like click. Send some message in the chat is an event because is directly caused by some user action, like the click on the button or something like that. Setiing up a server is an effect bacause the connection happen with witch interaction that cause the component to appear. It's worth to you know that Effects run at the end of the [rendering process](https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/render-and-commit) after the screen updates. Here is a nice moment to synchronize the React component with some external system like network.
+Effects let you specify side effects rendering themselves and not by a particular event like a click. Send some message in the chat is an event because is directly caused by some user action, like the click on the button or something like that. Setting up a server is an effect because the connection happens with which interaction causes the component to appear. It's worth you knowing that Effects run at the end of the [rendering process](https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/render-and-commit) after the screen updates. Here is a nice moment to synchronize the React component with some external system like a network.
 
 ## Maybe you don't need an effect
 
-Don't run to add effects to your components. Effects are used to "step out" of your code and sync with some external system. If your effect only adjust some state based on other state, maybe you don't need an effect.
+Don't run to add effects to your components. Effects are used to "step out" of your code and sync with some external system. If your effect only adjusts some states based on other states, maybe you don't need an effect.
 
 ## How to write an effect
 
@@ -35,7 +35,7 @@ Don't run to add effects to your components. Effects are used to "step out" of y
 
 ## 1: Declare an effect
 
-First of all you you need to import the useEffect hook in your React component:
+First of all, you need to import the useEffect hook in your React component:
 
 ```js
 import { useEffect } from 'react'
@@ -52,7 +52,7 @@ function MyComponent() {
 }
 ```
 
-Every time the component `MyComponent` render, React will update the screen _and then_ run the code inside of useEffect. **The code inside effect only will run after React load the component**.
+Every time the component `MyComponent` renders, React will update the screen _and then_ run the code inside of useEffect. **The code inside effect only will run after React load the component**.
 
 Now let's see how to use effect with some external system. Consider a React componente named `<VideoPlayer>` that have a prop isPlaying.
 
@@ -101,9 +101,9 @@ export default function App() {
 }
 ```
 
-In this case, just call the play or pause function during rendering is a wrong way. Why? Cause try to do something in DOM during rendering some component in react is impossible. Remember that [rendering should be a pure calculation](https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/keeping-components-pure) of JSX and sohuldn't contain some side effect that modify the DOM.
+In this case, just calling the play or pause function during rendering is the wrong way. Why? Cause trying to do something in DOM during rendering some component in react is impossible. Remember that [rendering should be a pure calculation](https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/keeping-components-pure) of JSX and shouldn't contain some side effects that modify the DOM.
 
-Is simple. How can you modify something that not exist yet? Impossible.
+Is simple. How can you modify something that does not exist yet? Impossible.
 
 The solution is wrap our side effect with `useEffect` to move it out of the rendering calculation.
 
@@ -140,4 +140,4 @@ export default function App() {
 }
 ```
 
-This example keep simple to understand the "external system" to synchronize with react States.
+This example keeps simple to understand the "external system" to synchronize with react States.
