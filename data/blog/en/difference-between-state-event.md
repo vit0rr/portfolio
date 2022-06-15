@@ -17,7 +17,7 @@ You need to be familiar with two types of logic:
 
 - Rendering code is what lives on the top of your component. This is where you take the props and state, transform them, and return the JSX that you want to see on screen. [Keep components pure](https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/keeping-components-pure). It should only calculate the result, nothing anything else.
 
-- [Event handlers](https://developer.mozilla.org/en-US/docs/Web/Events/Event_handlers) are functions that do something rather than just calculate them. An event handlers contain [side effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science)#) that can change the program state and are caused by specific user action, like a button click or typing.
+- [Event handlers](https://developer.mozilla.org/en-US/docs/Web/Events/Event_handlers) are functions that do something rather than just calculate them. An event handlers contain [side effects](<https://en.wikipedia.org/wiki/Side_effect_(computer_science)#>) that can change the program state and are caused by specific user action, like a button click or typing.
 
 But this isn't enough. A ChatRoom, for example, that must connect to the chat server wheever it's visible on the screen. Connecting to a chat server it's a side effect then can't happen during the rendering the component. But, there is no single event like a click or typing that caused ChatRoom to be displayed. And now?
 
@@ -38,17 +38,17 @@ Don't run to add effects to your components. Effects are used to "step out" of y
 First of all you you need to import the useEffect hook in your React component:
 
 ```js
-import { useEffect } from 'react';
+import { useEffect } from 'react'
 ```
 
 At in the top level of your component, call it and put some code inside your effect:
 
 ```js
-function MyComponent(){
-    useEffect(() => {
-        // Code
-    });
-    return <div />;
+function MyComponent() {
+  useEffect(() => {
+    // Code
+  })
+  return <div />
 }
 ```
 
@@ -57,7 +57,7 @@ Every time the component `MyComponent` render, React will update the screen _and
 Now let's see how to use effect with some external system. Consider a React componente named `<VideoPlayer>` that have a prop isPlaying.
 
 ```js
-<VideoPlayer isPlaying={isPlaying} />;
+<VideoPlayer isPlaying={isPlaying} />
 ```
 
 The component VideoPlayer renders a built-in browser `<video>` tag:
@@ -69,3 +69,40 @@ function VideoPlayer({src, isPlaying}) {
 ```
 
 The `<video>` tag does not have an `isPlaying` prop. `play()` and `pause()` method looks the only way to control it. We need to synchronize the value of `isPlaying` prop. You need to synchronize the value of `isPlaying` prop, which tells whether the video should currently be playing, with imperative calls like play() or pause().
+
+Now you need to be familiar with [ref](https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/manipulating-the-dom-with-refs) on React.
+
+```javascript
+import { useState, useRef, useEffect } from 'react'
+
+function VideoPlayer({ src, isPlaying }) {
+  const ref = useRef(null)
+
+  if (isPlaying) {
+    ref.current.play() // Calling these while rendering isn't allowed.
+  } else {
+    ref.current.pause() // Also, this crashes.
+  }
+
+  return <video ref={ref} src={src} loop playsInline />
+}
+
+export default function App() {
+  const [isPlaying, setIsPlaying] = useState(false)
+  return (
+    <>
+      <button onClick={() => setIsPlaying(!isPlaying)}>{isPlaying ? 'Pause' : 'Play'}</button>
+      <VideoPlayer
+        isPlaying={isPlaying}
+        src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+      />
+    </>
+  )
+}
+```
+
+In this case, just call the play or pause function during rendering is a wrong way. Why? Cause try to do something in DOM during rendering some component in react is impossible. Remember that [rendering should be a pure calculation](https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/keeping-components-pure) of JSX and sohuldn't contain some side effect that modify the DOM.
+
+Is simple. How can you modify something that not exist yet? Impossible.
+
+The solution is wrap our side effect with `useEffect` to move it out of the rendering calculation.
