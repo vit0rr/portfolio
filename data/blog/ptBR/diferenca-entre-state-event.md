@@ -24,3 +24,5 @@ Você precisa estar familiarizado com dois tipos de lógica:
 Mas isso não é suficiente. Um ChatRoom, por exemplo, deve se conectar ao servidor de chat sempre que estiver visível na tela. Conectar-se a um servidor de bate-papo é um efeito colateral, então não pode acontecer durante a renderização do componente. Mas, não há um único evento como um clique ou digitação que fez com que o ChatRoom fosse exibido. E agora?
 
 Os efeitos permitem que você especifique os efeitos colaterais renderizados por si mesmos e não por um evento específico como um clique. Enviar alguma mensagem no chat é um evento porque é causado diretamente por alguma ação do usuário, como o clique no botão ou algo assim. A configuração de um servidor é um efeito porque acontece a conexão com a qual a interação faz com que o componente apareça. Vale a pena saber que os efeitos são executados no final do [processo de renderização](https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/render-and-commit) após a atualização da tela. Aqui está um bom momento para sincronizar o componente React com algum sistema externo como uma rede.
+
+> Tenho em mim todos os sonhos do mundo.
