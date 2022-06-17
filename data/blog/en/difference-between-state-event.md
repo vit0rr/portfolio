@@ -144,4 +144,12 @@ export default function App() {
 
 This example keeps simple to understand the "external system" to synchronize with react States.
 
+## Step 2: Specify the effect dependencies
+
+By default, like that code that we learned, effects run after every render. But not always is what we want.
+
+- Sometimes the synchronizing is not always instant. For example, you wont to reconnect to the chat server on every keystroke.
+
+- Somestimes, we want that some animation should happen only in the first render, for the first time.
+
 > I have on me all the dreams of the world.
