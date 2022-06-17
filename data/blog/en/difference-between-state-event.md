@@ -152,4 +152,43 @@ By default, like that code that we learned, effects run after every render. But 
 
 - Somestimes, we want that some animation should happen only in the first render, for the first time.
 
+An example to demonstrate the issue, with a few `console.log` and a input that updates the parent component's state.
+
+```js
+import { useState, useRef, useEffect } from 'react'
+
+function VideoPlayer({ src, isPlaying }) {
+  const ref = useRef(null)
+
+  useEffect(() => {
+    if (isPlaying) {
+      console.log('Calling video.play()')
+      ref.current.play()
+    } else {
+      console.log('Calling video.pause()')
+      ref.current.pause()
+    }
+  })
+
+  return <video ref={ref} src={src} loop playsInline />
+}
+
+export default function App() {
+  const [isPlaying, setIsPlaying] = useState(false)
+  const [text, setText] = useState('')
+  return (
+    <>
+      <input value={text} onChange={(e) => setText(e.target.value)} />
+      <button onClick={() => setIsPlaying(!isPlaying)}>{isPlaying ? 'Pause' : 'Play'}</button>
+      <VideoPlayer
+        isPlaying={isPlaying}
+        src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+      />
+    </>
+  )
+}
+```
+
+Every keystroke, will call the `console.log`. Now think that instead a `log`, the function that call is a connection to some server, a fetch or css animation. Chaotic.
+
 > I have on me all the dreams of the world.
