@@ -1,8 +1,8 @@
 ---
-title: What's is, and the difference between State and Event on ReactJS
+title: What's is, and the difference between State and Effect on ReactJS
 date: '5-4-2022'
 tags: ['Tutorial']
-draft: false
+draft: true
 summary: Explanning what is and the difference between State and Event on ReactJS
 images: /static/images/banners/difference-between-state.jpg
 ---
@@ -336,9 +336,5 @@ And in browser console:
 
 This is the correct behavior in development.
 This behavior says that when React unmounts our component, our connection is "Disconnected". And when mount again, "Connecting...".
-
-## Conclusion
-
-State is like math. State should be pure. True or false. And an event will use this pure State to do something.
 
 > I have on me all the dreams of the world.
