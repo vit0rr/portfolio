@@ -236,4 +236,50 @@ export default function App() {
 
 The array can contain multiple dependencies.
 
+## Step 3: Add cleanup or stop if needed
+
+Now consider a different example: our ChatRoom component needs to connect to the chat server when it appears. We are givin a `createConnection()` API that returns an object with `connect()` and `disconnect()`. How to connect when it displayed to the user?
+
+Let's start building the effect logic:
+
+```js
+useEffect(() => {
+  const connection = createConnection()
+  connection.connect()
+}, [])
+```
+
+My dependency array is empty because our effect does not have props or states. This tells React yo only load this code when the component mounts.
+
+Our code is:
+
+```js
+// App.js
+import { useState, useEffect } from 'react'
+import { createConnection } from './chat.js'
+
+export default function ChatRoom() {
+  useEffect(() => {
+    const connection = createConnection()
+    connection.connect()
+  }, [])
+  return <h1>Welcome to the chat!</h1>
+}
+```
+
+```js
+// chat.js
+export function createConnection() {
+  // A real implementation would actually connect to the server
+  return {
+    connect() {
+      console.log('Connecting...')
+    },
+    disconnect() {
+      console.log('Disconnected.')
+    },
+  }
+}
+```
+
 > I have on me all the dreams of the world.
