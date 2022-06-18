@@ -107,7 +107,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             </div>
             <footer>
               <div className="text-sm font-medium leading-5 divide-gray-200 xl:divide-y dark:divide-gray-700 xl:col-start-1 xl:row-start-2">
-                {tags && (
+                {/* {tags && (
                   <div className="py-4 xl:py-8">
                     <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
                       Tags
@@ -118,8 +118,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                       ))}
                     </div>
                   </div>
-                )}
-                {(next || prev) && (
+                )} */}
+                {/* {(next || prev) && (
                   <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
                     {prev && (
                       <div>
@@ -142,7 +142,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                       </div>
                     )}
                   </div>
-                )}
+                )} */}
               </div>
               <div className="pt-4 xl:pt-8">
                 <Link
