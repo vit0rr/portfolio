@@ -148,11 +148,11 @@ This example keeps simple to understand the "external system" to synchronize wit
 
 By default, like that code that we learned, effects run after every render. But not always is what we want.
 
-- Sometimes the synchronizing is not always instant. For example, you wont to reconnect to the chat server on every keystroke.
+- Sometimes the synchronizing is not always instant. For example, you do not want to reconnect to the chat server on every keystroke.
 
-- Somestimes, we want that some animation should happen only in the first render, for the first time.
+- Sometimes, we want that some animation should happen only in the first render, for the first time.
 
-An example to demonstrate the issue, with a few `console.log` and a input that updates the parent component's state.
+An example to demonstrate the issue, with a few `console.log` and an input that updates the parent component's state.
 
 ```js
 import { useState, useRef, useEffect } from 'react'
@@ -189,7 +189,7 @@ export default function App() {
 }
 ```
 
-Every keystroke, will call the `console.log`. Now think that instead a `log`, the function that call is a connection to some server, a fetch or css animation. Chaotic.
+Every keystroke, will call the `console.log`. Now think that instead of a `log`, the function that calls is a connection to some server, a fetch, or CSS animation. Chaotic.
 
 To fix this, we need to specify an array of dependencies. Like this:
 
@@ -238,7 +238,7 @@ The array can contain multiple dependencies.
 
 ## Step 3: Add cleanup or stop if needed
 
-Now consider a different example: our ChatRoom component needs to connect to the chat server when it appears. We are givin a `createConnection()` API that returns an object with `connect()` and `disconnect()`. How to connect when it displayed to the user?
+Now consider a different example: our ChatRoom component needs to connect to the chat server when it appears. We are giving a `createConnection()` API that returns an object with `connect()` and `disconnect()`. How to connect when it is displayed to the user?
 
 Let's start building the effect logic:
 
@@ -249,7 +249,7 @@ useEffect(() => {
 }, [])
 ```
 
-My dependency array is empty because our effect does not have props or states. This tells React yo only load this code when the component mounts.
+My dependency array is empty because our effect does not have props or states. This tells React to only load this code when the component mounts.
 
 Our code is:
 
@@ -282,11 +282,11 @@ export function createConnection() {
 }
 ```
 
-But, if you check your console on browser, will see "Connectin" printed twice. To help us, React remounts every component once immediately after its initial mount. Log twice helps us to notice the real issue: our code doesn't close the connection when the componente unmounts. And this is bad. Why?
+But, if you check your console on your browser, will see "Connectin" printed twice. To help us, React remounts every component once immediately after its initial mount. Log twice helps us to notice the real issue: our code doesn't close the connection when the component unmounts. And this is bad. Why?
 
-Think if you have a project with many components to render in differents tabs. When you go to another page, the connection was not closed, and you acumule so many connection/connected requests. **You need to close the connection when the component unmout**.
+Think if you have a project with many components to render in different tabs. When you go to another page, the connection was not closed, and you accumulate so many connections/connected requests. **You need to close the connection when the component unmounts**.
 
-To fix, let's return a cleanup function from our effect:
+To fix this, let's return a cleanup function from our effect:
 
 ```js
 useEffect(() => {
@@ -336,7 +336,7 @@ And in browser console:
 2. "Disconnected."
 3. "Connecting..."
 
-This is the correct beavior in development.
-This behavior says that when React unmout our component, our connection is "Disconnected". And when mount again, "Connecting...".
+This is the correct behavior in development.
+This behavior says that when React unmounts our component, our connection is "Disconnected". And when mount again, "Connecting...".
 
 > I have on me all the dreams of the world.
