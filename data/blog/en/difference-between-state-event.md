@@ -7,8 +7,6 @@ summary: Explanning what is and the difference between State and Event on ReactJ
 images: /static/images/banners/difference-between-state.jpg
 ---
 
-<h3>en | [ptBR](/blog/ptBR/diferenca-entre-state-event)</h3>
-
 ![image](/static/images/banners/difference-between-state.jpg)
 
 ### The logic inside React components
