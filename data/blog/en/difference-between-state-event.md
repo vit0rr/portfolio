@@ -191,4 +191,49 @@ export default function App() {
 
 Every keystroke, will call the `console.log`. Now think that instead a `log`, the function that call is a connection to some server, a fetch or css animation. Chaotic.
 
+To fix this, we need to specify an array of dependencies. Like this:
+
+```js
+useEffect(() => {
+  // code
+}, [])
+```
+
+```js
+import { useState, useRef, useEffect } from 'react'
+
+function VideoPlayer({ src, isPlaying }) {
+  const ref = useRef(null)
+
+  useEffect(() => {
+    if (isPlaying) {
+      console.log('Calling video.play()')
+      ref.current.play()
+    } else {
+      console.log('Calling video.pause()')
+      ref.current.pause()
+    }
+  }, [isPlaying])
+
+  return <video ref={ref} src={src} loop playsInline />
+}
+
+export default function App() {
+  const [isPlaying, setIsPlaying] = useState(false)
+  const [text, setText] = useState('')
+  return (
+    <>
+      <input value={text} onChange={(e) => setText(e.target.value)} />
+      <button onClick={() => setIsPlaying(!isPlaying)}>{isPlaying ? 'Pause' : 'Play'}</button>
+      <VideoPlayer
+        isPlaying={isPlaying}
+        src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+      />
+    </>
+  )
+}
+```
+
+The array can contain multiple dependencies.
+
 > I have on me all the dreams of the world.
