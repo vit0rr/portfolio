@@ -282,4 +282,61 @@ export function createConnection() {
 }
 ```
 
+But, if you check your console on browser, will see "Connectin" printed twice. To help us, React remounts every component once immediately after its initial mount. Log twice helps us to notice the real issue: our code doesn't close the connection when the componente unmounts. And this is bad. Why?
+
+Think if you have a project with many components to render in differents tabs. When you go to another page, the connection was not closed, and you acumule so many connection/connected requests. **You need to close the connection when the component unmout**.
+
+To fix, let's return a cleanup function from our effect:
+
+```js
+useEffect(() => {
+  const connection = createConnection()
+  connection.connect()
+  return () => {
+    connection.disconnect()
+  }
+}, [])
+```
+
+React will call our cleanup function each time before the effect runs again, and one final time when the component unmounts.
+
+```js
+// App.js
+import { useState, useEffect } from 'react'
+import { createConnection } from './chat.js'
+
+export default function ChatRoom() {
+  useEffect(() => {
+    const connection = createConnection()
+    connection.connect()
+    return () => connection.disconnect()
+  }, [])
+  return <h1>Welcome to the chat!</h1>
+}
+```
+
+```js
+// chat.js
+export function createConnection() {
+  // A real implementation would actually connect to the server
+  return {
+    connect() {
+      console.log('Connecting...')
+    },
+    disconnect() {
+      console.log('Disconnected.')
+    },
+  }
+}
+```
+
+And in browser console:
+
+1. "Connecting..."
+2. "Disconnected."
+3. "Connecting..."
+
+This is the correct beavior in development.
+This behavior says that when React unmout our component, our connection is "Disconnected". And when mount again, "Connecting...".
+
 > I have on me all the dreams of the world.
