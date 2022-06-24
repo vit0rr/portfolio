@@ -1,9 +1,9 @@
 ---
-title: What's is, and the difference between State and Effect on ReactJS
+title: Introduction to hook React.useEffect
 date: '5-4-2022'
 tags: ['Tutorial']
 draft: false
-summary: Explanning what is and the difference between State and Event on ReactJS
+summary: Introduction to hook React.useEffect
 images: /static/images/banners/difference-between-state.jpg
 ---
 
@@ -280,7 +280,7 @@ export function createConnection() {
 }
 ```
 
-But, if you check your console on your browser, will see "Connectin" printed twice. To help us, React remounts every component once immediately after its initial mount. Log twice helps us to notice the real issue: our code doesn't close the connection when the component unmounts. And this is bad. Why?
+But, if you check your console on your browser, will see "Connecting" printed twice. To help us, React remounts every component once immediately after its initial mount. Log twice helps us to notice the real issue: our code doesn't close the connection when the component unmounts. And this is bad. Why?
 
 Think if you have a project with many components to render in different tabs. When you go to another page, the connection was not closed, and you accumulate so many connections/connected requests. **You need to close the connection when the component unmounts**.
 
