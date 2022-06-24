@@ -1,9 +1,9 @@
 ---
-title: What's is, and the difference between State and Effect on ReactJS
+title: Introduction to hook React.useEffect
 date: '5-4-2022'
 tags: ['Tutorial']
 draft: false
-summary: Explanning what is and the difference between State and Event on ReactJS
+summary: Introduction to hook React.useEffect
 images: /static/images/banners/difference-between-state.jpg
 ---
 
