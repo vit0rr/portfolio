@@ -11,7 +11,7 @@ const siteMetadata = {
   socialBanner: '/static/images/resume.png',
   email: 'vi.souza.almeida@protonmail.com',
   github: 'https://github.com/vit0rr',
-  twitter: 'https://twitter.com/vit0rrk',
+  twitter: '@vit0rrk',
   linkedin: 'https://www.linkedin.com/in/vitorsalmeida/',
   locale: 'en-US',
   analytics: {
