@@ -4,7 +4,7 @@ const siteMetadata = {
   headerTitle: "Vitor's Blog",
   description: 'My lasted posts',
   language: 'pt-br',
-  siteUrl: '',
+  siteUrl: 'https://vitorsalmeida.com/',
   siteRepo: 'https://github.com/vit0rr/portfolio',
   siteLogo: 'https://avatars.githubusercontent.com/u/70543018?v=4',
   image: '/static/images/resume.png',
