@@ -1,6 +1,6 @@
 ---
 title: Introduction to React.useEffect hook
-date: '5-4-2022'
+date: '6-30-2022'
 tags: ['Tutorial']
 draft: false
 summary: Introduction to React.useEffect hook
