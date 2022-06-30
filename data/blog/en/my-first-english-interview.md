@@ -1,7 +1,7 @@
 ---
 title: Lessons learned in my first English interview
 date: '12-31-2021'
-tags: ['Essay', 'Pinned']
+tags: ['Essay']
 draft: false
 summary: How was my first English interview about blockchain development work
 images: /static/images/banners/my-first-english-interview.png

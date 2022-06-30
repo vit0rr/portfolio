@@ -1,7 +1,7 @@
 ---
 title: Stop thinking about learning curve
 date: '01-18-2022'
-tags: ['Essay', 'Pinned']
+tags: ['Essay']
 draft: false
 summary: Stop thinking about learning curve
 images: /static/images/banners/learning-curve.png
