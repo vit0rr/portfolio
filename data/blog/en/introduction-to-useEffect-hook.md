@@ -1,7 +1,7 @@
 ---
 title: Introduction to React.useEffect hook
 date: '6-30-2022'
-tags: ['Tutorial']
+tags: ['Tutorials']
 draft: false
 summary: Introduction to React.useEffect hook
 images: /static/images/banners/difference-between-state.jpg
