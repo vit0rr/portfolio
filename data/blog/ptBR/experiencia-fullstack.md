@@ -11,7 +11,7 @@ images: /static/images/banners/experience-fullstack.jpg
 
 ## Fullstack
 
-Anteriormente, minha definiçao de fullstack era de uma pessoa que consegue desenvolver front e backend. Mas vai bem além.
+Um desenvolvedor fullstack vai muito mais além que apenas saber programadr front e backend.
 
 Para ser um bom desenvolvedor fullstack, você precisa entender o processo **completo**.
 
