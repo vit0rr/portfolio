@@ -11,7 +11,7 @@ images: /static/images/banners/experience-fullstack.jpg
 
 ## Fullstack
 
-Um desenvolvedor fullstack vai muito mais além que apenas saber programadr front e backend.
+Um desenvolvedor fullstack vai muito mais além que saber programar front e backend.
 
 Para ser um bom desenvolvedor fullstack, você precisa entender o processo **completo**.
 
