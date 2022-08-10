@@ -26,7 +26,7 @@ Para fazer isso eficientemente, você vai precisar saber o que copiar, onde copi
 
 - Referências: meu tech lead costuma referenciar PR's e issues já resolvidas nas novas que são abertas. Isso ajuda com que os devs tenham um ponto de partida, comecem a conhecer e mapear a code base. Onde buscar o que querem, e começar a construir um modelo mental melhor. Isso também faz com que o time tenha a capacidade de referenciar algo que já tenha sido construído por eles nas próximas PR's e issues.
 
-- Codando: quanto mais você coda, mais vai conhecer a code base. Depois de resolver diversas issues, terá autonomia dentro da code base, saber onde buscar o que eu quer, códigos de refência etc.
+- Codando: quanto mais você coda, mais vai conhecer a code base. Depois de resolver diversas issues, terá autonomia dentro da code base, saber onde buscar o que eu quero, códigos de referência etc.
 
 - Code review: mesmo que você não seja o tech lead, é importante revisar todas a PR's do seu time. Isso nem sempre é viável caso o time seja muito grande, tente revisar algumas, se for o caso.
 
