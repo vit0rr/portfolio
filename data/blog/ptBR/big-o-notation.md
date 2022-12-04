@@ -82,6 +82,7 @@ Suponha que você receba uma lista de números, e precise achar x número nessa 
 Agora suponha que você receba uma lista de números, e tenha que ordenar ela (de forma logarítmica). Esse é o algoritmo de merge sort O(n log(n)).
 
 ```typescript
+// O(log(n))
 function binarySearch(arr: number[], x: number) {
   let left = 0
   let right = arr.length - 1
@@ -102,6 +103,7 @@ function binarySearch(arr: number[], x: number) {
 ```
 
 ```typescript
+// O(n log(n))
 function mergeSort(arr: number[]) {
   if (arr.length === 1) {
     return arr
