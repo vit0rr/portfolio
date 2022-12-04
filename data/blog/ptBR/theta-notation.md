@@ -3,7 +3,7 @@ title: Por que você escreve código lento?
 date: '12-04-2022'
 tags: ['Essay']
 draft: false
-summary: Por que você escreve código explicado com theta notation
+summary: Entenda com theta-notation porque você escreve código lento
 images: /static/images/banners/theta-notation.jpg
 ---
 
