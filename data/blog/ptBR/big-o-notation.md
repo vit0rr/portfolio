@@ -7,7 +7,7 @@ summary: Entenda com "big O notation" porque você escreve código lento
 images: /static/images/banners/theta-notation.jpg
 ---
 
-![banner theta notation](/static/images/banners/theta-notation.jpg)
+![banner theta notation](/static/images/banners/big-o-notation.jpg)
 
 ### Introdução
 
@@ -72,7 +72,7 @@ Ou seja, se um array tem `n` elementos, o loop interno (`while`) vai rodar `n` v
 
 A vantagem disso, é que em caso de arrays maiores, o código vai rodar mais rápido, pelo número de iteração ser proporcional ao tamanho do array. Logo, a complexidade de tempo está limitada pelo tamanho do array, e não vai ter um gráfico de crescimento tão alto comparado à um código de complexidade quadrática.
 
-![image](/static/images/posts/theta-notation.jpeg)
+![image](/static/images/posts/big-o-notation.jpeg)
 
 O segundo código, é um exemplo de complexidade quadrática Θ(n²). O loop `for` dentro do loop `for` vai rodar de forma proporcional ao quadrado do tamanho do array.
 
