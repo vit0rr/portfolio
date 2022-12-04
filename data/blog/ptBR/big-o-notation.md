@@ -141,6 +141,9 @@ Ou seja, no pior dos casos, dado um array de 8 ítens, o algoritmo vai rodar 3 v
 
 No segundo exemplo, O(n log(n)) é uma notação que indica que o tempo de execução de um algoritmo aumenta de maneira proporcional ao produto do tamanho dos dados de entrada e do logaritmo desse tamanho. Isso significa que, no pior dos casos, dado um array de 8 ítens, o algoritmo vai rodar 24 vezes. Exemplo: 8 * log2(8) = 24. 
 
+Porém, note que a complexidade temporal não implica necessariamente em maior ou menor velocidade.
+Um algoritmo com uma pior complexidade, é possível que seja mais rápido que um algoritmo com uma melhor complexidade, **dependendo do input**. No entando, uma afirmação mais segura, seria de que, em geral, códigos com uma complexidade melhor (menor), serão mais eficientes e mais rápidos a medida que o input aumente.
+
 Para quem quiser se aprofundar mais no assunto, recomendo a leitura do livro "Introduction to Algorithms" do Thomas H. Cormen.
 
 #### Referências
