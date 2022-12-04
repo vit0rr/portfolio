@@ -78,7 +78,8 @@ As implicações disso, é que em arrays maiores, o gráfico de crescimento ser�
 Agora, exemplo de código com complexidade logarítmica O(log(n)) e O(n log(n))
 
 Suponha que você receba uma lista de números, e precise achar x número nessa lista. Esse é o algoritmo de binary search O(log(n)).
-Agora suponha que você receba uma lista de números, e tenha que encontrar um elemento específico. Ou seja, buscar por 4 dentro da lista [2, 4, 3, 1]. Esse é o algoritmo de binary search O(n log(n)).
+
+Agora suponha que você receba uma lista de números, e tenha que ordenar ela (de forma logarítmica). Esse é o algoritmo de merge sort O(n log(n)).
 
 ```typescript
 function binarySearch(arr: number[], x: number) {
@@ -97,6 +98,38 @@ function binarySearch(arr: number[], x: number) {
     }
   }
   return -1
+}
+```
+
+```typescript
+function mergeSort(arr: number[]) {
+  if (arr.length === 1) {
+    return arr
+  }
+
+  let mid = Math.floor(arr.length / 2)
+  let left = arr.slice(0, mid)
+  let right = arr.slice(mid)
+
+  return merge(mergeSort(left), mergeSort(right))
+}
+
+function merge(left: number[], right: number[]) {
+  let result = []
+  let i = 0
+  let j = 0
+
+  while (i < left.length && j < right.length) {
+    if (left[i] < right[j]) {
+      result.push(left[i])
+      i++
+    } else {
+      result.push(right[j])
+      j++
+    }
+  }
+
+  return result.concat(left.slice(i)).concat(right.slice(j))
 }
 ```
 
