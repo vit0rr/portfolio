@@ -29,6 +29,7 @@ Big O notation é representada pela letra O e usada da seguinte forma: `Θ(f(n))
 ### Big O notation em código
 
 Suponha que você tenha uma lista, e precisa encontrar o elemento 'x'. Esse algoritmo se chama sequential search.
+E outro que, dado uma lista, você precisa retornar ela ordenada. Esse algoritmo se chama insertion sort.
 
 ```typescript
 // linear time
@@ -57,8 +58,6 @@ function insertionSort(arr: number[]) {
 
   return arr
 }
-
-insertionSort([5, 2, 4, 6, 1, 3])
 ```
 
 Ambos os códigos funcionam e resolvem o problema que propomos, mas um é mais performático que outro.
@@ -75,6 +74,37 @@ O segundo código, é um exemplo de complexidade quadrática Θ(n²). O loop `fo
 Ou seja, se um array tem `n` elementos, o loop interno vai rodar `n * n` vezes. Logo, Θ(n²).
 
 As implicações disso, é que em arrays maiores, o gráfico de crescimento será maior, logo, mais lento e mais complexo quanto maior o input.
+
+Agora, exemplo de código com complexidade logarítmica O(log(n)) e O(n log(n))
+
+Suponha que você receba uma lista de números, e precise achar x número nessa lista. Esse é o algoritmo de binary search O(log(n)).
+Agora suponha que você receba uma lista de números, e tenha que encontrar um elemento específico. Ou seja, buscar por 4 dentro da lista [2, 4, 3, 1]. Esse é o algoritmo de binary search O(n log(n)).
+
+```typescript
+function binarySearch(arr: number[], x: number) {
+  let left = 0
+  let right = arr.length - 1
+
+  while (left <= right) {
+    let mid = Math.floor((left + right) / 2)
+    if (arr[mid] === x) {
+      return mid
+    }
+    if (arr[mid] < x) {
+      left = mid + 1
+    } else {
+      right = mid - 1
+    }
+  }
+  return -1
+}
+```
+
+Ambos válidos, mas apresentam uma complexidade de tempo diferente.
+O primeiro é O(log(n)), isso significa que o tempo de execução aumenta logaritmicamente com o tamanho do input.
+Ou seja, no pior dos casos, dado um array de 8 ítens, o algoritmo vai rodar 3 vezes. Exemplo: log2(8) = 3.
+
+No segundo exemplo, O(n log(n)) é uma notação que indica que o tempo de execução de um algoritmo aumenta de maneira proporcional ao produto do tamanho dos dados de entrada e do logaritmo desse tamanho. Isso significa que, no pior dos casos, dado um array de 8 ítens, o algoritmo vai rodar 24 vezes. Exemplo: 8 * log2(8) = 24. 
 
 Para quem quiser se aprofundar mais no assunto, recomendo a leitura do livro "Introduction to Algorithms" do Thomas H. Cormen.
 
