@@ -28,21 +28,17 @@ Big O notation é representada pela letra O e usada da seguinte forma: `Θ(f(n))
 
 ### Big O notation em código
 
-Suponha que você tenha uma lista de números, e você precisa ordenar essa lista. Ou seja, o input [5, 2, 4, 6, 1, 3] precisa ser ordenado para [1, 2, 3, 4, 5, 6]. Esse algoritmo é chamado de insertion sort.
+Suponha que você tenha uma lista, e precisa encontrar o elemento 'x'. Esse algoritmo se chama sequential search.
 
 ```typescript
 // linear time
-function insertionSort(arr: number[]) {
-  for (let i = 1; i < arr.length; i++) {
-    let key = arr[i]
-    let j = i - 1
-    while (j >= 0 && key < arr[j]) {
-      arr[j + 1] = arr[j]
-      j -= 1
+function sequentialSearch(arr: number[], x: number) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === x) {
+      return i
     }
-    arr[j + 1] = key
   }
-  return arr
+  return -1
 }
 ```
 
@@ -66,9 +62,9 @@ insertionSort([5, 2, 4, 6, 1, 3])
 ```
 
 Ambos os códigos funcionam e resolvem o problema que propomos, mas um é mais performático que outro.
-O primeiro código é linear. Na prática isso significa que o loop `while` dentro do loop `for` vai rodar por uma quantidade de vezes diretamente proporcional ao tamanho do array.
+O primeiro código é linear. Na prática isso significa que o loop `for` vai rodar por uma quantidade de vezes diretamente proporcional ao tamanho do array.
 
-Ou seja, se um array tem `n` elementos, o loop interno (`while`) vai rodar `n` vezes. Logo, Θ(n).
+Ou seja, se um array tem `n` elementos, o loop vai rodar `n` vezes. Logo, Θ(n).
 
 A vantagem disso, é que em caso de arrays maiores, o código vai rodar mais rápido, pelo número de iteração ser proporcional ao tamanho do array. Logo, a complexidade de tempo está limitada pelo tamanho do array, e não vai ter um gráfico de crescimento tão alto comparado à um código de complexidade quadrática.
 
@@ -83,5 +79,6 @@ As implicações disso, é que em arrays maiores, o gráfico de crescimento ser�
 Para quem quiser se aprofundar mais no assunto, recomendo a leitura do livro "Introduction to Algorithms" do Thomas H. Cormen.
 
 #### Referências
+
 - [Big O notation ](https://en.wikipedia.org/wiki/Big_O_notation)
 - [introduction to algorithms](https://www.amazon.com.br/Introduction-Algorithms-Thomas-H-Cormen/dp/0262033844)
