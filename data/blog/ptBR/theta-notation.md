@@ -79,3 +79,9 @@ O segundo código, é um exemplo de complexidade quadrática Θ(n²). O loop `fo
 Ou seja, se um array tem `n` elementos, o loop interno vai rodar `n * n` vezes. Logo, Θ(n²).
 
 As implicações disso, é que em arrays maiores, o gráfico de crescimento será maior, logo, mais lento e mais complexo quanto maior o input.
+
+Para quem quiser se aprofundar mais no assunto, recomendo a leitura do livro "Introduction to Algorithms" do Thomas H. Cormen.
+
+#### Referências
+- [Big O notation ](https://en.wikipedia.org/wiki/Big_O_notation)
+- [introduction to algorithms](https://www.amazon.com.br/Introduction-Algorithms-Thomas-H-Cormen/dp/0262033844)
