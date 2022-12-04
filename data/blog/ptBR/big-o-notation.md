@@ -4,7 +4,7 @@ date: '12-04-2022'
 tags: ['Essay']
 draft: false
 summary: Entenda com "big O notation" porque você escreve código lento
-images: /static/images/banners/theta-notation.jpg
+images: /static/images/banners/big-o-notation.jpg
 ---
 
 ![banner theta notation](/static/images/banners/big-o-notation.jpg)
