@@ -31,6 +31,8 @@ Big O notation é representada pela letra O e usada da seguinte forma: `Θ(f(n))
 Suponha que você tenha uma lista, e precisa encontrar o elemento 'x'. Esse algoritmo se chama sequential search.
 E outro que, dado uma lista, você precisa retornar ela ordenada. Esse algoritmo se chama insertion sort.
 
+<details open>
+<summary>Sequential search example</summary>
 ```typescript
 // linear time
 function sequentialSearch(arr: number[], x: number) {
@@ -42,7 +44,10 @@ function sequentialSearch(arr: number[], x: number) {
   return -1
 }
 ```
+</details>
 
+<details>
+<summary>Insertion sort example</summary>
 ```typescript
 // quadratic time
 function insertionSort(arr: number[]) {
@@ -59,6 +64,7 @@ function insertionSort(arr: number[]) {
   return arr
 }
 ```
+</details>
 
 Ambos os códigos funcionam e resolvem o problema que propomos, mas um é mais performático que outro.
 O primeiro código é linear. Na prática isso significa que o loop `for` vai rodar por uma quantidade de vezes diretamente proporcional ao tamanho do array.
@@ -81,6 +87,8 @@ Suponha que você receba uma lista de números, e precise achar x número nessa 
 
 Agora suponha que você receba uma lista de números, e tenha que ordenar ela (de forma logarítmica). Esse é o algoritmo de merge sort O(n log(n)).
 
+<details>
+<summary>Binary search example</summary>
 ```typescript
 // O(log(n))
 function binarySearch(arr: number[], x: number) {
@@ -101,7 +109,10 @@ function binarySearch(arr: number[], x: number) {
   return -1
 }
 ```
+</details>
 
+<details>
+<summary>Merge sort example</summary>
 ```typescript
 // O(n log(n))
 function mergeSort(arr: number[]) {
@@ -134,6 +145,7 @@ function merge(left: number[], right: number[]) {
   return result.concat(left.slice(i)).concat(right.slice(j))
 }
 ```
+</details>
 
 Ambos válidos, mas apresentam uma complexidade de tempo diferente.
 O primeiro é O(log(n)), isso significa que o tempo de execução aumenta logaritmicamente com o tamanho do input.
