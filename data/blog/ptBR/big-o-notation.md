@@ -11,15 +11,13 @@ images: /static/images/banners/big-o-notation.jpg
 
 ### Introdução
 
-Nesse post, vamos explorar o conceito de eficiência de algoritmos e como medir essa eficiência com big O notation, e como isso pode te ajudar a escrever códigos mais performáticos.
+Neste post, vamos explorar o conceito de eficiência de algoritmos e como medir essa eficiência utilizando a notação de big O. Além disso, veremos como isso pode ajudar a escrever códigos mais performáticos. A notação de big O nos permite avaliar o desempenho de um algoritmo de acordo com o tamanho do seu conjunto de dados, o que é fundamental para otimizar o uso de recursos em aplicações em larga escala.
 
 ### O que é big O notation notation e eficiência de algoritmos?
 
-Nós chamamos um algoritmo de eficiente, quando ele consegue resolver um problema em um tempo razoável e sem requerir muito poder de processamento e memória.
+A eficiência de um algoritmo é a capacidade de resolver um problema em um tempo razoável e com o uso eficiente de recursos computacionais, como processamento e memória. A big O notation, é uma forma de medir a eficiência de um algoritmo, descrevendo o comportamento assintótico de uma função. Isso significa que podemos avaliar a taxa de crescimento da função, comparando com outros algoritmos.
 
-Uma forma de medir a eficiência de um algoritmo é usando big O notation. Big O notation é uma notação matemática usada para descrever o comportamento assintótico de funções. Ou seja, podemos medir a taxa de crescimento dessas funções, de diferentes algoritmos, e comparar essas taxas de crescimento.
-
-Big O notation é representada pela letra O e usada da seguinte forma: `Θ(f(n))`. Onde `f(n)` é à medida que o tamanho da entrada (n) cresce. Por exemplo, um algoritmo cresce quadraticamente, ou seja, o algoritmo cresce 2 vezes mais por entrada, é representado por `Θ(n²)`.
+A notação de big O é representada pela letra O e é utilizada da seguinte forma: `Θ(f(n))`, onde `f(n)` é a medida em que o tamanho da entrada (n) aumenta. Por exemplo, um algoritmo que cresce quadraticamente, ou seja, que aumenta duas vezes mais a cada entrada adicional, é representado por `Θ(n²)`.
 
 - Tempo constante: `Θ(1)`
 - Tempo linear: `Θ(n)`
@@ -28,8 +26,9 @@ Big O notation é representada pela letra O e usada da seguinte forma: `Θ(f(n))
 
 ### Big O notation em código
 
-Suponha que você tenha uma lista, e precisa encontrar o elemento 'x'. Esse algoritmo se chama sequential search.
-E outro que, dado uma lista, você precisa retornar ela ordenada. Esse algoritmo se chama insertion sort.
+Suponha que você tenha uma lista e precise encontrar um determinado elemento 'x'. Esse algoritmo é chamado de sequential search.
+
+Outro exemplo é quando é preciso ordenar uma lista. Esse algoritmo é chamado de insertion sort.
 
 <details open>
 <summary>Sequential search example</summary>
@@ -66,26 +65,23 @@ function insertionSort(arr: number[]) {
 ```
 </details>
 
-Ambos os códigos funcionam e resolvem o problema que propomos, mas um é mais performático que outro.
-O primeiro código é linear. Na prática isso significa que o loop `for` vai rodar por uma quantidade de vezes diretamente proporcional ao tamanho do array.
+Ambos os códigos funcionam e resolvem o problema proposto, mas um é mais performático que o outro. O primeiro código é linear, o que significa que o loop for será executado por uma quantidade de vezes diretamente proporcional ao tamanho do array. Isso quer dizer que, se o array tem n elementos, o loop será executado n vezes, o que pode ser representado por Θ(n).
 
-Ou seja, se um array tem `n` elementos, o loop vai rodar `n` vezes. Logo, Θ(n).
-
-A vantagem disso, é que em caso de arrays maiores, o código vai rodar mais rápido, pelo número de iteração ser proporcional ao tamanho do array. Logo, a complexidade de tempo está limitada pelo tamanho do array, e não vai ter um gráfico de crescimento tão alto comparado à um código de complexidade quadrática.
+A vantagem dessa abordagem é que, em caso de arrays maiores, o código será executado mais rapidamente, pois o número de iterações é proporcional ao tamanho do array. Isso faz com que a complexidade de tempo do código seja limitada pelo tamanho do array, o que resulta em um gráfico de crescimento menos acentuado em comparação com um código de complexidade quadrática. Em outras palavras, o primeiro código é mais performático e eficiente em situações onde o array pode ser muito grande.
 
 ![image](/static/images/posts/big-o-notation.jpeg)
 
-O segundo código, é um exemplo de complexidade quadrática Θ(n²). O loop `for` dentro do loop `for` vai rodar de forma proporcional ao quadrado do tamanho do array.
+O segundo código é um exemplo de complexidade quadrática `Θ(n²)`. Isso significa que o loop `for` dentro do loop `for` será executado por uma quantidade de vezes proporcional ao quadrado do tamanho do array. Em outras palavras, se o array tem `n` elementos, o loop interno será executado `n * n` vezes, o que pode ser representado por `Θ(n²)`.
 
-Ou seja, se um array tem `n` elementos, o loop interno vai rodar `n * n` vezes. Logo, Θ(n²).
+As implicações dessa complexidade são que, em arrays maiores, o gráfico de crescimento será mais acentuado, o que resulta em um código mais lento e mais complexo quanto maior o input.
 
-As implicações disso, é que em arrays maiores, o gráfico de crescimento será maior, logo, mais lento e mais complexo quanto maior o input.
+Agora, vejamos alguns exemplos de códigos com complexidades logarítmicas O(log(n)) e O(n log(n)).
 
-Agora, exemplo de código com complexidade logarítmica O(log(n)) e O(n log(n))
+Suponha que você receba uma lista de números e precise encontrar um determinado número x na lista. Para isso, pode-se utilizar o algoritmo de binary search, que tem complexidade O(log(n)).
 
-Suponha que você receba uma lista de números, e precise achar x número nessa lista. Esse é o algoritmo de binary search O(log(n)).
+Outro exemplo é quando é preciso ordenar uma lista de números de forma logarítmica. Para isso, pode-se utilizar o algoritmo de merge sort, que tem complexidade O(n log(n)).
 
-Agora suponha que você receba uma lista de números, e tenha que ordenar ela (de forma logarítmica). Esse é o algoritmo de merge sort O(n log(n)).
+Esses algoritmos são mais performáticos e eficientes do que abordagens lineares ou quadráticas em situações onde o tamanho da entrada pode ser muito grande.
 
 <details>
 <summary>Binary search example</summary>
@@ -147,14 +143,11 @@ function merge(left: number[], right: number[]) {
 ```
 </details>
 
-Ambos válidos, mas apresentam uma complexidade de tempo diferente.
-O primeiro é O(log(n)), isso significa que o tempo de execução aumenta logaritmicamente com o tamanho do input.
-Ou seja, no pior dos casos, dado um array de 8 ítens, o algoritmo vai rodar 3 vezes. Exemplo: log2(8) = 3.
+Ambos os exemplos são válidos, mas apresentam complexidades de tempo diferentes. O primeiro é O(log(n)), o que significa que o tempo de execução aumenta de forma logarítmica em relação ao tamanho do input. Em outras palavras, no pior dos casos, se o array tem 8 elementos, o algoritmo será executado 3 vezes. Por exemplo: log2(8) = 3.
 
-No segundo exemplo, O(n log(n)) é uma notação que indica que o tempo de execução de um algoritmo aumenta de maneira proporcional ao produto do tamanho dos dados de entrada e do logaritmo desse tamanho. Isso significa que, no pior dos casos, dado um array de 8 ítens, o algoritmo vai rodar 24 vezes. Exemplo: 8 * log2(8) = 24. 
+O segundo exemplo, O(n log(n)), é uma notação que indica que o tempo de execução de um algoritmo aumenta de forma proporcional ao produto do tamanho dos dados de entrada e do logaritmo desse tamanho. Isso significa que, no pior dos casos, se o array tem 8 elementos, o algoritmo será executado 24 vezes. Por exemplo: 8 * log2(8) = 24.
 
-Porém, note que a complexidade temporal não implica necessariamente em maior ou menor velocidade.
-Um algoritmo com uma pior complexidade, é possível que seja mais rápido que um algoritmo com uma melhor complexidade, **dependendo do input**. No entando, uma afirmação mais segura, seria de que, em geral, códigos com uma complexidade melhor (menor), serão mais eficientes e mais rápidos a medida que o input aumente.
+No entanto, é importante lembrar que a complexidade temporal de um algoritmo não implica necessariamente em maior ou menor velocidade. É possível que um algoritmo com uma pior complexidade seja mais rápido que um algoritmo com uma melhor complexidade, dependendo do input específico. No entanto, em geral, é seguro dizer que quanto menor a complexidade, mais rápido o algoritmo será, de acordo com o que o input aumente.
 
 Para quem quiser se aprofundar mais no assunto, recomendo a leitura do livro "Introduction to Algorithms" do Thomas H. Cormen.
 
