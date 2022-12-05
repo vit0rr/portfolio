@@ -11,7 +11,7 @@ images: /static/images/banners/big-o-notation.jpg
 
 ### Introdução
 
-Neste post, vamos explorar o conceito de eficiência de algoritmos e como medir essa eficiência utilizando a big O notation. Além disso, veremos como isso pode ajudar a escrever códigos mais performáticos. A big O notation nos permite avaliar o desempenho de um algoritmo de acordo com o tamanho do seu conjunto de dados, o que é fundamental para otimizar o uso de recursos em aplicações em larga escala.
+Neste post, vamos explorar o conceito de eficiência de algoritmos e como medir essa eficiência utilizando a big O notation. Além disso, veremos como isso pode ajudar a escrever códigos mais performáticos. A big O notation nos permite avaliar o desempenho de um algoritmo de acordo com o tamanho do seu conjunto de dados.
 
 ### O que é big O notation notation e eficiência de algoritmos?
 
