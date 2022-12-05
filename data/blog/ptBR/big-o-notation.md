@@ -11,13 +11,13 @@ images: /static/images/banners/big-o-notation.jpg
 
 ### Introdução
 
-Neste post, vamos explorar o conceito de eficiência de algoritmos e como medir essa eficiência utilizando a notação de big O. Além disso, veremos como isso pode ajudar a escrever códigos mais performáticos. A notação de big O nos permite avaliar o desempenho de um algoritmo de acordo com o tamanho do seu conjunto de dados, o que é fundamental para otimizar o uso de recursos em aplicações em larga escala.
+Neste post, vamos explorar o conceito de eficiência de algoritmos e como medir essa eficiência utilizando a big O notation. Além disso, veremos como isso pode ajudar a escrever códigos mais performáticos. A big O notation nos permite avaliar o desempenho de um algoritmo de acordo com o tamanho do seu conjunto de dados, o que é fundamental para otimizar o uso de recursos em aplicações em larga escala.
 
 ### O que é big O notation notation e eficiência de algoritmos?
 
 A eficiência de um algoritmo é a capacidade de resolver um problema em um tempo razoável e com o uso eficiente de recursos computacionais, como processamento e memória. A big O notation, é uma forma de medir a eficiência de um algoritmo, descrevendo o comportamento assintótico de uma função. Isso significa que podemos avaliar a taxa de crescimento da função, comparando com outros algoritmos.
 
-A notação de big O é representada pela letra O e é utilizada da seguinte forma: `Θ(f(n))`, onde `f(n)` é a medida em que o tamanho da entrada (n) aumenta. Por exemplo, um algoritmo que cresce quadraticamente, ou seja, que aumenta duas vezes mais a cada entrada adicional, é representado por `Θ(n²)`.
+A big O notation é representada pela letra O e é utilizada da seguinte forma: `Θ(f(n))`, onde `f(n)` é a medida em que o tamanho da entrada (n) aumenta. Por exemplo, um algoritmo que cresce quadraticamente, ou seja, que aumenta duas vezes mais a cada entrada adicional, é representado por `Θ(n²)`.
 
 - Tempo constante: `Θ(1)`
 - Tempo linear: `Θ(n)`
