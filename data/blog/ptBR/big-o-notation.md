@@ -3,7 +3,7 @@ title: Por que você escreve código lento?
 date: '12-04-2022'
 tags: ['Essay']
 draft: false
-summary: Entenda com "big O notation" porque você escreve código lento
+summary: Uma introdução a como medir a complexidade de algoritmos com big o notation e como isso pode te ajudar a escrever código mais rápido.
 images: /static/images/banners/big-o-notation.jpg
 ---
 
