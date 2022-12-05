@@ -65,7 +65,7 @@ function insertionSort(arr: number[]) {
 ```
 </details>
 
-Ambos os códigos funcionam e resolvem o problema proposto, mas um é mais performático que o outro. O primeiro código é linear, o que significa que o loop for será executado por uma quantidade de vezes diretamente proporcional ao tamanho do array. Isso quer dizer que, se o array tem n elementos, o loop será executado n vezes, o que pode ser representado por Θ(n).
+Ambos os códigos funcionam e resolvem o problema proposto, mas um é mais performático que o outro. O primeiro código é linear, o que significa que o loop `for` será executado por uma quantidade de vezes diretamente proporcional ao tamanho do array. Isso quer dizer que, se o array tem `n` elementos, o loop será executado `n` vezes, o que pode ser representado por `Θ(n)`.
 
 A vantagem dessa abordagem é que, em caso de arrays maiores, o código será executado mais rapidamente, pois o número de iterações é proporcional ao tamanho do array. Isso faz com que a complexidade de tempo do código seja limitada pelo tamanho do array, o que resulta em um gráfico de crescimento menos acentuado em comparação com um código de complexidade quadrática. Em outras palavras, o primeiro código é mais performático e eficiente em situações onde o array pode ser muito grande.
 
@@ -75,11 +75,11 @@ O segundo código é um exemplo de complexidade quadrática `Θ(n²)`. Isso sign
 
 As implicações dessa complexidade são que, em arrays maiores, o gráfico de crescimento será mais acentuado, o que resulta em um código mais lento e mais complexo quanto maior o input.
 
-Agora, vejamos alguns exemplos de códigos com complexidades logarítmicas O(log(n)) e O(n log(n)).
+Agora, vejamos alguns exemplos de códigos com complexidades logarítmicas `O(log(n))` e `O(n log(n))`.
 
-Suponha que você receba uma lista de números e precise encontrar um determinado número x na lista. Para isso, pode-se utilizar o algoritmo de binary search, que tem complexidade O(log(n)).
+Suponha que você receba uma lista de números e precise encontrar um determinado número x na lista. Para isso, pode-se utilizar o algoritmo de binary search, que tem complexidade `O(log(n))`.
 
-Outro exemplo é quando é preciso ordenar uma lista de números de forma logarítmica. Para isso, pode-se utilizar o algoritmo de merge sort, que tem complexidade O(n log(n)).
+Outro exemplo é quando é preciso ordenar uma lista de números de forma logarítmica. Para isso, pode-se utilizar o algoritmo de merge sort, que tem complexidade `O(n log(n))`.
 
 Esses algoritmos são mais performáticos e eficientes do que abordagens lineares ou quadráticas em situações onde o tamanho da entrada pode ser muito grande.
 
@@ -143,9 +143,9 @@ function merge(left: number[], right: number[]) {
 ```
 </details>
 
-Ambos os exemplos são válidos, mas apresentam complexidades de tempo diferentes. O primeiro é O(log(n)), o que significa que o tempo de execução aumenta de forma logarítmica em relação ao tamanho do input. Em outras palavras, no pior dos casos, se o array tem 8 elementos, o algoritmo será executado 3 vezes. Por exemplo: log2(8) = 3.
+Ambos os exemplos são válidos, mas apresentam complexidades de tempo diferentes. O primeiro é `O(log(n))`, o que significa que o tempo de execução aumenta de forma logarítmica em relação ao tamanho do input. Em outras palavras, no pior dos casos, se o array tem 8 elementos, o algoritmo será executado 3 vezes. Por exemplo: log2(8) = 3.
 
-O segundo exemplo, O(n log(n)), é uma notação que indica que o tempo de execução de um algoritmo aumenta de forma proporcional ao produto do tamanho dos dados de entrada e do logaritmo desse tamanho. Isso significa que, no pior dos casos, se o array tem 8 elementos, o algoritmo será executado 24 vezes. Por exemplo: 8 * log2(8) = 24.
+O segundo exemplo, `O(n log(n))`, é uma notação que indica que o tempo de execução de um algoritmo aumenta de forma proporcional ao produto do tamanho dos dados de entrada e do logaritmo desse tamanho. Isso significa que, no pior dos casos, se o array tem 8 elementos, o algoritmo será executado 24 vezes. Por exemplo: 8 * log2(8) = 24.
 
 No entanto, é importante lembrar que a complexidade temporal de um algoritmo não implica necessariamente em maior ou menor velocidade. É possível que um algoritmo com uma pior complexidade seja mais rápido que um algoritmo com uma melhor complexidade, dependendo do input específico. No entanto, em geral, é seguro dizer que quanto menor a complexidade, mais rápido o algoritmo será, de acordo com o que o input aumente.
 
