@@ -1,11 +1,13 @@
 ---
-title: Por que você escreve código lento?
+title: Introdução a Big O Notation
 date: '12-04-2022'
 tags: ['Essay']
-draft: false
+draft: true
 summary: Uma introdução a como medir a complexidade de algoritmos com big o notation e como isso pode te ajudar a escrever código mais rápido.
 images: /static/images/banners/big-o-notation.jpg
 ---
+
+<h3>[en](/blog/en/big-o-notation) | ptBR</h3>
 
 ![banner theta notation](/static/images/banners/big-o-notation.jpg)
 
