@@ -60,19 +60,18 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             </svg>
           </div>
         </div>
-        <ul>
+        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
             return (
-              <li key={slug} className="py-4">
+              <li
+                key={slug}
+                className="py-4 
+                transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-103
+                "
+              >
                 <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
-                  <dl>
-                    <dt className="sr-only">Published on</dt>
-                    <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                      {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
-                    </dd>
-                  </dl>
                   <div className="space-y-3 xl:col-span-3">
                     <div>
                       <h3 className="text-2xl font-bold leading-8 tracking-tight">
@@ -91,6 +90,13 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                     </div>
                     <div className="prose text-gray-500 max-w-none dark:text-gray-400">
                       {summary}
+                    </div>
+                    <div>
+                      <div className="prose text-gray-500 max-w-none dark:text-gray-400">
+                        <time dateTime={date}>
+                          {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                        </time>
+                      </div>
                     </div>
                   </div>
                 </article>
