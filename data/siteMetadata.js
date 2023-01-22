@@ -2,7 +2,9 @@ const siteMetadata = {
   title: "Vitor's Blog",
   author: 'Vitor S. Almeida',
   headerTitle: "Vitor's Blog",
-  description: 'My lasted posts',
+  description: `I'm a developer who loves building cool stuff on the web. 
+    I work with ReactJS, Typescript, Relay and GraphQL, but I also have a
+    passion for diving into theoretical topics like type theory and compilers.`,
   language: 'pt-br',
   siteUrl: 'https://vitorsalmeida.com',
   siteRepo: 'https://github.com/vit0rr/portfolio',
@@ -13,6 +15,7 @@ const siteMetadata = {
   github: 'https://github.com/vit0rr',
   twitter: '@vit0rrk',
   linkedin: 'https://www.linkedin.com/in/vitorsalmeida/',
+  work: 'https://bemtevi.com/',
   locale: 'en-US',
   analytics: {
     plausibleDataDomain: 'vitorsalmeida.com',

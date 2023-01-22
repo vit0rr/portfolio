@@ -1,4 +1,5 @@
 export type PostFrontMatter = {
+  lang: string
   title: string
   date: string
   tags: string[]
