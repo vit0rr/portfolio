@@ -7,13 +7,14 @@ summary: Como construir um parser JSON do zero
 images: '/static/images/banners/json-parser.jpg'
 ---
 
-![image](/static/images/banners/json-parser.jpg)
-
 ### Lexing
 
-Um `lexer` vai ser responsável por converter uma expressão, seja ela qual for, em tokens. Esses tokens são strings identificáveis. Ou seja, strings com um significado atribuído.
+Um `lexer` vai ser responsável por converter uma expressão, seja ela qual for, em tokens. Esses tokens são elementos identificáveis que possuem um significado atribuído.
 
-Você pode dividir esses tokens de algumas formas, como [identifer](<https://en.wikipedia.org/wiki/Identifier_(computer_languages)>), [keyword](https://en.wikipedia.org/wiki/Reserved_word), [separator](https://en.wikipedia.org/wiki/Delimiter), [operator](<https://en.wikipedia.org/wiki/Operator_(computer_programming)>), [literal](<https://en.wikipedia.org/wiki/Literal_(computer_programming)>), e [comment](<https://en.wikipedia.org/wiki/Comment_(computer_programming)>). O parsing de JSON é um pouco mais simples, e como eu não segui nenhuma representação formal ou muito rigorosa, como descritas [neste artigo](https://www.rfc-editor.org/rfc/rfc8259#section-9), o meu parser tem apenas o `type`, e o `value`.
+Você pode dividir esses tokens de algumas formas, como [identifer](<https://en.wikipedia.org/wiki/Identifier_(computer_languages)>), [keyword](https://en.wikipedia.org/wiki/Reserved_word), [delimiter](https://en.wikipedia.org/wiki/Delimiter), [operator](<https://en.wikipedia.org/wiki/Operator_(computer_programming)>), [literal](<https://en.wikipedia.org/wiki/Literal_(computer_programming)>), e [comment](<https://en.wikipedia.org/wiki/Comment_(computer_programming)>).
+
+`{ "type": "LEFT_BRACE", "value": undefined },` é um exemplo de delimiter.
+`{ "type": "STRING", "value": "name" }` é um exemplo de literal.
 
 Exemplo: `{"name":"Vitor","age":18}`
 
@@ -47,6 +48,8 @@ const tokens: Token:[] = [];
 ```
 
 Agora, precisamos rodar um loop que vai iterar até que todos os caracteres do `input` tenham sido processdas.
+
+> Note que é possível refatorar todos esses blocos de `if` para um `switch`. Porém eu segui um estilo imperativo, e `if` soa mais natural.
 
 ```typescript
 export const lexer = (input: string): Token[] => {
@@ -195,8 +198,8 @@ export const createToken = (type: TOKEN_TYPES, value?: string): Token => {
 }
 ```
 
-E depois, incremenda +1 no `current`, para ir para o próximo `char` da nossa string.
-Isso é bem repetitivo é lógico, eu não vou explicar cada um deles, mas vale a atenção aos que sae u mpouico do padrão.
+E depois, incrementa +1 no `current`, para ir para o próximo `char` da nossa string.
+Isso é bem repetitivo é lógico, eu não vou explicar cada um deles, mas vale a atenção aos que saem um pouco do padrão.
 
 ```typescript
 if (char === '"') {
