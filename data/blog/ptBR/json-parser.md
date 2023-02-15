@@ -199,7 +199,7 @@ export const createToken = (type: TOKEN_TYPES, value?: string): Token => {
 ```
 
 E depois, incrementa +1 no `current`, para ir para o próximo `char` da nossa string.
-Isso é bem repetitivo é lógico, eu não vou explicar cada um deles, mas vale a atenção aos que saem um pouco do padrão.
+Isso é bem repetitivo e lógico, eu não vou explicar cada um deles, mas vale a atenção aos que saem um pouco do padrão.
 
 ```typescript
 if (char === '"') {
