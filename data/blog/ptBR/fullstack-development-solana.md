@@ -4,6 +4,7 @@ date: '11-18-2021'
 tags: ['Tutorials']
 draft: false
 summary: Guia completo com desenvolvimento full stack, minha introdução com crypto e web3.
+images: /static/images/posts/red-flags/solana.jpg
 ---
 
 ### Solana e Phantom

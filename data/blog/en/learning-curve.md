@@ -9,8 +9,6 @@ images: /static/images/banners/learning-curve.png
 
 <h3>en | [ptBR](/blog/ptBR/pare-de-pensar-sobre-curva-de-aprendizagem)</h3>
 
-![image](/static/images/banners/learning-curve.png)
-
 Why? Because it doesn't care.
 
 You don't need to prepare to learn something. You need more practice and less overthinking. Learning is not linear, and you will not get expected results when you start something.

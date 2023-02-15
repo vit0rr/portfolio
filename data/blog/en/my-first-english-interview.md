@@ -9,8 +9,6 @@ images: /static/images/banners/my-first-english-interview.png
 
 <h3>en | [ptBR](/blog/ptBR/minha-primeira-entrevista-em-ingles)</h3> 
 
-![image](/static/images/banners/my-first-english-interview.png)
-
 I've attended my first job interview in English to work with blockchain development. The requirement was complex, and I knew that I wouldn't get the job.
 
 The opportunity came to me. I don't have reasons to decline this meeting. I accepted and did well for myself.

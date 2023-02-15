@@ -13,7 +13,7 @@ module.exports = withBundleAnalyzer({
   },
   experimental: { esmExternals: true },
   images: {
-    domains: ['avatars.githubusercontent.com'],
+    domains: ['avatars.githubusercontent.com', 'i.giphy.com'],
   },
   webpack: (config, { dev, isServer }) => {
     config.module.rules.push({

@@ -9,8 +9,6 @@ images: /static/images/banners/first-freela.png
 
 <h3>[en](/blog/en/first-freelance) | ptBR</h3>
 
-![image](/static/images/banners/first-freela.png)
-
 ### Seu portfólio importa menos do que parece
 
 Se você tem apenas exercícios e projetos pessoais no seu GitHub, saiba que isso vai te ajudar menos do que parece a conseguir o primeiro freela.

@@ -9,8 +9,6 @@ images: /static/images/banners/easy-life-making-excuses.png
 
 ### en | [ptBR](/blog/ptBR/vida-facil-com-desculpas)
 
-![image](/static/images/banners/easy-life-making-excuses.png)
-
 On Twitter, I saw frequently excuses for different things and challenges that peoples have in life. The most excuses for something is "X is very difficult" or think "I don't need or learn Y". This mentality is wrong.
 
 ### Excuses limit yourself

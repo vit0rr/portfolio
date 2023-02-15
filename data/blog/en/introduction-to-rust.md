@@ -7,8 +7,6 @@ summary: Introduction to Rust with basic concepts
 images: /static/images/posts/Qpzr40o.png
 ---
 
-![image](/static/images/posts/Qpzr40o.png)
-
 ### Basic Data types in Rust
 
 We have five types in Rust.

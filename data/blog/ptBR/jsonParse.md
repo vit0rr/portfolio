@@ -4,6 +4,7 @@ date: '09-13-2021'
 tags: ['Tutorials']
 draft: true
 summary: Entendendo JSON.parse() e o motivo de JSON.parse("false") ser false e Boolean("false") ser true
+images: /static/images/banners/json-parse.jpg
 ---
 
 <h3>[en](/blog/en/jsonParse) | ptBR</h3>

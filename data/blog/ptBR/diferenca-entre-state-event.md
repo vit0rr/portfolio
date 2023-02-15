@@ -9,8 +9,6 @@ images: /static/images/banners/difference-between-state.jpg
 
 <h3>[en](/blog/en/difference-between-state-event) | ptBR</h3>
 
-![image](/static/images/banners/difference-between-state.jpg)
-
 ### A lógica dos componentes em React
 
 _Exemplos de código foram importados [daqui](https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/synchronizing-with-effects)._

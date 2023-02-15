@@ -4,6 +4,7 @@ date: '11-07-2021'
 tags: ['Essay']
 draft: false
 summary: How were the first few weeks as a Tech Lead in a tech startup?
+images: /static/images/banners/tech-lead.jpg
 ---
 
 <h3>en | [ptBR](/blog/ptBR/experiencia-como-techlead)</h3>

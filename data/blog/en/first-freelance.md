@@ -9,8 +9,6 @@ images: /static/images/banners/first-freela.png
 
 <h3>en | [ptBR](/blog/ptBR/primeiro-freela)</h3>
 
-![image](/static/images/banners/first-freela.png)
-
 ### Your portfolio matters less than it seems.
 
 If you only have exercises and personal projects on your GitHub, know that this will help you less than it seems to get your first freelance.

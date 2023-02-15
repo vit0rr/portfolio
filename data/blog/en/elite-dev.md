@@ -9,8 +9,6 @@ images: /static/images/banners/elite-dev.png
 
 <h3>en | [ptBR](/blog/ptBR/elite-dev)</h3>
 
-![image](/static/images/banners/elite-dev.png)
-
 ### What is a 10x Dev or an Elite Dev?
 
 A direct analogy is with elite athletes. They are always beyond their limits, they never stop, and even when they are hurt they keep active somehow. This athlete is ready for anything.

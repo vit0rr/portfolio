@@ -9,8 +9,6 @@ images: /static/images/banners/learning-curve.png
 
 <h3>[en](/blog/en/learning-curve) | ptBR</h3>
 
-![image](/static/images/banners/learning-curve.png)
-
 Por que? Pois isso não importa.
 
 Você não precisa de preparo para aprender algo. Você precisa de mais prática e menos pensamento excessivo. Aprendizagem não é linear, e você não vai ter resultados esperados quando começar algo.
