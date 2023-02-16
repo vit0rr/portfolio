@@ -1,9 +1,9 @@
 ---
-title: Construindo um parser JSON do zero
+title: Construindo um parser de JSON do zero
 date: '01-30-2023'
 tags: ['Tutorials']
 draft: false
-summary: Como construir um parser JSON do zero
+summary: Introdução a parsers - Como criar um parser de JSON do zero
 images: '/static/images/banners/json-parser.jpg'
 ---
 
@@ -255,3 +255,240 @@ Se o `char`, for igual a `"`, vamos pro loop, para continuar lendo os caracteres
 As outras linhas, são para definir os booleanos, para caso o caractere atual for "f", e os sequentes formarem a palavra `false`, adicionamos no array de `tokens` o `false`. E o mesmo se repete ao `true`.
 
 Em todos os casos, `current`, é incrementada para apontar o próximo caractere a ser processado, assim como fizemos em todo o resto do nosso código.
+
+### Parsing
+
+Um "parser" é responsável por transformar uma sequência de tokens em uma estrutura de dados. No caso, uma [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree).
+
+Uma AST é uma estrutura de dados que vai representar a estrutura sintática de um programa. Dentro da AST existem vários nós, e cada nó representa uma construção sintática válida do programa. Exemplo:
+
+```json
+parser: {
+  "type": "Program",
+  "body": [
+    {
+      "type": "ObjectExpression",
+      "properties": [
+        {
+          "type": "Property",
+          "key": {
+            "type": "STRING",
+            "value": "name"
+          },
+          "value": {
+            "type": "StringLiteral",
+            "value": "Vitor"
+          }
+        },
+        {
+          "type": "Property",
+          "key": {
+            "type": "STRING",
+            "value": "age"
+          },
+          "value": {
+            "type": "NumberLiteral",
+            "value": "18"
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+Essa é a AST do JSON que exemplifiquei lá no começo. E nesse exemplo temos 8 nós no total. O nó `Program`, representa o programa principal. `ObjectExpression` representa um objeto, `Property` representa uma propriedade em um objeto, tendo chave e valor, `STRING` representa uma string que é usada como chave, `StringLiteral` representa uma string em uma propriedade, `NumberLiteral` representa um valor numérico em uma propriedade.
+
+Através de uma AST, é possível otimizar um código, transformar um código em outro, fazer análise estática, gerar código etc. Exemplo: você poderia implementar uma sintaxe nova, fazer um parser, e cuspir um código em JavaScript, que seria executado normalmente.
+
+Para gerar nossa AST, vamos precisar de uma função vá receber nosso array de tokens, percorrer ele, e ir gerando a AST de acordo com os tokens que ele encontrar. Para isso, criaremos uma função `walk`, que vai _andar_ pelos tokens e retornando os nós da AST.
+
+```typescript
+export const parser = (tokens: Array<{ type: string; value?: any }>) => {
+    let current = 0;
+
+    const walk = () => {
+        let token = tokens[current];
+
+        if (token.type === TOKEN_TYPES.LEFT_BRACE) {
+            token = tokens[++current];
+
+            const node: {
+                type: string;
+                properties?: Array<{ type: string; key: any; value: any }>;
+            } = {
+                type: 'ObjectExpression',
+                properties: [],
+            };
+
+            while (token.type !== TOKEN_TYPES.RIGHT_BRACE) {
+                const property: { type: string; key: any; value: any } = {
+                    type: 'Property',
+                    key: token,
+                    value: null,
+                };
+
+                token = tokens[++current];
+
+                token = tokens[++current];
+                property.value = walk();
+                node.properties.push(property);
+
+                token = tokens[current];
+                if (token.type === TOKEN_TYPES.COMMA) {
+                    token = tokens[++current];
+                }
+            }
+
+            current++;
+            return node;
+        }
+```
+
+A primeira verificação que fazemos é se o token atual é um `{`. Se for, criamos um novo nó do tipo `ObjectExpression`, e itera pelos tokens seguintes, adicionando como propriedade do objeto até encontrar o final da chave, ou seja, o `}`. E cada propriedade é representada por um nó do tipo `Property`. Esse tipo `Property`, têm um valor que foi gerado pela função `walk()`, que é chamada recursivamente.
+
+Note que uso `tokens[++current]`. Isso é para avançar o cursor para o próximo token. E se um token do tipo `,` for encontrado, avançamos o cursor novamente, para ignorar a vírgula.
+
+O resto do código é bem semelhante ao que expliquei agora, então vale o esforço de olhar e tentar entender, ou implementar o resto por conta própria. Não é muito complexo.
+
+Por último, crio a constante `ast`, que vai conter o tipo `Program`, e o corpo da AST, que é gerado pela função `walk()`. O while é para garantir que o `current` não vai passar do tamanho do array de tokens.
+
+Depois, basta retornar a AST.
+
+```typescript
+export const parser = (tokens: Array<{ type: string; value?: any }>) => {
+  let current = 0
+
+  const walk = () => {
+    let token = tokens[current]
+
+    if (token.type === TOKEN_TYPES.LEFT_BRACE) {
+      token = tokens[++current]
+
+      const node: {
+        type: string
+        properties?: Array<{ type: string; key: any; value: any }>
+      } = {
+        type: 'ObjectExpression',
+        properties: [],
+      }
+
+      while (token.type !== TOKEN_TYPES.RIGHT_BRACE) {
+        const property: { type: string; key: any; value: any } = {
+          type: 'Property',
+          key: token,
+          value: null,
+        }
+
+        token = tokens[++current]
+
+        token = tokens[++current]
+        property.value = walk()
+        node.properties.push(property)
+
+        token = tokens[current]
+        if (token.type === TOKEN_TYPES.COMMA) {
+          token = tokens[++current]
+        }
+      }
+
+      current++
+      return node
+    }
+
+    if (token.type === TOKEN_TYPES.RIGHT_BRACE) {
+      current++
+      return {
+        type: 'ObjectExpression',
+        properties: [],
+      }
+    }
+
+    if (token.type === TOKEN_TYPES.LEFT_BRACKET) {
+      token = tokens[++current]
+
+      const node: {
+        type: string
+        elements?: Array<{ type?: string; value?: any }>
+      } = {
+        type: 'ArrayExpression',
+        elements: [],
+      }
+
+      while (token.type !== TOKEN_TYPES.RIGHT_BRACKET) {
+        node.elements.push(walk())
+        token = tokens[current]
+
+        if (token.type === TOKEN_TYPES.COMMA) {
+          token = tokens[++current]
+        }
+      }
+
+      current++
+      return node
+    }
+
+    if (token.type === TOKEN_TYPES.STRING) {
+      current++
+      return {
+        type: 'StringLiteral',
+        value: token.value,
+      }
+    }
+
+    if (token.type === TOKEN_TYPES.NUMBER) {
+      current++
+      return {
+        type: 'NumberLiteral',
+        value: token.value,
+      }
+    }
+
+    if (token.type === TOKEN_TYPES.TRUE) {
+      current++
+      return {
+        type: 'BooleanLiteral',
+        value: true,
+      }
+    }
+
+    if (token.type === TOKEN_TYPES.FALSE) {
+      current++
+      return {
+        type: 'BooleanLiteral',
+        value: false,
+      }
+    }
+
+    if (token.type === TOKEN_TYPES.NULL) {
+      current++
+      return {
+        type: 'NullLiteral',
+        value: null,
+      }
+    }
+
+    throw new TypeError(token.type)
+  }
+
+  const ast = {
+    type: 'Program',
+    body: [],
+  }
+
+  while (current < tokens.length) {
+    ast.body.push(walk())
+  }
+
+  return ast
+}
+```
+
+```typescript
+const tokens = lexer('{"name":"Vitor","age":18}')
+console.log('tokens', tokens)
+const json = parser(tokens)
+
+console.log('parser:', JSON.stringify(json, null, 2))
+```
+Se quiser ver como é a AST de linguagens mais populares, recomendo o [AST Explorer](https://astexplorer.net/). Tem suporte a diversas linguagens, e você consegue ver a AST completa, e navegar pelos nós. Se quiser ir mais além, pode tentar copiar alguma lógica de algum parser, e implementar no seu, como calcular uma expressão em ordem de precedência, por exemplo: `1 + 2 * 3` (que é 7, e não 9).
