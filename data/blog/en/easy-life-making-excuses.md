@@ -21,7 +21,7 @@ You need to learn everything that you can. Read all my [Pinned](/pinned) posts i
 
 ### You don't improve with excuses
 
-With excuses, you never get better because you risk less, and with less risk, you don't improve your skills. Read [Lessons learned in my first English interview](/blog/my-first-english-interview) to understand.
+With excuses, you never get better because you risk less, and with less risk, you don't improve your skills. Read [Lessons learned in my first English interview](/blog/en/my-first-english-interview) to understand.
 
 ### Do not run away
 
