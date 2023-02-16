@@ -21,7 +21,7 @@ Você precisa aprender tudo que conseguir. Leia todos meus posts [Pinados](/pinn
 
 ### Você não melhora com desculpas
 
-Com desculpas, você nunca fica melhor pois não se arrisca, e com menos risco, menos você melhora. Leia [Lissões que aprendi na minha primeira entrevista em inglês](/blog/my-first-english-interview) para entender.
+Com desculpas, você nunca fica melhor pois não se arrisca, e com menos risco, menos você melhora. Leia [Lissões que aprendi na minha primeira entrevista em inglês](/blog/ptBR/minha-primeira-entrevista-em-ingles) para entender.
 
 ### Não fuja
 
