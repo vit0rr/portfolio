@@ -7,6 +7,12 @@ summary: Introdução a parsers - Como criar um parser de JSON do zero
 images: '/static/images/banners/json-parser.jpg'
 ---
 
+### Introdução
+
+A ideia desse texto é introduzir ao conceito de lexing e parsing, implementar eles usando JavaScript para analisar expressões em JSON. O objetivo vai ser separar esse processo em funções, explicar essas funções e no final você ter um parser de JSON implementado.
+
+Vale lembrar que meu repositório é aberto, e você pode acessar ele [aqui](https://github.com/vit0rr/json-parser).
+
 ### Lexing
 
 Um `lexer` vai ser responsável por converter uma expressão, seja ela qual for, em tokens. Esses tokens são elementos identificáveis que possuem um significado atribuído.
@@ -49,7 +55,7 @@ const tokens: Token:[] = [];
 
 Agora, precisamos rodar um loop que vai iterar até que todos os caracteres do `input` tenham sido processdas.
 
-> Note que é possível refatorar todos esses blocos de `if` para um `switch`. Porém eu segui um estilo imperativo, e `if` soa mais natural.
+> Note que é possível refatorar todos esses blocos de `if` para um `switch`. Porém eu segui um estilo imperativo.
 
 ```typescript
 export const lexer = (input: string): Token[] => {
@@ -199,7 +205,7 @@ export const createToken = (type: TOKEN_TYPES, value?: string): Token => {
 ```
 
 E depois, incrementa +1 no `current`, para ir para o próximo `char` da nossa string.
-Isso é bem repetitivo e lógico, eu não vou explicar cada um deles, mas vale a atenção aos que saem um pouco do padrão.
+Isso é bem repetitivo e lógico. Eu não vou explicar cada um deles, mas vale a atenção aos que saem um pouco do padrão.
 
 ```typescript
 if (char === '"') {
@@ -250,7 +256,7 @@ if (
 }
 ```
 
-Se o `char`, for igual a `"`, vamos pro loop, para continuar lendo os caracteres sequentes até encontrarmos outra aspas, pois isso indica o fim da string. Todos os caracteres lido durante esse loop, são concatenados na variável `value`. E então, um novo token é adicionado ao `tokens`.
+Se o `char`, for igual a `"`, vamos pro loop, para continuar lendo os caracteres sequentes até encontrarmos outra aspas, pois isso indica o fim da string. Todos os caracteres lidos durante esse loop, são concatenados na variável `value`. E então, um novo token é adicionado ao `tokens`.
 
 As outras linhas, são para definir os booleanos, para caso o caractere atual for "f", e os sequentes formarem a palavra `false`, adicionamos no array de `tokens` o `false`. E o mesmo se repete ao `true`.
 
@@ -301,7 +307,7 @@ Essa é a AST do JSON que exemplifiquei lá no começo. E nesse exemplo temos 8 
 
 Através de uma AST, é possível otimizar um código, transformar um código em outro, fazer análise estática, gerar código etc. Exemplo: você poderia implementar uma sintaxe nova, fazer um parser, e cuspir um código em JavaScript, que seria executado normalmente.
 
-Para gerar nossa AST, vamos precisar de uma função vá receber nosso array de tokens, percorrer ele, e ir gerando a AST de acordo com os tokens que ele encontrar. Para isso, criaremos uma função `walk`, que vai _andar_ pelos tokens e retornando os nós da AST.
+Para gerar nossa AST, vamos precisar de uma função vai receber nosso array de tokens, percorrer ele, e ir gerando a AST de acordo com os tokens que ele encontrar. Para isso, criaremos uma função `walk`, que vai _andar_ pelos tokens e retornando os nós da AST.
 
 ```typescript
 export const parser = (tokens: Array<{ type: string; value?: any }>) => {
@@ -492,3 +498,5 @@ const json = parser(tokens)
 console.log('parser:', JSON.stringify(json, null, 2))
 ```
 Se quiser ver como é a AST de linguagens mais populares, recomendo o [AST Explorer](https://astexplorer.net/). Tem suporte a diversas linguagens, e você consegue ver a AST completa, e navegar pelos nós. Se quiser ir mais além, pode tentar copiar alguma lógica de algum parser, e implementar no seu, como calcular uma expressão em ordem de precedência, por exemplo: `1 + 2 * 3` (que é 7, e não 9).
+
+Caso tenha interesse em algum material, recomendo o livro "Modern Compiler Implementation in ML". Vale a nota de que, apesar do título ser em ML, tem como você seguir estudando por ele sem necessariamente escrever código ML, e existem outras versões escritas e C, C++ e Java.
