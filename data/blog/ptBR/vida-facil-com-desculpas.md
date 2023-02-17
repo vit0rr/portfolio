@@ -9,8 +9,6 @@ images: /static/images/banners/easy-life-making-excuses.png
 
 <h3>[en](/blog/en/easy-life-making-excuses) | ptBR</h3>
 
-![image](/static/images/banners/easy-life-making-excuses.png)
-
 No Twitter, eu vejo frequentemente desculpas para diferentes problemas que pessoas tem na vida. A desculpa que mais vejo é "X é muito difícil" ou pensar "Eu não preciso aprender Y". Essa mentalidade está errada.
 
 ### Desculpas limitam você mesmo

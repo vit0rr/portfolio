@@ -9,8 +9,6 @@ images: '/static/images/banners/introduction-flexbox.png'
 
 <h3>[en](/blog/en/introduction-flexbox) | ptBR</h3>
 
-![image](/static/images/banners/introduction-flexbox.png)
-
 ### Introdução
 
 A maioria ou todos os exemplos serão baseados numa página de exemplo, ela está disponível [aqui](https://gist.github.com/vit0rr/7409ea0efdf47b56728e7125a2644cb1).

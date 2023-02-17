@@ -9,8 +9,6 @@ images: /static/images/posts/experience-requirement-is-bullshit/clock.png
 
 <h3>en | [ptBR](/blog/ptBR/requisitos-de-experiencia-e-besteira)</h3>
 
-![image](/static/images/posts/experience-requirement-is-bullshit/clock.png)
-
 ### You probably have a bad metric!
 
 In some works requirements, I saw "X time with Y technology" and this is wrong. I don't care if you are a two years developer or five. I want you to solve my problems and I can pay you for that! But the majority of people don't think about that.

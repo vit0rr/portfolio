@@ -9,7 +9,6 @@ images: /static/images/posts/identify-anonymous-tab/banner.png
 
 <h3>en | [ptBR](/blog/ptBR/identificar-janelas-anonimas)</h3>
 
-![image](/static/images/posts/identify-anonymous-tab/banner.png)
 ### Introduction
 
 Some websites are able to block certain access based on the user's anonymous guide information. This can be useful to avoid bypassing some access controls, like with Brainly. Basically, there is a limit for viewing responses, and if this limit is reached, the site is blocked and you have to watch ads or pay. This is because, this limit is based on some local storage or with some information based on the current session, and this is cleared if accessed via an anonymous tab.
@@ -174,7 +173,7 @@ The solution - use Chrome - isn't very cool, but it is one. So if you want somet
 
 The tests will be done with the Brainly website and in the Firefox browser.
 In this example, I accessed the site from the anonymous Firefox tab without any extensions, and the response was blocked.
-![Firefox na guia anônima sendo bloqueado](/static/images/posts/identify-anonymous-tab/anonFirefoxAllow.png)
+![Firefox na guia anônima sendo bloqueado](/static/images/posts/identify-anonymous-tab/anonFirefoxBlock.png)
 
 #### Blocking JavaScript
 

@@ -4,13 +4,14 @@ date: '11-07-2021'
 tags: ['Essay']
 draft: false
 summary: How were the first few weeks as a Tech Lead in a tech startup?
+images: /static/images/banners/tech-lead.jpg
 ---
 
 <h3>en | [ptBR](/blog/ptBR/experiencia-como-techlead)</h3>
 
 ## Introduction
 
-I wrote on [Twitter](https://twitter.com/vit0rrk/status/1456382675720224770) a little bit about my experience as a Tech Lead and got a lot of feedback about in comment, DM and Discord. With that in mind, I decided to write this post to talk more fully about how the first two weeks were. Also, tell the way I arrived at the company, and the process to get the position.
+I wrote on [Twitter](https://twitter.com/vitorsalmeida_/status/1456382675720224770) a little bit about my experience as a Tech Lead and got a lot of feedback about in comment, DM and Discord. With that in mind, I decided to write this post to talk more fully about how the first two weeks were. Also, tell the way I arrived at the company, and the process to get the position.
 
 ## How was the process to start in the company
 

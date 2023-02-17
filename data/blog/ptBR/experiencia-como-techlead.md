@@ -4,13 +4,14 @@ date: '11-07-2021'
 tags: ['Essay']
 draft: true
 summary: Como foram as primeiras semanas como Tech Lead numa startup de tecnologia?
+images: /static/images/banners/tech-lead.jpg
 ---
 
 <h3>[en](/blog/en/experience-as-a-tech-lead) | ptBR</h3>
 
 ## Introdução
 
-Escrevi no [Twitter](https://twitter.com/vit0rrk/status/1456382675720224770) um pouco sobre minha experiência como Tech Lead e recebi bastante feedback sobre em comentário, DM e Discord. Pensando nisso, resolvi escrever esse post para falar de forma mais completa sobre como foram as duas primeiras semanas. Além disso, contar a forma que cheguei na empresa, e o processo para conseguir o cargo.
+Escrevi no [Twitter](https://twitter.com/vitorsalmeida_/status/1456382675720224770) um pouco sobre minha experiência como Tech Lead e recebi bastante feedback sobre em comentário, DM e Discord. Pensando nisso, resolvi escrever esse post para falar de forma mais completa sobre como foram as duas primeiras semanas. Além disso, contar a forma que cheguei na empresa, e o processo para conseguir o cargo.
 
 ## Como foi o processo para iniciar na empresa
 

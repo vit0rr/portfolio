@@ -9,8 +9,6 @@ images: /static/images/posts/identify-anonymous-tab/banner.png
 
 <h3>[en](/blog/en/identify-anonymous-tab) | ptBR</h3>
 
-![image](/static/images/posts/identify-anonymous-tab/banner.png)
-
 ### Introdução
 
 Alguns sites conseguem bloquear determinado acesso baseado na informação de guia anônima do usuário. Isso pode ser útil para evitar burlar alguns controles de acessos, como houve com o Brainly. Basicamente, existe um limite para visualização de respostas, e caso esse limite seja alcançado, o site é bloqueado e é necessário assistir anúncios ou pagar. Isso ocorre pois, esse limite é baseado em algum armazenamento local ou com alguma informação baseado na sessão atual, e isso é limpo caso acessado via aba anônima.
@@ -177,7 +175,7 @@ A solução de - use o Chrome - não é muito legal, mas é uma. Então caso que
 
 Os testes serão feitos com o site do Brainly e no navegador Firefox.
 Nesse exemplo, acessei o site na guia anônima do Firefox sem qualquer extensão, e a resposta foi bloqueada.
-![Firefox na guia anônima sendo bloqueado](/static/images/posts/identify-anonymous-tab/anonFirefoxAllow.png)
+![Firefox na guia anônima sendo bloqueado](/static/images/posts/identify-anonymous-tab/anonFirefoxBlock.png)
 
 #### Bloqueando JavaScript
 

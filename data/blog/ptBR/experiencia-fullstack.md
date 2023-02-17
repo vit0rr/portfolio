@@ -7,8 +7,6 @@ summary: Resumo do que aprendi como programador fullstack em uma startup
 images: /static/images/banners/experience-fullstack.jpg
 ---
 
-![image](/static/images/banners/experience-fullstack.jpg)
-
 ## Fullstack
 
 Um desenvolvedor fullstack vai muito mais além que saber programar front e backend.

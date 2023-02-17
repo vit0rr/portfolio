@@ -9,8 +9,6 @@ images: /static/images/posts/oop/46jF8Xd.png
 
 <h3>en | [ptBR](/blog/ptBR/OOPPtBr)</h3>
 
-![image](/static/images/posts/oop/46jF8Xd.png)
-
 ### What is an object?
 
 Languages like C, which follow a structured programming paradigm, that is, have data structures and program instructions act on these data. In an object-oriented language - such as Java, JavaScript and others - we combine data and its instructions into objects.

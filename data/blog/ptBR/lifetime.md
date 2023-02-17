@@ -9,8 +9,6 @@ images: /static/images/posts/lifetime/MuQSmKC.png
 
 <h2>pt-br | [en](/blog/en/lifetime)</h2>
 
-![image])(/static/images/posts/lifetime/MuQSmKC.png)
-
 ### Introdução
 
 Rust não tem um Garbage Colector (GC), e você precisa limpar a memória de alguma forma, mas como sem Garbage Colector (GC)? A resposta é lifetime.

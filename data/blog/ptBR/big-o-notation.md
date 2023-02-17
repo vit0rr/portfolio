@@ -9,8 +9,6 @@ images: /static/images/banners/big-o-notation.jpg
 
 <h3>[en](/blog/en/big-o-notation) | ptBR</h3>
 
-![banner theta notation](/static/images/banners/big-o-notation.jpg)
-
 ### Introdução
 
 Neste post, vamos explorar o conceito de eficiência de algoritmos e como medir essa eficiência utilizando a big O notation. Além disso, veremos como isso pode ajudar a escrever códigos mais performáticos. A big O notation nos permite avaliar o desempenho de um algoritmo de acordo com o tamanho do seu conjunto de dados.

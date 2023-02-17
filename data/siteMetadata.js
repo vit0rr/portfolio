@@ -13,7 +13,7 @@ const siteMetadata = {
   socialBanner: '/static/images/resume.png',
   email: 'vi.souza.almeida@protonmail.com',
   github: 'https://github.com/vit0rr',
-  twitter: '@vit0rrk',
+  twitter: '@vitorsalmeida_',
   linkedin: 'https://www.linkedin.com/in/vitorsalmeida/',
   work: 'https://bemtevi.com/',
   locale: 'en-US',

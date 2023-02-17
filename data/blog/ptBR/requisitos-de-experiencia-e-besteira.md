@@ -9,8 +9,6 @@ images: /static/images/posts/experience-requirement-is-bullshit/clock.png
 
 <h3>[en](/blog/en/experience-requirement-is-bullshit) | ptBR</h3>
 
-![image](/static/images/posts/experience-requirement-is-bullshit/clock.png)
-
 ### Você provavelmente tem métricas ruins
 
 Em algunas requisitos de vaga, já vi "X tempo com Y tecnologia" e isso é errado. Eu não ligo se você é um desenvolvedor de dois ou cinco anos. Eu quero que você resolva meus problemas e posso te pagar pra isso. Mas a maioria das pessoas não pensam sobre.

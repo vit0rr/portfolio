@@ -5,7 +5,7 @@ occupation: Software engineer
 company: Bem.te.vi
 companyUrl: https://github.com/BemteviSeguros
 email: vi.souza.almeida@protonmail.com
-twitter: https://twitter.com/vit0rrk
+twitter: https://twitter.com/vitorsalmeida_
 linkedin: https://www.linkedin.com/in/vitorsalmeida/
 github: https://github.com/vit0rr
 ---

@@ -7,8 +7,6 @@ summary: Introduction to React.useEffect hook
 images: /static/images/banners/difference-between-state.jpg
 ---
 
-![image](/static/images/banners/difference-between-state.jpg)
-
 ### The logic inside React components
 
 _This article is based on and has code examples imported from [here](https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/synchronizing-with-effects)._

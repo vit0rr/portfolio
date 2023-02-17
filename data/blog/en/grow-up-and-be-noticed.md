@@ -7,8 +7,6 @@ summary: Tips to grow up, be noticed on your job, and get promoted.
 images: /static/images/banners/grow-up-and-be-noticed.jpg
 ---
 
-![image](/static/images/banners/grow-up-and-be-noticed.jpg)
-
 <h2> <a href="https://tsh.io/blog/ownership-in-software-development/" target="_blank">Ownership</a> </h2>
 
 - Always leave the code better than you found it

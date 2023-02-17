@@ -9,8 +9,6 @@ images: /static/images/posts/lifetime/MuQSmKC.png
 
 <h2>[pt-br](/blog/ptBR/lifetime) | en</h2>
 
-![image](/static/images/posts/lifetime/MuQSmKC.png)
-
 ### Introduction
 
 Rust doesn't have a Garbage Collector (GC), and you need to clear the memory somehow, but how about without Garbage Collector (GC)? The answer is lifetime.

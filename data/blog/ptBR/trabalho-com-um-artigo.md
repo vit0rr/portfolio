@@ -9,8 +9,6 @@ images: /static/images/posts/job-with-1-article/J4ZEeyt.png
 
 <h3>[en](/blog/en/job-with-1-article) | ptBR</h3>
 
-![image](/static/images/posts/job-with-1-article/J4ZEeyt.png)
-
 ### Introdução
 
 Recentemente escrevi um [artigo](/blog/ptBR/fullstack-development-solana) sobre Solana, sendo ele minha porta de entrada em desenvolvimento com crypto. Fiquei um tempo estudando e escrevendo, quando publiquei no Twitter, um dia depois me chamaram para trabalhar com a stack.
