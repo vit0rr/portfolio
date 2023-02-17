@@ -8,8 +8,9 @@ images: '/static/images/banners/json-parser.jpg'
 ---
 
 ### Introdução
+Um parsing pode ter diversas aplicabilidades no dia a dia, e você provavelmente usa diariamente algum parser. Babel, webpack, eslint, prettier, e [jscodeshift](https://github.com/facebook/jscodeshift). Todos eles por baixo dos panos rodam um parser que vai manipular uma AST (Abstract Syntax Tree) para fazer o que você precisa - vamos falar disso posteriormente, não se preocupe.
 
-A ideia desse texto é introduzir ao conceito de lexing e parsing, implementar eles usando JavaScript para analisar expressões em JSON. O objetivo vai ser separar esse processo em funções, explicar essas funções e no final você ter um parser de JSON implementado.
+A ideia desse texto é introduzir ao conceito de lexing e parsing, implementar eles usando JavaScript para analisar expressões em JSON. O objetivo vai ser separar esse processo em funções, explicar essas funções e no final você ter um parser de JSON implementado gerando uma AST.
 
 Vale lembrar que meu repositório é aberto, e você pode acessar ele [aqui](https://github.com/vit0rr/json-parser).
 
@@ -264,7 +265,11 @@ Em todos os casos, `current`, é incrementada para apontar o próximo caractere 
 
 ### Parsing
 
-Um "parser" é responsável por transformar uma sequência de tokens em uma estrutura de dados. No caso, uma [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree).
+Um `parser` é responsável por transformar uma sequência de tokens em uma estrutura de dados. No caso, uma [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree).
+
+> Ilustração de AST retirada do livro Modern Compiler Implementation in ML.
+
+![ast](/static/images/posts/json-parser/ast.png)
 
 Uma AST é uma estrutura de dados que vai representar a estrutura sintática de um programa. Dentro da AST existem vários nós, e cada nó representa uma construção sintática válida do programa. Exemplo:
 
@@ -497,6 +502,11 @@ const json = parser(tokens)
 
 console.log('parser:', JSON.stringify(json, null, 2))
 ```
+
+Parsing pode ser divertido, mas na realidade é pouco escrito, e você provavelmente não precisa escrever seu próprio parser. Se estiver implementando uma linguagem de programação por exemplo, já existem diversas ferramentas que vão fazer esse papel para você, como OCamllex, Menhir ou Nearley.
+
+Também é importante notar que, como é um artigo introdutório, eu não abordei as diferentes técnicas de tokenização e parsing, com parsers [LR(0)](https://en.wikipedia.org/wiki/LR_parser), [LR(1)](https://en.wikipedia.org/wiki/Canonical_LR_parser), [SLR(1)](https://en.wikipedia.org/wiki/SLR_grammar), etc. Mas fique ciente que existem, e você pode pesquisar mais sobre, e existem diversos livros que abordam esses assuntos.
+
 Se quiser ver como é a AST de linguagens mais populares, recomendo o [AST Explorer](https://astexplorer.net/). Tem suporte a diversas linguagens, e você consegue ver a AST completa, e navegar pelos nós. Se quiser ir mais além, pode tentar copiar alguma lógica de algum parser, e implementar no seu, como calcular uma expressão em ordem de precedência, por exemplo: `1 + 2 * 3` (que é 7, e não 9).
 
 Caso tenha interesse em algum material, recomendo o livro "Modern Compiler Implementation in ML". Vale a nota de que, apesar do título ser em ML, tem como você seguir estudando por ele sem necessariamente escrever código ML, e existem outras versões escritas e C, C++ e Java.
