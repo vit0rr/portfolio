@@ -54,7 +54,7 @@ const tokens: Token:[] = [];
 }
 ```
 
-Agora, precisamos rodar um loop que vai iterar até que todos os caracteres do `input` tenham sido processdas.
+Agora, precisamos rodar um loop que vai iterar até que todos os caracteres do `input` tenham sido processadas.
 
 > Note que é possível refatorar todos esses blocos de `if` para um `switch`. Porém eu segui um estilo imperativo.
 
