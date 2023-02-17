@@ -8,7 +8,7 @@ images: '/static/images/banners/json-parser.jpg'
 ---
 
 ### Introdução
-Um parsing pode ter diversas aplicabilidades no dia a dia, e você provavelmente usa diariamente algum parser. Babel, webpack, eslint, prettier, e [jscodeshift](https://github.com/facebook/jscodeshift). Todos eles por baixo dos panos rodam um parser que vai manipular uma AST (Abstract Syntax Tree) para fazer o que você precisa - vamos falar disso posteriormente, não se preocupe.
+Um parser pode ter diversas aplicabilidades no dia a dia, e você provavelmente usa diariamente algum parser. [Babel](https://babeljs.io/), [webpack](https://webpack.js.org/), [eslint](https://eslint.org/), [prettier](https://prettier.io/), e [jscodeshift](https://github.com/facebook/jscodeshift). Todos eles por baixo dos panos rodam um parser que vai manipular uma AST (Abstract Syntax Tree) para fazer o que você precisa - vamos falar disso posteriormente, não se preocupe.
 
 A ideia desse texto é introduzir ao conceito de lexing e parsing, implementar eles usando JavaScript para analisar expressões em JSON. O objetivo vai ser separar esse processo em funções, explicar essas funções e no final você ter um parser de JSON implementado gerando uma AST.
 
