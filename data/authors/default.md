@@ -1,6 +1,6 @@
 ---
 name: Vitor
-avatar: /static/images/avatars/vG1x8FK9.png
+avatar: https://avatars.githubusercontent.com/u/70543018?v=4
 occupation: Software engineer
 company: Bem.te.vi
 companyUrl: https://github.com/BemteviSeguros
