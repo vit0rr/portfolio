@@ -9,7 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "write": "node generateMarkdown.js"
+    "write": "./generateMarkdown.sh"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.16.0",
