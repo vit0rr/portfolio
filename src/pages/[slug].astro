@@ -1,0 +1,78 @@
+---
+import { getCollection, CollectionEntry } from 'astro:content';
+
+import Link from '../components/Link.astro';
+import Layout from '../layout/Layout.astro';
+import NavOptions from '../components/NavOptions.astro';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+
+  return posts.map(post => ({
+    params: {
+      slug: post.slug,
+    },
+    props: {
+      post,
+    }
+  }));
+}
+
+const { post } = Astro.props;
+
+const { Content } = await post.render();
+---
+
+<Layout>
+  <NavOptions />
+  <section>
+  <h1>
+    {post.data.title}
+  </h1>
+    <section class="tags">
+      {post.data.tags.map((tag: string) => (
+        <Link href={`/tag/${tag}`}>
+          <p>#{tag}</p>
+        </Link>
+      ))}
+    </section>
+  </section>
+  <article>
+    <Content />
+  </article>
+</Layout>
+
+<style is:global>
+  article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  article ul {
+    padding-right: var(--spacing-2px);
+  }
+
+  article li {
+    list-style-type: disc;
+    /* TODO: it should be spacing-4x, but for some reason, astro is understading it as a string */
+    margin-left: 32px;
+  }
+
+  article code {
+    background-color: black;
+    color: white;
+    padding: 2px 4px;
+  }
+
+  .tags {
+    display: flex;
+    column-gap: var(--spacing);
+  }
+</style>

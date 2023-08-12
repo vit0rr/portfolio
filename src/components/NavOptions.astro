@@ -1,0 +1,22 @@
+---
+import Link from "./Link.astro";
+---
+
+<div>
+  <Link href="#">
+    <span>Go Back</span>
+  </Link>
+
+  <Link href="/">
+    <span>Home</span>
+  </Link>
+</div>
+
+<script>
+  const link = document.querySelector("a");
+
+  const hrefAttribute = document.createAttribute("href");
+  hrefAttribute.value = history.length > 1 ? "javascript:history.back()" : "/";
+
+  link?.attributes.setNamedItem(hrefAttribute);
+</script>
