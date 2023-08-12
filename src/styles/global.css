@@ -54,6 +54,10 @@ p, li {
   text-justify: inter-word;
 }
 
+code {
+  background-color: #24292e;
+}
+
 li {
   list-style-type: none;
 }
