@@ -65,3 +65,8 @@ li {
 .description > p {
   text-align: left;
 }
+
+#cube-container {
+  margin: 0 auto;
+  margin-left: 0;
+}

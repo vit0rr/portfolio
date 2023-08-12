@@ -57,7 +57,7 @@ const camera = new THREE.PerspectiveCamera(
   1000
 );
 
-const renderer = new THREE.WebGLRenderer();
+const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(newWidth, newHeight);
 
 const geometry = new THREE.TetrahedronGeometry(1, 5);
