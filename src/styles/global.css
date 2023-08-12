@@ -57,3 +57,7 @@ p, li {
 li {
   list-style-type: none;
 }
+
+.description > p {
+  text-align: left;
+}
