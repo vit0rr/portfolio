@@ -14,6 +14,7 @@ const posts = await getCollection('blog', ({ data }) => !data.draft);
   <section class="description">
     <p>{SITE.description}</p>
   </section>
+  <div id="cube-container"></div>
   <section class="posts">
     <h2>posts.</h2>
     <ul>
@@ -37,6 +38,68 @@ const posts = await getCollection('blog', ({ data }) => !data.draft);
     </ul>
   </section>
 </Layout>
+
+<script>
+  import * as THREE from 'three';
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(
+  parseInt('0x' + 'ffffff'.replace(/^#/, ''), 16)
+);
+
+const newWidth = 312;
+const newHeight = 350;
+
+const camera = new THREE.PerspectiveCamera(
+  75,
+  newWidth / newHeight,
+  0.1,
+  1000
+);
+
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize(newWidth, newHeight);
+
+const geometry = new THREE.TetrahedronGeometry(1, 5);
+const material = new THREE.MeshBasicMaterial({
+  color: parseInt('0x' + '000000'.replace(/^#/, ''), 16),
+  wireframe: true,
+});
+
+const cube = new THREE.Mesh(geometry, material);
+scene.add(cube);
+
+camera.position.z = 2;
+
+const cubeContainer = document.getElementById('cube-container');
+cubeContainer.appendChild(renderer.domElement);
+
+// Function to handle window resize
+function onWindowResize() {
+  const newWidth = cubeContainer.clientWidth;
+  const newHeight = cubeContainer.clientHeight;
+
+  camera.aspect = newWidth / newHeight;
+  camera.updateProjectionMatrix();
+
+  renderer.setSize(newWidth, newHeight);
+}
+
+// Attach the event listener
+window.addEventListener('resize', onWindowResize);
+
+function animate() {
+  requestAnimationFrame(animate);
+  cube.rotation.x += 0.01;
+  cube.rotation.y += 0.01;
+  renderer.render(scene, camera);
+}
+
+animate();
+
+</script>
+
+
 
 <style>
   .description {
