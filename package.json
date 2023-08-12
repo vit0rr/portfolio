@@ -8,7 +8,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "write": "node generateMarkdown.js"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.16.0",
@@ -16,6 +17,7 @@
     "@astrojs/vercel": "^3.0.1",
     "astro": "^2.0.6",
     "markdown-it": "^13.0.1",
+    "moment": "^2.29.4",
     "rehype-katex": "^6.0.3",
     "remark-math": "^5.1.1",
     "sanitize-html": "^2.9.0"
