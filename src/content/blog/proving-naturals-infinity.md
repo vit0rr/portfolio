@@ -8,11 +8,15 @@ tags:
 
 ## Introduction
 
-An interesting fact about math is that you can demonstrate things. It means that you can prove that something is true. And sadly, they are not shown at school. For some concepts, you have to believe they are true. And today, I will open the magic box and demonstrate that the set of natural numbers is infinite with Coq.
+An interesting fact about math is that you can demonstrate things. A lot of people thinks that demonstrate is exemplify something, but it is not. It's common to see people saying that 1 + 1 = 2, just like one apple plus one apple is two apples. But, this is not a demonstration. A demonstration is a logical proof that something is true, by a formal way. You cannot say that everything plus itself is equal to two. Boolean algebra is a good example of this. In Boolean algebra, 1 + 1 = 1. So, you can't say that aways 1 + 1 = 2.
 
 ## What is Coq?
 
 Coq is a software that allows you to write proofs. It is a proof assistant based on the calculus of inductive constructions. It is a functional programming language based on lambda calculus. I won't talk about lambda calculus and the calculus of inductive constructions, but you can find more information about them on Wikipedia.
+
+## What is a formal proof?
+
+A formal proof is a process based on logical rules and axioms used to demonstrate some theorem. The goal is to show an absolute truth that some affirmation is faithful by following strict rules.
 
 ## The proof
 
@@ -20,7 +24,7 @@ A simple way to prove that natural numbers are infinite is by defining that give
 
 So, lets to define our theorem in Coq:
 
-```coq
+```rust
 Theorem plus_1_natural : forall n : nat, 1 + n = S n /\ S n > n.
 ```
 
@@ -37,7 +41,9 @@ Proof.
 Qed.
 ```
 
-`intros n` introduces the universal quantifier `forall` and the arbitrary natural number `n` as a variable. The `split.` splits the objective into two subgoals. One for each conjunct `/\`. The hyphen is to refer to the subgoal. The `reflexivity.` proves that `1 + n = S n`. 
+`intros n` introduces the universal quantifier `forall` and the arbitrary natural number `n` as a variable. The `split.` splits the objective into two subgoals. One for each conjunct `/\`. The hyphen is to refer to the subgoal. The `reflexivity.` is to prove that something equals to itself. Like `1 + n = S n`, because `1 + n` is equal to `S n`. You can reduce it, like: 
+ - 1 + 1 = 2.
+ - 2 = 2.
 
 The `apply le_n_S.` means `le_n_S : forall n m : nat, n <= m -> S n <= S m`, and `le_n` that `le_n : forall n : nat, n <= n`. So, to read the `apply le_n_S. apply le_n.` is: "Given a natural number `n`, if `n <= n`, then `S n <= S n`". And this is true, because `n <= n` is true, and `S n <= S n` is true too. So, the theorem is proved. `Qed.` means that the proof is finished. 
 
