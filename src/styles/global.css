@@ -49,7 +49,7 @@ h2 {
 
 p, li {
   font-size: var(--font-size-md);
-  line-height: 1.25;
+  line-height: 1.50;
   text-align: justify;
   text-justify: inter-word;
 }
