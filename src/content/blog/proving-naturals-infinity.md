@@ -39,7 +39,7 @@ Qed.
 
 `intros n` introduces the universal quantifier `forall` and the arbitrary natural number `n` as a variable. The `split.` splits the objective in two subgoals. One for each conjunct `/\`. The hyphen is just to refer to the subgoal. The `reflexivity.` proves that `1 + n = S n`. 
 
-The `apply le_n_S.` means `le_n_S : forall n m : nat, n <= m -> S n <= S m`, and le_n that `le_n : forall n : nat, n <= n`. So, to read the `apply le_n_S. apply le_n.` is: "Given a natural number `n`, if `n <= n`, then `S n <= S n`". And this is true, because `n <= n` is true, and `S n <= S n` is true too. So, the theorem is proved. `Qed.` means that the proof is finished. 
+The `apply le_n_S.` means `le_n_S : forall n m : nat, n <= m -> S n <= S m`, and `le_n` that `le_n : forall n : nat, n <= n`. So, to read the `apply le_n_S. apply le_n.` is: "Given a natural number `n`, if `n <= n`, then `S n <= S n`". And this is true, because `n <= n` is true, and `S n <= S n` is true too. So, the theorem is proved. `Qed.` means that the proof is finished. 
 
 
 ## Conclusion
