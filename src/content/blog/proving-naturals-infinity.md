@@ -8,7 +8,7 @@ tags:
 
 ## Introduction
 
-An interesting fact about math is that you can demonstrate things. A lot of people thinks that demonstrate is exemplify something, but it is not. It's common to see people saying that $1 + 1 = 2$, just like one apple plus one apple is two apples. But, this is not a demonstration. A demonstration is a logical proof that something is true, by a formal way. You cannot say that everything plus itself is equal to two. Boolean algebra is a good example of this. In Boolean algebra, $1 + 1 = 1$. So, you can't say that aways $1 + 1 = 2$.
+An interesting fact about math is that you can demonstrate things. A lot of people thinks that demonstrate is exemplify something, but it is not. It's common to see people saying that $1 + 1 = 2$, just like one apple plus one apple is two apples. But, this is not a demonstration. A demonstration is a logical proof that something is true, by a formal way. You cannot say that every 1 plus itself is equal to two. Boolean algebra is a good example of this. In Boolean algebra, $1 + 1 = 1$. So, you can't say that aways $1 + 1 = 2$.
 ## What is Coq?
 
 Coq is a software that allows you to write proofs. It is a proof assistant based on the calculus of inductive constructions. It is a functional programming language based on lambda calculus. I won't talk about lambda calculus and the calculus of inductive constructions, but you can find more information about them on Wikipedia.
