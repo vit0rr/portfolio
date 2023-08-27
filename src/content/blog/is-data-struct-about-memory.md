@@ -6,7 +6,7 @@ tags:
   - computer-science
 ---
 
-A principle that I try to always follow is to have aversion to obvious concepts. Since we are introduced to society, we meet with a lot of concepts that we don't even question. Some authoritary figure like a teacher or a parent tells us things that we just accept. 
+A principle that I try to follow is to think about obvious concepts. Since we are introduced to society, we meet with a lot of concepts that we don't even question. Some authoritary figure like a teacher or a parent tells us things that we just accept. 
 
 If you think about data structure, you can relate it immediately to memory. Today, I want to discuss why data structures **are not only** about memory.
 
@@ -15,7 +15,7 @@ If you think about data structure, you can relate it immediately to memory. Toda
 
 For instance, let’s understand that we do not have any problem thinking about data structures to organize data in memory. The problem is never the idea that data structures are indifferent to implementation.
 
-[Data Structure](https://en.wikipedia.org/wiki/Data_structure#Language_support) is a way to organize, manage, and store data (yes, you can store things in math. If you think about [matrices](https://en.wikipedia.org/wiki/Matrix_(mathematics)) or [sets](https://en.wikipedia.org/wiki/Set_(mathematics)), you will understand what I mean). It is a collection of values that we can realize operations. In essence, it is an **Algebraic Structure** of data.
+[Data Structure](https://en.wikipedia.org/wiki/Data_structure#Language_support) is a way to organize, manage, and store data (yes, you can store things in math. If you think about [matrices](https://en.wikipedia.org/wiki/Matrix_(mathematics)) or [sets](https://en.wikipedia.org/wiki/Set_(mathematics)), you can notice that is a way to organize data. In practice, store things is about to organize things). It is a collection of values that we can realize operations. In essence, it is an **Algebraic Structure** of data.
 
 ### Algebraic Structure
 
@@ -25,7 +25,7 @@ At this point, I want to highlight that algebraic structures are essentially abo
 
 It is a big mistake to take an abstract and mathematical concept and reduce it to a simple implementation that needs physical and limited resources. You do not need any computer or memory to understand or use data structures. You need [data](https://en.wikipedia.org/wiki/Data). And data in math is just a set of elements.
 
-### Let's to think about omputational models
+### Let's to think about computational models
 
 The root of this problem is that you maybe don't know about computational models. It is a important step because if you think that in computer science we are using math to model computational problems, and computational problems are mathematical problems, you probably never will reduce any computational problem to a phisical and limited resource (like memory).
 
