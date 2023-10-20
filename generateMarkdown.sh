@@ -5,7 +5,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 chmod +x "$SCRIPT_DIR/generateMarkdown.sh"
 
 if [ "$#" -ne 1 ]; then
-  echo "Use: $0 <nome-do-arquivo>"
+  echo "Use: $0 <file-name>"
   exit 1
 fi
 
