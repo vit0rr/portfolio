@@ -6,4 +6,3 @@ export const SITE = {
 }
 
 export const GITHUB_REPO_URL = 'https://github.com/vit0rr/';
-export const TWITTER_URL = 'https://twitter.com/vitorsalmeida_';
