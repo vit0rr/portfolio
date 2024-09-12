@@ -71,3 +71,10 @@ li {
   margin: 0 auto;
   margin-left: 0;
 }
+
+img {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
