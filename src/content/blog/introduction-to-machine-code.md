@@ -7,9 +7,9 @@ tags:
 ---
 
 ### What is machine code?
-Machine code is how the computer will understand your instructions from a more human-readable language, such as JavaScript, OCaml, or Rust.
+Machine code is computer code.
 
-A binary number represents each machine code instruction and information—a number system with only 1s and 0s. These numbers are represented by pulses of electricity, with a pulse (1) and no pulse (0). Each pulse is a bit. As you probably know, a byte is a group of 8 bits. The instructions themselves are a series of bytes. A single instruction consists of an opcode and an optional number of operands.
+It consisting of machine language instructions that will be used to control a CPU. And about this, the reason that some programming languages have virtual machines, is to simulate a unique CPU. It helps to run the same code on different platforms without needing to care about specific architectures.
 
 An opcode (Operation Code) is one byte wide, has an arbitrary but unique value, and is the first byte on the instruction.
 
@@ -24,7 +24,7 @@ The opcode here is the MOV instruction. The other parts are the operands. In thi
 The "opcode" here, the operation, is the **+** symbol, which means addition. The operands are **3** and **6**.
 
 ### Assembler, disassembler
-Of course, no one writes code in machine code—at least not in modern times. However, some tools translate code from Assembly Language to Machine Code.
+Of course, no one writes code in machine code — at least not in modern times. However, some tools translate code from Assembly Language to Machine Code.
 
 In assembly language, each instruction on the computer is represented by a mnemonic:
 ```asm
@@ -65,12 +65,12 @@ _start:
 
 This code was written using an assembler/disassembler called NASM and sums **1** to **2**. This program (NASM) will translate the mnemonics into machine code. Historically, this part is exciting. If you think about how things work nowadays, we already have compilers and all the tools needed to write code that humans can easily understand. But think a second about the process of creating a new programming language.
 
-Of course, you will need some language to code your new language. For example, I'm writing a toy language called Monkey using GoLang. If you're creating a language for production use, eventually, you'll do the bootstrapping—basically, implement your language using the language itself. Following my example of Monkey, it is like refactoring Monkey using Monkey instead of GoLang.
+Of course, you will need some language to code your new language. For example, I'm writing a toy language called Monkey using GoLang. If you're creating a language for production use, eventually, you'll do the bootstrapping — basically, implement your language using the language itself. Following my example of Monkey, it is like refactoring Monkey using Monkey instead of GoLang.
 
 Now, moving some years back, someone needed to write the first assembler/disassembler directly in a binary system. The first functional computer will depend on what you understand by computer and functional and other things. But I'll follow the idea that it was the [EDSAC](https://en.wikipedia.org/wiki/EDSAC). Initially, from binary input, programs were entered using a set of 18 switches on EDSAC's control panel. Each instruction was typically 18 bits long - that's not 18 because the topmost was always unavailable due to timing programs, so only 17 bits were used. Operators would physically flip these switches to represent 1s and 0s. And, of course, they used paper tape for program storage, but the initial loader had to be entered manually.
 Then, the first simple assembler. This was a tiny 31-instruction program (31 words). It was the world's first assembler. It could read paper tape and convert simple symbolic notations into machine code. The basic format was like a Letter + Number, like A 32, which means "Add the content of memory location 32".
 
-The first bootstrap comes from this basic assembler. The new version could handle more symbols, basic arithmetic in the address, and some macros. This process was repeated. If you want to learn more about this, I recommend reading EDSAC from Wikipedia and watching Bootstrapping EDSAC: Initial Orders—Computerphile](https://youtu.be/nc2q4OOK6K8?si=W7rzWRtFQDXfqA2z) from Computerphile.
+The first bootstrap comes from this basic assembler. The new version could handle more symbols, basic arithmetic in the address, and some macros. This process was repeated. If you want to learn more about this, I recommend reading [EDSAC](https://pt.wikipedia.org/wiki/EDSAC) from Wikipedia and watching [Bootstrapping EDSAC: Initial Orders—Computerphile](https://youtu.be/nc2q4OOK6K8?si=W7rzWRtFQDXfqA2z) from Computerphile.
 
 ### Starting with bytes
 Excellent. I hope I have cleared your mind about machine code at this point. We'll write some code in GoLang to write our machine code instructions.
@@ -85,7 +85,7 @@ type Instructions []byte // byte is an alias for uint8
 type Opcode byte
 ```
 
-Instructions are a slice of bytes, and an Opcode is a byte. Note how it describes our past descriptions. Let's define the first opcode, which would tells the VM (or the processor, if you're compiling directly to machine code and to some especific processor architecture) to push something on the stack - we'll not build a VM at this article.
+`Instructions` are a slice of bytes, and an `Opcode` is a byte. Note how it describes our past descriptions. Let's define the first opcode, which would tells the VM (or the processor, if you're compiling directly to machine code and to some especific processor architecture) to push something on the stack - we'll not build a VM at this article.
 
 Backing to the opcode, it wouldn't be called "push", because it won't be solely about pushing things. Let's think about the expression `1 + 2`. There are three instructions, two of which tell the VM/processor to push `1` and `2` to the stack. A first instinct might tell us to implement these by defining a "push" instruction with an integer as its operand, with the idea being that the VM/processor then takes the integer operand and pushes it into the stack. For integers, it would work because I could encode them and put them directly into the bytecode, but for string literals, for example, putting those into the bytecode is also possible since it's just made of bytes. Still, it would also be a lot of bloat and would sooner or later become unwieldy.
 - Variable size: A string can be any length, like "a" or "a more extensive text like this one.";
@@ -94,7 +94,7 @@ Backing to the opcode, it wouldn't be called "push", because it won't be solely 
 
 Notice how it is a bad design? Here, I introduce the idea of `constants`.
 
-#### Constants
+### Constants
 In this context, `constants` are short for "constant expressions" and refer to expressions whose value doesn't change. It is `constant` and can be determined at `compile time`. That means we don't need to run the program to know what these expressions evaluate. A compiler can find them in the code and store the value they evaluate. After that, it can *reference* the constants in the instructions it generates instead of embedding the value directly in them. A plain integer does the job fine and can serve as an index into a data structure that holds all constants, often called a constant pool. For example:
 ```
 // Instead of having bytecode like:
@@ -152,7 +152,21 @@ func Lookup(op byte) (*Definition, error) {
 }
 ```
 
-The lookup helper is not needed, but it's nice for debugging.
+The lookup helper is not needed, but it's nice for debugging:
+```go
+		debug, _ := Lookup(instructions[0])
+		fmt.Println(debug)
+```
+Output:
+```shell
+go test ./code -v
+=== RUN   TestMake
+&{OpConstant [2]}
+--- PASS: TestMake (0.00s)
+PASS
+ok      github.com/vit0rr/introduction-to-machine-code/code     0.179s
+```
+
 
 The `Definition` for an `Opcode` has two fields: `Name` and `OperandsWidths`. `Name` helps to make an `Opcode` readable and `OperandWidths` contains the number of bytes each operand takes up.
 
