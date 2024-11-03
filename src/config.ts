@@ -1,7 +1,7 @@
 export const SITE = {
   title: "vitorsalmeida",
   website: 'https://vitorsalmeida.com',
-  description: "Thoughts. Learning about math and programming. Currently working as a Software Engineer at MeteorJS ☄️",
+  description: "Thoughts. Learning about math, computer science, programming languages and software development.",
   author: 'Vitor S. Almeida',
 }
 
