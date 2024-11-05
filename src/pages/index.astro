@@ -13,100 +13,37 @@ const posts = await getCollection('blog', ({ data }) => !data.draft);
   <section class="description">
     <p>{SITE.description}</p>
   </section>
-  <div id="cube-container"></div>
   <section class="posts">
     <h2>posts.</h2>
     <ul>
-      {posts
-        .sort(
-          (a, b) =>
-            Math.floor(b.data.pubDate / 1000) -
-            Math.floor(a.data.pubDate / 1000)
-        ).map(post => (
-          <li>
-            <p>
-              {post.data.pubDate.toISOString().split('T')[0]}
-            </p>
-            <Link href={post.slug}>
-              <p class="post-title">
-                {post.data.title}
+        {posts
+          .sort(
+            (a, b) =>
+              Math.floor(b.data.pubDate / 1000) -
+              Math.floor(a.data.pubDate / 1000)
+          ).slice(0, 5).map(post => (
+            <li>
+              <p>
+                {post.data.pubDate.toISOString().split('T')[0]}
               </p>
-            </Link>
-          </li>
-        ))}
+              <Link href={post.slug}>
+                <p class="post-title
+                ">
+                  {post.data.title}
+                </p>
+              </Link>
+            </li>
+          ))}
     </ul>
+
+    <Link href="/blog">
+      <p class="see-all-articles">See all posts</p>
+    </Link>
   </section>
 </Layout>
 
-<script>
-  import * as THREE from 'three';
-
-const scene = new THREE.Scene();
-scene.background = new THREE.Color(
-  parseInt('0x' + 'ffffff'.replace(/^#/, ''), 16)
-);
-
-const newWidth = 312;
-const newHeight = 350;
-
-const camera = new THREE.PerspectiveCamera(
-  75,
-  newWidth / newHeight,
-  0.1,
-  1000
-);
-
-const renderer = new THREE.WebGLRenderer({ antialias: true });
-renderer.setSize(newWidth, newHeight);
-
-const geometry = new THREE.TetrahedronGeometry(1, 5);
-const material = new THREE.MeshBasicMaterial({
-  color: parseInt('0x' + '000000'.replace(/^#/, ''), 16),
-  wireframe: true,
-});
-
-const cube = new THREE.Mesh(geometry, material);
-scene.add(cube);
-
-camera.position.z = 2;
-
-const cubeContainer = document.getElementById('cube-container');
-cubeContainer.appendChild(renderer.domElement);
-
-// Function to handle window resize
-function onWindowResize() {
-  const newWidth = cubeContainer.clientWidth;
-  const newHeight = cubeContainer.clientHeight;
-
-  camera.aspect = newWidth / newHeight;
-  camera.updateProjectionMatrix();
-
-  renderer.setSize(newWidth, newHeight);
-}
-
-// Attach the event listener
-window.addEventListener('resize', onWindowResize);
-
-function animate() {
-  requestAnimationFrame(animate);
-  cube.rotation.x += 0.01;
-  cube.rotation.y += 0.01;
-  renderer.render(scene, camera);
-}
-
-animate();
-
-</script>
-
-
 
 <style>
-  .description {
-    display: flex;
-    flex-direction: column;
-    row-gap: var(--spacing-2x);
-  }
-
   .posts ul {
     display: flex;
     flex-direction: column;
@@ -121,6 +58,11 @@ animate();
 
   .posts :global(a) {
     flex: 1;
+  }
+
+  .see-all-articles {
+    margin-top: var(--spacing-2x);
+    text-decoration: underline;
   }
 </style>
 
