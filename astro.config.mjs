@@ -17,11 +17,10 @@ export default defineConfig({
       remarkMath,
     ],
     rehypePlugins: [
-      rehypeKatex,
+      [rehypeKatex, {}]
     ],
     shikiConfig: {
       theme: 'github-dark',
     }
-    
   }
 });
