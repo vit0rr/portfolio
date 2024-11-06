@@ -42,7 +42,7 @@ Proof.
 Qed.
 ```
 
-`intros n` introduces the universal quantifier `forall` and the arbitrary natural number $n$ as a variable. The `split.` splits the objective into two subgoals. One for each conjunct $\land$. The hyphen is to refer to the subgoal. The `reflexivity.` is to prove that something equals to itself. Like $1 + n = S n$, because $1 + n$ is equal to $S n$. You can reduce it, like: 
+`intros n` introduces the universal quantifier `forall` and the arbitrary natural number $n$ as a variable. The `split.` splits the objective into two subgoals. One for each conjunct $\land$. The hyphen is to refer to the subgoal. The `reflexivity.` is to prove that something equals to itself. Like $1 + n = S n$, because $1 + n$ is equal to $S n$. You can reduce it, like:
  - $1 + 1 = 2$.
  - $2 = 2$.
 
@@ -50,7 +50,7 @@ Coq have some macros that abstracts some proofs. We can see this reducing using 
 
 <img src="/natinfinity/simpl.gif" />
 
-Coq gives us some theorems related to natural numbers ordering, like `le_n_S` and `le_n`. These theorems can be used to reduce steps of our proof, replacing them with the applied theorem. In math, the `le` it is $\leq$, less than or equal. 
+Coq gives us some theorems related to natural numbers ordering, like `le_n_S` and `le_n`. These theorems can be used to reduce steps of our proof, replacing them with the applied theorem. In math, the `le` it is $\leq$, less than or equal.
 
 - `le_n` any natural number is less than or equal to itself. $n \leq n$ is a true statement for any natural number $n$.
 
