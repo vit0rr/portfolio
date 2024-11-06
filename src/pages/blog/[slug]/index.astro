@@ -4,6 +4,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import Link from '../../../components/Link.astro';
 import Layout from '../../../layout/Layout.astro';
 import NavOptions from '../../../components/NavOptions.astro';
+import { SITE } from '../../../config';
 
 interface Props {
   post: CollectionEntry<'blog'>;
@@ -29,7 +30,10 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 ---
 
-<Layout>
+<Layout
+ogImage={`/blog/${post.slug}.png`}
+head={{ title: `${post.data.title} | ${SITE.title}` }}
+>
   <NavOptions />
   <section>
   <h1>

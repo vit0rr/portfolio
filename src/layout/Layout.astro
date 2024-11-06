@@ -4,18 +4,26 @@ import Footer from "../components/Footer.astro";
 import { SITE } from '../config';
 
 export interface Props {
+  ogImage?: string,
   head?: {
     title?: string;
     description?: string;
   }
 }
-
 const {
+  ogImage = 'og.png',
   head = {
     title: SITE.title,
     description: SITE.description,
   }
 } = Astro.props;
+
+const ogURL = new URL(
+  ogImage,
+  Astro.url.origin,
+).href;
+
+
 ---
 
 <!DOCTYPE html>
@@ -28,6 +36,7 @@ const {
     <title>{head.title}</title>
     <meta name="description" content={head.description} />
     <meta name="author" content={SITE.author} />
+    <meta property="og:image" content={ogURL} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
