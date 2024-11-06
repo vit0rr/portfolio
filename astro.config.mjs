@@ -11,7 +11,7 @@ const BLOG_DIR = './src/content/blog';
 console.log("fonfon", await fs.readdir(BLOG_DIR))
 
 const getBlogRoutesRedirect = async () => {
-  const blogRoutes = await fs.readdir(BLOG_DIR)
+  const blogRoutes = (await fs.readdir(BLOG_DIR)).map((file) => file.replace(/\.md$/, ''));
 
   console.log({blogRoutes})
 
