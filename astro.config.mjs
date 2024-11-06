@@ -5,9 +5,10 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import fs from 'node:fs/promises';
 
-import vercel from "@astrojs/vercel/static";
+import vercel from "@astrojs/vercel/serverless";
 
 const BLOG_DIR = './src/content/blog';
+console.log("fonfon", await fs.readdir(BLOG_DIR))
 
 const getBlogRoutesRedirect = async () => {
   const blogRoutes = await fs.readdir(BLOG_DIR)
@@ -26,7 +27,7 @@ const getBlogRoutesRedirect = async () => {
 export default defineConfig({
   site: 'https://vitorsalmeida.com',
   integrations: [mdx(), sitemap()],
-  output: "static",
+  output: "server",
   adapter: vercel(),
   markdown: {
     remarkPlugins: [
