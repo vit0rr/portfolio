@@ -23,6 +23,7 @@ const ogURL = new URL(
   Astro.url.origin,
 ).href;
 
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 
 ---
 
@@ -37,6 +38,17 @@ const ogURL = new URL(
     <meta name="description" content={head.description} />
     <meta name="author" content={SITE.author} />
     <meta property="og:image" content={ogURL} />
+
+    <meta property="og:title" content={head.title} />
+    <meta property="og:description" content={head.description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={ogURL} />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={head.title} />
+    <meta property="twitter:description" content={head.description} />
+    <meta property="twitter:image" content={ogURL} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
