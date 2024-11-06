@@ -1,5 +1,4 @@
 ---
-slug: instroduction-to-big-o-notation
 title: Introduction to Big O notation
 pubDate: 2023-08-12
 tags:

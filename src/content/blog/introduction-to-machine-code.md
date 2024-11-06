@@ -1,5 +1,4 @@
 ---
-slug: introduction-to-machine-code
 title: Introduction to Machine Code
 pubDate: 2024-11-03
 tags:

@@ -1,5 +1,4 @@
 ---
-slug: building-json-parser-from-scratch
 title: Building a JSON Parser from scratch with JS
 pubDate: 2023-08-12
 tags:

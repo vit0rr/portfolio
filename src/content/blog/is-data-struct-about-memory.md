@@ -1,5 +1,4 @@
 ---
-slug: is-data-struct-about-memory
 title: Is Data Struct about memory?
 pubDate: 2023-08-27
 tags:

@@ -1,5 +1,4 @@
 ---
-slug: proving-naturals-infinity
 title: Proving natural numbers are infinity in Coq
 pubDate: 2023-08-13
 tags:
