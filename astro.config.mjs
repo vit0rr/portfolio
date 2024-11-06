@@ -7,7 +7,7 @@ import fs from 'node:fs/promises';
 
 import vercel from "@astrojs/vercel/serverless";
 
-const BLOG_DIR = './functions/_render.func/src/content/blog';
+const BLOG_DIR = './src/content/blog';
 
 const getBlogRoutesRedirect = async () => {
   const blogRoutes = await fs.readdir(BLOG_DIR)
