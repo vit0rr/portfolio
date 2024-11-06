@@ -12,6 +12,8 @@ const BLOG_DIR = './src/content/blog';
 const getBlogRoutesRedirect = async () => {
   const blogRoutes = await fs.readdir(BLOG_DIR)
 
+  console.log({blogRoutes})
+
   const slugs = blogRoutes.map((slug) => [
     `/${slug}`,
     `/blog/${slug}`,
