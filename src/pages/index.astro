@@ -26,7 +26,7 @@ const posts = await getCollection('blog', ({ data }) => !data.draft);
               <p>
                 {post.data.pubDate.toISOString().split('T')[0]}
               </p>
-              <Link href={post.slug}>
+              <Link href={`/blog/${post.slug}`}>
                 <p class="post-title
                 ">
                   {post.data.title}

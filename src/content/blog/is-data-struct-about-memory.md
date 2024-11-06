@@ -1,4 +1,5 @@
 ---
+slug: is-data-struct-about-memory
 title: Is Data Struct about memory?
 pubDate: 2023-08-27
 tags:
@@ -6,7 +7,7 @@ tags:
   - computer-science
 ---
 
-A principle that I try to follow is to think about obvious concepts. Since we are introduced to society, we meet with a lot of concepts that we don't even question. Some authoritary figure like a teacher or a parent tells us things that we just accept. 
+A principle that I try to follow is to think about obvious concepts. Since we are introduced to society, we meet with a lot of concepts that we don't even question. Some authoritary figure like a teacher or a parent tells us things that we just accept.
 
 If you think about data structure, you can relate it immediately to memory. Today, I want to discuss why data structures **are not only** about memory.
 
@@ -33,6 +34,6 @@ Computer science problems follow math problems, and we use math to model them. I
 
 ### Conclusion
 
-I hope that you understand that data structures **are not only** about memory. It is a mathematical concept that we use to model computational problems. 
+I hope that you understand that data structures **are not only** about memory. It is a mathematical concept that we use to model computational problems.
 
 This text is a little talk about some ideas that I would like to share. I tried to give some references to help if you want to dive into this topic. Also, it's **very** important to think about obvious concepts and try to understand **why** the things are the way they are.
