@@ -24,7 +24,6 @@
   },
   "devDependencies": {
     "@astrojs/sitemap": "^3.2.1",
-    "rehype-pretty-code": "^0.14.0",
     "@rollup/plugin-yaml": "^4.1.1",
     "@types/markdown-it": "^12.2.3",
     "@types/sanitize-html": "^2.8.0",
