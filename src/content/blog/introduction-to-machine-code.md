@@ -76,8 +76,7 @@ The first bootstrap comes from this basic assembler. The new version could handl
 Excellent. I hope I have cleared your mind about machine code at this point. We'll write some code in GoLang to write our machine code instructions.
 
 Let's start by defining the bytecode format:
-```go
-// code/code.go
+```go title="code/code.go"
 package code
 
 type Instructions []byte // byte is an alias for uint8
@@ -96,7 +95,7 @@ Notice how it is a bad design? Here, I introduce the idea of `constants`.
 
 ### Constants
 In this context, `constants` are short for "constant expressions" and refer to expressions whose value doesn't change. It is `constant` and can be determined at `compile time`. That means we don't need to run the program to know what these expressions evaluate. A compiler can find them in the code and store the value they evaluate. After that, it can *reference* the constants in the instructions it generates instead of embedding the value directly in them. A plain integer does the job fine and can serve as an index into a data structure that holds all constants, often called a constant pool. For example:
-```
+```asm
 // Instead of having bytecode like:
 PUSH 987654321 // Takes up a lot of space if the number is big
 PUSH "Hello World" // Takes even more space for string
@@ -117,9 +116,7 @@ Constant Pool:
 
 Well, that said, let's define the `OpConstant`. This opcode has one operand: the number I previously assigned to the constant. When the VM/processor executes `OpConstant`, it retrieves the constant using the operand as an index and pushes it on to the stack.
 
-```go
-// code/code.go
-
+```go title="code/code.go"
 // [...]
 
 const (
@@ -129,9 +126,7 @@ const (
 
 `Iota` will generate increasing `byte` values because I don't care about the actual values the opcodes represent. They only need to be distinct from each other and fit in one byte. Now, let's define the part that says `OpConstant` has one operand.
 
-```go
-// code/code.go
-
+```go title="code/code.go"
 // [...]
 
 type Definition struct {
@@ -154,8 +149,8 @@ func Lookup(op byte) (*Definition, error) {
 
 The lookup helper is not needed, but it's nice for debugging:
 ```go
-		debug, _ := Lookup(instructions[0])
-		fmt.Println(debug)
+debug, _ := Lookup(instructions[0])
+fmt.Println(debug)
 ```
 Output:
 ```shell
@@ -174,9 +169,7 @@ The definition for `OpConstant` says that it's only operand two bytes wide, whic
 
 With this, It's already possible to create the first bytecode instruction - finally.
 
-```go
-// code/code.go
-
+```go title="code/code.go"
 // [...]
 
 func Make(op Opcode, operands ...int) []byte {
@@ -210,9 +203,7 @@ This function creates a bytecode instruction for the given `Opcode` and operands
 
 And of course we'll write tests about all this.
 
-```go
-// code/code_test.go
-
+```go title="code/code_test.go"
 package code
 
 import "testing"

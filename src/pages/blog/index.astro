@@ -4,8 +4,9 @@ import { getCollection } from 'astro:content';
 import Layout from "../../layout/Layout.astro";
 import Link from "../../components/Link.astro";
 import NavOptions from '../../components/NavOptions.astro';
+import type { Post } from '../../types';
 
-const posts = await getCollection('blog', ({ data }) => !data.draft);
+const posts: Post[] = await getCollection('blog');
 ---
 
 <Layout>
@@ -16,8 +17,8 @@ const posts = await getCollection('blog', ({ data }) => !data.draft);
       {posts
         .sort(
           (a, b) =>
-            Math.floor(b.data.pubDate / 1000) -
-            Math.floor(a.data.pubDate / 1000)
+            Math.floor(Number(b.data.pubDate) / 1000) -
+            Math.floor(Number(a.data.pubDate) / 1000)
         ).map(post => (
           <li>
             <p>
