@@ -236,7 +236,7 @@ func TestMake(t *testing.T) {
 ```
 
 I only pass `OpConstant` and the operand `65534` to the `Make` function. Then expect to get back a `[]byte` golding three bytes. The first has to be the opcode, `OpConstant`, and the other two should be the big-endian encoding of `65534`. And that's also why use `65534` instead of `65535`:
-```
+```text
 65534 in decimal = 1111 1111 1111 1110 in binary
                  = 0xFF 0xFE in hexadecimal (two bytes)
 ```
@@ -247,7 +247,7 @@ Big-endian means "most significant byte first". Like reading left-to-right:
 And `65535`, both bytes are the same ([0xFF, 0xFF]) - can't tell the order.
 
 The expected output is 3 bytes:
-```
+```text
 [OpConstant, 0xFF, 0xFE]
  ^           ^      ^
  |           |      Second byte of 65534
