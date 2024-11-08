@@ -1,7 +1,7 @@
 export const SITE = {
-  title: "vitorsalmeida",
+  title: "Vitor's thoughts",
   website: 'https://vitorsalmeida.com',
-  description: "thoughts. learning about math, computer science, programming languages and software development.",
+  description: "thoughts, PL, CS and math",
   author: 'vitor s. almeida',
 }
 
