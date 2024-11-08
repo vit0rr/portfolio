@@ -35,6 +35,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     <meta name="generator" content={Astro.generator} />
 
     <title>{head.title}</title>
+    <link rel="icon" href="../../public/v.svg" type="image/x-icon" />
     <meta name="description" content={head.description} />
     <meta name="author" content={SITE.author} />
     <meta property="og:image" content={ogURL} />

@@ -4,11 +4,12 @@
   --font-size-2sm: 0.625rem;
   --font-size-sm: 0.75rem;
   --font-size-md: 1rem;
-  --font-size-md-m: 0.9rem;
+  --font-size-md-m: 0.8.8rem;
   --font-size-xl: 1.5rem;
   --font-size-2xl: 1.75rem;
 
   --spacing: 8px;
+  --spacing-05x: 4px;
   --spacing-2x: 16px;
   --spacing-4x: 32px;
   --spacing-8x: 64px;
@@ -25,7 +26,7 @@
 
 html,
 body {
-  font-family: 'Roboto Mono';
+  font-family: "Times", "Times New Roman", serif;
   min-height: 100vh;
   font-size: 100%;
   line-height: 1.3;
@@ -48,7 +49,7 @@ h2 {
   letter-spacing: 2px;
 }
 
-p, li {
+p {
   font-size: var(--font-size-md);
   line-height: 1.50;
   text-align: justify;
@@ -70,9 +71,9 @@ code {
   font-size: var(--font-size-md);
 }
 
-li {
+/* li {
   list-style-type: none;
-}
+} */
 
 .description > p {
   text-align: left;
@@ -89,7 +90,7 @@ li {
 }
 [data-rehype-pretty-code-figure] code {
   color: var(--color-white);
-  padding: var(--spacing);
+  padding: var(--spacing-05x);
   font-size: var(--font-size-md-m);
   overflow-x: auto;
   background-color: var(--color-white);
